@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThanhToan));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimeNgaymua = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,6 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblThanhToanNgaymua = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.lblTtoanDiachi = new System.Windows.Forms.Label();
             this.lblTtoanSodt = new System.Windows.Forms.Label();
             this.lblTtoanTen = new System.Windows.Forms.Label();
@@ -55,8 +56,6 @@
             this.lblTtoanTongTtoan = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnThanhtoanThoat = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblThanhToanNgaymua = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -199,6 +198,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin người mua";
             // 
+            // lblThanhToanNgaymua
+            // 
+            this.lblThanhToanNgaymua.AutoSize = true;
+            this.lblThanhToanNgaymua.Location = new System.Drawing.Point(134, 176);
+            this.lblThanhToanNgaymua.Name = "lblThanhToanNgaymua";
+            this.lblThanhToanNgaymua.Size = new System.Drawing.Size(0, 15);
+            this.lblThanhToanNgaymua.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(21, 176);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 15);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Ngày mua hàng";
+            // 
             // lblTtoanDiachi
             // 
             this.lblTtoanDiachi.AutoSize = true;
@@ -297,7 +313,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(811, 133);
             this.label7.TabIndex = 7;
-            this.label7.Text = resources.GetString("label7.Text");
+            this.label7.Text = "\r\n";
             // 
             // btnThanhtoanThoat
             // 
@@ -309,23 +325,6 @@
             this.btnThanhtoanThoat.TabIndex = 8;
             this.btnThanhtoanThoat.UseVisualStyleBackColor = false;
             this.btnThanhtoanThoat.Click += new System.EventHandler(this.btnThanhtoanThoat_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 176);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 15);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Ngày mua hàng";
-            // 
-            // lblThanhToanNgaymua
-            // 
-            this.lblThanhToanNgaymua.AutoSize = true;
-            this.lblThanhToanNgaymua.Location = new System.Drawing.Point(134, 176);
-            this.lblThanhToanNgaymua.Name = "lblThanhToanNgaymua";
-            this.lblThanhToanNgaymua.Size = new System.Drawing.Size(0, 15);
-            this.lblThanhToanNgaymua.TabIndex = 10;
             // 
             // FormThanhToan
             // 

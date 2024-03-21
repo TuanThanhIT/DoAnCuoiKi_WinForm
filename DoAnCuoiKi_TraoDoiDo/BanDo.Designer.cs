@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.picImage = new System.Windows.Forms.PictureBox();
+            this.btnLoadImage = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdBGiaohangtructiep = new System.Windows.Forms.RadioButton();
+            this.raBChuyenPhatNhanh = new System.Windows.Forms.RadioButton();
+            this.rdBNguoibangiao = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.txtBdSoluong = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimeNgayban = new System.Windows.Forms.DateTimePicker();
@@ -45,9 +54,6 @@
             this.btnBdLammoi = new System.Windows.Forms.Button();
             this.btnBdHoantat = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.picBoxAnh = new System.Windows.Forms.PictureBox();
-            this.rdBTulay = new System.Windows.Forms.RadioButton();
-            this.raBGiao = new System.Windows.Forms.RadioButton();
             this.cbBoxTinhtrang = new System.Windows.Forms.ComboBox();
             this.txtBdMota = new System.Windows.Forms.TextBox();
             this.txtBdGiaban = new System.Windows.Forms.TextBox();
@@ -61,14 +67,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.picImage);
+            this.groupBox1.Controls.Add(this.btnLoadImage);
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtBdSoluong);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.dateTimeNgayban);
@@ -79,9 +93,6 @@
             this.groupBox1.Controls.Add(this.btnBdLammoi);
             this.groupBox1.Controls.Add(this.btnBdHoantat);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.picBoxAnh);
-            this.groupBox1.Controls.Add(this.rdBTulay);
-            this.groupBox1.Controls.Add(this.raBGiao);
             this.groupBox1.Controls.Add(this.cbBoxTinhtrang);
             this.groupBox1.Controls.Add(this.txtBdMota);
             this.groupBox1.Controls.Add(this.txtBdGiaban);
@@ -104,9 +115,89 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin mặt hàng";
             // 
+            // picImage
+            // 
+            this.picImage.BackColor = System.Drawing.Color.White;
+            this.picImage.Location = new System.Drawing.Point(71, 367);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(433, 229);
+            this.picImage.TabIndex = 32;
+            this.picImage.TabStop = false;
+            // 
+            // btnLoadImage
+            // 
+            this.btnLoadImage.Location = new System.Drawing.Point(412, 322);
+            this.btnLoadImage.Name = "btnLoadImage";
+            this.btnLoadImage.Size = new System.Drawing.Size(92, 28);
+            this.btnLoadImage.TabIndex = 31;
+            this.btnLoadImage.Text = "Thêm ảnh";
+            this.btnLoadImage.UseVisualStyleBackColor = true;
+            this.btnLoadImage.Click += new System.EventHandler(this.btnLoadImage_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rdBGiaohangtructiep);
+            this.groupBox3.Controls.Add(this.raBChuyenPhatNhanh);
+            this.groupBox3.Controls.Add(this.rdBNguoibangiao);
+            this.groupBox3.Location = new System.Drawing.Point(788, 418);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(245, 90);
+            this.groupBox3.TabIndex = 29;
+            this.groupBox3.TabStop = false;
+            // 
+            // rdBGiaohangtructiep
+            // 
+            this.rdBGiaohangtructiep.AutoSize = true;
+            this.rdBGiaohangtructiep.Location = new System.Drawing.Point(6, 64);
+            this.rdBGiaohangtructiep.Name = "rdBGiaohangtructiep";
+            this.rdBGiaohangtructiep.Size = new System.Drawing.Size(154, 21);
+            this.rdBGiaohangtructiep.TabIndex = 14;
+            this.rdBGiaohangtructiep.TabStop = true;
+            this.rdBGiaohangtructiep.Text = "Giao hàng trực tiếp";
+            this.rdBGiaohangtructiep.UseVisualStyleBackColor = true;
+            // 
+            // raBChuyenPhatNhanh
+            // 
+            this.raBChuyenPhatNhanh.AutoSize = true;
+            this.raBChuyenPhatNhanh.Location = new System.Drawing.Point(6, 10);
+            this.raBChuyenPhatNhanh.Name = "raBChuyenPhatNhanh";
+            this.raBChuyenPhatNhanh.Size = new System.Drawing.Size(154, 21);
+            this.raBChuyenPhatNhanh.TabIndex = 12;
+            this.raBChuyenPhatNhanh.TabStop = true;
+            this.raBChuyenPhatNhanh.Text = "Chuyển phát nhanh";
+            this.raBChuyenPhatNhanh.UseVisualStyleBackColor = true;
+            // 
+            // rdBNguoibangiao
+            // 
+            this.rdBNguoibangiao.AutoSize = true;
+            this.rdBNguoibangiao.Location = new System.Drawing.Point(6, 37);
+            this.rdBNguoibangiao.Name = "rdBNguoibangiao";
+            this.rdBNguoibangiao.Size = new System.Drawing.Size(186, 21);
+            this.rdBNguoibangiao.TabIndex = 13;
+            this.rdBNguoibangiao.TabStop = true;
+            this.rdBNguoibangiao.Text = "Giao hàng bởi người bán";
+            this.rdBNguoibangiao.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(768, 299);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(143, 25);
+            this.textBox1.TabIndex = 28;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(611, 307);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 17);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Địa điểm";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // txtBdSoluong
             // 
-            this.txtBdSoluong.Location = new System.Drawing.Point(798, 253);
+            this.txtBdSoluong.Location = new System.Drawing.Point(768, 253);
             this.txtBdSoluong.Name = "txtBdSoluong";
             this.txtBdSoluong.Size = new System.Drawing.Size(143, 25);
             this.txtBdSoluong.TabIndex = 26;
@@ -114,7 +205,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(652, 261);
+            this.label14.Location = new System.Drawing.Point(611, 261);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 17);
             this.label14.TabIndex = 25;
@@ -144,7 +235,7 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Location = new System.Drawing.Point(641, 70);
+            this.groupBox2.Location = new System.Drawing.Point(611, 70);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(306, 153);
             this.groupBox2.TabIndex = 22;
@@ -205,7 +296,7 @@
             // btnBdApdung
             // 
             this.btnBdApdung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdApdung.Location = new System.Drawing.Point(853, 22);
+            this.btnBdApdung.Location = new System.Drawing.Point(831, 22);
             this.btnBdApdung.Name = "btnBdApdung";
             this.btnBdApdung.Size = new System.Drawing.Size(86, 32);
             this.btnBdApdung.TabIndex = 20;
@@ -216,7 +307,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(638, 30);
+            this.label9.Location = new System.Drawing.Point(611, 30);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(141, 17);
             this.label9.TabIndex = 19;
@@ -225,7 +316,7 @@
             // btnBdLammoi
             // 
             this.btnBdLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdLammoi.Location = new System.Drawing.Point(938, 564);
+            this.btnBdLammoi.Location = new System.Drawing.Point(952, 564);
             this.btnBdLammoi.Name = "btnBdLammoi";
             this.btnBdLammoi.Size = new System.Drawing.Size(86, 32);
             this.btnBdLammoi.TabIndex = 17;
@@ -252,37 +343,6 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Hình ảnh:\r\nChụp hình mặt hàng của bạn\r\n";
             // 
-            // picBoxAnh
-            // 
-            this.picBoxAnh.BackColor = System.Drawing.Color.White;
-            this.picBoxAnh.Location = new System.Drawing.Point(71, 357);
-            this.picBoxAnh.Name = "picBoxAnh";
-            this.picBoxAnh.Size = new System.Drawing.Size(400, 239);
-            this.picBoxAnh.TabIndex = 1;
-            this.picBoxAnh.TabStop = false;
-            // 
-            // rdBTulay
-            // 
-            this.rdBTulay.AutoSize = true;
-            this.rdBTulay.Location = new System.Drawing.Point(933, 420);
-            this.rdBTulay.Name = "rdBTulay";
-            this.rdBTulay.Size = new System.Drawing.Size(91, 21);
-            this.rdBTulay.TabIndex = 13;
-            this.rdBTulay.TabStop = true;
-            this.rdBTulay.Text = "Tự tới lấy";
-            this.rdBTulay.UseVisualStyleBackColor = true;
-            // 
-            // raBGiao
-            // 
-            this.raBGiao.AutoSize = true;
-            this.raBGiao.Location = new System.Drawing.Point(823, 418);
-            this.raBGiao.Name = "raBGiao";
-            this.raBGiao.Size = new System.Drawing.Size(104, 21);
-            this.raBGiao.TabIndex = 12;
-            this.raBGiao.TabStop = true;
-            this.raBGiao.Text = "Có thể giao";
-            this.raBGiao.UseVisualStyleBackColor = true;
-            // 
             // cbBoxTinhtrang
             // 
             this.cbBoxTinhtrang.FormattingEnabled = true;
@@ -291,9 +351,9 @@
             "Còn tốt ( Còn sử dụng tốt, không vấn đề )",
             "Như mới ( Đã bóc tem, mới tinh )",
             "Mới ( Chưa dùng bao giờ, nguyên tem )"});
-            this.cbBoxTinhtrang.Location = new System.Drawing.Point(803, 480);
+            this.cbBoxTinhtrang.Location = new System.Drawing.Point(788, 525);
             this.cbBoxTinhtrang.Name = "cbBoxTinhtrang";
-            this.cbBoxTinhtrang.Size = new System.Drawing.Size(221, 25);
+            this.cbBoxTinhtrang.Size = new System.Drawing.Size(250, 25);
             this.cbBoxTinhtrang.TabIndex = 11;
             // 
             // txtBdMota
@@ -342,7 +402,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(638, 307);
+            this.label7.Location = new System.Drawing.Point(611, 367);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(350, 48);
             this.label7.TabIndex = 6;
@@ -352,7 +412,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(638, 420);
+            this.label6.Location = new System.Drawing.Point(611, 428);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(157, 17);
             this.label6.TabIndex = 5;
@@ -361,7 +421,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(638, 488);
+            this.label5.Location = new System.Drawing.Point(611, 533);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 17);
             this.label5.TabIndex = 4;
@@ -403,6 +463,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên mặt hàng";
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // FormBanDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -413,9 +485,11 @@
             this.Text = "Đăng bán";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxAnh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -432,13 +506,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox txtBdLoaiMH;
         private System.Windows.Forms.TextBox txtBdTenMH;
-        private System.Windows.Forms.RadioButton rdBTulay;
-        private System.Windows.Forms.RadioButton raBGiao;
+        private System.Windows.Forms.RadioButton rdBNguoibangiao;
+        private System.Windows.Forms.RadioButton raBChuyenPhatNhanh;
         private System.Windows.Forms.ComboBox cbBoxTinhtrang;
         private System.Windows.Forms.TextBox txtBdMota;
         private System.Windows.Forms.TextBox txtBdGiaban;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox picBoxAnh;
         private System.Windows.Forms.Button btnBdLammoi;
         private System.Windows.Forms.Button btnBdHoantat;
         private System.Windows.Forms.Label label9;
@@ -455,5 +528,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtBdSoluong;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rdBGiaohangtructiep;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Button btnLoadImage;
+        private System.Windows.Forms.PictureBox picImage;
     }
 }

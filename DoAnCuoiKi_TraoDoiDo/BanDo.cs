@@ -46,5 +46,25 @@ namespace DoAnCuoiKi_TraoDoiDo
             txtBdGiamgia.Enabled = true;
             txtBdSlVou.Enabled = true;
         }
+
+        private void btnLoadImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.bmp; *.jpg; *.png)|*.bmp;*.jpg;*.png";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+
+                // Tạo một đối tượng Image từ tệp tin
+                Image image = Image.FromFile(filePath);
+
+                // Thiết lập kích thước ảnh phù hợp với PictureBox
+                picImage.SizeMode = PictureBoxSizeMode.Zoom;
+                picImage.Image = image;
+            }
+        }
+
+       
     }
 }

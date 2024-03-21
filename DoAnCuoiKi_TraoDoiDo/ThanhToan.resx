@@ -117,12 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Lưu ý: 
-Nếu phương thúc thanh toán do người bán đưa ra là có thể giao thì dựa vào địa chỉ mà bạn cung cấp hàng sẽ được giao tới bạn 
-trong khoảng từ 3 đến 7 ngày nếu không có sự cố phát sinh, ngược lại nếu phương thức giao hàng  là tự đến lấy thì người bán
-sẽ chủ động liên hệ với bạn qua số điện thoại bạn cung cấp để trao đổi địa điểm bạn có thể nhận hàng.
-
-</value>
-  </data>
 </root>
