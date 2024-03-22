@@ -102,6 +102,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblChude.Text = "Giỏ hàng";
         }
 
-        
+        private void dateTimePickerTrangchu_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePickerTrangchu.Value = DateTime.Now;
+        }
     }
 }

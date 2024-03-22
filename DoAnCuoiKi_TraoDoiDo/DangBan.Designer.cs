@@ -114,6 +114,7 @@
             this.Controls.Add(this.btnDbChinhsua);
             this.Name = "FormDangBan";
             this.Text = "Đang bán";
+            this.Load += new System.EventHandler(this.FormDangBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvDangban)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

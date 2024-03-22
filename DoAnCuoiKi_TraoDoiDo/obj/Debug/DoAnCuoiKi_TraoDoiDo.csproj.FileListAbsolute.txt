@@ -34,3 +34,6 @@ D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThanhToan.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangNhap.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormChiTiet.resources
+D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.dll
+D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.xml
+D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CopyComplete

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace DoAnCuoiKi_TraoDoiDo
 {
     internal static class Program
@@ -17,6 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormTrangChu());
+            
         }
     }
 }

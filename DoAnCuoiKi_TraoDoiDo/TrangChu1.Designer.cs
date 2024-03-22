@@ -111,6 +111,7 @@
             this.dateTimePickerTrangchu.Name = "dateTimePickerTrangchu";
             this.dateTimePickerTrangchu.Size = new System.Drawing.Size(247, 22);
             this.dateTimePickerTrangchu.TabIndex = 7;
+            this.dateTimePickerTrangchu.ValueChanged += new System.EventHandler(this.dateTimePickerTrangchu_ValueChanged);
             // 
             // panelTrangChu
             // 

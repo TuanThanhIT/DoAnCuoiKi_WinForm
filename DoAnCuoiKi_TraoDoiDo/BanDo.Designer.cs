@@ -34,9 +34,9 @@
             this.btnLoadImage = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rdBGiaohangtructiep = new System.Windows.Forms.RadioButton();
-            this.raBChuyenPhatNhanh = new System.Windows.Forms.RadioButton();
+            this.rdBChuyenPhatNhanh = new System.Windows.Forms.RadioButton();
             this.rdBNguoibangiao = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBdDiadiem = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtBdSoluong = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.cbBoxTinhtrang = new System.Windows.Forms.ComboBox();
             this.txtBdMota = new System.Windows.Forms.TextBox();
             this.txtBdGiaban = new System.Windows.Forms.TextBox();
-            this.txtBdLoaiMH = new System.Windows.Forms.ComboBox();
+            this.comboBdLoaiMH = new System.Windows.Forms.ComboBox();
             this.txtBdTenMH = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.txtImagePath = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -78,10 +79,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.txtImagePath);
             this.groupBox1.Controls.Add(this.picImage);
             this.groupBox1.Controls.Add(this.btnLoadImage);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtBdDiadiem);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtBdSoluong);
             this.groupBox1.Controls.Add(this.label14);
@@ -96,7 +98,7 @@
             this.groupBox1.Controls.Add(this.cbBoxTinhtrang);
             this.groupBox1.Controls.Add(this.txtBdMota);
             this.groupBox1.Controls.Add(this.txtBdGiaban);
-            this.groupBox1.Controls.Add(this.txtBdLoaiMH);
+            this.groupBox1.Controls.Add(this.comboBdLoaiMH);
             this.groupBox1.Controls.Add(this.txtBdTenMH);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -118,7 +120,7 @@
             // picImage
             // 
             this.picImage.BackColor = System.Drawing.Color.White;
-            this.picImage.Location = new System.Drawing.Point(71, 367);
+            this.picImage.Location = new System.Drawing.Point(71, 387);
             this.picImage.Name = "picImage";
             this.picImage.Size = new System.Drawing.Size(433, 229);
             this.picImage.TabIndex = 32;
@@ -126,18 +128,18 @@
             // 
             // btnLoadImage
             // 
-            this.btnLoadImage.Location = new System.Drawing.Point(412, 322);
+            this.btnLoadImage.Location = new System.Drawing.Point(416, 346);
             this.btnLoadImage.Name = "btnLoadImage";
-            this.btnLoadImage.Size = new System.Drawing.Size(92, 28);
+            this.btnLoadImage.Size = new System.Drawing.Size(88, 31);
             this.btnLoadImage.TabIndex = 31;
-            this.btnLoadImage.Text = "Thêm ảnh";
+            this.btnLoadImage.Text = "Thêm tệp";
             this.btnLoadImage.UseVisualStyleBackColor = true;
             this.btnLoadImage.Click += new System.EventHandler(this.btnLoadImage_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.rdBGiaohangtructiep);
-            this.groupBox3.Controls.Add(this.raBChuyenPhatNhanh);
+            this.groupBox3.Controls.Add(this.rdBChuyenPhatNhanh);
             this.groupBox3.Controls.Add(this.rdBNguoibangiao);
             this.groupBox3.Location = new System.Drawing.Point(788, 418);
             this.groupBox3.Name = "groupBox3";
@@ -156,16 +158,16 @@
             this.rdBGiaohangtructiep.Text = "Giao hàng trực tiếp";
             this.rdBGiaohangtructiep.UseVisualStyleBackColor = true;
             // 
-            // raBChuyenPhatNhanh
+            // rdBChuyenPhatNhanh
             // 
-            this.raBChuyenPhatNhanh.AutoSize = true;
-            this.raBChuyenPhatNhanh.Location = new System.Drawing.Point(6, 10);
-            this.raBChuyenPhatNhanh.Name = "raBChuyenPhatNhanh";
-            this.raBChuyenPhatNhanh.Size = new System.Drawing.Size(154, 21);
-            this.raBChuyenPhatNhanh.TabIndex = 12;
-            this.raBChuyenPhatNhanh.TabStop = true;
-            this.raBChuyenPhatNhanh.Text = "Chuyển phát nhanh";
-            this.raBChuyenPhatNhanh.UseVisualStyleBackColor = true;
+            this.rdBChuyenPhatNhanh.AutoSize = true;
+            this.rdBChuyenPhatNhanh.Location = new System.Drawing.Point(6, 10);
+            this.rdBChuyenPhatNhanh.Name = "rdBChuyenPhatNhanh";
+            this.rdBChuyenPhatNhanh.Size = new System.Drawing.Size(154, 21);
+            this.rdBChuyenPhatNhanh.TabIndex = 12;
+            this.rdBChuyenPhatNhanh.TabStop = true;
+            this.rdBChuyenPhatNhanh.Text = "Chuyển phát nhanh";
+            this.rdBChuyenPhatNhanh.UseVisualStyleBackColor = true;
             // 
             // rdBNguoibangiao
             // 
@@ -178,12 +180,12 @@
             this.rdBNguoibangiao.Text = "Giao hàng bởi người bán";
             this.rdBNguoibangiao.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBdDiadiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(768, 299);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 25);
-            this.textBox1.TabIndex = 28;
+            this.txtBdDiadiem.Location = new System.Drawing.Point(768, 299);
+            this.txtBdDiadiem.Name = "txtBdDiadiem";
+            this.txtBdDiadiem.Size = new System.Drawing.Size(143, 25);
+            this.txtBdDiadiem.TabIndex = 28;
             // 
             // label15
             // 
@@ -316,7 +318,7 @@
             // btnBdLammoi
             // 
             this.btnBdLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdLammoi.Location = new System.Drawing.Point(952, 564);
+            this.btnBdLammoi.Location = new System.Drawing.Point(952, 584);
             this.btnBdLammoi.Name = "btnBdLammoi";
             this.btnBdLammoi.Size = new System.Drawing.Size(86, 32);
             this.btnBdLammoi.TabIndex = 17;
@@ -326,7 +328,7 @@
             // btnBdHoantat
             // 
             this.btnBdHoantat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdHoantat.Location = new System.Drawing.Point(798, 564);
+            this.btnBdHoantat.Location = new System.Drawing.Point(794, 584);
             this.btnBdHoantat.Name = "btnBdHoantat";
             this.btnBdHoantat.Size = new System.Drawing.Size(86, 32);
             this.btnBdHoantat.TabIndex = 16;
@@ -370,10 +372,10 @@
             this.txtBdGiaban.Size = new System.Drawing.Size(221, 25);
             this.txtBdGiaban.TabIndex = 9;
             // 
-            // txtBdLoaiMH
+            // comboBdLoaiMH
             // 
-            this.txtBdLoaiMH.FormattingEnabled = true;
-            this.txtBdLoaiMH.Items.AddRange(new object[] {
+            this.comboBdLoaiMH.FormattingEnabled = true;
+            this.comboBdLoaiMH.Items.AddRange(new object[] {
             "Giày",
             "Điện thoại",
             "Nội thất",
@@ -386,10 +388,10 @@
             "Đồ em bé",
             "Khác",
             ""});
-            this.txtBdLoaiMH.Location = new System.Drawing.Point(283, 86);
-            this.txtBdLoaiMH.Name = "txtBdLoaiMH";
-            this.txtBdLoaiMH.Size = new System.Drawing.Size(221, 25);
-            this.txtBdLoaiMH.TabIndex = 8;
+            this.comboBdLoaiMH.Location = new System.Drawing.Point(283, 86);
+            this.comboBdLoaiMH.Name = "comboBdLoaiMH";
+            this.comboBdLoaiMH.Size = new System.Drawing.Size(221, 25);
+            this.comboBdLoaiMH.TabIndex = 8;
             // 
             // txtBdTenMH
             // 
@@ -475,6 +477,13 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // txtImagePath
+            // 
+            this.txtImagePath.Location = new System.Drawing.Point(71, 350);
+            this.txtImagePath.Name = "txtImagePath";
+            this.txtImagePath.Size = new System.Drawing.Size(339, 25);
+            this.txtImagePath.TabIndex = 33;
+            // 
             // FormBanDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -504,10 +513,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox txtBdLoaiMH;
+        private System.Windows.Forms.ComboBox comboBdLoaiMH;
         private System.Windows.Forms.TextBox txtBdTenMH;
         private System.Windows.Forms.RadioButton rdBNguoibangiao;
-        private System.Windows.Forms.RadioButton raBChuyenPhatNhanh;
+        private System.Windows.Forms.RadioButton rdBChuyenPhatNhanh;
         private System.Windows.Forms.ComboBox cbBoxTinhtrang;
         private System.Windows.Forms.TextBox txtBdMota;
         private System.Windows.Forms.TextBox txtBdGiaban;
@@ -528,7 +537,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtBdSoluong;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBdDiadiem;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -536,5 +545,6 @@
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.Button btnLoadImage;
         private System.Windows.Forms.PictureBox picImage;
+        private System.Windows.Forms.TextBox txtImagePath;
     }
 }
