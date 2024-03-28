@@ -16,7 +16,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTrangChu());
+            Application.Run(new FormTatCaMatHang());
             
         }
     }

@@ -36,12 +36,11 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void FormMatHang_Load(object sender, EventArgs e)
         {
-
             OpenChildForm(new FormTatCaMatHang());
         }
         private void btnMhTatca_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTatCaMatHang());  
+            OpenChildForm(new FormTatCaMatHang());
         }
 
         private void btnMhDienthoai_Click_1(object sender, EventArgs e)

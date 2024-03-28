@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.ucHienThi1 = new DoAnCuoiKi_TraoDoiDo.UCHienThi();
-            this.ucHienThi2 = new DoAnCuoiKi_TraoDoiDo.UCHienThi();
-            this.ucHienThi3 = new DoAnCuoiKi_TraoDoiDo.UCHienThi();
+            this.flowLPHienthiAll = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // label1
@@ -45,30 +43,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "TẤT CẢ";
             // 
-            // ucHienThi1
+            // flowLPHienthiAll
             // 
-            this.ucHienThi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ucHienThi1.Location = new System.Drawing.Point(12, 50);
-            this.ucHienThi1.Name = "ucHienThi1";
-            this.ucHienThi1.Size = new System.Drawing.Size(129, 176);
-            this.ucHienThi1.TabIndex = 1;
-            this.ucHienThi1.Load += new System.EventHandler(this.ucHienThi1_Load);
-            // 
-            // ucHienThi2
-            // 
-            this.ucHienThi2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ucHienThi2.Location = new System.Drawing.Point(171, 50);
-            this.ucHienThi2.Name = "ucHienThi2";
-            this.ucHienThi2.Size = new System.Drawing.Size(129, 176);
-            this.ucHienThi2.TabIndex = 2;
-            // 
-            // ucHienThi3
-            // 
-            this.ucHienThi3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ucHienThi3.Location = new System.Drawing.Point(324, 50);
-            this.ucHienThi3.Name = "ucHienThi3";
-            this.ucHienThi3.Size = new System.Drawing.Size(129, 176);
-            this.ucHienThi3.TabIndex = 3;
+            this.flowLPHienthiAll.AutoScroll = true;
+            this.flowLPHienthiAll.Location = new System.Drawing.Point(3, 50);
+            this.flowLPHienthiAll.Name = "flowLPHienthiAll";
+            this.flowLPHienthiAll.Size = new System.Drawing.Size(1030, 431);
+            this.flowLPHienthiAll.TabIndex = 1;
             // 
             // FormTatCaMatHang
             // 
@@ -76,12 +57,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1038, 487);
-            this.Controls.Add(this.ucHienThi3);
-            this.Controls.Add(this.ucHienThi2);
-            this.Controls.Add(this.ucHienThi1);
+            this.Controls.Add(this.flowLPHienthiAll);
             this.Controls.Add(this.label1);
             this.Name = "FormTatCaMatHang";
             this.Text = "Tất cả mặt hàng";
+            this.Load += new System.EventHandler(this.FormTatCaMatHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,8 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private UCHienThi ucHienThi1;
-        private UCHienThi ucHienThi2;
-        private UCHienThi ucHienThi3;
+        private System.Windows.Forms.FlowLayoutPanel flowLPHienthiAll;
     }
 }

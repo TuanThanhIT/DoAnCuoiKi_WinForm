@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnDangbanThem = new System.Windows.Forms.Button();
+            this.btnDangbanXuat = new System.Windows.Forms.Button();
             this.btnDbChinhsua = new System.Windows.Forms.Button();
             this.btnDbXoa = new System.Windows.Forms.Button();
             this.gvDangban = new System.Windows.Forms.DataGridView();
@@ -38,15 +38,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvDangban)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnDangbanThem
+            // btnDangbanXuat
             // 
-            this.btnDangbanThem.Location = new System.Drawing.Point(779, 588);
-            this.btnDangbanThem.Name = "btnDangbanThem";
-            this.btnDangbanThem.Size = new System.Drawing.Size(96, 36);
-            this.btnDangbanThem.TabIndex = 1;
-            this.btnDangbanThem.Text = "Thêm ";
-            this.btnDangbanThem.UseVisualStyleBackColor = true;
-            this.btnDangbanThem.Click += new System.EventHandler(this.btnDangbanThem_Click);
+            this.btnDangbanXuat.Location = new System.Drawing.Point(779, 588);
+            this.btnDangbanXuat.Name = "btnDangbanXuat";
+            this.btnDangbanXuat.Size = new System.Drawing.Size(96, 36);
+            this.btnDangbanXuat.TabIndex = 1;
+            this.btnDangbanXuat.Text = "Xuất báo cáo";
+            this.btnDangbanXuat.UseVisualStyleBackColor = true;
             // 
             // btnDbChinhsua
             // 
@@ -66,6 +65,7 @@
             this.btnDbXoa.TabIndex = 3;
             this.btnDbXoa.Text = "Xóa";
             this.btnDbXoa.UseVisualStyleBackColor = true;
+            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click);
             // 
             // gvDangban
             // 
@@ -77,6 +77,7 @@
             this.gvDangban.RowTemplate.Height = 24;
             this.gvDangban.Size = new System.Drawing.Size(1077, 523);
             this.gvDangban.TabIndex = 5;
+            this.gvDangban.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDangban_CellClick);
             // 
             // label1
             // 
@@ -110,7 +111,7 @@
             this.Controls.Add(this.gvDangban);
             this.Controls.Add(this.btnDbQuaylai);
             this.Controls.Add(this.btnDbXoa);
-            this.Controls.Add(this.btnDangbanThem);
+            this.Controls.Add(this.btnDangbanXuat);
             this.Controls.Add(this.btnDbChinhsua);
             this.Name = "FormDangBan";
             this.Text = "Đang bán";
@@ -124,11 +125,11 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btnDangbanThem;
+        private System.Windows.Forms.Button btnDangbanXuat;
         private System.Windows.Forms.Button btnDbChinhsua;
         private System.Windows.Forms.Button btnDbXoa;
         private System.Windows.Forms.Button btnDbQuaylai;
-        private System.Windows.Forms.DataGridView gvDangban;
+        public System.Windows.Forms.DataGridView gvDangban;
         private System.Windows.Forms.Label label1;
     }
 }
