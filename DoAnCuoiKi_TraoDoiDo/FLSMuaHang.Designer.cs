@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(7, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 23);
@@ -60,31 +60,46 @@
             // 
             // btnXuatReportLsMH
             // 
-            this.btnXuatReportLsMH.Location = new System.Drawing.Point(720, 584);
+            this.btnXuatReportLsMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnXuatReportLsMH.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatReportLsMH.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Report3;
+            this.btnXuatReportLsMH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatReportLsMH.Location = new System.Drawing.Point(698, 584);
             this.btnXuatReportLsMH.Name = "btnXuatReportLsMH";
             this.btnXuatReportLsMH.Size = new System.Drawing.Size(121, 36);
             this.btnXuatReportLsMH.TabIndex = 2;
             this.btnXuatReportLsMH.Text = "Xuất Báo Cáo";
-            this.btnXuatReportLsMH.UseVisualStyleBackColor = true;
+            this.btnXuatReportLsMH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatReportLsMH.UseVisualStyleBackColor = false;
             // 
             // btnBanHang
             // 
+            this.btnBanHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnBanHang.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanHang.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.history2;
+            this.btnBanHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBanHang.Location = new System.Drawing.Point(952, 584);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(121, 36);
             this.btnBanHang.TabIndex = 3;
-            this.btnBanHang.Text = "Bán Hàng";
-            this.btnBanHang.UseVisualStyleBackColor = true;
+            this.btnBanHang.Text = "Lịch Sử Bán Hàng";
+            this.btnBanHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanHang.UseVisualStyleBackColor = false;
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
             // btnXoaLsMH
             // 
-            this.btnXoaLsMH.Location = new System.Drawing.Point(837, 584);
+            this.btnXoaLsMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnXoaLsMH.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaLsMH.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.xoa3;
+            this.btnXoaLsMH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoaLsMH.Location = new System.Drawing.Point(825, 584);
             this.btnXoaLsMH.Name = "btnXoaLsMH";
             this.btnXoaLsMH.Size = new System.Drawing.Size(121, 36);
             this.btnXoaLsMH.TabIndex = 5;
             this.btnXoaLsMH.Text = "Xóa Lịch Sử";
-            this.btnXoaLsMH.UseVisualStyleBackColor = true;
+            this.btnXoaLsMH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaLsMH.UseVisualStyleBackColor = false;
             // 
             // btnThoat
             // 
@@ -101,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.ClientSize = new System.Drawing.Size(1078, 626);
             this.Controls.Add(this.btnXoaLsMH);
             this.Controls.Add(this.btnThoat);

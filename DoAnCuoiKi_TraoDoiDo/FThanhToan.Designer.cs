@@ -98,7 +98,7 @@
             // 
             // btnTtoanHoanthanh
             // 
-            this.btnTtoanHoanthanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnTtoanHoanthanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.btnTtoanHoanthanh.Location = new System.Drawing.Point(234, 226);
             this.btnTtoanHoanthanh.Name = "btnTtoanHoanthanh";
             this.btnTtoanHoanthanh.Size = new System.Drawing.Size(81, 29);
@@ -279,16 +279,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(479, 295);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(154, 20);
+            this.label12.Size = new System.Drawing.Size(133, 19);
             this.label12.TabIndex = 3;
             this.label12.Text = "Tổng Thanh Toán\r\n";
             // 
             // btnTtoanDathang
             // 
-            this.btnTtoanDathang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnTtoanDathang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnTtoanDathang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTtoanDathang.ForeColor = System.Drawing.Color.Red;
             this.btnTtoanDathang.Location = new System.Drawing.Point(672, 325);
             this.btnTtoanDathang.Name = "btnTtoanDathang";
             this.btnTtoanDathang.Size = new System.Drawing.Size(104, 44);
@@ -299,10 +301,10 @@
             // 
             // lblTtoanTongTtoan
             // 
-            this.lblTtoanTongTtoan.AutoSize = true;
-            this.lblTtoanTongTtoan.Location = new System.Drawing.Point(669, 295);
+            this.lblTtoanTongTtoan.BackColor = System.Drawing.Color.White;
+            this.lblTtoanTongTtoan.Location = new System.Drawing.Point(618, 294);
             this.lblTtoanTongTtoan.Name = "lblTtoanTongTtoan";
-            this.lblTtoanTongTtoan.Size = new System.Drawing.Size(0, 15);
+            this.lblTtoanTongTtoan.Size = new System.Drawing.Size(158, 20);
             this.lblTtoanTongTtoan.TabIndex = 6;
             // 
             // label7
@@ -317,7 +319,7 @@
             // 
             // btnThanhtoanThoat
             // 
-            this.btnThanhtoanThoat.BackColor = System.Drawing.Color.White;
+            this.btnThanhtoanThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.btnThanhtoanThoat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.quaylai2;
             this.btnThanhtoanThoat.Location = new System.Drawing.Point(717, 12);
             this.btnThanhtoanThoat.Name = "btnThanhtoanThoat";
@@ -330,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.ClientSize = new System.Drawing.Size(812, 513);
             this.Controls.Add(this.btnThanhtoanThoat);
             this.Controls.Add(this.label7);
@@ -341,6 +343,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "FormThanhToan";
             this.Text = "Thanh Toán";
             this.groupBox1.ResumeLayout(false);

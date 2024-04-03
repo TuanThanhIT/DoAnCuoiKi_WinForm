@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.IO;
-using static System.Net.Mime.MediaTypeNames;
+
+
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
@@ -19,12 +19,14 @@ namespace DoAnCuoiKi_TraoDoiDo
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDoDao bd = new BanDoDao();
         FormTrangChu mainForm;
-        XuLyAnh xulyanh = new XuLyAnh();
         XuLyGiaoDien xlgiaodien = new XuLyGiaoDien();
         public FormBanDo()
         {
             InitializeComponent();
-            xulyanh.Rong();
+            XuLyAnh.images = new List<Image>();
+            XuLyAnh.imagePaths = new List<string>();
+            XuLyAnh.currentIndex = -1;
+
         }
 
 
@@ -53,51 +55,118 @@ namespace DoAnCuoiKi_TraoDoiDo
         }
         public string chuyendoiAnh1()
         {
-            string imagePath1 = xulyanh.ImagePaths.Count > 0 ? xulyanh.ImagePaths[0] : string.Empty;
+            string imagePath1 = XuLyAnh.imagePaths.Count > 0 ? XuLyAnh.imagePaths[0] : string.Empty;
             return imagePath1;
         }
         public string chuyendoiAnh2()
         {
-            string imagePath2 = xulyanh.ImagePaths.Count > 1 ? xulyanh.ImagePaths[1] : string.Empty;
+            string imagePath2 = XuLyAnh.imagePaths.Count > 1 ? XuLyAnh.imagePaths[1] : string.Empty;
             return imagePath2;
         }
         public string chuyendoiAnh3()
         {
-            string imagePath3 = xulyanh.ImagePaths.Count > 2 ? xulyanh.ImagePaths[2] : string.Empty;
+            string imagePath3 = XuLyAnh.imagePaths.Count > 2 ? XuLyAnh.imagePaths[2] : string.Empty;
             return imagePath3;
         }
         public string chuyendoiAnh4()
         {
-            string imagePath4 = xulyanh.ImagePaths.Count > 3 ? xulyanh.ImagePaths[3] : string.Empty;
+            string imagePath4 = XuLyAnh.imagePaths.Count > 3 ? XuLyAnh.imagePaths[3] : string.Empty;
             return imagePath4;
+        }
+        public string RandomMaSanPham()
+        {
+            const int doDaiMaSanPham = 5;
+            const string kyTuDung = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            // Tạo một HashSet để lưu trữ các mã sản phẩm đã được sử dụng
+            HashSet<string> maSanPhamDaSuDung = new HashSet<string>();
+
+            // Tạo một đối tượng Random
+            Random random = new Random();
+
+            // Tạo lặp cho đến khi tạo được mã sản phẩm mới
+            while (true)
+            {
+                // Tạo một StringBuilder để xây dựng mã sản phẩm
+                var stringBuilder = new System.Text.StringBuilder();
+
+                // Tạo mã sản phẩm mới
+                for (int i = 0; i < doDaiMaSanPham; i++)
+                {
+                    char kyTuNgauNhien = kyTuDung[random.Next(kyTuDung.Length)];
+                    stringBuilder.Append(kyTuNgauNhien);
+                }
+
+                string maSanPhamMoi = stringBuilder.ToString();
+
+                // Kiểm tra xem mã sản phẩm đã được sử dụng chưa
+                if (!maSanPhamDaSuDung.Contains(maSanPhamMoi))
+                {
+                    maSanPhamDaSuDung.Add(maSanPhamMoi);
+                    return maSanPhamMoi;
+                }
+            }
         }
         private void btnBdHoantat_Click(object sender, EventArgs e)
         {
-            BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, float.TryParse(txtBdGiaban.Text, out float giaban) ? giaban : 0, txtBdMota.Text,dateTimeNgayban.Value, chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-                txtBdMa.Text, float.TryParse(txtBdGiamgia.Text, out float giamgia) ? giamgia : 0, int.TryParse(txtBdSlVou.Text, out int slVou) ? slVou : 0,
-                int.TryParse(txtBdSoluong.Text, out int soluong) ? soluong : 0, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text);
+            BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
+                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
             bd.Them(bando);
             DialogResult result = MessageBox.Show("Bạn có tiếp tục muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
                 OpenChildForm(new FormDangBan());
             }
-            
-            xulyanh.Rong();
+            else
+            {
+                XuLyAnh.images = new List<Image>();
+                XuLyAnh.imagePaths = new List<string>();
+                XuLyAnh.currentIndex = -1;
+            }
         }
 
-        public void btnLoadImage_Click(object sender, EventArgs e)
+        private void btnLoadImage_Click(object sender, EventArgs e)
         {
-            xulyanh.ImageLoad(picImage, txtImagePath);
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Multiselect = true;
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string fileName in openFileDialog.FileNames)
+                {
+                    Image image = Image.FromFile(fileName);
+                    XuLyAnh.images.Add(image);
+                    XuLyAnh.imagePaths.Add(fileName);
+                }
+
+                if (XuLyAnh.images.Count > 0)
+                {
+                    XuLyAnh.currentIndex = 0;
+                    picImage.SizeMode = PictureBoxSizeMode.Zoom;
+                    picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
+                    txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
+                }
+            }
         }
         public void btnDbTruoc_Click(object sender, EventArgs e)
         {
-            xulyanh.Before(picImage, txtImagePath);
+            if (XuLyAnh.images.Count > 0)
+            {
+                XuLyAnh.currentIndex = (XuLyAnh.currentIndex - 1 + XuLyAnh.images.Count) % XuLyAnh.images.Count;
+                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
+                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
+            }
         }
 
         public void btnDbSau_Click(object sender, EventArgs e)
         {
-           xulyanh.After(picImage, txtImagePath);
+            if (XuLyAnh.images.Count > 0)
+            {
+                XuLyAnh.currentIndex = (XuLyAnh.currentIndex + 1) % XuLyAnh.images.Count;
+                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
+                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
+            }
         }
 
         private void btnBdApdung_Click(object sender, EventArgs e)
@@ -110,35 +179,79 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void btnBdLammoi_Click(object sender, EventArgs e)
         {
             txtBdTenMH.Text = "";
-            comboBdLoaiMH.Text = "";
+            comboBdLoaiMH.Text = null;
             txtBdGiaban.Text = "";
             txtBdMota.Text = "";
             txtBdMa.Text = "";
             txtBdGiamgia.Text = "";
             txtBdSlVou.Text = "";
             txtBdSoluong.Text = "";
-            cbBoxTinhtrang.Text = "";    
+            cbBoxTinhtrang.Text = null;
             txtImagePath.Text = "";
-            picImage.Image = null;  
+            txtBdDiadiem.Text = "";
+            picImage.Image = null;
             if (rdBNguoibangiao.Checked)
                 rdBNguoibangiao.Checked = false;
             else if (rdBChuyenPhatNhanh.Checked)
                 rdBChuyenPhatNhanh.Checked = false;
             else
                 rdBGiaohangtructiep.Checked = false;
-            xulyanh.Rong();
+            XuLyAnh.images = new List<Image>();
+            XuLyAnh.imagePaths = new List<string>();
+            XuLyAnh.currentIndex = -1;
         }
 
         private void btnDbXoa_Click(object sender, EventArgs e)
         {
-            xulyanh.XoaAnhHienTai(picImage, txtImagePath);
+
+            if (XuLyAnh.currentIndex >= 0 && XuLyAnh.currentIndex < XuLyAnh.images.Count)
+            {
+                XuLyAnh.images.RemoveAt(XuLyAnh.currentIndex);
+                XuLyAnh.imagePaths.RemoveAt(XuLyAnh.currentIndex);
+
+                if (XuLyAnh.images.Count > 0)
+                {
+                    XuLyAnh.currentIndex = Math.Min(XuLyAnh.currentIndex, XuLyAnh.images.Count - 1);
+                    picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
+                    txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
+                }
+                else
+                {
+                    XuLyAnh.currentIndex = -1;
+                    picImage.Image = null;
+                    txtImagePath.Text = string.Empty;
+                }
+            }
         }
+
 
         private void FormBanDo_Load(object sender, EventArgs e)
         {
-           
+            if (XuLyAnh.images.Count > 0)
+            {
+                XuLyAnh.currentIndex = 0;
+                picImage.SizeMode = PictureBoxSizeMode.Zoom;
+                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
+                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
+            }
+        }
+        private void btnBdLuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
+              txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text,
+              txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
+                bd.Sua(bando);
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        
+        private void picImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,6 +16,13 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
+        public FormTrangChu(DangKi dk)
+        {
+            InitializeComponent();
+            dk.Tendangnhap = lblTrangchuTen.Text;
+            dk.Chucvu = lblTrangChuChucvu.Text;
+            dk.ID = lblTrangChuID.Text;
+        }
         private Form currentFormChild;
 
         public void OpenChildForm(Form childForm)
@@ -49,7 +56,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void btnBanDo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormBanDo());
-            lblChude.Text = "Bán Đồ";
+            lblChude.Text = "Bán Hàng";
         }
 
         private void btnMatHang_Click_1(object sender, EventArgs e)
@@ -105,6 +112,16 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void dateTimePickerTrangchu_ValueChanged(object sender, EventArgs e)
         {
             dateTimePickerTrangchu.Value = DateTime.Now;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

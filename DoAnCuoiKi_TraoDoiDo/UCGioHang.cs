@@ -17,6 +17,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
         }
 
-        
+        private void UCGioHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

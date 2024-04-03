@@ -45,14 +45,17 @@
             this.UCChiTietbtnThem = new System.Windows.Forms.Button();
             this.UCChiTietbtnMua = new System.Windows.Forms.Button();
             this.UCChiTietPicBox = new System.Windows.Forms.PictureBox();
-            this.UCChitietbtnThoat = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.UCCTlbLoaiMH = new System.Windows.Forms.Label();
+            this.UCCTlblDiadiem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.UCChiTietPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 283);
+            this.label1.Location = new System.Drawing.Point(10, 270);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 1;
@@ -61,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 314);
+            this.label2.Location = new System.Drawing.Point(10, 352);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 2;
@@ -70,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 357);
+            this.label3.Location = new System.Drawing.Point(10, 389);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 3;
@@ -79,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 430);
+            this.label4.Location = new System.Drawing.Point(10, 424);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 4;
@@ -88,7 +91,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 464);
+            this.label5.Location = new System.Drawing.Point(10, 465);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 16);
             this.label5.TabIndex = 5;
@@ -97,7 +100,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 497);
+            this.label6.Location = new System.Drawing.Point(10, 501);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 16);
             this.label6.TabIndex = 6;
@@ -106,7 +109,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 535);
+            this.label7.Location = new System.Drawing.Point(10, 537);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 16);
             this.label7.TabIndex = 7;
@@ -114,83 +117,91 @@
             // 
             // UCChiTietlblTen
             // 
-            this.UCChiTietlblTen.AutoSize = true;
-            this.UCChiTietlblTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblTen.Location = new System.Drawing.Point(184, 283);
+            this.UCChiTietlblTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblTen.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblTen.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblTen.Location = new System.Drawing.Point(183, 265);
             this.UCChiTietlblTen.Name = "UCChiTietlblTen";
-            this.UCChiTietlblTen.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblTen.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblTen.TabIndex = 8;
             // 
             // UCChiTietlblGia
             // 
-            this.UCChiTietlblGia.AutoSize = true;
-            this.UCChiTietlblGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblGia.Location = new System.Drawing.Point(184, 314);
+            this.UCChiTietlblGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblGia.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblGia.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblGia.Location = new System.Drawing.Point(183, 347);
             this.UCChiTietlblGia.Name = "UCChiTietlblGia";
-            this.UCChiTietlblGia.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblGia.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblGia.TabIndex = 11;
             // 
             // UCChiTietlblMota
             // 
-            this.UCChiTietlblMota.AutoSize = true;
-            this.UCChiTietlblMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblMota.Location = new System.Drawing.Point(184, 350);
+            this.UCChiTietlblMota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblMota.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblMota.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblMota.Location = new System.Drawing.Point(183, 384);
             this.UCChiTietlblMota.Name = "UCChiTietlblMota";
-            this.UCChiTietlblMota.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblMota.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblMota.TabIndex = 12;
             // 
             // UCChiTietlblSoLuong
             // 
-            this.UCChiTietlblSoLuong.AutoSize = true;
-            this.UCChiTietlblSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblSoLuong.Location = new System.Drawing.Point(184, 430);
+            this.UCChiTietlblSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblSoLuong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblSoLuong.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblSoLuong.Location = new System.Drawing.Point(183, 424);
             this.UCChiTietlblSoLuong.Name = "UCChiTietlblSoLuong";
-            this.UCChiTietlblSoLuong.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblSoLuong.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblSoLuong.TabIndex = 13;
             // 
             // UCChiTietlblGiaohang
             // 
-            this.UCChiTietlblGiaohang.AutoSize = true;
-            this.UCChiTietlblGiaohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblGiaohang.Location = new System.Drawing.Point(184, 464);
+            this.UCChiTietlblGiaohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblGiaohang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblGiaohang.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblGiaohang.Location = new System.Drawing.Point(183, 460);
             this.UCChiTietlblGiaohang.Name = "UCChiTietlblGiaohang";
-            this.UCChiTietlblGiaohang.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblGiaohang.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblGiaohang.TabIndex = 14;
             // 
             // UCChiTietlblTinhTrang
             // 
-            this.UCChiTietlblTinhTrang.AutoSize = true;
-            this.UCChiTietlblTinhTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblTinhTrang.Location = new System.Drawing.Point(184, 497);
+            this.UCChiTietlblTinhTrang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblTinhTrang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblTinhTrang.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblTinhTrang.Location = new System.Drawing.Point(183, 496);
             this.UCChiTietlblTinhTrang.Name = "UCChiTietlblTinhTrang";
-            this.UCChiTietlblTinhTrang.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblTinhTrang.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblTinhTrang.TabIndex = 15;
             // 
             // UCChiTietlblVoucher
             // 
-            this.UCChiTietlblVoucher.AutoSize = true;
-            this.UCChiTietlblVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.UCChiTietlblVoucher.Location = new System.Drawing.Point(184, 528);
+            this.UCChiTietlblVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCChiTietlblVoucher.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCChiTietlblVoucher.ForeColor = System.Drawing.Color.Red;
+            this.UCChiTietlblVoucher.Location = new System.Drawing.Point(183, 532);
             this.UCChiTietlblVoucher.Name = "UCChiTietlblVoucher";
-            this.UCChiTietlblVoucher.Size = new System.Drawing.Size(0, 16);
+            this.UCChiTietlblVoucher.Size = new System.Drawing.Size(238, 26);
             this.UCChiTietlblVoucher.TabIndex = 16;
             // 
             // UCChiTietbtnThem
             // 
             this.UCChiTietbtnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.UCChiTietbtnThem.Location = new System.Drawing.Point(204, 572);
+            this.UCChiTietbtnThem.Location = new System.Drawing.Point(299, 648);
             this.UCChiTietbtnThem.Name = "UCChiTietbtnThem";
-            this.UCChiTietbtnThem.Size = new System.Drawing.Size(106, 42);
+            this.UCChiTietbtnThem.Size = new System.Drawing.Size(122, 42);
             this.UCChiTietbtnThem.TabIndex = 17;
             this.UCChiTietbtnThem.Text = "Thêm vào\r\ngiỏ hàng\r\n";
             this.UCChiTietbtnThem.UseVisualStyleBackColor = false;
+            this.UCChiTietbtnThem.Click += new System.EventHandler(this.UCChiTietbtnThem_Click);
             // 
             // UCChiTietbtnMua
             // 
             this.UCChiTietbtnMua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.UCChiTietbtnMua.Location = new System.Drawing.Point(316, 572);
+            this.UCChiTietbtnMua.Location = new System.Drawing.Point(171, 648);
             this.UCChiTietbtnMua.Name = "UCChiTietbtnMua";
-            this.UCChiTietbtnMua.Size = new System.Drawing.Size(106, 42);
+            this.UCChiTietbtnMua.Size = new System.Drawing.Size(122, 42);
             this.UCChiTietbtnMua.TabIndex = 18;
             this.UCChiTietbtnMua.Text = "Mua Ngay";
             this.UCChiTietbtnMua.UseVisualStyleBackColor = false;
@@ -201,25 +212,57 @@
             this.UCChiTietPicBox.Location = new System.Drawing.Point(3, 3);
             this.UCChiTietPicBox.Name = "UCChiTietPicBox";
             this.UCChiTietPicBox.Size = new System.Drawing.Size(419, 239);
+            this.UCChiTietPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UCChiTietPicBox.TabIndex = 0;
             this.UCChiTietPicBox.TabStop = false;
             // 
-            // UCChitietbtnThoat
+            // label8
             // 
-            this.UCChitietbtnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.UCChitietbtnThoat.Location = new System.Drawing.Point(92, 572);
-            this.UCChitietbtnThoat.Name = "UCChitietbtnThoat";
-            this.UCChitietbtnThoat.Size = new System.Drawing.Size(106, 42);
-            this.UCChitietbtnThoat.TabIndex = 19;
-            this.UCChitietbtnThoat.Text = "Thoát";
-            this.UCChitietbtnThoat.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 573);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 16);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Địa điểm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 311);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 16);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Loại mặt hàng";
+            // 
+            // UCCTlbLoaiMH
+            // 
+            this.UCCTlbLoaiMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCCTlbLoaiMH.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCCTlbLoaiMH.ForeColor = System.Drawing.Color.Red;
+            this.UCCTlbLoaiMH.Location = new System.Drawing.Point(183, 306);
+            this.UCCTlbLoaiMH.Name = "UCCTlbLoaiMH";
+            this.UCCTlbLoaiMH.Size = new System.Drawing.Size(238, 26);
+            this.UCCTlbLoaiMH.TabIndex = 22;
+            // 
+            // UCCTlblDiadiem
+            // 
+            this.UCCTlblDiadiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UCCTlblDiadiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCCTlblDiadiem.ForeColor = System.Drawing.Color.Red;
+            this.UCCTlblDiadiem.Location = new System.Drawing.Point(183, 568);
+            this.UCCTlblDiadiem.Name = "UCCTlblDiadiem";
+            this.UCCTlblDiadiem.Size = new System.Drawing.Size(238, 26);
+            this.UCCTlblDiadiem.TabIndex = 23;
             // 
             // UCChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.UCChitietbtnThoat);
+            this.Controls.Add(this.UCCTlblDiadiem);
+            this.Controls.Add(this.UCCTlbLoaiMH);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.UCChiTietbtnMua);
             this.Controls.Add(this.UCChiTietbtnThem);
             this.Controls.Add(this.UCChiTietlblVoucher);
@@ -238,7 +281,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UCChiTietPicBox);
             this.Name = "UCChiTiet";
-            this.Size = new System.Drawing.Size(426, 620);
+            this.Size = new System.Drawing.Size(427, 693);
+            this.Load += new System.EventHandler(this.UCChiTiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UCChiTietPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,6 +308,9 @@
         public System.Windows.Forms.Label UCChiTietlblVoucher;
         public System.Windows.Forms.Button UCChiTietbtnThem;
         public System.Windows.Forms.Button UCChiTietbtnMua;
-        public System.Windows.Forms.Button UCChitietbtnThoat;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label UCCTlbLoaiMH;
+        public System.Windows.Forms.Label UCCTlblDiadiem;
     }
 }

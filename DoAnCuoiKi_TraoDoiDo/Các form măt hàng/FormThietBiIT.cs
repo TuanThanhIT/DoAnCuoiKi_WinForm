@@ -12,9 +12,15 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormThietBiIT : Form
     {
+        XuLyHienThi xlht = new XuLyHienThi();
         public FormThietBiIT()
         {
             InitializeComponent();
+        }
+        string loaimathang = "Thiet bi IT";
+        private void FormThietBiIT_Load(object sender, EventArgs e)
+        {
+            xlht.LoadDanhSach(loaimathang, flowLPTbIT);
         }
     }
 }

@@ -12,9 +12,15 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormKhac : Form
     {
+        XuLyHienThi xlht = new XuLyHienThi();
         public FormKhac()
         {
             InitializeComponent();
+        }
+        string loaimathang = "Khac";
+        private void FormKhac_Load(object sender, EventArgs e)
+        {
+            xlht.LoadDanhSach(loaimathang, flowLPKhac);
         }
     }
 }

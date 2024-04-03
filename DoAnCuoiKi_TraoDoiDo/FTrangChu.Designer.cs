@@ -36,8 +36,8 @@
             this.panelTrangChu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLichsu = new System.Windows.Forms.Button();
-            this.btnThongke = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnThongke = new System.Windows.Forms.Button();
             this.btnGioHang = new System.Windows.Forms.Button();
             this.btnMatHang = new System.Windows.Forms.Button();
             this.btnBanDo = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             this.lblTrangchuTen = new System.Windows.Forms.Label();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblTrangChuID = new System.Windows.Forms.Label();
             this.Panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,7 +63,7 @@
             // 
             // Panel
             // 
-            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
             this.Panel.Controls.Add(this.groupBox1);
             this.Panel.Controls.Add(this.button1);
             this.Panel.Controls.Add(this.dateTimePickerTrangchu);
@@ -72,10 +73,11 @@
             this.Panel.Name = "Panel";
             this.Panel.Size = new System.Drawing.Size(1424, 52);
             this.Panel.TabIndex = 7;
+            this.Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Paint);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
             this.groupBox1.Controls.Add(this.lblChude);
             this.groupBox1.Location = new System.Drawing.Point(-1, 0);
             this.groupBox1.Name = "groupBox1";
@@ -86,17 +88,17 @@
             // lblChude
             // 
             this.lblChude.AutoSize = true;
-            this.lblChude.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChude.ForeColor = System.Drawing.Color.Red;
-            this.lblChude.Location = new System.Drawing.Point(0, 15);
+            this.lblChude.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChude.ForeColor = System.Drawing.Color.White;
+            this.lblChude.Location = new System.Drawing.Point(6, 19);
             this.lblChude.Name = "lblChude";
-            this.lblChude.Size = new System.Drawing.Size(67, 26);
+            this.lblChude.Size = new System.Drawing.Size(70, 25);
             this.lblChude.TabIndex = 10;
             this.lblChude.Text = "label1";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
             this.button1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
             this.button1.Location = new System.Drawing.Point(1352, 8);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -115,7 +117,7 @@
             // 
             // panelTrangChu
             // 
-            this.panelTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelTrangChu.BackColor = System.Drawing.Color.White;
             this.panelTrangChu.Location = new System.Drawing.Point(140, 52);
             this.panelTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTrangChu.Name = "panelTrangChu";
@@ -124,10 +126,10 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
             this.panel2.Controls.Add(this.btnLichsu);
-            this.panel2.Controls.Add(this.btnThongke);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btnThongke);
             this.panel2.Controls.Add(this.btnGioHang);
             this.panel2.Controls.Add(this.btnMatHang);
             this.panel2.Controls.Add(this.btnBanDo);
@@ -137,93 +139,125 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(143, 633);
             this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnLichsu
             // 
-            this.btnLichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnLichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnLichsu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichsu.ForeColor = System.Drawing.Color.White;
             this.btnLichsu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._7;
-            this.btnLichsu.Location = new System.Drawing.Point(-1, 351);
+            this.btnLichsu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLichsu.Location = new System.Drawing.Point(0, 451);
             this.btnLichsu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLichsu.Name = "btnLichsu";
-            this.btnLichsu.Size = new System.Drawing.Size(141, 57);
+            this.btnLichsu.Size = new System.Drawing.Size(141, 81);
             this.btnLichsu.TabIndex = 15;
+            this.btnLichsu.Text = "Lịch Sử";
+            this.btnLichsu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLichsu.UseVisualStyleBackColor = false;
             this.btnLichsu.Click += new System.EventHandler(this.btnLichsu_Click_1);
             // 
-            // btnThongke
-            // 
-            this.btnThongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnThongke.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._5;
-            this.btnThongke.Location = new System.Drawing.Point(-1, 290);
-            this.btnThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThongke.Name = "btnThongke";
-            this.btnThongke.Size = new System.Drawing.Size(141, 57);
-            this.btnThongke.TabIndex = 14;
-            this.btnThongke.UseVisualStyleBackColor = false;
-            this.btnThongke.Click += new System.EventHandler(this.btnThongke_Click);
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._20019650c3aeebf1ad141858659c915e;
-            this.pictureBox1.Location = new System.Drawing.Point(-9, 2);
+            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.lam_logo_ban_hang_online_dep1;
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(149, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // btnThongke
+            // 
+            this.btnThongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnThongke.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongke.ForeColor = System.Drawing.Color.White;
+            this.btnThongke.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._5;
+            this.btnThongke.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThongke.Location = new System.Drawing.Point(0, 366);
+            this.btnThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongke.Name = "btnThongke";
+            this.btnThongke.Size = new System.Drawing.Size(141, 81);
+            this.btnThongke.TabIndex = 14;
+            this.btnThongke.Text = "Thống Kê";
+            this.btnThongke.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThongke.UseVisualStyleBackColor = false;
+            this.btnThongke.Click += new System.EventHandler(this.btnThongke_Click);
+            // 
             // btnGioHang
             // 
-            this.btnGioHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnGioHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnGioHang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGioHang.ForeColor = System.Drawing.Color.White;
             this.btnGioHang.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.shopping_cart2;
-            this.btnGioHang.Location = new System.Drawing.Point(-1, 571);
+            this.btnGioHang.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGioHang.Location = new System.Drawing.Point(0, 536);
             this.btnGioHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGioHang.Name = "btnGioHang";
-            this.btnGioHang.Size = new System.Drawing.Size(141, 57);
+            this.btnGioHang.Size = new System.Drawing.Size(141, 73);
             this.btnGioHang.TabIndex = 12;
+            this.btnGioHang.Text = "Giỏ Hàng";
+            this.btnGioHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGioHang.UseVisualStyleBackColor = false;
             this.btnGioHang.Click += new System.EventHandler(this.btnGioHang_Click_1);
             // 
             // btnMatHang
             // 
-            this.btnMatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnMatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnMatHang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatHang.ForeColor = System.Drawing.Color.White;
             this.btnMatHang.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._1;
-            this.btnMatHang.Location = new System.Drawing.Point(-1, 229);
+            this.btnMatHang.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMatHang.Location = new System.Drawing.Point(-1, 281);
             this.btnMatHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMatHang.Name = "btnMatHang";
-            this.btnMatHang.Size = new System.Drawing.Size(141, 57);
+            this.btnMatHang.Size = new System.Drawing.Size(141, 81);
             this.btnMatHang.TabIndex = 11;
+            this.btnMatHang.Text = "Mặt Hàng";
+            this.btnMatHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMatHang.UseVisualStyleBackColor = false;
             this.btnMatHang.Click += new System.EventHandler(this.btnMatHang_Click_1);
             // 
             // btnBanDo
             // 
-            this.btnBanDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBanDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnBanDo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanDo.ForeColor = System.Drawing.Color.White;
             this.btnBanDo.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._4;
-            this.btnBanDo.Location = new System.Drawing.Point(0, 168);
+            this.btnBanDo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBanDo.Location = new System.Drawing.Point(-1, 196);
             this.btnBanDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBanDo.Name = "btnBanDo";
-            this.btnBanDo.Size = new System.Drawing.Size(141, 57);
+            this.btnBanDo.Size = new System.Drawing.Size(141, 81);
             this.btnBanDo.TabIndex = 10;
+            this.btnBanDo.Text = "Bán Hàng";
+            this.btnBanDo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBanDo.UseVisualStyleBackColor = false;
             this.btnBanDo.Click += new System.EventHandler(this.btnBanDo_Click);
             // 
             // btnTrangChu
             // 
-            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnTrangChu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
             this.btnTrangChu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._3;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 107);
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 111);
             this.btnTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(141, 57);
+            this.btnTrangChu.Size = new System.Drawing.Size(141, 81);
             this.btnTrangChu.TabIndex = 9;
+            this.btnTrangChu.Text = "Trang Chủ";
+            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.panel3.Controls.Add(this.lblTrangChuID);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.btnMylichsu);
@@ -262,9 +296,10 @@
             // 
             // btnMylichsu
             // 
-            this.btnMylichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnMylichsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMylichsu.Location = new System.Drawing.Point(18, 584);
+            this.btnMylichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnMylichsu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMylichsu.ForeColor = System.Drawing.Color.White;
+            this.btnMylichsu.Location = new System.Drawing.Point(17, 584);
             this.btnMylichsu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMylichsu.Name = "btnMylichsu";
             this.btnMylichsu.Size = new System.Drawing.Size(171, 38);
@@ -276,20 +311,24 @@
             // lblTrangChuChucvu
             // 
             this.lblTrangChuChucvu.AutoSize = true;
-            this.lblTrangChuChucvu.Location = new System.Drawing.Point(71, 308);
+            this.lblTrangChuChucvu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChuChucvu.ForeColor = System.Drawing.Color.White;
+            this.lblTrangChuChucvu.Location = new System.Drawing.Point(74, 323);
             this.lblTrangChuChucvu.Name = "lblTrangChuChucvu";
-            this.lblTrangChuChucvu.Size = new System.Drawing.Size(54, 16);
+            this.lblTrangChuChucvu.Size = new System.Drawing.Size(69, 19);
             this.lblTrangChuChucvu.TabIndex = 22;
             this.lblTrangChuChucvu.Text = "Chức vụ";
             // 
             // lblTrangchuTen
             // 
             this.lblTrangchuTen.AutoSize = true;
-            this.lblTrangchuTen.Location = new System.Drawing.Point(80, 281);
+            this.lblTrangchuTen.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangchuTen.ForeColor = System.Drawing.Color.White;
+            this.lblTrangchuTen.Location = new System.Drawing.Point(55, 281);
             this.lblTrangchuTen.Name = "lblTrangchuTen";
-            this.lblTrangchuTen.Size = new System.Drawing.Size(34, 16);
+            this.lblTrangchuTen.Size = new System.Drawing.Size(114, 19);
             this.lblTrangchuTen.TabIndex = 21;
-            this.lblTrangchuTen.Text = "Tên ";
+            this.lblTrangchuTen.Text = "Tên đăng nhập";
             // 
             // btnDangxuat
             // 
@@ -304,11 +343,23 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(14, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Cá nhân";
+            // 
+            // lblTrangChuID
+            // 
+            this.lblTrangChuID.AutoSize = true;
+            this.lblTrangChuID.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChuID.ForeColor = System.Drawing.Color.White;
+            this.lblTrangChuID.Location = new System.Drawing.Point(124, 18);
+            this.lblTrangChuID.Name = "lblTrangChuID";
+            this.lblTrangChuID.Size = new System.Drawing.Size(55, 19);
+            this.lblTrangChuID.TabIndex = 26;
+            this.lblTrangChuID.Text = "Mã ID";
             // 
             // FormTrangChu
             // 
@@ -360,5 +411,6 @@
         public System.Windows.Forms.Button btnTrangChu;
         public System.Windows.Forms.Label lblChude;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblTrangChuID;
     }
 }

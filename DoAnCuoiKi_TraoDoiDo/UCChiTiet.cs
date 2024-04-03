@@ -17,5 +17,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
         }
 
+        private void UCChitietbtnThoat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UCChiTiet_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UCChiTietbtnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,10 +28,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLSBanHang = new System.Windows.Forms.DataGridView();
-            this.btnMuaLsBH = new System.Windows.Forms.Button();
-            this.btnXuatReportLsBH = new System.Windows.Forms.Button();
             this.btnXoaLsBH = new System.Windows.Forms.Button();
+            this.btnXuatReportLsBH = new System.Windows.Forms.Button();
             this.btnThoatLsBH = new System.Windows.Forms.Button();
+            this.btnMuaLsBH = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLSBanHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +39,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 23);
@@ -57,33 +57,34 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.dgvLSBanHang.Size = new System.Drawing.Size(807, 416);
             this.dgvLSBanHang.TabIndex = 1;
             // 
-            // btnMuaLsBH
-            // 
-            this.btnMuaLsBH.Location = new System.Drawing.Point(691, 470);
-            this.btnMuaLsBH.Name = "btnMuaLsBH";
-            this.btnMuaLsBH.Size = new System.Drawing.Size(121, 36);
-            this.btnMuaLsBH.TabIndex = 2;
-            this.btnMuaLsBH.Text = "Mua Hàng";
-            this.btnMuaLsBH.UseVisualStyleBackColor = true;
-            this.btnMuaLsBH.Click += new System.EventHandler(this.btnMuaLsBH_Click);
-            // 
-            // btnXuatReportLsBH
-            // 
-            this.btnXuatReportLsBH.Location = new System.Drawing.Point(437, 470);
-            this.btnXuatReportLsBH.Name = "btnXuatReportLsBH";
-            this.btnXuatReportLsBH.Size = new System.Drawing.Size(121, 36);
-            this.btnXuatReportLsBH.TabIndex = 4;
-            this.btnXuatReportLsBH.Text = "Xuất Báo Cáo";
-            this.btnXuatReportLsBH.UseVisualStyleBackColor = true;
-            // 
             // btnXoaLsBH
             // 
+            this.btnXoaLsBH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnXoaLsBH.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaLsBH.ForeColor = System.Drawing.Color.Black;
+            this.btnXoaLsBH.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.xoa3;
+            this.btnXoaLsBH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaLsBH.Location = new System.Drawing.Point(564, 470);
             this.btnXoaLsBH.Name = "btnXoaLsBH";
             this.btnXoaLsBH.Size = new System.Drawing.Size(121, 36);
             this.btnXoaLsBH.TabIndex = 5;
             this.btnXoaLsBH.Text = "Xóa Lịch Sử";
-            this.btnXoaLsBH.UseVisualStyleBackColor = true;
+            this.btnXoaLsBH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaLsBH.UseVisualStyleBackColor = false;
+            // 
+            // btnXuatReportLsBH
+            // 
+            this.btnXuatReportLsBH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnXuatReportLsBH.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatReportLsBH.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Report3;
+            this.btnXuatReportLsBH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatReportLsBH.Location = new System.Drawing.Point(437, 470);
+            this.btnXuatReportLsBH.Name = "btnXuatReportLsBH";
+            this.btnXuatReportLsBH.Size = new System.Drawing.Size(121, 36);
+            this.btnXuatReportLsBH.TabIndex = 4;
+            this.btnXuatReportLsBH.Text = "Xuất Báo Cáo";
+            this.btnXuatReportLsBH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatReportLsBH.UseVisualStyleBackColor = false;
             // 
             // btnThoatLsBH
             // 
@@ -96,9 +97,24 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnThoatLsBH.UseVisualStyleBackColor = false;
             this.btnThoatLsBH.Click += new System.EventHandler(this.btnThoatLsBH_Click);
             // 
+            // btnMuaLsBH
+            // 
+            this.btnMuaLsBH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnMuaLsBH.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMuaLsBH.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.history2;
+            this.btnMuaLsBH.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMuaLsBH.Location = new System.Drawing.Point(691, 470);
+            this.btnMuaLsBH.Name = "btnMuaLsBH";
+            this.btnMuaLsBH.Size = new System.Drawing.Size(121, 36);
+            this.btnMuaLsBH.TabIndex = 2;
+            this.btnMuaLsBH.Text = "Lịch Sử Mua Hàng";
+            this.btnMuaLsBH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMuaLsBH.UseVisualStyleBackColor = false;
+            this.btnMuaLsBH.Click += new System.EventHandler(this.btnMuaLsBH_Click);
+            // 
             // FormLsBanHang
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.ClientSize = new System.Drawing.Size(820, 510);
             this.Controls.Add(this.btnXoaLsBH);
             this.Controls.Add(this.btnXuatReportLsBH);

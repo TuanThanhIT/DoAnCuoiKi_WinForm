@@ -69,6 +69,8 @@
   <ItemGroup>
     <Compile Include="BanDo.cs" />
     <Compile Include="BanDoDao.cs" />
+    <Compile Include="DangKi.cs" />
+    <Compile Include="DangKiDao.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="FChiTiet.cs">
       <SubType>Form</SubType>
@@ -105,6 +107,18 @@
     </Compile>
     <Compile Include="Các form măt hàng\FormGiay.Designer.cs">
       <DependentUpon>FormGiay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangKi.Designer.cs">
+      <DependentUpon>FDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangNhap.Designer.cs">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FMain.cs">
       <SubType>Form</SubType>
@@ -225,6 +239,12 @@
     <Compile Include="UCHienThi.Designer.cs">
       <DependentUpon>UCHienThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCVoucher.Designer.cs">
+      <DependentUpon>UCVoucher.cs</DependentUpon>
+    </Compile>
     <Compile Include="XuLyAnh.cs" />
     <Compile Include="XuLyGiaoDien.cs" />
     <Compile Include="XuLyHienThi.cs" />
@@ -245,6 +265,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Các form măt hàng\FormGiay.resx">
       <DependentUpon>FormGiay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDangKi.resx">
+      <DependentUpon>FDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDangNhap.resx">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
@@ -315,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCHienThi.resx">
       <DependentUpon>UCHienThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCVoucher.resx">
+      <DependentUpon>UCVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -488,6 +517,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lam-logo-ban-hang-online-dep1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mua2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lammoi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ban1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Less1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-arrow-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mua3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIT-DoanHoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
