@@ -123,6 +123,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.Controls.Add(this.dgvLSBanHang);
             this.Controls.Add(this.label1);
             this.Name = "FormLsBanHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch Sử Bán Hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLSBanHang)).EndInit();
             this.ResumeLayout(false);

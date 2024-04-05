@@ -15,19 +15,17 @@ namespace DoAnCuoiKi_TraoDoiDo
     {
         XuLyHienThi xlht = new XuLyHienThi();
         List<DangKi> dangKis = new List<DangKi>();
-        DangKi dk;
+        DangKi dk = new DangKi();
         public FormDangNhap()
         {
             InitializeComponent();
         }
-
         private void btnDNDangKi_Click(object sender, EventArgs e)
         {
             FormDangKi f = new FormDangKi();
             f.Show();
             this.Hide();
         }
-
 
 
         private void btnDNDangnhap_Click(object sender, EventArgs e)
@@ -37,7 +35,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 DialogResult result =  MessageBox.Show("Chúc mừng bạn đã đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if(result == DialogResult.OK)
                 {
-                    FormTrangChu f =new FormTrangChu(dk);
+                    FormTrangChu f = new FormTrangChu(dk);
                     f.Show();
                     this.Hide();
                 }    
@@ -65,11 +63,10 @@ namespace DoAnCuoiKi_TraoDoiDo
             string checkcv = chucvu();
             foreach(DangKi j in dangKis) 
             {
-                dk = j;
-                if(j.Tendangnhap == textDNTen.Text && j.Matkhau == txtDNPass.Text && checkcv == j.Chucvu)
+                if(j.Tendangnhap == txtDNTen.Text && j.Matkhau == txtDNPass.Text && checkcv == j.Chucvu)
                 {
+                    dk = j;
                     return true;
-                    break;
 
                 }
             }

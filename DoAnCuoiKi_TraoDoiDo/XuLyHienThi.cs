@@ -25,8 +25,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         public void LoadDanhSach(string a, FlowLayoutPanel fl)
         {
             string query2 = "";
-            query2 = string.Format("SELECT *" +
-            "FROM [ĐăngBán]");
+            query2 = string.Format("SELECT * FROM [ĐăngBán] WHERE Số_lượng <> 0");
 
             using (SqlConnection connection = GetSqlConnection())
             {

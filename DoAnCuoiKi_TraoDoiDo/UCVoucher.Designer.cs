@@ -156,7 +156,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCVoucher";
-            this.Size = new System.Drawing.Size(503, 160);
+            this.Size = new System.Drawing.Size(527, 160);
             this.Load += new System.EventHandler(this.UCVoucher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

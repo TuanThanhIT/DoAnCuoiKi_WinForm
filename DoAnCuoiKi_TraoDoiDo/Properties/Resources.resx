@@ -124,8 +124,8 @@
   <data name="pngtree-grocery-store-logo-png-png-image_7223803" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-grocery-store-logo-png-png-image_7223803.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Report3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Report3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="font-icon-template-mien-phi-thiet-ke-website-ban-hang-12mathang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\font-icon-template-mien-phi-thiet-ke-website-ban-hang-12mathang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="more" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +139,17 @@
   <data name="Luu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Luu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dienthoai3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dienthoai3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="quaylai2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quaylai2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="font-icon-template-mien-phi-thiet-ke-website-ban-hang-12mathang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\font-icon-template-mien-phi-thiet-ke-website-ban-hang-12mathang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="xeco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xeco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +211,14 @@
   <data name="more1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\more1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quaylai11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quaylai11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="xoa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xoa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-add-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-add-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="333" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,6 +313,9 @@
   <data name="lam-logo-ban-hang-online-dep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lam-logo-ban-hang-online-dep1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="giaodich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giaodich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-back-arrow-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-back-arrow-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -316,17 +328,26 @@
   <data name="shopping-cart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\82.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shopping-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="noithat5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noithat5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lam-logo-ban-hang-online-dep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lam-logo-ban-hang-online-dep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="history2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\history2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="event" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\event.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="noithat33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noithat33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,13 +367,13 @@
   <data name="Logo-đội-tuyển-game-Esport-hình-chuột1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo-đội-tuyển-game-Esport-hình-chuột1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dienthoai3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dienthoai3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lam-logo-ban-hang-online-dep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lam-logo-ban-hang-online-dep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart2222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart2222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\83.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

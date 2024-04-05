@@ -125,6 +125,7 @@
             this.Controls.Add(this.dgvLSMuaHang);
             this.Controls.Add(this.label1);
             this.Name = "FormLSMuaHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch Sử Mua Hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLSMuaHang)).EndInit();
             this.ResumeLayout(false);

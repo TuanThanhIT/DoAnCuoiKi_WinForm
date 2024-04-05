@@ -39,3 +39,5 @@ D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCVoucher.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangKi.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangNhap.resources
+D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSuKien.resources
+D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCSuKien.resources

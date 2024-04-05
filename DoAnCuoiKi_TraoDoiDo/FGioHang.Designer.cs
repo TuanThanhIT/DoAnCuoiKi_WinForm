@@ -36,6 +36,8 @@
             this.btnGHQuayLai = new System.Windows.Forms.Button();
             this.btnTcTimkiemSukien = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblGHMa = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.lblGHtinhtrang = new System.Windows.Forms.Label();
             this.lblGhGiaohang = new System.Windows.Forms.Label();
             this.lblGHDiadiem = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.picImageGH = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblGHMa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvGioHang)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImageGH)).BeginInit();
@@ -171,6 +171,27 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblGHMa
+            // 
+            this.lblGHMa.AutoSize = true;
+            this.lblGHMa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGHMa.ForeColor = System.Drawing.Color.White;
+            this.lblGHMa.Location = new System.Drawing.Point(160, 185);
+            this.lblGHMa.Name = "lblGHMa";
+            this.lblGHMa.Size = new System.Drawing.Size(0, 15);
+            this.lblGHMa.TabIndex = 20;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(12, 185);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 15);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Mã mặt hàng";
             // 
             // lblGHtinhtrang
             // 
@@ -371,27 +392,6 @@
             this.picImageGH.TabIndex = 0;
             this.picImageGH.TabStop = false;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(12, 185);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 15);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Mã mặt hàng";
-            // 
-            // lblGHMa
-            // 
-            this.lblGHMa.AutoSize = true;
-            this.lblGHMa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGHMa.ForeColor = System.Drawing.Color.White;
-            this.lblGHMa.Location = new System.Drawing.Point(160, 185);
-            this.lblGHMa.Name = "lblGHMa";
-            this.lblGHMa.Size = new System.Drawing.Size(0, 15);
-            this.lblGHMa.TabIndex = 20;
-            // 
             // FormGioHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -408,6 +408,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormGioHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giỏ Hàng";
             this.Load += new System.EventHandler(this.FormGioHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvGioHang)).EndInit();

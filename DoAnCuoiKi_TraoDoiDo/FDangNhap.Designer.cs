@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textDNTen = new System.Windows.Forms.TextBox();
+            this.txtDNTen = new System.Windows.Forms.TextBox();
             this.txtDNPass = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -65,18 +65,20 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Mật khẩu";
             // 
-            // textDNTen
+            // txtDNTen
             // 
-            this.textDNTen.Location = new System.Drawing.Point(144, 408);
-            this.textDNTen.Name = "textDNTen";
-            this.textDNTen.Size = new System.Drawing.Size(240, 22);
-            this.textDNTen.TabIndex = 3;
+            this.txtDNTen.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDNTen.Location = new System.Drawing.Point(144, 408);
+            this.txtDNTen.Name = "txtDNTen";
+            this.txtDNTen.Size = new System.Drawing.Size(240, 27);
+            this.txtDNTen.TabIndex = 3;
             // 
             // txtDNPass
             // 
+            this.txtDNPass.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDNPass.Location = new System.Drawing.Point(144, 457);
             this.txtDNPass.Name = "txtDNPass";
-            this.txtDNPass.Size = new System.Drawing.Size(240, 22);
+            this.txtDNPass.Size = new System.Drawing.Size(240, 27);
             this.txtDNPass.TabIndex = 4;
             // 
             // pictureBox3
@@ -184,7 +186,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtDNPass);
-            this.Controls.Add(this.textDNTen);
+            this.Controls.Add(this.txtDNTen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -205,7 +207,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textDNTen;
+        private System.Windows.Forms.TextBox txtDNTen;
         private System.Windows.Forms.TextBox txtDNPass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,9 @@ namespace DoAnCuoiKi_TraoDoiDo
         public FormTrangChu(DangKi dk)
         {
             InitializeComponent();
-            dk.Tendangnhap = lblTrangchuTen.Text;
-            dk.Chucvu = lblTrangChuChucvu.Text;
-            dk.ID = lblTrangChuID.Text;
+            lblTrangchuTen.Text = dk.Tendangnhap;
+            lblTrangChuChucvu.Text = dk.Chucvu;
+            lblTrangChuID.Text = dk.ID;
         }
         private Form currentFormChild;
 
@@ -114,14 +115,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             dateTimePickerTrangchu.Value = DateTime.Now;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+       
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormSuKien());
+            lblChude.Text = "Sự kiện";
         }
 
-        private void Panel_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            FormDangNhap f = new FormDangNhap();
+            f.Show();
+            this.Hide();
         }
     }
 }

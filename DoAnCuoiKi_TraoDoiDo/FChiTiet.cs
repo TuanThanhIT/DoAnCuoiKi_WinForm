@@ -17,17 +17,18 @@ namespace DoAnCuoiKi_TraoDoiDo
   
         BanDoDao bdd = new BanDoDao();
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
+        BanDo bando;
         public FormChiTiet()
         {
             InitializeComponent();
         }
-        FormTrangChu mainForm;
         string hinh1;
         string hinh2;
         string hinh3;
         string hinh4;
         public FormChiTiet(BanDo bando)
         {
+            this.bando = bando;
             InitializeComponent();
             lblChitietMa.Text = bando.Ma_San_Pham;
             lblChitietTen.Text = bando.Ten_Mat_Hang;
@@ -93,36 +94,10 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblCHitietTinhtrang.Text = bando.Tinh_Trang_Mat_Hang;
             lblChitietGiaohang.Text = bando.Phuong_Thuc_Giao_Hang;
         }
-        public void OpenChildForm(Form childForm)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-            if (mainForm != null)
-            {
-                childForm.Dock = DockStyle.Fill;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                mainForm.panelTrangChu.Controls.Clear();
-                mainForm.panelTrangChu.Controls.Add(childForm);
-                childForm.Show();
-            }
-        }
-        private void btnThoat(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void btnThemvao(object sender, EventArgs e)
-        {
-            MessageBox.Show("Thêm vào giỏ hàng của bạn thành công");
-        }
-        private void btnMuangay_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormThanhToan());
-            this.Close();
-        }
 
         private void FormChiTiet_Load(object sender, EventArgs e)
         {
-           // LoadDataIntoChiTiet();
+
         }
 
         private void btnChitietThem_Click(object sender, EventArgs e)
@@ -132,9 +107,12 @@ namespace DoAnCuoiKi_TraoDoiDo
             bdd.ThemGioang(bd);
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnChitietMua_Click(object sender, EventArgs e)
         {
-
+            FormThanhToan f = new FormThanhToan(bando);
+            f.Show();
+            this.Hide();
+            
         }
     }
 }

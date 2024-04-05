@@ -58,5 +58,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 bd.So_Luong, bd.So_Luong_Voucher, bd.Phuong_Thuc_Giao_Hang, bd.Tinh_Trang_Mat_Hang, bd.Dia_Diem, bd.Ma_San_Pham);
             db.Thucthi(sqlStr);
         }
+
+       
     }
 }

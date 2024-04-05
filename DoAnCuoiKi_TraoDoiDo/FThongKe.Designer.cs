@@ -51,7 +51,9 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "FormThongKe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống kê";
+            this.Load += new System.EventHandler(this.FormThongKe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

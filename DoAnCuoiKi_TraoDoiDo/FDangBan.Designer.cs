@@ -131,6 +131,7 @@
             this.Controls.Add(this.btnDangbanXuat);
             this.Controls.Add(this.btnDbChinhsua);
             this.Name = "FormDangBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đang bán";
             this.Load += new System.EventHandler(this.FormDangBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvDangban)).EndInit();

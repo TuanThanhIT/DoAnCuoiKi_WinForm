@@ -90,5 +90,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             Matkhau = matkhau;
             Chucvu = chucvu;
         }
+        public DangKi()
+        {
+
+        }
     }
 }

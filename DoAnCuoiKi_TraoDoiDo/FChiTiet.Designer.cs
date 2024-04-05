@@ -75,7 +75,6 @@
             this.label2.Size = new System.Drawing.Size(114, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Loại mặt hàng";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -281,6 +280,7 @@
             this.btnChitietMua.TabIndex = 10;
             this.btnChitietMua.Text = "Mua ngay";
             this.btnChitietMua.UseVisualStyleBackColor = false;
+            this.btnChitietMua.Click += new System.EventHandler(this.btnChitietMua_Click);
             // 
             // picImageChitiet
             // 

@@ -338,6 +338,7 @@
             this.Controls.Add(this.txtMhTim);
             this.Controls.Add(this.label1);
             this.Name = "FormMatHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mặt hàng";
             this.Load += new System.EventHandler(this.FormMatHang_Load);
             this.panel1.ResumeLayout(false);

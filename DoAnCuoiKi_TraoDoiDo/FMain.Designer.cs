@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.flowLPMainVoucher = new System.Windows.Forms.FlowLayoutPanel();
             this.btnTcTimkiemVou = new System.Windows.Forms.Button();
             this.txtVoucher = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtSuKien = new System.Windows.Forms.TextBox();
+            this.flowLPMainSukien = new System.Windows.Forms.FlowLayoutPanel();
             this.btnTcTimkiemSukien = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtSuKien = new System.Windows.Forms.TextBox();
             this.lblTrangChinhHienthi = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLPMainSukien = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLPMainVoucher = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +60,26 @@
             this.groupBox6.TabIndex = 22;
             this.groupBox6.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(6, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(171, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Danh sách voucher";
+            // 
+            // flowLPMainVoucher
+            // 
+            this.flowLPMainVoucher.AutoScroll = true;
+            this.flowLPMainVoucher.BackColor = System.Drawing.Color.White;
+            this.flowLPMainVoucher.Location = new System.Drawing.Point(6, 46);
+            this.flowLPMainVoucher.Name = "flowLPMainVoucher";
+            this.flowLPMainVoucher.Size = new System.Drawing.Size(523, 266);
+            this.flowLPMainVoucher.TabIndex = 1;
+            // 
             // btnTcTimkiemVou
             // 
             this.btnTcTimkiemVou.BackColor = System.Drawing.Color.White;
@@ -77,17 +97,6 @@
             this.txtVoucher.Size = new System.Drawing.Size(256, 22);
             this.txtVoucher.TabIndex = 3;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(6, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Danh sách voucher";
-            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
@@ -101,12 +110,14 @@
             this.groupBox5.TabIndex = 21;
             this.groupBox5.TabStop = false;
             // 
-            // txtSuKien
+            // flowLPMainSukien
             // 
-            this.txtSuKien.Location = new System.Drawing.Point(225, 18);
-            this.txtSuKien.Name = "txtSuKien";
-            this.txtSuKien.Size = new System.Drawing.Size(266, 22);
-            this.txtSuKien.TabIndex = 2;
+            this.flowLPMainSukien.AutoScroll = true;
+            this.flowLPMainSukien.BackColor = System.Drawing.Color.White;
+            this.flowLPMainSukien.Location = new System.Drawing.Point(6, 46);
+            this.flowLPMainSukien.Name = "flowLPMainSukien";
+            this.flowLPMainSukien.Size = new System.Drawing.Size(523, 266);
+            this.flowLPMainSukien.TabIndex = 0;
             // 
             // btnTcTimkiemSukien
             // 
@@ -128,6 +139,13 @@
             this.label6.Size = new System.Drawing.Size(165, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Danh sách sự kiện";
+            // 
+            // txtSuKien
+            // 
+            this.txtSuKien.Location = new System.Drawing.Point(225, 18);
+            this.txtSuKien.Name = "txtSuKien";
+            this.txtSuKien.Size = new System.Drawing.Size(266, 22);
+            this.txtSuKien.TabIndex = 2;
             // 
             // lblTrangChinhHienthi
             // 
@@ -164,24 +182,6 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // flowLPMainSukien
-            // 
-            this.flowLPMainSukien.AutoScroll = true;
-            this.flowLPMainSukien.BackColor = System.Drawing.Color.White;
-            this.flowLPMainSukien.Location = new System.Drawing.Point(6, 46);
-            this.flowLPMainSukien.Name = "flowLPMainSukien";
-            this.flowLPMainSukien.Size = new System.Drawing.Size(523, 266);
-            this.flowLPMainSukien.TabIndex = 0;
-            // 
-            // flowLPMainVoucher
-            // 
-            this.flowLPMainVoucher.AutoScroll = true;
-            this.flowLPMainVoucher.BackColor = System.Drawing.Color.White;
-            this.flowLPMainVoucher.Location = new System.Drawing.Point(6, 46);
-            this.flowLPMainVoucher.Name = "flowLPMainVoucher";
-            this.flowLPMainVoucher.Size = new System.Drawing.Size(523, 266);
-            this.flowLPMainVoucher.TabIndex = 1;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,6 +194,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.lblTrangChinhHienthi);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Chính";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox6.ResumeLayout(false);

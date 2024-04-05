@@ -49,7 +49,6 @@ namespace DoAnCuoiKi_TraoDoiDo
         }
 
        
-
         private void btnDbXoa_Click(object sender, EventArgs e)
         {
             BanDo bando = new BanDo(f.txtBdTenMH.Text, f.comboBdLoaiMH.Text, f.txtBdGiaban.Text, f.txtBdMota.Text, f.dateTimeNgayban.Value.ToString(), f.chuyendoiAnh1(), f.chuyendoiAnh2(), f.chuyendoiAnh3(), f.chuyendoiAnh4(),

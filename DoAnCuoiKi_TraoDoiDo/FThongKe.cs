@@ -16,5 +16,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
+
+        private void FormThongKe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

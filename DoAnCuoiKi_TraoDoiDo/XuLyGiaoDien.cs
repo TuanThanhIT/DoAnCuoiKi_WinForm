@@ -9,6 +9,10 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public class XuLyGiaoDien
     {
+        public void OpenChildForm(Form childForm)
+        {
+            
+        }
         public void OpenChildForm(FormTrangChu mainForm, Form childForm)
         {
             if (mainForm != null)
