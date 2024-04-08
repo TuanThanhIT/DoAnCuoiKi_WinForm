@@ -29,13 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBanDo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBdLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBdLammoi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbSau = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbTruoc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBdHoantat1 = new System.Windows.Forms.Button();
+            this.btnBdHoantat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbXoa = new Guna.UI2.WinForms.Guna2Button();
             this.txtBDMaSP = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.btnBdLuu = new System.Windows.Forms.Button();
-            this.btnDbXoa = new System.Windows.Forms.Button();
-            this.btnDbTruoc = new System.Windows.Forms.Button();
-            this.btnDbSau = new System.Windows.Forms.Button();
+            this.btnBdLuu1 = new System.Windows.Forms.Button();
+            this.btnDbXoa1 = new System.Windows.Forms.Button();
+            this.btnDbTruoc1 = new System.Windows.Forms.Button();
+            this.btnDbSau1 = new System.Windows.Forms.Button();
             this.txtImagePath = new System.Windows.Forms.TextBox();
             this.picImage = new System.Windows.Forms.PictureBox();
             this.btnLoadImage = new System.Windows.Forms.Button();
@@ -58,8 +66,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnBdApdung = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnBdLammoi = new System.Windows.Forms.Button();
-            this.btnBdHoantat = new System.Windows.Forms.Button();
+            this.btnBdLammoi1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cbBoxTinhtrang = new System.Windows.Forms.ComboBox();
             this.txtBdMota = new System.Windows.Forms.TextBox();
@@ -85,12 +92,19 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
+            this.groupBox1.Controls.Add(this.btnBdLuu);
+            this.groupBox1.Controls.Add(this.btnBdLammoi);
+            this.groupBox1.Controls.Add(this.btnDbSau);
+            this.groupBox1.Controls.Add(this.btnDbTruoc);
+            this.groupBox1.Controls.Add(this.btnBdHoantat1);
+            this.groupBox1.Controls.Add(this.btnBdHoantat);
+            this.groupBox1.Controls.Add(this.btnDbXoa);
             this.groupBox1.Controls.Add(this.txtBDMaSP);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.btnBdLuu);
-            this.groupBox1.Controls.Add(this.btnDbXoa);
-            this.groupBox1.Controls.Add(this.btnDbTruoc);
-            this.groupBox1.Controls.Add(this.btnDbSau);
+            this.groupBox1.Controls.Add(this.btnBdLuu1);
+            this.groupBox1.Controls.Add(this.btnDbXoa1);
+            this.groupBox1.Controls.Add(this.btnDbTruoc1);
+            this.groupBox1.Controls.Add(this.btnDbSau1);
             this.groupBox1.Controls.Add(this.txtImagePath);
             this.groupBox1.Controls.Add(this.picImage);
             this.groupBox1.Controls.Add(this.btnLoadImage);
@@ -104,8 +118,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btnBdApdung);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.btnBdLammoi);
-            this.groupBox1.Controls.Add(this.btnBdHoantat);
+            this.groupBox1.Controls.Add(this.btnBdLammoi1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cbBoxTinhtrang);
             this.groupBox1.Controls.Add(this.txtBdMota);
@@ -129,6 +142,135 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin mặt hàng";
             // 
+            // btnBdLuu
+            // 
+            this.btnBdLuu.AutoRoundedCorners = true;
+            this.btnBdLuu.BorderRadius = 21;
+            this.btnBdLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdLuu.FillColor = System.Drawing.Color.OrangeRed;
+            this.btnBdLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBdLuu.ForeColor = System.Drawing.Color.White;
+            this.btnBdLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLuu.Image")));
+            this.btnBdLuu.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBdLuu.Location = new System.Drawing.Point(935, 579);
+            this.btnBdLuu.Name = "btnBdLuu";
+            this.btnBdLuu.Size = new System.Drawing.Size(143, 45);
+            this.btnBdLuu.TabIndex = 45;
+            this.btnBdLuu.Text = "Lưu";
+            this.btnBdLuu.Click += new System.EventHandler(this.btnBdLuu_Click);
+            // 
+            // btnBdLammoi
+            // 
+            this.btnBdLammoi.AutoRoundedCorners = true;
+            this.btnBdLammoi.BorderRadius = 21;
+            this.btnBdLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdLammoi.FillColor = System.Drawing.Color.OrangeRed;
+            this.btnBdLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBdLammoi.ForeColor = System.Drawing.Color.White;
+            this.btnBdLammoi.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLammoi.Image")));
+            this.btnBdLammoi.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBdLammoi.Location = new System.Drawing.Point(774, 579);
+            this.btnBdLammoi.Name = "btnBdLammoi";
+            this.btnBdLammoi.Size = new System.Drawing.Size(143, 45);
+            this.btnBdLammoi.TabIndex = 44;
+            this.btnBdLammoi.Text = "Làm mới";
+            this.btnBdLammoi.Click += new System.EventHandler(this.btnBdLammoi_Click);
+            // 
+            // btnDbSau
+            // 
+            this.btnDbSau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbSau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbSau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbSau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbSau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
+            this.btnDbSau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDbSau.ForeColor = System.Drawing.Color.White;
+            this.btnDbSau.Image = ((System.Drawing.Image)(resources.GetObject("btnDbSau.Image")));
+            this.btnDbSau.ImageSize = new System.Drawing.Size(59, 59);
+            this.btnDbSau.Location = new System.Drawing.Point(433, 573);
+            this.btnDbSau.Name = "btnDbSau";
+            this.btnDbSau.Size = new System.Drawing.Size(59, 59);
+            this.btnDbSau.TabIndex = 43;
+            this.btnDbSau.Click += new System.EventHandler(this.btnDbSau_Click_1);
+            // 
+            // btnDbTruoc
+            // 
+            this.btnDbTruoc.BackColor = System.Drawing.Color.Aqua;
+            this.btnDbTruoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbTruoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbTruoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbTruoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbTruoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
+            this.btnDbTruoc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDbTruoc.ForeColor = System.Drawing.Color.White;
+            this.btnDbTruoc.Image = ((System.Drawing.Image)(resources.GetObject("btnDbTruoc.Image")));
+            this.btnDbTruoc.ImageSize = new System.Drawing.Size(59, 59);
+            this.btnDbTruoc.Location = new System.Drawing.Point(368, 572);
+            this.btnDbTruoc.Name = "btnDbTruoc";
+            this.btnDbTruoc.Size = new System.Drawing.Size(59, 59);
+            this.btnDbTruoc.TabIndex = 42;
+            this.btnDbTruoc.Click += new System.EventHandler(this.btnDbTruoc_Click_1);
+            // 
+            // btnBdHoantat1
+            // 
+            this.btnBdHoantat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnBdHoantat1.ForeColor = System.Drawing.Color.Black;
+            this.btnBdHoantat1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.ban1;
+            this.btnBdHoantat1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBdHoantat1.Location = new System.Drawing.Point(935, 261);
+            this.btnBdHoantat1.Name = "btnBdHoantat1";
+            this.btnBdHoantat1.Size = new System.Drawing.Size(118, 47);
+            this.btnBdHoantat1.TabIndex = 16;
+            this.btnBdHoantat1.Text = "Đăng Bán";
+            this.btnBdHoantat1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBdHoantat1.UseVisualStyleBackColor = false;
+            // 
+            // btnBdHoantat
+            // 
+            this.btnBdHoantat.AutoRoundedCorners = true;
+            this.btnBdHoantat.BorderRadius = 21;
+            this.btnBdHoantat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdHoantat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdHoantat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdHoantat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdHoantat.FillColor = System.Drawing.Color.OrangeRed;
+            this.btnBdHoantat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBdHoantat.ForeColor = System.Drawing.Color.White;
+            this.btnBdHoantat.Image = ((System.Drawing.Image)(resources.GetObject("btnBdHoantat.Image")));
+            this.btnBdHoantat.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBdHoantat.Location = new System.Drawing.Point(614, 579);
+            this.btnBdHoantat.Name = "btnBdHoantat";
+            this.btnBdHoantat.Size = new System.Drawing.Size(143, 45);
+            this.btnBdHoantat.TabIndex = 41;
+            this.btnBdHoantat.Text = "Đăng bán";
+            this.btnBdHoantat.Click += new System.EventHandler(this.btnBdHoantat_Click);
+            // 
+            // btnDbXoa
+            // 
+            this.btnDbXoa.AutoRoundedCorners = true;
+            this.btnDbXoa.BorderRadius = 21;
+            this.btnDbXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbXoa.FillColor = System.Drawing.Color.OrangeRed;
+            this.btnDbXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDbXoa.ForeColor = System.Drawing.Color.White;
+            this.btnDbXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnDbXoa.Image")));
+            this.btnDbXoa.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDbXoa.Location = new System.Drawing.Point(122, 577);
+            this.btnDbXoa.Name = "btnDbXoa";
+            this.btnDbXoa.Size = new System.Drawing.Size(120, 45);
+            this.btnDbXoa.TabIndex = 40;
+            this.btnDbXoa.Text = "Xóa ảnh";
+            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click_1);
+            // 
             // txtBDMaSP
             // 
             this.txtBDMaSP.Enabled = false;
@@ -148,60 +290,56 @@
             this.label16.TabIndex = 38;
             this.label16.Text = "Mã sản phẩm";
             // 
-            // btnBdLuu
+            // btnBdLuu1
             // 
-            this.btnBdLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnBdLuu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Luu11;
-            this.btnBdLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBdLuu.Location = new System.Drawing.Point(954, 575);
-            this.btnBdLuu.Name = "btnBdLuu";
-            this.btnBdLuu.Size = new System.Drawing.Size(79, 47);
-            this.btnBdLuu.TabIndex = 37;
-            this.btnBdLuu.Text = "Lưu";
-            this.btnBdLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBdLuu.UseVisualStyleBackColor = false;
-            this.btnBdLuu.Click += new System.EventHandler(this.btnBdLuu_Click);
+            this.btnBdLuu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnBdLuu1.ForeColor = System.Drawing.Color.Black;
+            this.btnBdLuu1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Luu11;
+            this.btnBdLuu1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBdLuu1.Location = new System.Drawing.Point(959, 321);
+            this.btnBdLuu1.Name = "btnBdLuu1";
+            this.btnBdLuu1.Size = new System.Drawing.Size(79, 47);
+            this.btnBdLuu1.TabIndex = 37;
+            this.btnBdLuu1.Text = "Lưu";
+            this.btnBdLuu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBdLuu1.UseVisualStyleBackColor = false;
             // 
-            // btnDbXoa
+            // btnDbXoa1
             // 
-            this.btnDbXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.xoa3;
-            this.btnDbXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDbXoa.Location = new System.Drawing.Point(74, 575);
-            this.btnDbXoa.Name = "btnDbXoa";
-            this.btnDbXoa.Size = new System.Drawing.Size(94, 43);
-            this.btnDbXoa.TabIndex = 36;
-            this.btnDbXoa.Text = "Xóa ảnh";
-            this.btnDbXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDbXoa.UseVisualStyleBackColor = false;
-            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click);
+            this.btnDbXoa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnDbXoa1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbXoa1.ForeColor = System.Drawing.Color.Black;
+            this.btnDbXoa1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.xoa3;
+            this.btnDbXoa1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDbXoa1.Location = new System.Drawing.Point(12, 579);
+            this.btnDbXoa1.Name = "btnDbXoa1";
+            this.btnDbXoa1.Size = new System.Drawing.Size(94, 43);
+            this.btnDbXoa1.TabIndex = 36;
+            this.btnDbXoa1.Text = "Xóa ảnh";
+            this.btnDbXoa1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDbXoa1.UseVisualStyleBackColor = false;
             // 
-            // btnDbTruoc
+            // btnDbTruoc1
             // 
-            this.btnDbTruoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
-            this.btnDbTruoc.ForeColor = System.Drawing.Color.Black;
-            this.btnDbTruoc.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._000;
-            this.btnDbTruoc.Location = new System.Drawing.Point(378, 568);
-            this.btnDbTruoc.Name = "btnDbTruoc";
-            this.btnDbTruoc.Size = new System.Drawing.Size(60, 54);
-            this.btnDbTruoc.TabIndex = 35;
-            this.btnDbTruoc.UseVisualStyleBackColor = false;
-            this.btnDbTruoc.Click += new System.EventHandler(this.btnDbTruoc_Click);
+            this.btnDbTruoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
+            this.btnDbTruoc1.ForeColor = System.Drawing.Color.Black;
+            this.btnDbTruoc1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._000;
+            this.btnDbTruoc1.Location = new System.Drawing.Point(257, 575);
+            this.btnDbTruoc1.Name = "btnDbTruoc1";
+            this.btnDbTruoc1.Size = new System.Drawing.Size(60, 54);
+            this.btnDbTruoc1.TabIndex = 35;
+            this.btnDbTruoc1.UseVisualStyleBackColor = false;
             // 
-            // btnDbSau
+            // btnDbSau1
             // 
-            this.btnDbSau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
-            this.btnDbSau.ForeColor = System.Drawing.Color.Black;
-            this.btnDbSau.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._001;
-            this.btnDbSau.Location = new System.Drawing.Point(444, 568);
-            this.btnDbSau.Name = "btnDbSau";
-            this.btnDbSau.Size = new System.Drawing.Size(60, 54);
-            this.btnDbSau.TabIndex = 34;
-            this.btnDbSau.UseVisualStyleBackColor = false;
-            this.btnDbSau.Click += new System.EventHandler(this.btnDbSau_Click);
+            this.btnDbSau1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
+            this.btnDbSau1.ForeColor = System.Drawing.Color.Black;
+            this.btnDbSau1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._001;
+            this.btnDbSau1.Location = new System.Drawing.Point(520, 572);
+            this.btnDbSau1.Name = "btnDbSau1";
+            this.btnDbSau1.Size = new System.Drawing.Size(60, 54);
+            this.btnDbSau1.TabIndex = 34;
+            this.btnDbSau1.UseVisualStyleBackColor = false;
             // 
             // txtImagePath
             // 
@@ -415,35 +553,19 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Voucher khuyến mãi";
             // 
-            // btnBdLammoi
+            // btnBdLammoi1
             // 
-            this.btnBdLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdLammoi.ForeColor = System.Drawing.Color.Black;
-            this.btnBdLammoi.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Lammoi1;
-            this.btnBdLammoi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBdLammoi.Location = new System.Drawing.Point(831, 575);
-            this.btnBdLammoi.Name = "btnBdLammoi";
-            this.btnBdLammoi.Size = new System.Drawing.Size(119, 47);
-            this.btnBdLammoi.TabIndex = 17;
-            this.btnBdLammoi.Text = "Làm mới";
-            this.btnBdLammoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBdLammoi.UseVisualStyleBackColor = false;
-            this.btnBdLammoi.Click += new System.EventHandler(this.btnBdLammoi_Click);
-            // 
-            // btnBdHoantat
-            // 
-            this.btnBdHoantat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnBdHoantat.ForeColor = System.Drawing.Color.Black;
-            this.btnBdHoantat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.ban1;
-            this.btnBdHoantat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBdHoantat.Location = new System.Drawing.Point(707, 575);
-            this.btnBdHoantat.Name = "btnBdHoantat";
-            this.btnBdHoantat.Size = new System.Drawing.Size(118, 47);
-            this.btnBdHoantat.TabIndex = 16;
-            this.btnBdHoantat.Text = "Đăng Bán";
-            this.btnBdHoantat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBdHoantat.UseVisualStyleBackColor = false;
-            this.btnBdHoantat.Click += new System.EventHandler(this.btnBdHoantat_Click);
+            this.btnBdLammoi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnBdLammoi1.ForeColor = System.Drawing.Color.Black;
+            this.btnBdLammoi1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.Lammoi1;
+            this.btnBdLammoi1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBdLammoi1.Location = new System.Drawing.Point(935, 192);
+            this.btnBdLammoi1.Name = "btnBdLammoi1";
+            this.btnBdLammoi1.Size = new System.Drawing.Size(119, 47);
+            this.btnBdLammoi1.TabIndex = 17;
+            this.btnBdLammoi1.Text = "Làm mới";
+            this.btnBdLammoi1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBdLammoi1.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -628,8 +750,8 @@
         public System.Windows.Forms.TextBox txtBdMota;
         public System.Windows.Forms.TextBox txtBdGiaban;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnBdLammoi;
-        private System.Windows.Forms.Button btnBdHoantat;
+        private System.Windows.Forms.Button btnBdLammoi1;
+        private System.Windows.Forms.Button btnBdHoantat1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnBdApdung;
         private System.Windows.Forms.Label label10;
@@ -653,11 +775,17 @@
         private System.Windows.Forms.Button btnLoadImage;
         public System.Windows.Forms.PictureBox picImage;
         public System.Windows.Forms.TextBox txtImagePath;
-        private System.Windows.Forms.Button btnDbTruoc;
-        private System.Windows.Forms.Button btnDbSau;
-        private System.Windows.Forms.Button btnDbXoa;
-        private System.Windows.Forms.Button btnBdLuu;
+        private System.Windows.Forms.Button btnDbTruoc1;
+        private System.Windows.Forms.Button btnDbSau1;
+        private System.Windows.Forms.Button btnDbXoa1;
+        private System.Windows.Forms.Button btnBdLuu1;
         public System.Windows.Forms.TextBox txtBDMaSP;
         private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2Button btnDbXoa;
+        private Guna.UI2.WinForms.Guna2Button btnBdHoantat;
+        private Guna.UI2.WinForms.Guna2Button btnDbTruoc;
+        private Guna.UI2.WinForms.Guna2Button btnDbSau;
+        private Guna.UI2.WinForms.Guna2Button btnBdLammoi;
+        private Guna.UI2.WinForms.Guna2Button btnBdLuu;
     }
 }

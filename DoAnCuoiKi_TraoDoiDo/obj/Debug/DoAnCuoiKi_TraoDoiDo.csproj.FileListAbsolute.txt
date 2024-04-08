@@ -41,3 +41,47 @@ D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangNhap.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSuKien.resources
 D:\HỌC TẬP\Lập trình Window\DoAnCuoiKi_TraoDoiDo\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCSuKien.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.exe.config
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.exe
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.pdb
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\Guna.UI2.dll
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.dll
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.xml
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.AssemblyReference.cache
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormChiTiet.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDienThoai.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoDienTu.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoEmBe.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoGiaDung.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormGiay.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangKi.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangNhap.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormMain.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormGioHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormKhac.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormNoiThat.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSach.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormTatCaMatHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSuKien.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThanhToan.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThietBiIT.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThoiTrang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormXeCo.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormLsBanHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangBan.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormLSMuaHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormMatHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormBanDo.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.Properties.Resources.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThongKe.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormTrangChu.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCChiTiet.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCGioHang.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCHienThi.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCSuKien.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCVoucher.resources
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.GenerateResource.cache
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CoreCompileInputs.cache
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CopyComplete
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.exe
+D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.pdb
