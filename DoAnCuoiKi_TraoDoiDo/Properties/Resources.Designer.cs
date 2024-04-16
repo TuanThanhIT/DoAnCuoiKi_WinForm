@@ -483,9 +483,79 @@ namespace DoAnCuoiKi_TraoDoiDo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cart_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cart-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cart_641 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cart-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cart_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cart-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_export_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-export-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_export_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-export-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_fast_cart_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-fast-cart-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_fast_cart_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-fast-cart-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_out_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-out-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -723,6 +793,16 @@ namespace DoAnCuoiKi_TraoDoiDo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap quaylai {
+            get {
+                object obj = ResourceManager.GetObject("quaylai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap quaylai1 {
             get {
                 object obj = ResourceManager.GetObject("quaylai1", resourceCulture);
@@ -876,6 +956,16 @@ namespace DoAnCuoiKi_TraoDoiDo.Properties {
         internal static System.Drawing.Bitmap transparent_login_icon_logout_icon_5dcfef94516950_3632820915739083723335dangxuat {
             get {
                 object obj = ResourceManager.GetObject("transparent-login-icon-logout-icon-5dcfef94516950.3632820915739083723335dangxuat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vietnamdong {
+            get {
+                object obj = ResourceManager.GetObject("vietnamdong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

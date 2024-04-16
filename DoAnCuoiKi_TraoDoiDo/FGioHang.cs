@@ -14,156 +14,75 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormGioHang : Form
     {
-        BanDoDao bdd = new BanDoDao();
-        string hinh1;
-        string hinh2;
-        string hinh3;
-        string hinh4;
         public FormGioHang()
         {
             InitializeComponent();
         }
-        FormTrangChu mainForm;
-        public void OpenChildForm(Form childForm)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-            if (mainForm != null)
-            {
-                childForm.Dock = DockStyle.Fill;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                mainForm.panelTrangChu.Controls.Clear();
-                mainForm.panelTrangChu.Controls.Add(childForm);
-                childForm.Show();
-            }
-        }
         private void btnGHQuayLai_Click(object sender, EventArgs e)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát", "Thông báo",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                OpenChildForm(new FormMain());
-                mainForm.lblChude.Text = "Trang Chủ";
-
-            }
-        }
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormThanhToan());
-            mainForm.lblChude.Text = "Thanh Toán";
-        }
-
-        private void ucGioHang1_Load_1(object sender, EventArgs e)
         {
             
         }
 
         private void FormGioHang_Load(object sender, EventArgs e)
         {
-            DataTable a = bdd.Load2();
-            gvGioHang.DataSource = a;   
+            LoadDanhSach();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        XuLyHienThi xlht = new XuLyHienThi();
+        public void LoadDanhSach()
         {
+            string query2 = "";
+            query2 = string.Format("SELECT *" +
+            "FROM [GiỏHàng]");
 
-        }
-        private List<string> imagePathList;
-        private void gvGioHang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+            using (SqlConnection connection = xlht.GetSqlConnection())
             {
-                DataGridViewRow row = gvGioHang.Rows[e.RowIndex];
+                connection.Open();
 
-                lblGhTen.Text = row.Cells["Tên_mặt_hàng"].Value.ToString();
-                lblGhLoai.Text = row.Cells["Loại_mặt_hàng"].Value.ToString();
-                lblGHGiaban.Text = row.Cells["Giá_bán"].Value.ToString();
-                lblGhMota.Text = row.Cells["Mô_tả_mặt_hàng"].Value.ToString();
-                lblGhSl.Text = row.Cells["Số_lượng"].Value.ToString();
-                lblGHSlVou.Text = row.Cells["Số_lượng_Vou"].Value.ToString();
-                lblGHDiadiem.Text = row.Cells["Địa_điểm"].Value.ToString();
-                lblGhGiaohang.Text = row.Cells["Phương_thức_giao_hàng"].Value.ToString();
-                lblGHtinhtrang.Text = row.Cells["Tình_trạng_mặt_hàng"].Value.ToString();
-                lblGHMa.Text = row.Cells["Mã_mặt_hàng"].Value.ToString();
-
-                imagePathList = new List<string>();
-                hinh1 = row.Cells["Hình_ảnh_1"].Value.ToString();
-                hinh2 = row.Cells["Hình_ảnh_2"].Value.ToString();
-                hinh3 = row.Cells["Hình_ảnh_3"].Value.ToString();
-                hinh4 = row.Cells["Hình_ảnh_4"].Value.ToString();
-                imagePathList.Add(hinh1);
-                imagePathList.Add(hinh2);
-                imagePathList.Add(hinh3);
-                imagePathList.Add(hinh4);
-                // Khởi tạo biến đếm và gán giá trị ban đầu là 0
-                int currentImageIndex = 0;
-
-                // Khởi tạo Timer với khoảng thời gian là 5 giây (5000 milliseconds)
-                Timer timer = new Timer();
-                timer.Interval = 3000;
-                timer.Tick += Timer_Tick;
-
-                // Hiển thị ảnh đầu tiên trong UCChiTietPicBox
-                DisplayImageAtIndex(currentImageIndex);
-
-                // Bắt đầu chuyển đổi tự động sau khi khởi động ứng dụng
-                timer.Start();
-
-                // Hàm để hiển thị ảnh tại chỉ số index trong danh sách
-                void DisplayImageAtIndex(int index)
+                using (SqlCommand command = new SqlCommand(query2, connection))
                 {
-                    // Kiểm tra xem chỉ số có hợp lệ hay không
-                    if (index >= 0 && index < imagePathList.Count)
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        // Kiểm tra xem đường dẫn hình ảnh có tồn tại hay không
-                        if (File.Exists(imagePathList[index]))
+                        if (reader.HasRows)
                         {
-                            // Đọc và hiển thị ảnh từ đường dẫn
-                            Image image = Image.FromFile(imagePathList[index]);
-                            picImageGH.Image = image;
+                            List<BanDo> bss = new List<BanDo>();
+                            while (reader.Read())
+                            {
+                               string id = reader["ID"].ToString();
+                               string tennguoidung = reader["Tên_người_dùng"].ToString();   
+                               if(tennguoidung == XuLyHienThi.Ten_Nguoi_Dung && id == XuLyHienThi.ID)
+                               {
+                                    string tenmathang = reader["Tên_mặt_hàng"].ToString();
+                                    string loaimathang = reader["Loại_mặt_hàng"].ToString();
+                                    string soluong = reader["Số_lượng"].ToString();
+                                    string hinhanh = reader["Hình_ảnh"].ToString();
+                                    string giacu = reader["Giá_cũ"].ToString();
+                                    string giamoi = reader["Giá_mới"].ToString();
+                                    string soluongchon = reader["Số_lượng_chọn"].ToString();
+                                    string ngaydangban = reader["Ngày_đăng_bán"].ToString();
+                                    string masanpham = reader["Mã_sản_phẩm"].ToString();
+                                    BanDo bd = new BanDo(id, tennguoidung, tenmathang, loaimathang, soluong, hinhanh, giacu, giamoi, soluongchon, ngaydangban, masanpham);
+                                    bss.Add(bd);
+                               }
+
+                            }
+                            foreach (BanDo j in bss)
+                            {
+                                UCGioHang ucgh = new UCGioHang(j);
+                                ucgh.Margin = new Padding(0, 0, 0, 8);
+                                flowLPGioHang.Controls.Add(ucgh);
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không có sản phẩm nào trong giỏ hàng của bạn");
                         }
                     }
                 }
-
-                // Xử lý sự kiện của Timer
-                void Timer_Tick(object eventSender, EventArgs eventArgs)
-                {
-                    // Tăng giá trị của biến đếm
-                    currentImageIndex++;
-                    // Kiểm tra xem có vượt quá số lượng ảnh hay không
-                    if (currentImageIndex >= imagePathList.Count)
-                    {
-                        // Quay lại ảnh đầu tiên
-                        currentImageIndex = 0;
-                    }
-                    // Hiển thị ảnh tại chỉ số hiện tại
-                    DisplayImageAtIndex(currentImageIndex);
-                }
-            
-
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-             BanDo bd = new BanDo(lblGHMa.Text,lblGhTen.Text, lblGhLoai.Text, lblGHGiaban.Text, lblGhMota.Text, hinh1, hinh2, hinh3, hinh4, lblGhSl.Text, lblGHSlVou.Text, lblGhGiaohang.Text, lblGHtinhtrang.Text, lblGHDiadiem.Text);
-             bdd.XoaGH(bd);
-             lblGHMa.Text = "";
-             lblGhTen.Text = "";
-             lblGhLoai.Text = "";
-             lblGHGiaban.Text = "";
-             lblGhMota.Text = "";
-            picImageGH.Image = null;
-            imagePathList.Clear();
-
-            lblGhSl.Text = "";
-            lblGHSlVou.Text = "";
-            lblGhGiaohang.Text = "";
-            lblGHtinhtrang.Text = ""; 
-            lblGHDiadiem.Text= "";
-            FormGioHang_Load(sender, e);
-        }
+        
     }
 }

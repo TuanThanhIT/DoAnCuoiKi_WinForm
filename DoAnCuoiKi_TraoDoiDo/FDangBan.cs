@@ -17,17 +17,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDoDao bdd = new BanDoDao();
         FormBanDo f = new FormBanDo();
-        XuLyGiaoDien xlgiaodien = new XuLyGiaoDien();
+        FormDao fd = new FormDao();
        
         public FormDangBan()
         {
             InitializeComponent();;
-        }
-        FormTrangChu mainForm;
-        public void OpenChildForm(Form childForm)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-            xlgiaodien.OpenChildForm(mainForm,childForm);
         }
         private void FormDangBan_Load(object sender, EventArgs e)
         {
@@ -38,25 +32,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void btnDbQuaylai_Click(object sender, EventArgs e)
         {
             
-            OpenChildForm(new FormBanDo());
-        }
-
-        
-        private void btnDbChinhsua_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(f);
             
         }
 
-       
-        private void btnDbXoa_Click(object sender, EventArgs e)
-        {
-            BanDo bando = new BanDo(f.txtBdTenMH.Text, f.comboBdLoaiMH.Text, f.txtBdGiaban.Text, f.txtBdMota.Text, f.dateTimeNgayban.Value.ToString(), f.chuyendoiAnh1(), f.chuyendoiAnh2(), f.chuyendoiAnh3(), f.chuyendoiAnh4(),
-                f.txtBdMa.Text, f.txtBdGiamgia.Text, f.txtBdSlVou.Text,
-                f.txtBdSoluong.Text, f.txtBdDiadiem.Text, f.ptGiaoHang(), f.cbBoxTinhtrang.Text, f.RandomMaSanPham());
-            bdd.Xoa(bando);
-            FormDangBan_Load(sender, e);
-        }
+        
 
         private void gvDangban_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -115,8 +94,22 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
                 f.cbBoxTinhtrang.Text = row.Cells["Tình_trạng_mặt_hàng"].Value.ToString();
                 f.txtBDMaSP.Text = row.Cells["Mã_sản_phẩm"].Value.ToString();
+                f.txtDbGiaGoc.Text = row.Cells["Giá_gốc"].Value.ToString();
             }
         }
-       
+
+        private void btnDbChinhsua_Click_1(object sender, EventArgs e)
+        {
+            fd.OpenChildForm(f, ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+        }
+
+        private void btnDbXoa_Click_1(object sender, EventArgs e)
+        {
+            BanDo bando = new BanDo(f.txtBdTenMH.Text, f.comboBdLoaiMH.Text, f.txtBdGiaban.Text, f.txtBdMota.Text, f.dateTimeNgayban.Value.ToString(), f.chuyendoiAnh1(), f.chuyendoiAnh2(), f.chuyendoiAnh3(), f.chuyendoiAnh4(),
+                f.txtBdMa.Text, f.txtBdGiamgia.Text, f.txtBdSlVou.Text,
+                f.txtBdSoluong.Text, f.txtBdDiadiem.Text, f.ptGiaoHang(), f.cbBoxTinhtrang.Text, f.RandomMaSanPham(), XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, f.txtDbGiaGoc.Text);
+            bdd.Xoa(bando);
+            FormDangBan_Load(sender, e);
+        }
     }
 }

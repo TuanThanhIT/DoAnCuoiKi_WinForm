@@ -163,6 +163,7 @@
     <Compile Include="Các form măt hàng\FormTatCaMatHang.Designer.cs">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDao.cs" />
     <Compile Include="FSuKien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,18 +239,6 @@
     </Compile>
     <Compile Include="SuKien.cs" />
     <Compile Include="SuKienDao.cs" />
-    <Compile Include="UCChiTiet.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCChiTiet.Designer.cs">
-      <DependentUpon>UCChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCGioHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCGioHang.Designer.cs">
-      <DependentUpon>UCGioHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCHienThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -268,8 +257,13 @@
     <Compile Include="UCVoucher.Designer.cs">
       <DependentUpon>UCVoucher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCGioHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGioHang.Designer.cs">
+      <DependentUpon>UCGioHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="XuLyAnh.cs" />
-    <Compile Include="XuLyGiaoDien.cs" />
     <Compile Include="XuLyHienThi.cs" />
     <Compile Include="XuLySuKien.cs" />
     <EmbeddedResource Include="FChiTiet.resx">
@@ -360,12 +354,6 @@
     <EmbeddedResource Include="FTrangChu.resx">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCChiTiet.resx">
-      <DependentUpon>UCChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCGioHang.resx">
-      <DependentUpon>UCGioHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UCHienThi.resx">
       <DependentUpon>UCHienThi.cs</DependentUpon>
     </EmbeddedResource>
@@ -374,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCVoucher.resx">
       <DependentUpon>UCVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGioHang.resx">
+      <DependentUpon>UCGioHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -640,6 +631,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\83.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnamdong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cart-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fast-cart-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cart-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cart-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quaylai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-export-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-out-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

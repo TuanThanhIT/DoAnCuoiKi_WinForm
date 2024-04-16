@@ -17,6 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
+        FormDao fd = new FormDao();
         public FormTrangChu(DangKi dk)
         {
             InitializeComponent();
@@ -24,51 +25,37 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblTrangChuChucvu.Text = dk.Chucvu;
             lblTrangChuID.Text = dk.ID;
         }
-        private Form currentFormChild;
-
-        public void OpenChildForm(Form childForm)
-        {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelTrangChu.Controls.Add(childForm);
-            panelTrangChu.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
+       
 
         private void FormTrangChu_Load_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMain());
+            fd.OpenChildForm(new FormMain(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Trang Chủ";
+            XuLyHienThi.Ten_Nguoi_Dung = lblTrangchuTen.Text;
+            XuLyHienThi.ID = lblTrangChuID.Text;
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMain());
+            fd.OpenChildForm(new FormMain(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Trang Chủ";
         }
 
         private void btnBanDo_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormBanDo());
+            fd.OpenChildForm(new FormBanDo(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Bán Hàng";
         }
 
         private void btnMatHang_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormMatHang());
+            fd.OpenChildForm(new FormMatHang(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Mặt Hàng";
         }
 
         private void btnThongke_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormThongKe());
+            fd.OpenChildForm(new FormThongKe(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Thống Kê";
         }
 
@@ -78,35 +65,24 @@ namespace DoAnCuoiKi_TraoDoiDo
                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                OpenChildForm(new FormLsBanHang());
+                fd.OpenChildForm(new FormLsBanHang(), ref FormDao.activeForm, panelTrangChu); ;
                 lblChude.Text = "Lịch Sử";
             }
             else if (result == DialogResult.No)
             {
-                OpenChildForm(new FormLSMuaHang());
+                fd.OpenChildForm(new FormLSMuaHang(), ref FormDao.activeForm, panelTrangChu);
                 lblChude.Text = "Lịch Sử";
             }
         }
 
         private void btnMylichsu_Click_1(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn muốn xem: Chọn Yes để xem lịch sử bán hàng của bạn, No để xem lịch sử mua hàng của bạn, hoặc Cancel để thoát", "Thông Báo",
-               MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                OpenChildForm(new FormLsBanHang());
-                lblChude.Text = "Lịch sử của tôi";
-            }
-            else if (result == DialogResult.No)
-            {
-                OpenChildForm(new FormLSMuaHang());
-                lblChude.Text = "Lịch sử của tôi";
-            }
+           
         }
 
         private void btnGioHang_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FormGioHang());
+            fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Giỏ hàng";
         }
 
@@ -117,11 +93,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
        
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormSuKien());
-            lblChude.Text = "Sự kiện";
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -129,5 +101,13 @@ namespace DoAnCuoiKi_TraoDoiDo
             f.Show();
             this.Hide();
         }
+
+        private void btnTrangChuSuKien_Click(object sender, EventArgs e)
+        {
+            fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, panelTrangChu);
+            lblChude.Text = "Sự kiện";
+        }
+
+        
     }
 }

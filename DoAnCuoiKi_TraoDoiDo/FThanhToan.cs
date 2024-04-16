@@ -29,21 +29,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblTtoanTenMH.Text = bando.Ten_Mat_Hang;
         }
       
-        FormTrangChu mainForm;
-        public void OpenChildForm(Form childForm)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-
-            if (mainForm != null)
-            {
-                childForm.Dock = DockStyle.Fill;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                mainForm.panelTrangChu.Controls.Clear();
-                mainForm.panelTrangChu.Controls.Add(childForm);
-                childForm.Show();
-            }
-        }
+        
         private void btnThanhtoanThoat_Click(object sender, EventArgs e)
         {
             FormTrangChu f = new FormTrangChu();
@@ -62,7 +48,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             DialogResult result = MessageBox.Show("Tổng số tiền bạn cần thanh toán là: " + TongTienThanhToan, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if(result == DialogResult.OK)
             {
-                CapNhatSoLuong();
+                //CapNhatSoLuong();
                 FormTrangChu f =new FormTrangChu();
                 f.Show();
                 this.Hide();
@@ -129,7 +115,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 lblTtoanGiamgiaVou.Text = "Khong co";
             }
         }
-        public void CapNhatSoLuong()
+      /*  public void CapNhatSoLuong()
         {
 
             int soLuongMua = Convert.ToInt32(bando.So_Luong) - Convert.ToInt32(txtTtoanSLmua.Text);
@@ -150,6 +136,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 bdd.Sua(bd);
             }    
         }
+      */
 
         private void HienThiSuKien()
         {

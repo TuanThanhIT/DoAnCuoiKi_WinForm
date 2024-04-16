@@ -125,44 +125,30 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.Name = "FormLsBanHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch Sử Bán Hàng";
+            this.Load += new System.EventHandler(this.FormLsBanHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLSBanHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        FormTrangChu mainForm;
         private void btnThoatLsBH_Click(object sender, EventArgs e)
         {
-            mainForm = this.ParentForm as FormTrangChu;
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát", "Thông báo",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                OpenChildForm(new FormMain());
-                mainForm.lblChude.Text = "Trang Chủ";
-                
-            }
+           
         }
 
         public void OpenChildForm(Form childForm)
         {
-            mainForm = this.ParentForm as FormTrangChu;
-            if (mainForm != null)
-            {
-                childForm.Dock = DockStyle.Fill;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                mainForm.panelTrangChu.Controls.Clear();
-                mainForm.panelTrangChu.Controls.Add(childForm);
-                childForm.Show();
-            }
+           
         }
         private void btnMuaLsBH_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormLSMuaHang());
+            
         }
 
-       
+        private void FormLsBanHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

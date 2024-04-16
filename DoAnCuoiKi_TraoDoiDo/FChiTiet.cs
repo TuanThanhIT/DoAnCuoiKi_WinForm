@@ -18,6 +18,8 @@ namespace DoAnCuoiKi_TraoDoiDo
         BanDoDao bdd = new BanDoDao();
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDo bando;
+        FormDao fd = new FormDao();
+
         public FormChiTiet()
         {
             InitializeComponent();
@@ -30,11 +32,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             this.bando = bando;
             InitializeComponent();
-            lblChitietMa.Text = bando.Ma_San_Pham;
+            txtChiTietMa.Text = bando.Ma_San_Pham;
             lblChitietTen.Text = bando.Ten_Mat_Hang;
-            lblChitietLoaiMH.Text = bando.Loai_Mat_Hang;
-            lblChitietGia.Text = bando.Gia_Ban;
-            lblChitietMota.Text = bando.Mo_ta_mat_hang;
+            txtChiTietLoai.Text = bando.Loai_Mat_Hang;
+            lblChiTietGiaban.Text = bando.Gia_Ban;
+            txtChitietMota.Text = bando.Mo_ta_mat_hang;
             List<string> imagePathList = new List<string>();
             hinh1 = bando.Hinh_Anh_1;
             hinh2 = bando.Hinh_Anh_2;
@@ -88,23 +90,14 @@ namespace DoAnCuoiKi_TraoDoiDo
                 // Hiển thị ảnh tại chỉ số hiện tại
                 DisplayImageAtIndex(currentImageIndex);
             }
-            lblChitietSlVou.Text = bando.So_Luong_Voucher;
-            lblChitietSI.Text = bando.So_Luong;
-            lblChitietDiadiem.Text = bando.Dia_Diem;
-            lblCHitietTinhtrang.Text = bando.Tinh_Trang_Mat_Hang;
-            lblChitietGiaohang.Text = bando.Phuong_Thuc_Giao_Hang;
-        }
-
-        private void FormChiTiet_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnChitietThem_Click(object sender, EventArgs e)
-        {
-            BanDo bd = new BanDo(lblChitietMa.Text, lblChitietTen.Text, lblChitietLoaiMH.Text, lblChitietGia.Text, lblChitietMota.Text,
-                hinh1, hinh2, hinh3, hinh4, lblChitietSI.Text, lblChitietSlVou.Text, lblChitietGiaohang.Text, lblCHitietTinhtrang.Text, lblChitietDiadiem.Text);
-            bdd.ThemGioang(bd);
+            txtChiTietSLVou.Text = bando.So_Luong_Voucher;
+            lblChotietSoluong.Text = bando.So_Luong;
+            txtChiTietDiaDiem.Text = bando.Dia_Diem;
+            txtChitietTinhtrang.Text = bando.Tinh_Trang_Mat_Hang;
+            txtChiTietGiaohang.Text = bando.Phuong_Thuc_Giao_Hang;
+            lblChitietGiacu.Text = bando.Gia_Goc;
+            lblChiTietGiamgia.Text = bando.Giam_Gia;
+            txtChitietNgay.Text = bando.Ngay_Dang_Ban;
         }
 
         private void btnChitietMua_Click(object sender, EventArgs e)
@@ -112,6 +105,36 @@ namespace DoAnCuoiKi_TraoDoiDo
             FormThanhToan f = new FormThanhToan(bando);
             f.Show();
             this.Hide();
+            
+        }
+
+        private void FormChiTiet_Load(object sender, EventArgs e)
+        {
+            lblChitietGiacu.Font = new Font(lblChitietGiacu.Font, FontStyle.Strikeout);
+            lblChitietRateStar.Font = new Font(lblChitietRateStar.Font, FontStyle.Underline);
+        }
+
+
+        private void btnChiTietThoat_Click(object sender, EventArgs e)
+        {
+            fd.OpenChildForm(new FormMatHang(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+        }
+
+        private void btnChitietThem_Click(object sender, EventArgs e)
+        {
+            BanDo bb = new BanDo(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, bando.Ten_Mat_Hang, bando.Loai_Mat_Hang, bando.So_Luong, bando.Hinh_Anh_1, bando.Gia_Goc, bando.Gia_Ban,
+                NumUpDown.Value.ToString(), bando.Ngay_Dang_Ban, bando.Ma_San_Pham);
+            bdd.ThemGioHang(bb);
+        }
+
+        private void btnChiTietMuangay_Click(object sender, EventArgs e)
+        {
+            BanDo bb = new BanDo(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, bando.Ten_Mat_Hang, bando.Loai_Mat_Hang, bando.So_Luong, bando.Hinh_Anh_1, bando.Gia_Goc, bando.Gia_Ban,
+                NumUpDown.Value.ToString(), bando.Ngay_Dang_Ban, bando.Ma_San_Pham);
+            bdd.ThemGioHang(bb);
+            this.Hide();
+            
+            fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, FormTrangChu.panelTrangChu); 
             
         }
     }

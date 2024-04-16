@@ -48,7 +48,7 @@
             this.flowLPHienthiAll.AutoScroll = true;
             this.flowLPHienthiAll.Location = new System.Drawing.Point(3, 35);
             this.flowLPHienthiAll.Name = "flowLPHienthiAll";
-            this.flowLPHienthiAll.Size = new System.Drawing.Size(1030, 450);
+            this.flowLPHienthiAll.Size = new System.Drawing.Size(1056, 450);
             this.flowLPHienthiAll.TabIndex = 1;
             // 
             // FormTatCaMatHang
@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
-            this.ClientSize = new System.Drawing.Size(1038, 487);
+            this.ClientSize = new System.Drawing.Size(1064, 487);
             this.Controls.Add(this.flowLPHienthiAll);
             this.Controls.Add(this.label1);
             this.Name = "FormTatCaMatHang";

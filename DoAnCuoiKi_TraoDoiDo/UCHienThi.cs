@@ -17,41 +17,33 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
+
+
         public UCHienThi(BanDo bando)
         {
             InitializeComponent();
             this.bando = bando;
 
             UCHTlblTen.Text = bando.Ten_Mat_Hang;
-            UCHTlblGia.Text = bando.Gia_Ban;
+            UCHTlblGiaban.Text = bando.Gia_Ban;
             string path = bando.Hinh_Anh_1;
-            UCHTPictureBox.Image = Image.FromFile(path);
-            UCCTlbMaSP.Text = bando.Ma_San_Pham;
-
+            UCHTpicImage.Image = Image.FromFile(path);
+            UCHTlblGiagoc.Text = bando.Gia_Goc;
+            UCHTlblNgay.Text = bando.Ngay_Dang_Ban;
         }
 
         private void UCHienThi_Load(object sender, EventArgs e)
         {
-
+            UCHTlblGiagoc.Font = new Font(UCHTlblGiagoc.Font, FontStyle.Strikeout);
         }
 
-        private void UCbtnChiTiet_Click(object sender, EventArgs e)
+        
+
+        private void UCHTbtnChitiet_Click(object sender, EventArgs e)
         {
-            FormChiTiet f = new FormChiTiet(bando);
-            f.Show();
-
-
+            FormDao fd = new FormDao();
+            fd.OpenChildForm(new FormChiTiet(bando), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+            FormTrangChu.lblChude.Text = "Chi tiết sản phẩm";
         }
-
-        private void UCHTlblTen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        /* private void UCbtnChiTiet_Click(object sender, EventArgs e)
-          {
-
-
-          }*/
     }
 }

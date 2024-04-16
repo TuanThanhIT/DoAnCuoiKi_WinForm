@@ -28,218 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UCGHlblVoucher = new System.Windows.Forms.Label();
-            this.UCGHlblTinhTrang = new System.Windows.Forms.Label();
-            this.UCGHlblGiaohang = new System.Windows.Forms.Label();
-            this.UCGHlblSoluong = new System.Windows.Forms.Label();
-            this.UCGHlblMota = new System.Windows.Forms.Label();
-            this.UCGHlblTen = new System.Windows.Forms.Label();
-            this.UCGHlblGia = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.UCGHlblLoaiMH = new System.Windows.Forms.Label();
-            this.UCGHDiadiem = new System.Windows.Forms.Label();
-            this.UCChiTietPicBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.UCChiTietPicBox)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.UCGHUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.UCGHImagePicBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
+            this.UCGHlblLoai = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHlblGiacu = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHlblGiamoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHbtnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.UCGHlblThanhtoan = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHlblSoluong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHlblNgay = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHlblTenMH = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UCGHCheck = new System.Windows.Forms.CheckBox();
+            this.UCGHlblMa = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.UCGHUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UCGHImagePicBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // UCGHlblVoucher
+            // UCGHUpDown
             // 
-            this.UCGHlblVoucher.BackColor = System.Drawing.Color.White;
-            this.UCGHlblVoucher.Location = new System.Drawing.Point(158, 401);
-            this.UCGHlblVoucher.Name = "UCGHlblVoucher";
-            this.UCGHlblVoucher.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblVoucher.TabIndex = 31;
+            this.UCGHUpDown.BackColor = System.Drawing.Color.Transparent;
+            this.UCGHUpDown.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UCGHUpDown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UCGHUpDown.Location = new System.Drawing.Point(682, 55);
+            this.UCGHUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UCGHUpDown.Name = "UCGHUpDown";
+            this.UCGHUpDown.Size = new System.Drawing.Size(137, 40);
+            this.UCGHUpDown.TabIndex = 3;
+            this.UCGHUpDown.ValueChanged += new System.EventHandler(this.UCGHUpDown_ValueChanged);
             // 
-            // UCGHlblTinhTrang
+            // UCGHImagePicBox
             // 
-            this.UCGHlblTinhTrang.BackColor = System.Drawing.Color.White;
-            this.UCGHlblTinhTrang.Location = new System.Drawing.Point(158, 368);
-            this.UCGHlblTinhTrang.Name = "UCGHlblTinhTrang";
-            this.UCGHlblTinhTrang.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblTinhTrang.TabIndex = 30;
+            this.UCGHImagePicBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UCGHImagePicBox.ImageRotate = 0F;
+            this.UCGHImagePicBox.Location = new System.Drawing.Point(34, 3);
+            this.UCGHImagePicBox.Name = "UCGHImagePicBox";
+            this.UCGHImagePicBox.Size = new System.Drawing.Size(158, 156);
+            this.UCGHImagePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UCGHImagePicBox.TabIndex = 4;
+            this.UCGHImagePicBox.TabStop = false;
             // 
-            // UCGHlblGiaohang
+            // guna2ColorTransition1
             // 
-            this.UCGHlblGiaohang.BackColor = System.Drawing.Color.White;
-            this.UCGHlblGiaohang.Location = new System.Drawing.Point(158, 337);
-            this.UCGHlblGiaohang.Name = "UCGHlblGiaohang";
-            this.UCGHlblGiaohang.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblGiaohang.TabIndex = 29;
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
+            // 
+            // UCGHlblLoai
+            // 
+            this.UCGHlblLoai.BackColor = System.Drawing.Color.White;
+            this.UCGHlblLoai.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblLoai.Location = new System.Drawing.Point(230, 90);
+            this.UCGHlblLoai.Name = "UCGHlblLoai";
+            this.UCGHlblLoai.Size = new System.Drawing.Size(98, 21);
+            this.UCGHlblLoai.TabIndex = 9;
+            this.UCGHlblLoai.Text = "Loại mặt hàng";
+            this.UCGHlblLoai.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UCGHlblGiacu
+            // 
+            this.UCGHlblGiacu.BackColor = System.Drawing.Color.Transparent;
+            this.UCGHlblGiacu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblGiacu.ForeColor = System.Drawing.Color.Fuchsia;
+            this.UCGHlblGiacu.Location = new System.Drawing.Point(431, 69);
+            this.UCGHlblGiacu.Name = "UCGHlblGiacu";
+            this.UCGHlblGiacu.Size = new System.Drawing.Size(55, 24);
+            this.UCGHlblGiacu.TabIndex = 10;
+            this.UCGHlblGiacu.Text = "Giá cũ";
+            // 
+            // UCGHlblGiamoi
+            // 
+            this.UCGHlblGiamoi.BackColor = System.Drawing.Color.Transparent;
+            this.UCGHlblGiamoi.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblGiamoi.ForeColor = System.Drawing.Color.Red;
+            this.UCGHlblGiamoi.Location = new System.Drawing.Point(527, 55);
+            this.UCGHlblGiamoi.Name = "UCGHlblGiamoi";
+            this.UCGHlblGiamoi.Size = new System.Drawing.Size(115, 39);
+            this.UCGHlblGiamoi.TabIndex = 11;
+            this.UCGHlblGiamoi.Text = "Giá mới";
+            // 
+            // UCGHbtnXoa
+            // 
+            this.UCGHbtnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UCGHbtnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UCGHbtnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UCGHbtnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UCGHbtnXoa.FillColor = System.Drawing.Color.White;
+            this.UCGHbtnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHbtnXoa.ForeColor = System.Drawing.Color.Black;
+            this.UCGHbtnXoa.Location = new System.Drawing.Point(970, 57);
+            this.UCGHbtnXoa.Name = "UCGHbtnXoa";
+            this.UCGHbtnXoa.Size = new System.Drawing.Size(77, 38);
+            this.UCGHbtnXoa.TabIndex = 12;
+            this.UCGHbtnXoa.Text = "Xóa";
+            this.UCGHbtnXoa.Click += new System.EventHandler(this.UCGHbtnXoa_Click);
+            // 
+            // UCGHlblThanhtoan
+            // 
+            this.UCGHlblThanhtoan.AutoSize = false;
+            this.UCGHlblThanhtoan.BackColor = System.Drawing.Color.Transparent;
+            this.UCGHlblThanhtoan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblThanhtoan.ForeColor = System.Drawing.Color.Red;
+            this.UCGHlblThanhtoan.Location = new System.Drawing.Point(855, 65);
+            this.UCGHlblThanhtoan.Name = "UCGHlblThanhtoan";
+            this.UCGHlblThanhtoan.Size = new System.Drawing.Size(109, 30);
+            this.UCGHlblThanhtoan.TabIndex = 13;
+            this.UCGHlblThanhtoan.Text = "Thanh toán";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(230, 126);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 21);
+            this.guna2HtmlLabel1.TabIndex = 14;
+            this.guna2HtmlLabel1.Text = "Số lượng";
             // 
             // UCGHlblSoluong
             // 
             this.UCGHlblSoluong.BackColor = System.Drawing.Color.White;
-            this.UCGHlblSoluong.Location = new System.Drawing.Point(158, 303);
+            this.UCGHlblSoluong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblSoluong.Location = new System.Drawing.Point(336, 126);
             this.UCGHlblSoluong.Name = "UCGHlblSoluong";
-            this.UCGHlblSoluong.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblSoluong.TabIndex = 28;
+            this.UCGHlblSoluong.Size = new System.Drawing.Size(21, 21);
+            this.UCGHlblSoluong.TabIndex = 15;
+            this.UCGHlblSoluong.Text = "15";
             // 
-            // UCGHlblMota
+            // UCGHlblNgay
             // 
-            this.UCGHlblMota.BackColor = System.Drawing.Color.White;
-            this.UCGHlblMota.Location = new System.Drawing.Point(158, 271);
-            this.UCGHlblMota.Name = "UCGHlblMota";
-            this.UCGHlblMota.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblMota.TabIndex = 27;
+            this.UCGHlblNgay.AutoSize = false;
+            this.UCGHlblNgay.BackColor = System.Drawing.Color.White;
+            this.UCGHlblNgay.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblNgay.Location = new System.Drawing.Point(809, 126);
+            this.UCGHlblNgay.Name = "UCGHlblNgay";
+            this.UCGHlblNgay.Size = new System.Drawing.Size(243, 27);
+            this.UCGHlblNgay.TabIndex = 16;
+            this.UCGHlblNgay.Text = "Ngày đăng bán";
             // 
-            // UCGHlblTen
+            // UCGHlblTenMH
             // 
-            this.UCGHlblTen.BackColor = System.Drawing.Color.White;
-            this.UCGHlblTen.Location = new System.Drawing.Point(158, 172);
-            this.UCGHlblTen.Name = "UCGHlblTen";
-            this.UCGHlblTen.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblTen.TabIndex = 26;
+            this.UCGHlblTenMH.BackColor = System.Drawing.Color.White;
+            this.UCGHlblTenMH.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblTenMH.ForeColor = System.Drawing.Color.Red;
+            this.UCGHlblTenMH.Location = new System.Drawing.Point(230, 3);
+            this.UCGHlblTenMH.Name = "UCGHlblTenMH";
+            this.UCGHlblTenMH.Size = new System.Drawing.Size(130, 28);
+            this.UCGHlblTenMH.TabIndex = 17;
+            this.UCGHlblTenMH.Text = "Tên mặt hàng";
             // 
-            // UCGHlblGia
+            // UCGHCheck
             // 
-            this.UCGHlblGia.BackColor = System.Drawing.Color.White;
-            this.UCGHlblGia.Location = new System.Drawing.Point(158, 237);
-            this.UCGHlblGia.Name = "UCGHlblGia";
-            this.UCGHlblGia.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblGia.TabIndex = 25;
+            this.UCGHCheck.AutoSize = true;
+            this.UCGHCheck.Location = new System.Drawing.Point(10, 76);
+            this.UCGHCheck.Name = "UCGHCheck";
+            this.UCGHCheck.Size = new System.Drawing.Size(18, 17);
+            this.UCGHCheck.TabIndex = 18;
+            this.UCGHCheck.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // UCGHlblMa
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 401);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 16);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Số lượng Voucher";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 368);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 16);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Tình trạng mặt hàng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 337);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 16);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Phương thức giao hàng";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 303);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 16);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Số lượng";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 271);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 16);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Mô tả mặt hàng";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 237);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Giá bán";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Tên mặt hàng";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 202);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
-            this.label8.TabIndex = 32;
-            this.label8.Text = "Loại mặt hàng";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 428);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 16);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Địa điểm";
-            // 
-            // UCGHlblLoaiMH
-            // 
-            this.UCGHlblLoaiMH.BackColor = System.Drawing.Color.White;
-            this.UCGHlblLoaiMH.Location = new System.Drawing.Point(158, 202);
-            this.UCGHlblLoaiMH.Name = "UCGHlblLoaiMH";
-            this.UCGHlblLoaiMH.Size = new System.Drawing.Size(155, 16);
-            this.UCGHlblLoaiMH.TabIndex = 34;
-            // 
-            // UCGHDiadiem
-            // 
-            this.UCGHDiadiem.BackColor = System.Drawing.Color.White;
-            this.UCGHDiadiem.Location = new System.Drawing.Point(158, 428);
-            this.UCGHDiadiem.Name = "UCGHDiadiem";
-            this.UCGHDiadiem.Size = new System.Drawing.Size(155, 16);
-            this.UCGHDiadiem.TabIndex = 35;
-            // 
-            // UCChiTietPicBox
-            // 
-            this.UCChiTietPicBox.BackColor = System.Drawing.Color.White;
-            this.UCChiTietPicBox.Location = new System.Drawing.Point(6, 3);
-            this.UCChiTietPicBox.Name = "UCChiTietPicBox";
-            this.UCChiTietPicBox.Size = new System.Drawing.Size(277, 157);
-            this.UCChiTietPicBox.TabIndex = 17;
-            this.UCChiTietPicBox.TabStop = false;
+            this.UCGHlblMa.BackColor = System.Drawing.Color.White;
+            this.UCGHlblMa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblMa.Location = new System.Drawing.Point(230, 55);
+            this.UCGHlblMa.Name = "UCGHlblMa";
+            this.UCGHlblMa.Size = new System.Drawing.Size(89, 21);
+            this.UCGHlblMa.TabIndex = 19;
+            this.UCGHlblMa.Text = "Mã mặt hàng";
             // 
             // UCGioHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.UCGHDiadiem);
-            this.Controls.Add(this.UCGHlblLoaiMH);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.UCGHlblVoucher);
-            this.Controls.Add(this.UCGHlblTinhTrang);
-            this.Controls.Add(this.UCGHlblGiaohang);
+            this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.UCGHlblMa);
+            this.Controls.Add(this.UCGHCheck);
+            this.Controls.Add(this.UCGHlblTenMH);
+            this.Controls.Add(this.UCGHlblNgay);
             this.Controls.Add(this.UCGHlblSoluong);
-            this.Controls.Add(this.UCGHlblMota);
-            this.Controls.Add(this.UCGHlblTen);
-            this.Controls.Add(this.UCGHlblGia);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.UCChiTietPicBox);
+            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.UCGHlblThanhtoan);
+            this.Controls.Add(this.UCGHbtnXoa);
+            this.Controls.Add(this.UCGHlblGiamoi);
+            this.Controls.Add(this.UCGHlblGiacu);
+            this.Controls.Add(this.UCGHlblLoai);
+            this.Controls.Add(this.UCGHImagePicBox);
+            this.Controls.Add(this.UCGHUpDown);
             this.Name = "UCGioHang";
-            this.Size = new System.Drawing.Size(329, 456);
+            this.Size = new System.Drawing.Size(1055, 166);
             this.Load += new System.EventHandler(this.UCGioHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.UCChiTietPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UCGHUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UCGHImagePicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,24 +230,19 @@
 
         #endregion
 
-        public System.Windows.Forms.Label UCGHlblVoucher;
-        public System.Windows.Forms.Label UCGHlblTinhTrang;
-        public System.Windows.Forms.Label UCGHlblGiaohang;
-        public System.Windows.Forms.Label UCGHlblSoluong;
-        public System.Windows.Forms.Label UCGHlblMota;
-        public System.Windows.Forms.Label UCGHlblTen;
-        public System.Windows.Forms.Label UCGHlblGia;
-        public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.PictureBox UCChiTietPicBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.Label UCGHlblLoaiMH;
-        public System.Windows.Forms.Label UCGHDiadiem;
+        private Guna.UI2.WinForms.Guna2NumericUpDown UCGHUpDown;
+        private Guna.UI2.WinForms.Guna2PictureBox UCGHImagePicBox;
+        private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblLoai;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblGiacu;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblGiamoi;
+        private Guna.UI2.WinForms.Guna2Button UCGHbtnXoa;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblThanhtoan;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblSoluong;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblNgay;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblTenMH;
+        private System.Windows.Forms.CheckBox UCGHCheck;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblMa;
     }
 }

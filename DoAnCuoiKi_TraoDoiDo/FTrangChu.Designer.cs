@@ -30,24 +30,11 @@
         {
             this.Panel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblChude = new System.Windows.Forms.Label();
+            lblChude = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.dateTimePickerTrangchu = new System.Windows.Forms.DateTimePicker();
-            this.panelTrangChu = new System.Windows.Forms.Panel();
+            panelTrangChu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTrangChuID = new System.Windows.Forms.Label();
-            this.lblTrangChuChucvu = new System.Windows.Forms.Label();
-            this.lblTrangchuTen = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnMylichsu = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnLichsu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnThongke = new System.Windows.Forms.Button();
@@ -55,15 +42,28 @@
             this.btnMatHang = new System.Windows.Forms.Button();
             this.btnBanDo = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnMylichsu = new System.Windows.Forms.Button();
+            this.btnTrangChuSuKien = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTrangChuID = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblTrangChuChucvu = new System.Windows.Forms.Label();
+            this.lblTrangchuTen = new System.Windows.Forms.Label();
+            this.btnDangxuat = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.Panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel
@@ -82,7 +82,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.groupBox1.Controls.Add(this.lblChude);
+            this.groupBox1.Controls.Add(lblChude);
             this.groupBox1.Location = new System.Drawing.Point(-1, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(144, 52);
@@ -91,14 +91,26 @@
             // 
             // lblChude
             // 
-            this.lblChude.AutoSize = true;
-            this.lblChude.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChude.ForeColor = System.Drawing.Color.White;
-            this.lblChude.Location = new System.Drawing.Point(6, 19);
-            this.lblChude.Name = "lblChude";
-            this.lblChude.Size = new System.Drawing.Size(70, 25);
-            this.lblChude.TabIndex = 10;
-            this.lblChude.Text = "label1";
+            lblChude.AutoSize = true;
+            lblChude.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblChude.ForeColor = System.Drawing.Color.White;
+            lblChude.Location = new System.Drawing.Point(6, 19);
+            lblChude.Name = "lblChude";
+            lblChude.Size = new System.Drawing.Size(70, 25);
+            lblChude.TabIndex = 10;
+            lblChude.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.button1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
+            this.button1.Location = new System.Drawing.Point(1352, 8);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 39);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePickerTrangchu
             // 
@@ -110,12 +122,12 @@
             // 
             // panelTrangChu
             // 
-            this.panelTrangChu.BackColor = System.Drawing.Color.White;
-            this.panelTrangChu.Location = new System.Drawing.Point(140, 52);
-            this.panelTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelTrangChu.Name = "panelTrangChu";
-            this.panelTrangChu.Size = new System.Drawing.Size(1092, 628);
-            this.panelTrangChu.TabIndex = 8;
+            panelTrangChu.BackColor = System.Drawing.Color.White;
+            panelTrangChu.Location = new System.Drawing.Point(140, 52);
+            panelTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            panelTrangChu.Name = "panelTrangChu";
+            panelTrangChu.Size = new System.Drawing.Size(1092, 628);
+            panelTrangChu.TabIndex = 8;
             // 
             // panel2
             // 
@@ -132,171 +144,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(143, 630);
             this.panel2.TabIndex = 9;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.panel3.Controls.Add(this.groupBox2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.lblTrangChuID);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.lblTrangChuChucvu);
-            this.panel3.Controls.Add(this.lblTrangchuTen);
-            this.panel3.Controls.Add(this.btnDangxuat);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1224, 52);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 630);
-            this.panel3.TabIndex = 10;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnMylichsu);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(3, 420);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(197, 207);
-            this.groupBox2.TabIndex = 29;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chỉ có quản trị viên mới thức hiện chức năng này";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Người dùng: ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 19);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "ID: ";
-            // 
-            // lblTrangChuID
-            // 
-            this.lblTrangChuID.AutoSize = true;
-            this.lblTrangChuID.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangChuID.ForeColor = System.Drawing.Color.White;
-            this.lblTrangChuID.Location = new System.Drawing.Point(72, 67);
-            this.lblTrangChuID.Name = "lblTrangChuID";
-            this.lblTrangChuID.Size = new System.Drawing.Size(55, 19);
-            this.lblTrangChuID.TabIndex = 26;
-            this.lblTrangChuID.Text = "Mã ID";
-            // 
-            // lblTrangChuChucvu
-            // 
-            this.lblTrangChuChucvu.AutoSize = true;
-            this.lblTrangChuChucvu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangChuChucvu.ForeColor = System.Drawing.Color.White;
-            this.lblTrangChuChucvu.Location = new System.Drawing.Point(81, 18);
-            this.lblTrangChuChucvu.Name = "lblTrangChuChucvu";
-            this.lblTrangChuChucvu.Size = new System.Drawing.Size(69, 19);
-            this.lblTrangChuChucvu.TabIndex = 22;
-            this.lblTrangChuChucvu.Text = "Chức vụ";
-            // 
-            // lblTrangchuTen
-            // 
-            this.lblTrangchuTen.AutoSize = true;
-            this.lblTrangchuTen.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangchuTen.ForeColor = System.Drawing.Color.White;
-            this.lblTrangchuTen.Location = new System.Drawing.Point(45, 142);
-            this.lblTrangchuTen.Name = "lblTrangchuTen";
-            this.lblTrangchuTen.Size = new System.Drawing.Size(114, 19);
-            this.lblTrangchuTen.TabIndex = 21;
-            this.lblTrangchuTen.Text = "Tên đăng nhập";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Cá nhân";
-            // 
-            // btnMylichsu
-            // 
-            this.btnMylichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.btnMylichsu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMylichsu.ForeColor = System.Drawing.Color.White;
-            this.btnMylichsu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.giaodich;
-            this.btnMylichsu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMylichsu.Location = new System.Drawing.Point(33, 138);
-            this.btnMylichsu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMylichsu.Name = "btnMylichsu";
-            this.btnMylichsu.Size = new System.Drawing.Size(141, 61);
-            this.btnMylichsu.TabIndex = 23;
-            this.btnMylichsu.Text = "Tất cả giao dịch";
-            this.btnMylichsu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMylichsu.UseVisualStyleBackColor = false;
-            this.btnMylichsu.UseWaitCursor = true;
-            this.btnMylichsu.Click += new System.EventHandler(this.btnMylichsu_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._event;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(33, 56);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 61);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Tạo sự kiện";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.images1;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 6);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._7079591;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 176);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 215);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnDangxuat
-            // 
-            this.btnDangxuat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
-            this.btnDangxuat.Location = new System.Drawing.Point(127, -40);
-            this.btnDangxuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Size = new System.Drawing.Size(69, 39);
-            this.btnDangxuat.TabIndex = 20;
-            this.btnDangxuat.UseVisualStyleBackColor = true;
             // 
             // btnLichsu
             // 
@@ -411,17 +258,170 @@
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
-            // button1
+            // panel3
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.button1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
-            this.button1.Location = new System.Drawing.Point(1352, 8);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 39);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lblTrangChuID);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.lblTrangChuChucvu);
+            this.panel3.Controls.Add(this.lblTrangchuTen);
+            this.panel3.Controls.Add(this.btnDangxuat);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1224, 52);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 630);
+            this.panel3.TabIndex = 10;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnMylichsu);
+            this.groupBox2.Controls.Add(this.btnTrangChuSuKien);
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(3, 420);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(197, 207);
+            this.groupBox2.TabIndex = 29;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chỉ có quản trị viên mới thức hiện chức năng này";
+            // 
+            // btnMylichsu
+            // 
+            this.btnMylichsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnMylichsu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMylichsu.ForeColor = System.Drawing.Color.White;
+            this.btnMylichsu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.giaodich;
+            this.btnMylichsu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMylichsu.Location = new System.Drawing.Point(33, 138);
+            this.btnMylichsu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMylichsu.Name = "btnMylichsu";
+            this.btnMylichsu.Size = new System.Drawing.Size(141, 61);
+            this.btnMylichsu.TabIndex = 23;
+            this.btnMylichsu.Text = "Tất cả giao dịch";
+            this.btnMylichsu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMylichsu.UseVisualStyleBackColor = false;
+            this.btnMylichsu.UseWaitCursor = true;
+            this.btnMylichsu.Click += new System.EventHandler(this.btnMylichsu_Click_1);
+            // 
+            // btnTrangChuSuKien
+            // 
+            this.btnTrangChuSuKien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
+            this.btnTrangChuSuKien.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChuSuKien.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChuSuKien.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._event;
+            this.btnTrangChuSuKien.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTrangChuSuKien.Location = new System.Drawing.Point(33, 56);
+            this.btnTrangChuSuKien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTrangChuSuKien.Name = "btnTrangChuSuKien";
+            this.btnTrangChuSuKien.Size = new System.Drawing.Size(141, 61);
+            this.btnTrangChuSuKien.TabIndex = 29;
+            this.btnTrangChuSuKien.Text = "Tạo sự kiện";
+            this.btnTrangChuSuKien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTrangChuSuKien.UseVisualStyleBackColor = false;
+            this.btnTrangChuSuKien.Click += new System.EventHandler(this.btnTrangChuSuKien_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(14, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Người dùng: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(14, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 19);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "ID: ";
+            // 
+            // lblTrangChuID
+            // 
+            this.lblTrangChuID.AutoSize = true;
+            this.lblTrangChuID.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChuID.ForeColor = System.Drawing.Color.White;
+            this.lblTrangChuID.Location = new System.Drawing.Point(72, 67);
+            this.lblTrangChuID.Name = "lblTrangChuID";
+            this.lblTrangChuID.Size = new System.Drawing.Size(55, 19);
+            this.lblTrangChuID.TabIndex = 26;
+            this.lblTrangChuID.Text = "Mã ID";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.images1;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._7079591;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 176);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(174, 215);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblTrangChuChucvu
+            // 
+            this.lblTrangChuChucvu.AutoSize = true;
+            this.lblTrangChuChucvu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChuChucvu.ForeColor = System.Drawing.Color.White;
+            this.lblTrangChuChucvu.Location = new System.Drawing.Point(81, 18);
+            this.lblTrangChuChucvu.Name = "lblTrangChuChucvu";
+            this.lblTrangChuChucvu.Size = new System.Drawing.Size(69, 19);
+            this.lblTrangChuChucvu.TabIndex = 22;
+            this.lblTrangChuChucvu.Text = "Chức vụ";
+            // 
+            // lblTrangchuTen
+            // 
+            this.lblTrangchuTen.AutoSize = true;
+            this.lblTrangchuTen.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangchuTen.ForeColor = System.Drawing.Color.White;
+            this.lblTrangchuTen.Location = new System.Drawing.Point(45, 142);
+            this.lblTrangchuTen.Name = "lblTrangchuTen";
+            this.lblTrangchuTen.Size = new System.Drawing.Size(114, 19);
+            this.lblTrangchuTen.TabIndex = 21;
+            this.lblTrangchuTen.Text = "Tên đăng nhập";
+            // 
+            // btnDangxuat
+            // 
+            this.btnDangxuat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
+            this.btnDangxuat.Location = new System.Drawing.Point(127, -40);
+            this.btnDangxuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDangxuat.Name = "btnDangxuat";
+            this.btnDangxuat.Size = new System.Drawing.Size(69, 39);
+            this.btnDangxuat.TabIndex = 20;
+            this.btnDangxuat.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(14, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Cá nhân";
             // 
             // FormTrangChu
             // 
@@ -430,7 +430,7 @@
             this.ClientSize = new System.Drawing.Size(1424, 682);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelTrangChu);
+            this.Controls.Add(panelTrangChu);
             this.Controls.Add(this.Panel);
             this.Name = "FormTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -440,12 +440,12 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -454,7 +454,6 @@
 
         private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.DateTimePicker dateTimePickerTrangchu;
-        public System.Windows.Forms.Panel panelTrangChu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.Panel panel3;
@@ -473,12 +472,13 @@
         private System.Windows.Forms.Button btnMatHang;
         private System.Windows.Forms.Button btnBanDo;
         public System.Windows.Forms.Button btnTrangChu;
-        public System.Windows.Forms.Label lblChude;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblTrangChuID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTrangChuSuKien;
         private System.Windows.Forms.GroupBox groupBox2;
+        public static System.Windows.Forms.Label lblChude;
+        public static System.Windows.Forms.Panel panelTrangChu;
     }
 }

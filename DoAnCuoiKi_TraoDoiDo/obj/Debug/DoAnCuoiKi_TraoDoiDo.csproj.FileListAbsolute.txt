@@ -85,3 +85,46 @@ D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCu
 D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CopyComplete
 D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.exe
 D:\Đồ Án WinDows\84\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.pdb
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.exe.config
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.exe
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\DoAnCuoiKi_TraoDoiDo.pdb
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\Guna.UI2.dll
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.dll
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\bin\Debug\System.Data.SqlClient.xml
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.AssemblyReference.cache
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormChiTiet.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDienThoai.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoDienTu.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoEmBe.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDoGiaDung.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormGiay.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangKi.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangNhap.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormMain.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormGioHang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormKhac.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormNoiThat.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSach.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormTatCaMatHang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormSuKien.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThanhToan.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThietBiIT.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThoiTrang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormXeCo.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormLsBanHang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormDangBan.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormLSMuaHang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormMatHang.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormBanDo.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.Properties.Resources.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormThongKe.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.FormTrangChu.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCHienThi.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCSuKien.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCVoucher.resources
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.GenerateResource.cache
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CoreCompileInputs.cache
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.csproj.CopyComplete
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.exe
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.pdb
+D:\Đồ án cuối kì_Winform\DoAnCuoiKi_WinForm\DoAnCuoiKi_TraoDoiDo\obj\Debug\DoAnCuoiKi_TraoDoiDo.UCGioHang.resources

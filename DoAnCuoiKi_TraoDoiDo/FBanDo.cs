@@ -18,8 +18,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDoDao bd = new BanDoDao();
-        FormTrangChu mainForm;
-        XuLyGiaoDien xlgiaodien = new XuLyGiaoDien();
+        FormDao fd = new FormDao();
         public FormBanDo()
         {
             InitializeComponent();
@@ -29,12 +28,6 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         }
 
-
-        public void OpenChildForm(Form childForm)
-        {
-            mainForm = this.ParentForm as FormTrangChu;
-            xlgiaodien.OpenChildForm(mainForm, childForm);
-        }
 
         string deliveryMethod = string.Empty;
         public string ptGiaoHang()
@@ -107,24 +100,6 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
             }
         }
-        //private void btnBdHoantat_Click(object sender, EventArgs e)
-        //{
-        //    BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-        //        txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
-        //    bd.Them(bando);
-        //    DialogResult result = MessageBox.Show("Bạn có tiếp tục muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        //    if (result == DialogResult.No)
-        //    {
-        //        OpenChildForm(new FormDangBan());
-        //    }
-        //    else
-        //    {
-        //        XuLyAnh.images = new List<Image>();
-        //        XuLyAnh.imagePaths = new List<string>();
-        //        XuLyAnh.currentIndex = -1;
-        //    }
-        //}
-
         private void btnLoadImage_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -149,26 +124,6 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
             }
         }
-        //public void btnDbTruoc_Click(object sender, EventArgs e)
-        //{
-        //    if (XuLyAnh.images.Count > 0)
-        //    {
-        //        XuLyAnh.currentIndex = (XuLyAnh.currentIndex - 1 + XuLyAnh.images.Count) % XuLyAnh.images.Count;
-        //        picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-        //        txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-        //    }
-        //}
-
-        //public void btnDbSau_Click(object sender, EventArgs e)
-        //{
-        //    if (XuLyAnh.images.Count > 0)
-        //    {
-        //        XuLyAnh.currentIndex = (XuLyAnh.currentIndex + 1) % XuLyAnh.images.Count;
-        //        picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-        //        txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-        //    }
-        //}
-
         private void btnBdApdung_Click(object sender, EventArgs e)
         {
             txtBdMa.Enabled = true;
@@ -176,53 +131,6 @@ namespace DoAnCuoiKi_TraoDoiDo
             txtBdSlVou.Enabled = true;
         }
 
-        //private void btnBdLammoi_Click(object sender, EventArgs e)
-        //{
-        //    txtBdTenMH.Text = "";
-        //    comboBdLoaiMH.Text = null;
-        //    txtBdGiaban.Text = "";
-        //    txtBdMota.Text = "";
-        //    txtBdMa.Text = "";
-        //    txtBdGiamgia.Text = "";
-        //    txtBdSlVou.Text = "";
-        //    txtBdSoluong.Text = "";
-        //    cbBoxTinhtrang.Text = null;
-        //    txtImagePath.Text = "";
-        //    txtBdDiadiem.Text = "";
-        //    picImage.Image = null;
-        //    if (rdBNguoibangiao.Checked)
-        //        rdBNguoibangiao.Checked = false;
-        //    else if (rdBChuyenPhatNhanh.Checked)
-        //        rdBChuyenPhatNhanh.Checked = false;
-        //    else
-        //        rdBGiaohangtructiep.Checked = false;
-        //    XuLyAnh.images = new List<Image>();
-        //    XuLyAnh.imagePaths = new List<string>();
-        //    XuLyAnh.currentIndex = -1;
-        //}
-
-        //private void btnDbXoa_Click(object sender, EventArgs e)
-        //{
-
-        //    if (XuLyAnh.currentIndex >= 0 && XuLyAnh.currentIndex < XuLyAnh.images.Count)
-        //    {
-        //        XuLyAnh.images.RemoveAt(XuLyAnh.currentIndex);
-        //        XuLyAnh.imagePaths.RemoveAt(XuLyAnh.currentIndex);
-
-        //        if (XuLyAnh.images.Count > 0)
-        //        {
-        //            XuLyAnh.currentIndex = Math.Min(XuLyAnh.currentIndex, XuLyAnh.images.Count - 1);
-        //            picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-        //            txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-        //        }
-        //        else
-        //        {
-        //            XuLyAnh.currentIndex = -1;
-        //            picImage.Image = null;
-        //            txtImagePath.Text = string.Empty;
-        //        }
-        //    }
-        //}
 
 
         private void FormBanDo_Load(object sender, EventArgs e)
@@ -235,19 +143,6 @@ namespace DoAnCuoiKi_TraoDoiDo
                 txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
             }
         }
-        //private void btnBdLuu_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-        //      txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text,
-        //      txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
-        //        bd.Sua(bando);
-        //    }
-        //    catch (Exception ex) {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
 
         private void picImage_Click(object sender, EventArgs e)
         {
@@ -300,12 +195,13 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void btnBdHoantat_Click(object sender, EventArgs e)
         {
             BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
+                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham(), XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, txtDbGiaGoc.Text);
             bd.Them(bando);
             DialogResult result = MessageBox.Show("Bạn có tiếp tục muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
-                OpenChildForm(new FormDangBan());
+                fd.OpenChildForm(new FormDangBan(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Đăng bán";
             }
             else
             {
@@ -342,18 +238,12 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnBdLuu_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-              txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text,
-              txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham());
-                bd.Sua(bando);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
+                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham(), XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, txtDbGiaGoc.Text);
+            bd.Sua(bando);
         }
+
+       
+
     }
 }

@@ -9,13 +9,15 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Runtime.Remoting.Channels;
+using System.Resources;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
     public class XuLyHienThi
     {
         private string stringConnection = @"Data Source=(localdb)\mssqllocaldb;Initial Catalog=DoAnTraoDoiDo;Integrated Security=True";
-       
+        public static string ID;
+        public static string Ten_Nguoi_Dung;
         public SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);
@@ -58,7 +60,10 @@ namespace DoAnCuoiKi_TraoDoiDo
                                 string diadiem = reader["Địa_điểm"].ToString();
                                 string masanpham = reader["Mã_sản_phẩm"].ToString();
                                 string ngaydangban = reader["Ngày_đăng_bán"].ToString();
-                                BanDo bd = new BanDo(tenmathang, loaimathang, giaban, motamathang, ngaydangban, hinhanh1, hinhanh2, hinhanh3, hinhanh4,mavoucher, giamgia, soluongVou, soluong, diadiem, ptgiaohang, tinhtrangmh, masanpham);
+                                string id = reader["ID"].ToString();
+                                string tennguoidung = reader["Tên_người_dùng"].ToString();
+                                string giagoc = reader["Giá_gốc"].ToString();   
+                                BanDo bd = new BanDo(tenmathang, loaimathang, giaban, motamathang, ngaydangban, hinhanh1, hinhanh2, hinhanh3, hinhanh4,mavoucher, giamgia, soluongVou, soluong, diadiem, ptgiaohang, tinhtrangmh, masanpham, id, tennguoidung, giagoc );
                                 bds.Add(bd);
 
                             }
@@ -93,7 +98,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
             }
         }
-
+      
 
 
 

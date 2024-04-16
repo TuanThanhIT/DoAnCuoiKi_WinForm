@@ -24,7 +24,6 @@ namespace DoAnCuoiKi_TraoDoiDo
             xlht.LoadDanhSach(htVoucher, flowLPMainVoucher);
             LoadDanhSachSuKien();
         }
-        List<SuKien> sks;
         public void LoadDanhSachSuKien()
         {
             string query2 = "";
