@@ -24,9 +24,9 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
             this.bando = bando;
-            lblTtoanMa.Text = bando.Ma_San_Pham;
+           /* lblTtoanMa.Text = bando.Ma_San_Pham;
             lblTtoanLoai.Text = bando.Loai_Mat_Hang;
-            lblTtoanTenMH.Text = bando.Ten_Mat_Hang;
+            lblTtoanTenMH.Text = bando.Ten_Mat_Hang;*/
         }
       
         
@@ -39,7 +39,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnTtoanDathang_Click(object sender, EventArgs e)
         {
-            double tongTienThanhToan = tinhTienDonHang();
+           /* double tongTienThanhToan = tinhTienDonHang();
             string TongTienThanhToan = tongTienThanhToan.ToString();    
             MuaHang mh = new MuaHang(lblTtoanTen.Text, lblTtoanSodt.Text, lblTtoanDiachi.Text, lblThanhToanNgaymua.Text, lblTtoanMa.Text, lblTtoanTenMH.Text, lblTtoanLoai.Text, 
                 txtTtoanSLmua.Text, txtTtoanMaVou.Text, lblTtoanGiamgiaVou.Text, lblTtoanGgSukien.Text);
@@ -53,44 +53,47 @@ namespace DoAnCuoiKi_TraoDoiDo
                 f.Show();
                 this.Hide();
             }    
+           */
 
         }
 
-        private double tinhTienDonHang()
-        {
-            double tongTien;
-            if(lblTtoanGiamgiaVou.Text == "Khong co" && lblTtoanGgSukien.Text == "Khong co")
-            {
-                tongTien = Convert.ToDouble(bando.Gia_Ban);
-            }
-            else if(lblTtoanGiamgiaVou.Text != "Khong co" && lblTtoanGgSukien.Text == "Khong co")
-            {
-                tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGiamgiaVou.Text) / 100));
-            }    
-            else if(lblTtoanGiamgiaVou.Text == "Khong co" && lblTtoanGgSukien.Text != "Khong co")
-            {
-                tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGgSukien.Text) / 100));
-            }
-            else
-            {
-                tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGiamgiaVou.Text) / 100)) + Convert.ToDouble(bando.Gia_Ban)*((double)(Convert.ToDouble(lblTtoanGgSukien.Text) / 100));
-            }
-            tongTien = tongTien * Convert.ToInt32(txtTtoanSLmua.Text);
-            tongTien = Convert.ToDouble(bando.Gia_Ban) - tongTien;
-            return tongTien;
-        }
+        /* private double tinhTienDonHang()
+         {
+
+             double tongTien;
+             if(lblTtoanGiamgiaVou.Text == "Khong co" && lblTtoanGgSukien.Text == "Khong co")
+             {
+                 tongTien = Convert.ToDouble(bando.Gia_Ban);
+             }
+             else if(lblTtoanGiamgiaVou.Text != "Khong co" && lblTtoanGgSukien.Text == "Khong co")
+             {
+                 tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGiamgiaVou.Text) / 100));
+             }    
+             else if(lblTtoanGiamgiaVou.Text == "Khong co" && lblTtoanGgSukien.Text != "Khong co")
+             {
+                 tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGgSukien.Text) / 100));
+             }
+             else
+             {
+                 tongTien = Convert.ToDouble(bando.Gia_Ban) * ((double)(Convert.ToDouble(lblTtoanGiamgiaVou.Text) / 100)) + Convert.ToDouble(bando.Gia_Ban)*((double)(Convert.ToDouble(lblTtoanGgSukien.Text) / 100));
+             }
+             tongTien = tongTien * Convert.ToInt32(txtTtoanSLmua.Text);
+             tongTien = Convert.ToDouble(bando.Gia_Ban) - tongTien;
+             return tongTien;
+             
+    }
+        */
 
         private void FormThanhToan_Load(object sender, EventArgs e)
         {
+            /*
             txtTtoanMaVou.Enabled = false;
+            */
         }
 
         private void btnTtoanLuuTT_Click(object sender, EventArgs e)
         {
-            lblTtoanTen.Text = txtTtoanHoten.Text;
-            lblTtoanSodt.Text = txtTtoanSdt.Text;
-            lblTtoanDiachi.Text = txtTtoanDiachi.Text;
-            lblThanhToanNgaymua.Text = dateTimeNgaymua.Value.ToString();    
+               
         }
 
         private void btnTtoanLuuMH_Click(object sender, EventArgs e)
@@ -101,6 +104,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         }
         private void HienThiVouCher()
         {
+            /*
             if (string.IsNullOrEmpty(txtTtoanMaVou.Text))
             {
                 lblTtoanGiamgiaVou.Text = "Khong co";
@@ -114,6 +118,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 MessageBox.Show("Mã Voucher bạn nhập cho mặt hàng này ko đúng");
                 lblTtoanGiamgiaVou.Text = "Khong co";
             }
+            */
         }
       /*  public void CapNhatSoLuong()
         {
@@ -140,6 +145,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void HienThiSuKien()
         {
+            /*
             foreach (SuKien s in XuLySuKien.suKiens)
             {
                 string startTimeString = s.BatDau;
@@ -164,11 +170,14 @@ namespace DoAnCuoiKi_TraoDoiDo
                     }
                 }
             }
+            */
         }
 
         private void btnTtoanApdung_Click(object sender, EventArgs e)
         {
-            txtTtoanMaVou.Enabled = true;
+           // txtTtoanMaVou.Enabled = true;
         }
+
+        
     }
 }

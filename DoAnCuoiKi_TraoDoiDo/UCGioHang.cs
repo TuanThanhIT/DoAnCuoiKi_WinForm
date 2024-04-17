@@ -13,45 +13,53 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class UCGioHang : UserControl
     {
-        BanDoDao bdd = new BanDoDao();
+        GioHangDao ghd = new GioHangDao();
         string path;
         string ID;
         string tenNguoiDung;
-        
+        string check;
+        GioHang gh;
     
         public UCGioHang()
         {
             InitializeComponent();
         }
 
-        public UCGioHang(BanDo bd)
+        public UCGioHang(GioHang gh)
         {
             InitializeComponent();
-            ID = bd.ID;
-            tenNguoiDung = bd.Ten_Nguoi_Dung;
-            UCGHlblTenMH.Text = bd.Ten_Mat_Hang;
-            UCGHlblLoai.Text = bd.Loai_Mat_Hang;
-            UCGHlblSoluong.Text = bd.So_Luong;
-            UCGHlblNgay.Text = bd.Ngay_Dang_Ban;
-            UCGHUpDown.Value = Convert.ToDecimal(bd.So_Luong_Chon);
-            UCGHlblGiacu.Text = bd.Gia_Goc;
-            UCGHlblGiamoi.Text = bd.Gia_Ban;
-            path = bd.Hinh_Anh_1;
+            this.gh = gh;
+            ID = gh.ID;
+            tenNguoiDung = gh.Ten_Nguoi_Dung;
+            UCGHlblTenMH.Text = gh.Ten_Mat_Hang;
+            UCGHlblLoai.Text = gh.Loai_Mat_Hang;
+            UCGHlblSoluong.Text = gh.So_Luong;
+            UCGHlblNgay.Text = gh.Ngay_Dang_Ban;
+            UCGHUpDown.Value = Convert.ToDecimal(gh.So_Luong_Chon);
+            UCGHlblGiacu.Text = gh.Gia_Goc;
+            UCGHlblGiamoi.Text = gh.Gia_Ban;
+            path = gh.Hinh_Anh_1;
             UCGHImagePicBox.Image = Image.FromFile(path);
-            UCGHlblMa.Text = bd.Ma_San_Pham;
+            UCGHlblMa.Text = gh.Ma_San_Pham;
+            check = gh.MaKiemTra;
         }
 
         private void UCGioHang_Load(object sender, EventArgs e)
         {
             UCGHlblGiacu.Font = new Font(UCGHlblGiacu.Font, FontStyle.Strikeout);
             UCGHUpDown_ValueChanged(sender, e);
+            if(check == "T")
+            {
+                UCGHCheck.Checked = true;
+            }    
+            
             
         }
 
         private void UCGHbtnXoa_Click(object sender, EventArgs e)
         {
-            BanDo bd = new BanDo(ID, tenNguoiDung, UCGHlblTenMH.Text, UCGHlblLoai.Text, UCGHlblSoluong.Text, path, UCGHlblGiacu.Text, UCGHlblGiamoi.Text, UCGHUpDown.Value.ToString(), UCGHlblNgay.Text, UCGHlblMa.Text);
-            bdd.XoaGH(bd);
+            GioHang gh = new GioHang(ID, tenNguoiDung, UCGHlblTenMH.Text, UCGHlblLoai.Text, UCGHlblSoluong.Text, path, UCGHlblGiacu.Text, UCGHlblGiamoi.Text, UCGHUpDown.Value.ToString(), UCGHlblNgay.Text, UCGHlblMa.Text, check);
+            ghd.XoaGH(gh);
             this.Hide();
 
         }
@@ -73,6 +81,23 @@ namespace DoAnCuoiKi_TraoDoiDo
             }
         }
 
-       
+        private void UCGHCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if(UCGHCheck.Checked == true) 
+            {
+                if(check == "F")
+                {
+                    gh.MaKiemTra = "T";
+                    ghd.SuaGH(gh);
+                }    
+            }
+            else
+            {
+                if (check == "T") {
+                    gh.MaKiemTra = "F";
+                    ghd.SuaGH(gh);
+                }
+            }
+        }
     }
 }

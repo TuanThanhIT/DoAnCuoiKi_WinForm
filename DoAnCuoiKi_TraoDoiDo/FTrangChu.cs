@@ -104,7 +104,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnTrangChuSuKien_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, panelTrangChu);
+            fd.OpenChildForm(new FormSuKien(), ref FormDao.activeForm, panelTrangChu);
             lblChude.Text = "Sự kiện";
         }
 

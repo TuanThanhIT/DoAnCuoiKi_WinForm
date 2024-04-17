@@ -33,8 +33,8 @@
             this.UCHTlblGiaban = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UCHTlblNgay = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.UCHTpicImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.UCHTbtnChitiet = new Guna.UI2.WinForms.Guna2Button();
+            this.UCHTpicImage = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.UCHTpicImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,18 +93,6 @@
             this.UCHTlblNgay.TabIndex = 5;
             this.UCHTlblNgay.Text = "Ngày đăng bán";
             // 
-            // UCHTpicImage
-            // 
-            this.UCHTpicImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UCHTpicImage.ImageRotate = 0F;
-            this.UCHTpicImage.Location = new System.Drawing.Point(4, 4);
-            this.UCHTpicImage.Name = "UCHTpicImage";
-            this.UCHTpicImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.UCHTpicImage.Size = new System.Drawing.Size(226, 159);
-            this.UCHTpicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UCHTpicImage.TabIndex = 0;
-            this.UCHTpicImage.TabStop = false;
-            // 
             // UCHTbtnChitiet
             // 
             this.UCHTbtnChitiet.BorderRadius = 5;
@@ -123,18 +111,29 @@
             this.UCHTbtnChitiet.Text = "Chi tiết";
             this.UCHTbtnChitiet.Click += new System.EventHandler(this.UCHTbtnChitiet_Click);
             // 
+            // UCHTpicImage
+            // 
+            this.UCHTpicImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UCHTpicImage.ImageRotate = 0F;
+            this.UCHTpicImage.Location = new System.Drawing.Point(4, 3);
+            this.UCHTpicImage.Name = "UCHTpicImage";
+            this.UCHTpicImage.Size = new System.Drawing.Size(226, 161);
+            this.UCHTpicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UCHTpicImage.TabIndex = 7;
+            this.UCHTpicImage.TabStop = false;
+            // 
             // UCHienThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.UCHTpicImage);
             this.Controls.Add(this.UCHTbtnChitiet);
             this.Controls.Add(this.UCHTlblNgay);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.UCHTlblGiaban);
             this.Controls.Add(this.UCHTlblGiagoc);
             this.Controls.Add(this.UCHTlblTen);
-            this.Controls.Add(this.UCHTpicImage);
             this.Name = "UCHienThi";
             this.Size = new System.Drawing.Size(233, 330);
             this.Load += new System.EventHandler(this.UCHienThi_Load);
@@ -145,13 +144,12 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CirclePictureBox UCHTpicImage;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblTen;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblGiagoc;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblGiaban;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblNgay;
         private Guna.UI2.WinForms.Guna2Button UCHTbtnChitiet;
+        private Guna.UI2.WinForms.Guna2PictureBox UCHTpicImage;
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
@@ -45,7 +46,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                     {
                         if (reader.HasRows)
                         {
-                            List<BanDo> bss = new List<BanDo>();
+                            List<GioHang> ghs = new List<GioHang>();
                             while (reader.Read())
                             {
                                string id = reader["ID"].ToString();
@@ -61,12 +62,13 @@ namespace DoAnCuoiKi_TraoDoiDo
                                     string soluongchon = reader["Số_lượng_chọn"].ToString();
                                     string ngaydangban = reader["Ngày_đăng_bán"].ToString();
                                     string masanpham = reader["Mã_sản_phẩm"].ToString();
-                                    BanDo bd = new BanDo(id, tennguoidung, tenmathang, loaimathang, soluong, hinhanh, giacu, giamoi, soluongchon, ngaydangban, masanpham);
-                                    bss.Add(bd);
+                                    string makiemtra = reader["Mã_kiểm_tra"].ToString();
+                                    GioHang gh  = new GioHang(id, tennguoidung, tenmathang, loaimathang, soluong, hinhanh, giacu, giamoi, soluongchon, ngaydangban, masanpham, makiemtra);
+                                    ghs.Add(gh);
                                }
 
                             }
-                            foreach (BanDo j in bss)
+                            foreach (GioHang j in ghs)
                             {
                                 UCGioHang ucgh = new UCGioHang(j);
                                 ucgh.Margin = new Padding(0, 0, 0, 8);
@@ -83,6 +85,10 @@ namespace DoAnCuoiKi_TraoDoiDo
             }
         }
 
-        
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            FormDao fd = new FormDao();
+            fd.OpenChildForm(new FormThanhToan(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+        }
     }
 }

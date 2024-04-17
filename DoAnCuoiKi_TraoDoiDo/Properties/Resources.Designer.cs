@@ -473,6 +473,16 @@ namespace DoAnCuoiKi_TraoDoiDo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_address_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-address-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_back_arrow_60 {
             get {
                 object obj = ResourceManager.GetObject("icons8-back-arrow-60", resourceCulture);

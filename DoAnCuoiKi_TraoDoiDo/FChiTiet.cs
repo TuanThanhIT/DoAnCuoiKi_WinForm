@@ -19,6 +19,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDo bando;
         FormDao fd = new FormDao();
+        GioHangDao ghd = new GioHangDao();
 
         public FormChiTiet()
         {
@@ -122,18 +123,19 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnChitietThem_Click(object sender, EventArgs e)
         {
-            BanDo bb = new BanDo(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, bando.Ten_Mat_Hang, bando.Loai_Mat_Hang, bando.So_Luong, bando.Hinh_Anh_1, bando.Gia_Goc, bando.Gia_Ban,
-                NumUpDown.Value.ToString(), bando.Ngay_Dang_Ban, bando.Ma_San_Pham);
-            bdd.ThemGioHang(bb);
+            string check = "F"; 
+            GioHang gh = new GioHang(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check); ;
+            ghd.ThemGioHang(gh);
         }
 
         private void btnChiTietMuangay_Click(object sender, EventArgs e)
         {
-            BanDo bb = new BanDo(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, bando.Ten_Mat_Hang, bando.Loai_Mat_Hang, bando.So_Luong, bando.Hinh_Anh_1, bando.Gia_Goc, bando.Gia_Ban,
-                NumUpDown.Value.ToString(), bando.Ngay_Dang_Ban, bando.Ma_San_Pham);
-            bdd.ThemGioHang(bb);
+            string check = "T"; ;
+            GioHang gh = new GioHang(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check); ;
+            ghd.ThemGioHang(gh);
             this.Hide();
-            
             fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, FormTrangChu.panelTrangChu); 
             
         }

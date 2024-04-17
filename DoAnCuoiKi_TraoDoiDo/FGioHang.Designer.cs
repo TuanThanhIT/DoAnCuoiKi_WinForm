@@ -101,6 +101,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(164, 35);
             this.guna2Button2.TabIndex = 15;
             this.guna2Button2.Text = "Mua Hàng";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // FormGioHang
             // 

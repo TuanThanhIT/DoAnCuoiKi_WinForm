@@ -234,6 +234,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             XuLyAnh.images = new List<Image>();
             XuLyAnh.imagePaths = new List<string>();
             XuLyAnh.currentIndex = -1;
+            txtDbGiaGoc.Text = "";
         }
 
         private void btnBdLuu_Click(object sender, EventArgs e)

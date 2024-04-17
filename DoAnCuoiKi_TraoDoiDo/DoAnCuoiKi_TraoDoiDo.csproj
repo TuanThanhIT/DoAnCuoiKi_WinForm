@@ -221,6 +221,8 @@
     <Compile Include="FBanDo.Designer.cs">
       <DependentUpon>FBanDo.cs</DependentUpon>
     </Compile>
+    <Compile Include="GioHang.cs" />
+    <Compile Include="GioHangDao.cs" />
     <Compile Include="MuaHang.cs" />
     <Compile Include="MuaHangDao.cs" />
     <Compile Include="Program.cs" />
@@ -250,6 +252,12 @@
     </Compile>
     <Compile Include="UCSuKien.Designer.cs">
       <DependentUpon>UCSuKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThanhToan.Designer.cs">
+      <DependentUpon>UCThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="UCVoucher.cs">
       <SubType>UserControl</SubType>
@@ -359,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCSuKien.resx">
       <DependentUpon>UCSuKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCThanhToan.resx">
+      <DependentUpon>UCThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCVoucher.resx">
       <DependentUpon>UCVoucher.cs</DependentUpon>
@@ -658,6 +669,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-out-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-address-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

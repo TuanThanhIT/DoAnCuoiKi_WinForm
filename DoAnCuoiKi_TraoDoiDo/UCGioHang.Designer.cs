@@ -140,11 +140,12 @@
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(230, 126);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(75, 21);
             this.guna2HtmlLabel1.TabIndex = 14;
             this.guna2HtmlLabel1.Text = "Số lượng";
             // 
@@ -188,6 +189,7 @@
             this.UCGHCheck.Size = new System.Drawing.Size(18, 17);
             this.UCGHCheck.TabIndex = 18;
             this.UCGHCheck.UseVisualStyleBackColor = true;
+            this.UCGHCheck.CheckedChanged += new System.EventHandler(this.UCGHCheck_CheckedChanged);
             // 
             // UCGHlblMa
             // 
@@ -242,7 +244,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblSoluong;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblNgay;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblTenMH;
-        private System.Windows.Forms.CheckBox UCGHCheck;
+        public System.Windows.Forms.CheckBox UCGHCheck;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblMa;
     }
 }
