@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormSuKien : Form
     {
-        SuKienDao sdk = new SuKienDao();
+        SuKienBUS skb = new SuKienBUS();
         public FormSuKien()
         {
             InitializeComponent();
@@ -21,33 +22,65 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void FormSuKien_Load(object sender, EventArgs e)
         {
-            DataTable a = sdk.Load();
+            DataTable a = skb.Load();
             gvSKsukien.DataSource = a;
         }
 
-        private void btnSKThem_Click(object sender, EventArgs e)
+
+
+
+        private void btnSkThem_Click(object sender, EventArgs e)
         {
             SuKien sk = new SuKien(txtSKTen.Text, txtSKGiamgia.Text, dateTimeSKbatdau.Value.ToString(), dateTimeSKKetthuc.Value.ToString());
-            sdk.themSuKien(sk);
-            FormSuKien_Load(sender, e);
+            if (skb.ThemSuKien(sk) == true)
+            {
+                MessageBox.Show("Tạo sự kiện thành công");
+                FormSuKien_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Tạo sự kiện thất bại");
+                MessageBox.Show("Tạo sự kiện thất bại");
+            }
         }
 
-        private void btnSKXoa_Click(object sender, EventArgs e)
+        private void btnSkXoa_Click(object sender, EventArgs e)
+        {
+            SuKien sk = new SuKien(txtSKTen.Text);
+            if (skb.XoaSuKien(sk))
+            {
+                MessageBox.Show("Gỡ sự kiện thành công");
+                FormSuKien_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Xóa sự kiện thất bại");
+            }
+        }
+
+        private void btnSkSua_Click(object sender, EventArgs e)
         {
             SuKien sk = new SuKien(txtSKTen.Text, txtSKGiamgia.Text, dateTimeSKbatdau.Value.ToString(), dateTimeSKKetthuc.Value.ToString());
-            sdk.xoaSuKien(sk);
-            FormSuKien_Load(sender, e);
+            if (skb.SuaSuKien(sk))
+            {
+                MessageBox.Show("Sửa sự kiện thành công");
+                FormSuKien_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Sửa sự kiện thất bại");
+            }
         }
+
 
         private void gvSKsukien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = gvSKsukien.Rows[e.RowIndex];
-                txtSKTen.Text = row.Cells["Tên_sự_kiện"].Value.ToString();
-                txtSKGiamgia.Text = row.Cells["Giảm_giá"].Value.ToString();
-                string ngayBatDauStr = row.Cells["Bắt_đầu"].Value.ToString();
+                txtSKTen.Text = row.Cells["Sự kiện"].Value.ToString();
+                txtSKGiamgia.Text = row.Cells["Giảm giá (%)"].Value.ToString();
+                string ngayBatDauStr = row.Cells["Bắt đầu"].Value.ToString();
                 DateTime ngayBatDau;
                 if (DateTime.TryParse(ngayBatDauStr, out ngayBatDau))
                 {
@@ -57,7 +90,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                 {
                     dateTimeSKbatdau.Value = DateTime.Now;
                 }
-                string ngayKetThucStr = row.Cells["Kết_thúc"].Value.ToString();
+                string ngayKetThucStr = row.Cells["Kết thúc"].Value.ToString();
                 DateTime ngayKetThuc;
                 if (DateTime.TryParse(ngayKetThucStr, out ngayKetThuc))
                 {
@@ -69,13 +102,5 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
             }
         }
-
-        private void btnSKSua_Click(object sender, EventArgs e)
-        {
-            SuKien sk = new SuKien(txtSKTen.Text, txtSKGiamgia.Text, dateTimeSKbatdau.Value.ToString(), dateTimeSKKetthuc.Value.ToString());
-            sdk.suaSuKien(sk);
-            FormSuKien_Load(sender, e);
-        }
-
     }
 }

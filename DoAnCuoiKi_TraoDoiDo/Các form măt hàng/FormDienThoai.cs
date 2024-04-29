@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormDienThoai : Form
     {
-        XuLyHienThi xlht = new XuLyHienThi();
+        BanDoBUS bdb = new BanDoBUS();
         public FormDienThoai()
         {
             InitializeComponent();
@@ -20,7 +21,13 @@ namespace DoAnCuoiKi_TraoDoiDo
         string loaimathang = "Dien thoai";
         private void FormDienThoai_Load(object sender, EventArgs e)
         {
-            xlht.LoadDanhSach(loaimathang, flowLPDienthoai);
+            bdb.LoadDanhSach(loaimathang, flowLPDienthoai);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+

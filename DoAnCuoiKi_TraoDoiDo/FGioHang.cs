@@ -10,85 +10,54 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using DoAnCuoiKi_TraoDoiDo.BUS;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormGioHang : Form
     {
+        GioHangBUS ghs = new GioHangBUS();
+        FormDAO fd = new FormDAO();
         public FormGioHang()
         {
             InitializeComponent();
         }
-        private void btnGHQuayLai_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void FormGioHang_Load(object sender, EventArgs e)
         {
-            LoadDanhSach();
+            ghs.LoadDanhSach(flowLPGioHang);
         }
 
-        XuLyHienThi xlht = new XuLyHienThi();
-        public void LoadDanhSach()
+
+
+        private void btnGHQuayLai_Click_1(object sender, EventArgs e)
         {
-            string query2 = "";
-            query2 = string.Format("SELECT *" +
-            "FROM [GiỏHàng]");
-
-            using (SqlConnection connection = xlht.GetSqlConnection())
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand(query2, connection))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.HasRows)
-                        {
-                            List<GioHang> ghs = new List<GioHang>();
-                            while (reader.Read())
-                            {
-                               string id = reader["ID"].ToString();
-                               string tennguoidung = reader["Tên_người_dùng"].ToString();   
-                               if(tennguoidung == XuLyHienThi.Ten_Nguoi_Dung && id == XuLyHienThi.ID)
-                               {
-                                    string tenmathang = reader["Tên_mặt_hàng"].ToString();
-                                    string loaimathang = reader["Loại_mặt_hàng"].ToString();
-                                    string soluong = reader["Số_lượng"].ToString();
-                                    string hinhanh = reader["Hình_ảnh"].ToString();
-                                    string giacu = reader["Giá_cũ"].ToString();
-                                    string giamoi = reader["Giá_mới"].ToString();
-                                    string soluongchon = reader["Số_lượng_chọn"].ToString();
-                                    string ngaydangban = reader["Ngày_đăng_bán"].ToString();
-                                    string masanpham = reader["Mã_sản_phẩm"].ToString();
-                                    string makiemtra = reader["Mã_kiểm_tra"].ToString();
-                                    GioHang gh  = new GioHang(id, tennguoidung, tenmathang, loaimathang, soluong, hinhanh, giacu, giamoi, soluongchon, ngaydangban, masanpham, makiemtra);
-                                    ghs.Add(gh);
-                               }
-
-                            }
-                            foreach (GioHang j in ghs)
-                            {
-                                UCGioHang ucgh = new UCGioHang(j);
-                                ucgh.Margin = new Padding(0, 0, 0, 8);
-                                flowLPGioHang.Controls.Add(ucgh);
-                            }
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("Không có sản phẩm nào trong giỏ hàng của bạn");
-                        }
-                    }
-                }
+                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Mặt Hàng";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnGioHangMua_Click_1(object sender, EventArgs e)
         {
-            FormDao fd = new FormDao();
-            fd.OpenChildForm(new FormThanhToan(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
+            {
+                fd.OpenChildForm(new FormThanhToan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Thanh Toán";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormThanhToan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Thanh Toán";
+            }
         }
     }
 }
+

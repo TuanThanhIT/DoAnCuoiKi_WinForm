@@ -121,7 +121,7 @@
             this.btnDNDangnhap.TabIndex = 7;
             this.btnDNDangnhap.Text = "Đăng nhập";
             this.btnDNDangnhap.UseVisualStyleBackColor = false;
-            this.btnDNDangnhap.Click += new System.EventHandler(this.btnDNDangnhap_Click);
+            this.btnDNDangnhap.Click += new System.EventHandler(this.btnDNDangnhap_Click_1);
             // 
             // btnDNQuenMK
             // 
@@ -146,18 +146,19 @@
             this.btnDNDangKi.TabIndex = 9;
             this.btnDNDangKi.Text = "Đăng kí";
             this.btnDNDangKi.UseVisualStyleBackColor = false;
-            this.btnDNDangKi.Click += new System.EventHandler(this.btnDNDangKi_Click);
+            this.btnDNDangKi.Click += new System.EventHandler(this.btnDNDangKi_Click_1);
             // 
             // radQuantrivien
             // 
             this.radQuantrivien.AutoSize = true;
+            this.radQuantrivien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radQuantrivien.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radQuantrivien.Location = new System.Drawing.Point(144, 504);
             this.radQuantrivien.Name = "radQuantrivien";
-            this.radQuantrivien.Size = new System.Drawing.Size(100, 19);
+            this.radQuantrivien.Size = new System.Drawing.Size(99, 19);
             this.radQuantrivien.TabIndex = 10;
             this.radQuantrivien.TabStop = true;
-            this.radQuantrivien.Text = "Quản trị viên";
+            this.radQuantrivien.Text = "Quan tri vien";
             this.radQuantrivien.UseVisualStyleBackColor = true;
             // 
             // radThanhvien
@@ -169,7 +170,7 @@
             this.radThanhvien.Size = new System.Drawing.Size(88, 19);
             this.radThanhvien.TabIndex = 11;
             this.radThanhvien.TabStop = true;
-            this.radThanhvien.Text = "Thành viên";
+            this.radThanhvien.Text = "Thanh vien";
             this.radThanhvien.UseVisualStyleBackColor = true;
             // 
             // FormDangNhap

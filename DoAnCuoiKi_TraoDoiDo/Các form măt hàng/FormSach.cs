@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormSach : Form
     {
-        XuLyHienThi xlht = new XuLyHienThi();
+        BanDoBUS bdb = new BanDoBUS();
         public FormSach()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         string loaimathang = "Sach";
         private void FormSach_Load(object sender, EventArgs e)
         {
-            xlht.LoadDanhSach(loaimathang, flowLPSach);
+            bdb.LoadDanhSach(loaimathang, flowLPSach);
         }
     }
 }

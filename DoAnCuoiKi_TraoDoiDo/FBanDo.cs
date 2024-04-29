@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,218 +9,105 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
-
-
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormBanDo : Form
     {
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
-        BanDoDao bd = new BanDoDao();
-        FormDao fd = new FormDao();
+        FormDAO fd = new FormDAO();
+        BanDoBUS bds = new BanDoBUS();
+        public FormBanDo(FormDangBan f)
+        {
+            InitializeComponent();
+            List<string> imagePaths = new List<string>();
+            if (BanDoBUS.checkButton == false)
+            {
+                txtBdTenMH.Text = f.lblTen.Text;
+                comboBdLoaiMH.Text = f.lblLoai.Text;
+                txtBdGiaban.Text = f.lblGiaban.Text;
+                txtBdMota.Text = f.lblMota.Text;
+                imagePaths.Add(f.lblAnh1.Text);
+                imagePaths.Add(f.lblAnh2.Text);
+                imagePaths.Add(f.lblAnh3.Text);
+                imagePaths.Add(f.lblAnh4.Text);
+                txtBdMa.Text = f.lblMaVoucher.Text;
+                txtBdGiamgia.Text = f.lblGiamgia.Text;
+                txtBdSlVou.Text = f.lblSlVou.Text;
+                txtBdSoluong.Text = f.lblSoluong.Text;
+                txtBdDiadiem.Text = f.lblDiadiem.Text;
+                bds.ptGiaoHang2(rdBChuyenPhatNhanh, rdBNguoibangiao, rdBGiaohangtructiep, f.lblPtGiaohang.Text);
+                cbBoxTinhtrang.Text = f.lblTinhtrang.Text;
+                txtBDMaSP.Text = f.lblMaSP.Text;
+                bds.ngayDangBan(dateTimeNgayban, f.lblNgay.Text);
+                txtDbGiaGoc.Text = f.lblGiagoc.Text;
+                bds.LoadImage2(picImage, txtImagePath, imagePaths);
+            }
+
+
+        }
+
         public FormBanDo()
         {
             InitializeComponent();
-            XuLyAnh.images = new List<Image>();
-            XuLyAnh.imagePaths = new List<string>();
-            XuLyAnh.currentIndex = -1;
-
         }
 
-
-        string deliveryMethod = string.Empty;
-        public string ptGiaoHang()
+        private void btnBdHoantat_Click_1(object sender, EventArgs e)
         {
-            if (rdBChuyenPhatNhanh.Checked)
+            string phuongthucGiaoHang = bds.ptGiaoHang(rdBChuyenPhatNhanh, rdBGiaohangtructiep, rdBNguoibangiao);
+            string maSanPham = bds.RandomMaSanPham();
+            BanDo banDo = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, bds.ImagePaths[0], bds.ImagePaths[1],
+                 bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, maSanPham, dateTimeNgayban.Value.ToString(), DangKiDAO.ID, txtDbGiaGoc.Text);
+            if (bds.ThemMatHang(banDo))
             {
-                deliveryMethod = "Chuyen phat nhanh";
-            }
-            else if (rdBGiaohangtructiep.Checked)
-            {
-                deliveryMethod = "Giao hang truc tiep";
-            }
-            else if (rdBNguoibangiao.Checked)
-            {
-                deliveryMethod = "Nguoi ban tu giao";
-            }
-            return deliveryMethod;
-        }
-        public string chuyendoiAnh1()
-        {
-            string imagePath1 = XuLyAnh.imagePaths.Count > 0 ? XuLyAnh.imagePaths[0] : string.Empty;
-            return imagePath1;
-        }
-        public string chuyendoiAnh2()
-        {
-            string imagePath2 = XuLyAnh.imagePaths.Count > 1 ? XuLyAnh.imagePaths[1] : string.Empty;
-            return imagePath2;
-        }
-        public string chuyendoiAnh3()
-        {
-            string imagePath3 = XuLyAnh.imagePaths.Count > 2 ? XuLyAnh.imagePaths[2] : string.Empty;
-            return imagePath3;
-        }
-        public string chuyendoiAnh4()
-        {
-            string imagePath4 = XuLyAnh.imagePaths.Count > 3 ? XuLyAnh.imagePaths[3] : string.Empty;
-            return imagePath4;
-        }
-        public string RandomMaSanPham()
-        {
-            const int doDaiMaSanPham = 5;
-            const string kyTuDung = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-            // Tạo một HashSet để lưu trữ các mã sản phẩm đã được sử dụng
-            HashSet<string> maSanPhamDaSuDung = new HashSet<string>();
-
-            // Tạo một đối tượng Random
-            Random random = new Random();
-
-            // Tạo lặp cho đến khi tạo được mã sản phẩm mới
-            while (true)
-            {
-                // Tạo một StringBuilder để xây dựng mã sản phẩm
-                var stringBuilder = new System.Text.StringBuilder();
-
-                // Tạo mã sản phẩm mới
-                for (int i = 0; i < doDaiMaSanPham; i++)
+                DialogResult result = MessageBox.Show("Bạn đã đăng bán thành công. Bạn có muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
                 {
-                    char kyTuNgauNhien = kyTuDung[random.Next(kyTuDung.Length)];
-                    stringBuilder.Append(kyTuNgauNhien);
+                    if (DangKiDAO.Chuc_vu == "Quan tri vien")
+                    {
+                        fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                        FormTrangChu.lblChude.Text = "Đang Bán";
+                    }
+                    else
+                    {
+                        fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                        FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
+                    }
                 }
-
-                string maSanPhamMoi = stringBuilder.ToString();
-
-                // Kiểm tra xem mã sản phẩm đã được sử dụng chưa
-                if (!maSanPhamDaSuDung.Contains(maSanPhamMoi))
-                {
-                    maSanPhamDaSuDung.Add(maSanPhamMoi);
-                    return maSanPhamMoi;
-                }
-            }
-        }
-        private void btnLoadImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Multiselect = true;
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                foreach (string fileName in openFileDialog.FileNames)
-                {
-                    Image image = Image.FromFile(fileName);
-                    XuLyAnh.images.Add(image);
-                    XuLyAnh.imagePaths.Add(fileName);
-                }
-
-                if (XuLyAnh.images.Count > 0)
-                {
-                    XuLyAnh.currentIndex = 0;
-                    picImage.SizeMode = PictureBoxSizeMode.Zoom;
-                    picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-                    txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-                }
-            }
-        }
-        private void btnBdApdung_Click(object sender, EventArgs e)
-        {
-            txtBdMa.Enabled = true;
-            txtBdGiamgia.Enabled = true;
-            txtBdSlVou.Enabled = true;
-        }
-
-
-
-        private void FormBanDo_Load(object sender, EventArgs e)
-        {
-            if (XuLyAnh.images.Count > 0)
-            {
-                XuLyAnh.currentIndex = 0;
-                picImage.SizeMode = PictureBoxSizeMode.Zoom;
-                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-            }
-        }
-
-        private void picImage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDbXoa_Click_1(object sender, EventArgs e)
-        {
-            if (XuLyAnh.currentIndex >= 0 && XuLyAnh.currentIndex < XuLyAnh.images.Count)
-            {
-                XuLyAnh.images.RemoveAt(XuLyAnh.currentIndex);
-                XuLyAnh.imagePaths.RemoveAt(XuLyAnh.currentIndex);
-
-                if (XuLyAnh.images.Count > 0)
-                {
-                    XuLyAnh.currentIndex = Math.Min(XuLyAnh.currentIndex, XuLyAnh.images.Count - 1);
-                    picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-                    txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-                }
-                else
-                {
-                    XuLyAnh.currentIndex = -1;
-                    picImage.Image = null;
-                    txtImagePath.Text = string.Empty;
-                }
-            }
-        }
-
-        private void btnDbTruoc_Click_1(object sender, EventArgs e)
-        {
-            if (XuLyAnh.images.Count > 0)
-            {
-                XuLyAnh.currentIndex = (XuLyAnh.currentIndex - 1 + XuLyAnh.images.Count) % XuLyAnh.images.Count;
-                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-            }
-        }
-
-        private void btnDbSau_Click_1(object sender, EventArgs e)
-        {
-
-            if (XuLyAnh.images.Count > 0)
-            {
-                XuLyAnh.currentIndex = (XuLyAnh.currentIndex + 1) % XuLyAnh.images.Count;
-                picImage.Image = XuLyAnh.images[XuLyAnh.currentIndex];
-                txtImagePath.Text = XuLyAnh.imagePaths[XuLyAnh.currentIndex];
-            }
-        }
-
-        private void btnBdHoantat_Click(object sender, EventArgs e)
-        {
-            BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham(), XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, txtDbGiaGoc.Text);
-            bd.Them(bando);
-            DialogResult result = MessageBox.Show("Bạn có tiếp tục muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.No)
-            {
-                fd.OpenChildForm(new FormDangBan(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
-                FormTrangChu.lblChude.Text = "Đăng bán";
             }
             else
             {
-                XuLyAnh.images = new List<Image>();
-                XuLyAnh.imagePaths = new List<string>();
-                XuLyAnh.currentIndex = -1;
+                MessageBox.Show("Mặt hàng của bạn đăng bán thất bại");
             }
         }
 
-        private void btnBdLammoi_Click(object sender, EventArgs e)
+        private void btnBdDangBan_Click_1(object sender, EventArgs e)
+        {
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
+            {
+                fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Đang Bán";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
+            }
+        }
+
+        private void btnBdLammoi_Click_1(object sender, EventArgs e)
         {
             txtBdTenMH.Text = "";
             comboBdLoaiMH.Text = null;
             txtBdGiaban.Text = "";
             txtBdMota.Text = "";
-            txtBdMa.Text = "";
-            txtBdGiamgia.Text = "";
-            txtBdSlVou.Text = "";
+            txtBdMa.Text = "Khong co";
+            txtBdGiamgia.Text = "Khong co";
+            txtBdSlVou.Text = "Khong co";
+            txtBdMa.Enabled = false;
+            txtBdGiamgia.Enabled = false;
+            txtBdSlVou.Enabled = false;
             txtBdSoluong.Text = "";
             cbBoxTinhtrang.Text = null;
             txtImagePath.Text = "";
@@ -231,20 +119,71 @@ namespace DoAnCuoiKi_TraoDoiDo
                 rdBChuyenPhatNhanh.Checked = false;
             else
                 rdBGiaohangtructiep.Checked = false;
-            XuLyAnh.images = new List<Image>();
-            XuLyAnh.imagePaths = new List<string>();
-            XuLyAnh.currentIndex = -1;
+            bds.Images = new List<Image>();
+            bds.ImagePaths = new List<string>();
+            bds.CurrentIndex = -1;
             txtDbGiaGoc.Text = "";
         }
 
-        private void btnBdLuu_Click(object sender, EventArgs e)
+        private void btnBdLuu_Click_1(object sender, EventArgs e)
         {
-            BanDo bando = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, dateTimeNgayban.Value.ToString(), chuyendoiAnh1(), chuyendoiAnh2(), chuyendoiAnh3(), chuyendoiAnh4(),
-                txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, ptGiaoHang(), cbBoxTinhtrang.Text, RandomMaSanPham(), XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, txtDbGiaGoc.Text);
-            bd.Sua(bando);
+            string phuongthucGiaoHang = bds.ptGiaoHang(rdBChuyenPhatNhanh, rdBGiaohangtructiep, rdBNguoibangiao);
+            string maSanPham = bds.RandomMaSanPham();
+            BanDo banDo = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, bds.ImagePaths[0], bds.ImagePaths[1],
+                 bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, maSanPham, dateTimeNgayban.Value.ToString(), DangKiDAO.ID, txtDbGiaGoc.Text);
+             if (bds.SuaMatHang(banDo) == true)
+             {
+                 MessageBox.Show("Bạn đã sửa thông tin mặt hàng thành công");
+                if (DangKiDAO.Chuc_vu == "Quan tri vien")
+                {
+                    fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                    FormTrangChu.lblChude.Text = "Đang Bán";
+                }
+                else
+                {
+                    fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                    FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
+                }
+            }
+             else
+             {
+                 MessageBox.Show("Lỗi. Không sửa được");
+             }
         }
 
-       
+        private void btnBdApdung_Click_1(object sender, EventArgs e)
+        {
+            txtBdMa.Enabled = true;
+            txtBdGiamgia.Enabled = true;
+            txtBdSlVou.Enabled = true;
+            txtBdMa.Text = "";
+            txtBdSlVou.Text = "";
+            txtBdGiamgia.Text = "";
+        }
 
+        private void btnDbTruoc_Click_1(object sender, EventArgs e)
+        {
+            bds.ImageBefore(picImage, txtImagePath);
+        }
+
+        private void btnDbSau_Click_1(object sender, EventArgs e)
+        {
+            bds.ImageAfter(picImage, txtImagePath);
+        }
+
+        private void btnLoadImage_Click_1(object sender, EventArgs e)
+        {
+            bds.LoadImage(picImage, txtImagePath);
+        }
+
+        private void btnDbXoa_Click_1(object sender, EventArgs e)
+        {
+            bds.DeleteImage(picImage, txtImagePath);
+        }
+
+        private void FormBanDo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

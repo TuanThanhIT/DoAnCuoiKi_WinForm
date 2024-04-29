@@ -9,26 +9,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using DoAnCuoiKi_TraoDoiDo.BUS;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormChiTiet : Form
     {
-  
-        BanDoDao bdd = new BanDoDao();
-        SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         BanDo bando;
-        FormDao fd = new FormDao();
-        GioHangDao ghd = new GioHangDao();
-
-        public FormChiTiet()
-        {
-            InitializeComponent();
-        }
+        FormDAO fd = new FormDAO();
+        GioHangBUS ghb = new GioHangBUS();
+         DanhGiaBUS dgb = new DanhGiaBUS();
         string hinh1;
         string hinh2;
         string hinh3;
         string hinh4;
+        string maVoucher;
+        string giamGia;
+        public FormChiTiet()
+        {
+            InitializeComponent();
+        }
+
         public FormChiTiet(BanDo bando)
         {
             this.bando = bando;
@@ -99,45 +100,92 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblChitietGiacu.Text = bando.Gia_Goc;
             lblChiTietGiamgia.Text = bando.Giam_Gia;
             txtChitietNgay.Text = bando.Ngay_Dang_Ban;
+            maVoucher = bando.Ma_Voucher;
+            giamGia = bando.Giam_Gia;
         }
 
-        private void btnChitietMua_Click(object sender, EventArgs e)
-        {
-            FormThanhToan f = new FormThanhToan(bando);
-            f.Show();
-            this.Hide();
-            
-        }
 
         private void FormChiTiet_Load(object sender, EventArgs e)
         {
             lblChitietGiacu.Font = new Font(lblChitietGiacu.Font, FontStyle.Strikeout);
             lblChitietRateStar.Font = new Font(lblChitietRateStar.Font, FontStyle.Underline);
+            dgb.LoadDanhGia(flowLPDanhGia, bando.Ma_San_Pham);
         }
 
 
-        private void btnChiTietThoat_Click(object sender, EventArgs e)
-        {
-            fd.OpenChildForm(new FormMatHang(), ref FormDao.activeForm, FormTrangChu.panelTrangChu);
-        }
 
-        private void btnChitietThem_Click(object sender, EventArgs e)
-        {
-            string check = "F"; 
-            GioHang gh = new GioHang(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
-                NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check); ;
-            ghd.ThemGioHang(gh);
-        }
 
-        private void btnChiTietMuangay_Click(object sender, EventArgs e)
+        private void btnChitietThem_Click_1(object sender, EventArgs e)
         {
-            string check = "T"; ;
-            GioHang gh = new GioHang(XuLyHienThi.ID, XuLyHienThi.Ten_Nguoi_Dung, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
-                NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check); ;
-            ghd.ThemGioHang(gh);
-            this.Hide();
-            fd.OpenChildForm(new FormGioHang(), ref FormDao.activeForm, FormTrangChu.panelTrangChu); 
+            if(NumUpDown.Value <= Convert.ToInt32(lblChotietSoluong.Text))
+            {
+                string check = "F";
+                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                     NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check, maVoucher, giamGia);
+                if (ghb.ThemGioHang(gh) == true)
+                {
+                    MessageBox.Show("Thêm vào giỏ hàng của bạn thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm vào giỏ hàng của bạn thất bại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Số lượng chọn của bạn vượt quá số lượng sản phẩm. Vui lòng chọn lại");
+            }
             
+        }
+
+        private void btnChiTietMuangay_Click_1(object sender, EventArgs e)
+        {
+            if (NumUpDown.Value <= Convert.ToInt32(lblChotietSoluong.Text))
+            {
+                string check = "T"; ;
+                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                    NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check, maVoucher, giamGia);
+                if (ghb.ThemGioHang(gh))
+                {
+                    if (DangKiDAO.Chuc_vu == "Quan tri vien")
+                    {
+                        fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                        FormTrangChu.lblChude.Text = "Giỏ Hàng";
+                    }
+                    else
+                    {
+                        fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                        FormTrangChuThanhVien.lblTVChude.Text = "Giỏ Hàng";
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Số lượng chọn của bạn vượt quá số lượng sản phẩm. Vui lòng chọn lại");
+            }
+            
+        }
+
+        private void btnChiTietDanhgia_Click(object sender, EventArgs e)
+        {
+            FormDanhGia f = new FormDanhGia(bando);
+            f.Show();
+        }
+
+
+        private void btnChiTietThoat_Click_1(object sender, EventArgs e)
+        {
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
+            {
+                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Mặt Hàng";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
+            }
+
         }
     }
 }

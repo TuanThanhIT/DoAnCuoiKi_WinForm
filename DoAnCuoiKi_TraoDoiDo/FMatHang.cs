@@ -38,62 +38,64 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             OpenChildForm(new FormTatCaMatHang());
         }
-        private void btnMhTatca_Click_1(object sender, EventArgs e)
+
+
+        private void btnTatCa_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormTatCaMatHang());
         }
 
-        private void btnMhDienthoai_Click_1(object sender, EventArgs e)
+        private void btnDienThoai_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormDienThoai());
         }
 
-        private void btnMhNoithat_Click_1(object sender, EventArgs e)
+        private void btnNoiThat_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormNoiThat());
         }
 
-        private void btnMhThoitrang_Click_1(object sender, EventArgs e)
+        private void btnThoiTrang_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormThoiTrang());
         }
 
-        private void btnMhDodientu_Click_1(object sender, EventArgs e)
+        private void btnDoDienTu_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormDoDienTu());
         }
 
-        private void btnMhDogiadung_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormDoGiaDung());
-        }
-
-        private void btnMhSach_Click_1(object sender, EventArgs e)
+        private void btnSach_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormSach());
         }
 
-        private void btnMhGiay_Click_1(object sender, EventArgs e)
+        private void btnDogiadung_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormDoGiaDung());
+        }
+
+        private void btnGiay_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormGiay());
         }
 
-        private void btnMhThietbiIT_Click_1(object sender, EventArgs e)
+        private void btnIT_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormThietBiIT());
         }
 
-        private void btnMhXeco_Click_1(object sender, EventArgs e)
+        private void btnXeco_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormXeCo());
         }
 
-        private void btnMhDoembe_Click_1(object sender, EventArgs e)
+        private void btnDoembe_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormDoEmBe());
         }
 
-        private void btnMhKhac_Click_1(object sender, EventArgs e)
+        private void btnKhac_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormKhac());
         }

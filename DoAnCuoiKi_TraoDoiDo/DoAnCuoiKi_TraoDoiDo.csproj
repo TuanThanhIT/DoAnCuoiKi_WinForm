@@ -74,28 +74,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BanDo.cs" />
-    <Compile Include="BanDoDao.cs" />
-    <Compile Include="DangKi.cs" />
-    <Compile Include="DangKiDao.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="FChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FChiTiet.Designer.cs">
-      <DependentUpon>FChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Các form măt hàng\FormDienThoai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Các form măt hàng\FormDienThoai.Designer.cs">
-      <DependentUpon>FormDienThoai.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BUS\BanDoBUS.cs" />
+    <Compile Include="BUS\BUS.cs" />
+    <Compile Include="BUS\DangKiBUS.cs" />
+    <Compile Include="BUS\DanhGiaBUS.cs" />
+    <Compile Include="BUS\GioHangBUS.cs" />
+    <Compile Include="BUS\MuaHangBUS.cs" />
+    <Compile Include="BUS\SuKienBUS.cs" />
+    <Compile Include="BUS\ThanhToanBUS.cs" />
     <Compile Include="Các form măt hàng\FormDoDienTu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Các form măt hàng\FormDoDienTu.Designer.cs">
       <DependentUpon>FormDoDienTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DanhGiaDAO.cs" />
+    <Compile Include="DAO\DBConnection.cs" />
+    <Compile Include="DAO\ThanhToanDAO.cs" />
+    <Compile Include="DTO\BanDo.cs" />
+    <Compile Include="DAO\BanDoDAO.cs" />
+    <Compile Include="DTO\DangKi.cs" />
+    <Compile Include="DAO\DangKiDAO.cs" />
+    <Compile Include="DTO\DanhGia.cs" />
+    <Compile Include="DTO\ThanhToan.cs" />
+    <Compile Include="Các form măt hàng\FormDienThoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Các form măt hàng\FormDienThoai.Designer.cs">
+      <DependentUpon>FormDienThoai.cs</DependentUpon>
     </Compile>
     <Compile Include="Các form măt hàng\FormDoEmBe.cs">
       <SubType>Form</SubType>
@@ -114,30 +120,6 @@
     </Compile>
     <Compile Include="Các form măt hàng\FormGiay.Designer.cs">
       <DependentUpon>FormGiay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FDangKi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FDangKi.Designer.cs">
-      <DependentUpon>FDangKi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FDangNhap.Designer.cs">
-      <DependentUpon>FDangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FMain.Designer.cs">
-      <DependentUpon>FMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FGioHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FGioHang.Designer.cs">
-      <DependentUpon>FGioHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Các form măt hàng\FormKhac.cs">
       <SubType>Form</SubType>
@@ -163,19 +145,7 @@
     <Compile Include="Các form măt hàng\FormTatCaMatHang.Designer.cs">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDao.cs" />
-    <Compile Include="FSuKien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FSuKien.Designer.cs">
-      <DependentUpon>FSuKien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FThanhToan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FThanhToan.Designer.cs">
-      <DependentUpon>FThanhToan.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DAO\FormDAO.cs" />
     <Compile Include="Các form măt hàng\FormThietBiIT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,8 +164,21 @@
     <Compile Include="Các form măt hàng\FormXeCo.Designer.cs">
       <DependentUpon>FormXeCo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FLSBanHang.cs">
+    <Compile Include="DTO\GioHang.cs" />
+    <Compile Include="DAO\GioHangDAO.cs" />
+    <Compile Include="DTO\MuaHang.cs" />
+    <Compile Include="DAO\MuaHangDAO.cs" />
+    <Compile Include="FBanDo.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBanDo.Designer.cs">
+      <DependentUpon>FBanDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChiTiet.Designer.cs">
+      <DependentUpon>FChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="FDangBan.cs">
       <SubType>Form</SubType>
@@ -203,11 +186,47 @@
     <Compile Include="FDangBan.Designer.cs">
       <DependentUpon>FDangBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangKi.Designer.cs">
+      <DependentUpon>FDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangNhap.Designer.cs">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDanhGia2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDanhGia2.Designer.cs">
+      <DependentUpon>FDanhGia2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGioHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGioHang.Designer.cs">
+      <DependentUpon>FGioHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLSBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLSBanHang.Designer.cs">
+      <DependentUpon>FLSBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLSMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FLSMuaHang.Designer.cs">
       <DependentUpon>FLSMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FMatHang.cs">
       <SubType>Form</SubType>
@@ -215,18 +234,24 @@
     <Compile Include="FMatHang.Designer.cs">
       <DependentUpon>FMatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FBanDo.cs">
+    <Compile Include="FTrangChuThanhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FBanDo.Designer.cs">
-      <DependentUpon>FBanDo.cs</DependentUpon>
+    <Compile Include="FTrangChuThanhVien.Designer.cs">
+      <DependentUpon>FTrangChuThanhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GioHang.cs" />
-    <Compile Include="GioHangDao.cs" />
-    <Compile Include="MuaHang.cs" />
-    <Compile Include="MuaHangDao.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FSuKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuKien.Designer.cs">
+      <DependentUpon>FSuKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThanhToan.Designer.cs">
+      <DependentUpon>FThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,44 +264,46 @@
     <Compile Include="FTrangChu.Designer.cs">
       <DependentUpon>FTrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuKien.cs" />
-    <Compile Include="SuKienDao.cs" />
-    <Compile Include="UCHienThi.cs">
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DTO\SuKien.cs" />
+    <Compile Include="DAO\SuKienDAO.cs" />
+    <Compile Include="UserControl\UCSuKien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCHienThi.Designer.cs">
-      <DependentUpon>UCHienThi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCSuKien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCSuKien.Designer.cs">
+    <Compile Include="UserControl\UCSuKien.Designer.cs">
       <DependentUpon>UCSuKien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCThanhToan.cs">
+    <Compile Include="UserControl\UCVoucher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCThanhToan.Designer.cs">
-      <DependentUpon>UCThanhToan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UCVoucher.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCVoucher.Designer.cs">
+    <Compile Include="UserControl\UCVoucher.Designer.cs">
       <DependentUpon>UCVoucher.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCGioHang.cs">
+    <Compile Include="UserControl\UCDanhGia.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCGioHang.Designer.cs">
+    <Compile Include="UserControl\UCDanhGia.Designer.cs">
+      <DependentUpon>UCDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCHienThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCHienThi.Designer.cs">
+      <DependentUpon>UCHienThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCThanhToan.Designer.cs">
+      <DependentUpon>UCThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCGioHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCGioHang.Designer.cs">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="XuLyAnh.cs" />
-    <Compile Include="XuLyHienThi.cs" />
-    <Compile Include="XuLySuKien.cs" />
-    <EmbeddedResource Include="FChiTiet.resx">
-      <DependentUpon>FChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Các form măt hàng\FormDienThoai.resx">
       <DependentUpon>FormDienThoai.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,18 +319,6 @@
     <EmbeddedResource Include="Các form măt hàng\FormGiay.resx">
       <DependentUpon>FormGiay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDangKi.resx">
-      <DependentUpon>FDangKi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FDangNhap.resx">
-      <DependentUpon>FDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FMain.resx">
-      <DependentUpon>FMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FGioHang.resx">
-      <DependentUpon>FGioHang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Các form măt hàng\FormKhac.resx">
       <DependentUpon>FormKhac.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,12 +331,6 @@
     <EmbeddedResource Include="Các form măt hàng\FormTatCaMatHang.resx">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FSuKien.resx">
-      <DependentUpon>FSuKien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FThanhToan.resx">
-      <DependentUpon>FThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Các form măt hàng\FormThietBiIT.resx">
       <DependentUpon>FormThietBiIT.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,20 +340,53 @@
     <EmbeddedResource Include="Các form măt hàng\FormXeCo.resx">
       <DependentUpon>FormXeCo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FLSBanHang.resx">
-      <DependentUpon>FLSBanHang.cs</DependentUpon>
+    <EmbeddedResource Include="FBanDo.resx">
+      <DependentUpon>FBanDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChiTiet.resx">
+      <DependentUpon>FChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FDangBan.resx">
       <DependentUpon>FDangBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDangKi.resx">
+      <DependentUpon>FDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDangNhap.resx">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDanhGia2.resx">
+      <DependentUpon>FDanhGia2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGioHang.resx">
+      <DependentUpon>FGioHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLSBanHang.resx">
+      <DependentUpon>FLSBanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLSMuaHang.resx">
       <DependentUpon>FLSMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMatHang.resx">
       <DependentUpon>FMatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FBanDo.resx">
-      <DependentUpon>FBanDo.cs</DependentUpon>
+    <EmbeddedResource Include="FTrangChuThanhVien.resx">
+      <DependentUpon>FTrangChuThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSuKien.resx">
+      <DependentUpon>FSuKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThanhToan.resx">
+      <DependentUpon>FThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThongKe.resx">
+      <DependentUpon>FThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTrangChu.resx">
+      <DependentUpon>FTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -356,25 +398,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FThongKe.resx">
-      <DependentUpon>FThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\UCDanhGia.resx">
+      <DependentUpon>UCDanhGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FTrangChu.resx">
-      <DependentUpon>FTrangChu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCHienThi.resx">
-      <DependentUpon>UCHienThi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCSuKien.resx">
+    <EmbeddedResource Include="UserControl\UCSuKien.resx">
       <DependentUpon>UCSuKien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCThanhToan.resx">
-      <DependentUpon>UCThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCVoucher.resx">
+    <EmbeddedResource Include="UserControl\UCVoucher.resx">
       <DependentUpon>UCVoucher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCGioHang.resx">
+    <EmbeddedResource Include="UserControl\UCHienThi.resx">
+      <DependentUpon>UCHienThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCThanhToan.resx">
+      <DependentUpon>UCThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCGioHang.resx">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -672,6 +711,150 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-address-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-box-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-script-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-event-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-3d-friendly-robot-assistant-waving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-shopping-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shop-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sale-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sale-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voucher-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online-shopping-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shop-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voucher-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-congratulations-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flower-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shop-962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-script-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-cart-901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5385357374042_c4f872ff0a094dd90ebad5a8dec9ab91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5385357374043_08d40445445922bd9f8373257b7a3a56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5385357382434_a7578eaa9f30a3ac0cb90167bbd0dc7d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sale-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-evaluate-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-five-of-five-stars-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

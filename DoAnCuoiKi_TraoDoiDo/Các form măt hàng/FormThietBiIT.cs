@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormThietBiIT : Form
     {
-        XuLyHienThi xlht = new XuLyHienThi();
+        BanDoBUS bdb = new BanDoBUS();
         public FormThietBiIT()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         string loaimathang = "Thiet bi IT";
         private void FormThietBiIT_Load(object sender, EventArgs e)
         {
-            xlht.LoadDanhSach(loaimathang, flowLPTbIT);
+            bdb.LoadDanhSach(loaimathang, flowLPTbIT);
         }
     }
 }

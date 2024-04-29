@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,29 +18,23 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormTatCaMatHang : Form
     {
-        
-        XuLyHienThi xlht = new XuLyHienThi();
+
+        BanDoBUS bdb = new BanDoBUS();
         public FormTatCaMatHang()
         {
             InitializeComponent();
-            
-        }
 
-        private void btnChiTiet(object sender, EventArgs e)
-        {
-            FormChiTiet f = new FormChiTiet();
-            f.Show();
         }
         string loaimathang = "All";
         private void FormTatCaMatHang_Load(object sender, EventArgs e)
         {
-            xlht.LoadDanhSach(loaimathang, flowLPHienthiAll);
+            bdb.LoadDanhSach(loaimathang, flowLPHienthiAll);
 
 
         }
-        
 
-        
+
+
     }
 
 }

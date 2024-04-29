@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,15 +13,16 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormDoEmBe : Form
     {
-        XuLyHienThi xlht = new XuLyHienThi();
+        BanDoBUS bdb = new BanDoBUS();
         public FormDoEmBe()
         {
             InitializeComponent();
         }
         string loaimathang = "Do em be";
-        private void FormDoEmBe_Load(object sender, EventArgs e)
+
+        private void FormDoEmBe_Load_1(object sender, EventArgs e)
         {
-            xlht.LoadDanhSach(loaimathang, flowLPDobaby);
+            bdb.LoadDanhSach(loaimathang, flowLPDobaby);
         }
     }
 }
