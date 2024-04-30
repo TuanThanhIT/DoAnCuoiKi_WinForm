@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
-namespace DoAnCuoiKi_TraoDoiDo
+namespace DoAnCuoiKi_TraoDoiDo.DTO
 {
-
     public class BanDo : DangKi
     {
         public string Ten_Mat_Hang { get; set; }
@@ -71,6 +67,14 @@ namespace DoAnCuoiKi_TraoDoiDo
             Ma_San_Pham = ma_san_pham;
             Ma_Voucher = ma_voucher;
             Giam_Gia = giam_gia;
+        }
+        public BanDo(string ten_mat_hang, string ma_san_pham, string ma_voucher, string giam_gia, string so_luong_vou)
+        {
+            Ten_Mat_Hang = ten_mat_hang;
+            Ma_San_Pham = ma_san_pham;
+            Ma_Voucher = ma_voucher;
+            Giam_Gia = giam_gia;
+            So_Luong_Voucher = so_luong_vou;
         }
         public BanDo(string ten_mat_hang)
         {

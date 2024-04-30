@@ -21,11 +21,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
-        string htVoucher = "MaVoucher";
         private void FormMain_Load(object sender, EventArgs e)
         {
             skb.LoadSukien(flowLPMainSukien);
-            bds.LoadDanhSach(htVoucher, flowLPMainVoucher);
+            bds.LoadDSVou(flowLPMainVoucher);
         }
 
     }

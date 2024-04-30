@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using DoAnCuoiKi_TraoDoiDo.BUS;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {

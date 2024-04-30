@@ -5,12 +5,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 
-namespace DoAnCuoiKi_TraoDoiDo
+namespace DoAnCuoiKi_TraoDoiDo.DAO
 {
     public class BanDoDAO
     {
+       
         DBConnection db = new DBConnection();
+        DAO d = new DAO();
 
         public bool ThemMatHang(BanDo bd)
         {
@@ -50,37 +53,16 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         public List<BanDo> LoadDanhSach()
         {
-            string query2 = string.Format("SELECT * FROM [ĐăngBán] WHERE Số_lượng > 0 and [Số_lượng_Voucher] > 0");
-            List<BanDo> listBD = new List<BanDo>();
-            using (SqlConnection connection = db.GetSqlConnection())
-            {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand(query2, connection))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        if (reader.HasRows)
-                        {
-
-                            while (reader.Read())
-                            {
-                                BanDo bd = new BanDo(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8), reader.GetString(9), reader.GetString(10), reader.GetString(11), reader.GetString(12), reader.GetString(13), reader.GetString(14), reader.GetString(15),
-                                    reader.GetString(16), reader.GetString(17), reader.GetString(18));
-                                listBD.Add(bd);
-
-
-                            }
-
-
-                        }
-                    }
-                }
-            }
-            return listBD;
+              string query2 = string.Format("SELECT * FROM [ĐăngBán] WHERE Số_lượng > 0");
+               return d.LoadDanhSachDangBan(query2);
 
 
 
+        }
+        public List<BanDo> LoadDSVou()
+        {
+            string query2 = string.Format("SELECT * FROM [ĐăngBán] WHERE [Số_lượng_Voucher] > 0");
+            return d.LoadDanhSachDangBan(query2);
         }
     }
 }

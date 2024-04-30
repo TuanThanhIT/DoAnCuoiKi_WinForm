@@ -29,5 +29,9 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             return mhd.xoaLSMuaHang();
         }
+        public List<MuaHang> LoadMuaHang()
+        {
+            return mhd.LoadMuaHang();
+        }
     }
 }

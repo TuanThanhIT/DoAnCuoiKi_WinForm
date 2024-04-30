@@ -1,5 +1,4 @@
-﻿using DoAnCuoiKi_TraoDoiDo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnCuoiKi_TraoDoiDo.DAO;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 
 namespace DoAnCuoiKi_TraoDoiDo.BUS
 {
@@ -221,12 +222,16 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                     ucht.Margin = new Padding(8);
                     fl.Controls.Add(ucht);
                 }
-                if (a == "MaVoucher" && j.Ma_Voucher != "null")
-                {
-                    UCVoucher ucvc = new UCVoucher(j);
-                    ucvc.Margin = new Padding(0, 0, 0, 8);
-                    fl.Controls.Add(ucvc);
-                }
+            }
+        }
+        public void LoadDSVou(FlowLayoutPanel fl)
+        {
+            List<BanDo> listVou = bdd.LoadDSVou();
+            foreach (BanDo j in listVou)
+            {
+                UCVoucher ucVou = new UCVoucher(j);
+                ucVou.Margin = new Padding(8);
+                fl.Controls.Add(ucVou);
             }
         }
 

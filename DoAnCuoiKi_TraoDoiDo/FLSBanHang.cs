@@ -28,5 +28,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
 
         }
+
+        private void FormLSBanHang_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

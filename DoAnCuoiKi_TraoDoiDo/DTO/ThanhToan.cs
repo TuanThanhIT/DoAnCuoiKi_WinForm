@@ -5,7 +5,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoAnCuoiKi_TraoDoiDo
+namespace DoAnCuoiKi_TraoDoiDo.DTO
 {
     public class ThanhToan : GioHang
     {

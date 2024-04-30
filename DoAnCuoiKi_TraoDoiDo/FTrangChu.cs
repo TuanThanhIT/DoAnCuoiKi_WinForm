@@ -1,4 +1,5 @@
 ﻿using DoAnCuoiKi_TraoDoiDo.BUS;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,7 +73,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnLichSu_Click_1(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormLSMuaHang(), ref FormDAO.activeForm, panelTrangChu);
+            fd.OpenChildForm(new FormLichSu(), ref FormDAO.activeForm, panelTrangChu);
             lblChude.Text = "Lịch sử";
         }
 

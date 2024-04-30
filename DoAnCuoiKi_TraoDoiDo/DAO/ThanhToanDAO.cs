@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {

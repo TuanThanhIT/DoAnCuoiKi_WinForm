@@ -31,19 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBanDo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBdDangBan = new Guna.UI2.WinForms.Guna2Button();
             this.label17 = new System.Windows.Forms.Label();
             this.txtDbGiaGoc = new System.Windows.Forms.TextBox();
-            this.btnBdLuu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBdLammoi = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDbSau = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDbTruoc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBdHoantat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDbXoa = new Guna.UI2.WinForms.Guna2Button();
             this.txtBDMaSP = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtImagePath = new System.Windows.Forms.TextBox();
-            this.picImage = new System.Windows.Forms.PictureBox();
             this.btnLoadImage = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rdBGiaohangtructiep = new System.Windows.Forms.RadioButton();
@@ -80,10 +72,18 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.btnBdDangBan = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBdLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBdLammoi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbSau = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbTruoc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBdHoantat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.picImage = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -136,28 +136,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin mặt hàng";
             // 
-            // btnBdDangBan
-            // 
-            this.btnBdDangBan.AutoRoundedCorners = true;
-            this.btnBdDangBan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBdDangBan.BorderRadius = 23;
-            this.btnBdDangBan.BorderThickness = 2;
-            this.btnBdDangBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdDangBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdDangBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBdDangBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBdDangBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnBdDangBan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBdDangBan.ForeColor = System.Drawing.Color.Black;
-            this.btnBdDangBan.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_sale_961;
-            this.btnBdDangBan.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBdDangBan.Location = new System.Drawing.Point(897, 141);
-            this.btnBdDangBan.Name = "btnBdDangBan";
-            this.btnBdDangBan.Size = new System.Drawing.Size(154, 48);
-            this.btnBdDangBan.TabIndex = 49;
-            this.btnBdDangBan.Text = "Đang bán";
-            this.btnBdDangBan.Click += new System.EventHandler(this.btnBdDangBan_Click_1);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -173,132 +151,6 @@
             this.txtDbGiaGoc.Name = "txtDbGiaGoc";
             this.txtDbGiaGoc.Size = new System.Drawing.Size(221, 25);
             this.txtDbGiaGoc.TabIndex = 47;
-            // 
-            // btnBdLuu
-            // 
-            this.btnBdLuu.AutoRoundedCorners = true;
-            this.btnBdLuu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBdLuu.BorderRadius = 23;
-            this.btnBdLuu.BorderThickness = 2;
-            this.btnBdLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBdLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBdLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnBdLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBdLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnBdLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLuu.Image")));
-            this.btnBdLuu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBdLuu.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBdLuu.Location = new System.Drawing.Point(897, 325);
-            this.btnBdLuu.Name = "btnBdLuu";
-            this.btnBdLuu.Size = new System.Drawing.Size(154, 48);
-            this.btnBdLuu.TabIndex = 45;
-            this.btnBdLuu.Text = "Lưu";
-            this.btnBdLuu.Click += new System.EventHandler(this.btnBdLuu_Click_1);
-            // 
-            // btnBdLammoi
-            // 
-            this.btnBdLammoi.AutoRoundedCorners = true;
-            this.btnBdLammoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBdLammoi.BorderRadius = 23;
-            this.btnBdLammoi.BorderThickness = 2;
-            this.btnBdLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBdLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBdLammoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnBdLammoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnBdLammoi.ForeColor = System.Drawing.Color.Black;
-            this.btnBdLammoi.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLammoi.Image")));
-            this.btnBdLammoi.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnBdLammoi.Location = new System.Drawing.Point(895, 222);
-            this.btnBdLammoi.Name = "btnBdLammoi";
-            this.btnBdLammoi.Size = new System.Drawing.Size(154, 48);
-            this.btnBdLammoi.TabIndex = 44;
-            this.btnBdLammoi.Text = "Làm mới";
-            this.btnBdLammoi.Click += new System.EventHandler(this.btnBdLammoi_Click_1);
-            // 
-            // btnDbSau
-            // 
-            this.btnDbSau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbSau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbSau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDbSau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDbSau.FillColor = System.Drawing.Color.White;
-            this.btnDbSau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDbSau.ForeColor = System.Drawing.Color.White;
-            this.btnDbSau.Image = ((System.Drawing.Image)(resources.GetObject("btnDbSau.Image")));
-            this.btnDbSau.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnDbSau.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDbSau.Location = new System.Drawing.Point(385, 575);
-            this.btnDbSau.Name = "btnDbSau";
-            this.btnDbSau.Size = new System.Drawing.Size(63, 50);
-            this.btnDbSau.TabIndex = 43;
-            this.btnDbSau.Click += new System.EventHandler(this.btnDbSau_Click_1);
-            // 
-            // btnDbTruoc
-            // 
-            this.btnDbTruoc.BackColor = System.Drawing.Color.Aqua;
-            this.btnDbTruoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbTruoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbTruoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDbTruoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDbTruoc.FillColor = System.Drawing.Color.White;
-            this.btnDbTruoc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDbTruoc.ForeColor = System.Drawing.Color.White;
-            this.btnDbTruoc.Image = ((System.Drawing.Image)(resources.GetObject("btnDbTruoc.Image")));
-            this.btnDbTruoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDbTruoc.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDbTruoc.Location = new System.Drawing.Point(320, 575);
-            this.btnDbTruoc.Name = "btnDbTruoc";
-            this.btnDbTruoc.Size = new System.Drawing.Size(59, 50);
-            this.btnDbTruoc.TabIndex = 42;
-            this.btnDbTruoc.Click += new System.EventHandler(this.btnDbTruoc_Click_1);
-            // 
-            // btnBdHoantat
-            // 
-            this.btnBdHoantat.AutoRoundedCorners = true;
-            this.btnBdHoantat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBdHoantat.BorderRadius = 23;
-            this.btnBdHoantat.BorderThickness = 2;
-            this.btnBdHoantat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdHoantat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBdHoantat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBdHoantat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBdHoantat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnBdHoantat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBdHoantat.ForeColor = System.Drawing.Color.Black;
-            this.btnBdHoantat.Image = ((System.Drawing.Image)(resources.GetObject("btnBdHoantat.Image")));
-            this.btnBdHoantat.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnBdHoantat.Location = new System.Drawing.Point(897, 43);
-            this.btnBdHoantat.Name = "btnBdHoantat";
-            this.btnBdHoantat.Size = new System.Drawing.Size(154, 48);
-            this.btnBdHoantat.TabIndex = 41;
-            this.btnBdHoantat.Text = "Đăng bán";
-            this.btnBdHoantat.Click += new System.EventHandler(this.btnBdHoantat_Click_1);
-            // 
-            // btnDbXoa
-            // 
-            this.btnDbXoa.AutoRoundedCorners = true;
-            this.btnDbXoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDbXoa.BorderRadius = 21;
-            this.btnDbXoa.BorderThickness = 2;
-            this.btnDbXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDbXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_48;
-            this.btnDbXoa.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnDbXoa.Location = new System.Drawing.Point(15, 575);
-            this.btnDbXoa.Name = "btnDbXoa";
-            this.btnDbXoa.Size = new System.Drawing.Size(120, 45);
-            this.btnDbXoa.TabIndex = 40;
-            this.btnDbXoa.Text = "Xóa ảnh";
-            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click_1);
             // 
             // txtBDMaSP
             // 
@@ -326,17 +178,6 @@
             this.txtImagePath.Name = "txtImagePath";
             this.txtImagePath.Size = new System.Drawing.Size(326, 25);
             this.txtImagePath.TabIndex = 33;
-            // 
-            // picImage
-            // 
-            this.picImage.BackColor = System.Drawing.Color.White;
-            this.picImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picImage.Location = new System.Drawing.Point(15, 357);
-            this.picImage.Name = "picImage";
-            this.picImage.Size = new System.Drawing.Size(433, 206);
-            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picImage.TabIndex = 32;
-            this.picImage.TabStop = false;
             // 
             // btnLoadImage
             // 
@@ -466,7 +307,7 @@
             this.txtBdSlVou.Name = "txtBdSlVou";
             this.txtBdSlVou.Size = new System.Drawing.Size(143, 25);
             this.txtBdSlVou.TabIndex = 26;
-            this.txtBdSlVou.Text = "Khong co";
+            this.txtBdSlVou.Text = "0";
             // 
             // txtBdGiamgia
             // 
@@ -475,7 +316,7 @@
             this.txtBdGiamgia.Name = "txtBdGiamgia";
             this.txtBdGiamgia.Size = new System.Drawing.Size(143, 25);
             this.txtBdGiamgia.TabIndex = 25;
-            this.txtBdGiamgia.Text = "Khong co";
+            this.txtBdGiamgia.Text = "0";
             // 
             // txtBdMa
             // 
@@ -678,6 +519,165 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // btnBdDangBan
+            // 
+            this.btnBdDangBan.AutoRoundedCorners = true;
+            this.btnBdDangBan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBdDangBan.BorderRadius = 23;
+            this.btnBdDangBan.BorderThickness = 2;
+            this.btnBdDangBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdDangBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdDangBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdDangBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdDangBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnBdDangBan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBdDangBan.ForeColor = System.Drawing.Color.Black;
+            this.btnBdDangBan.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_sale_961;
+            this.btnBdDangBan.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBdDangBan.Location = new System.Drawing.Point(897, 141);
+            this.btnBdDangBan.Name = "btnBdDangBan";
+            this.btnBdDangBan.Size = new System.Drawing.Size(154, 48);
+            this.btnBdDangBan.TabIndex = 49;
+            this.btnBdDangBan.Text = "Đang bán";
+            this.btnBdDangBan.Click += new System.EventHandler(this.btnBdDangBan_Click_1);
+            // 
+            // btnBdLuu
+            // 
+            this.btnBdLuu.AutoRoundedCorners = true;
+            this.btnBdLuu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBdLuu.BorderRadius = 23;
+            this.btnBdLuu.BorderThickness = 2;
+            this.btnBdLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnBdLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBdLuu.ForeColor = System.Drawing.Color.Black;
+            this.btnBdLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLuu.Image")));
+            this.btnBdLuu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBdLuu.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBdLuu.Location = new System.Drawing.Point(897, 325);
+            this.btnBdLuu.Name = "btnBdLuu";
+            this.btnBdLuu.Size = new System.Drawing.Size(154, 48);
+            this.btnBdLuu.TabIndex = 45;
+            this.btnBdLuu.Text = "Lưu";
+            this.btnBdLuu.Click += new System.EventHandler(this.btnBdLuu_Click_1);
+            // 
+            // btnBdLammoi
+            // 
+            this.btnBdLammoi.AutoRoundedCorners = true;
+            this.btnBdLammoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBdLammoi.BorderRadius = 23;
+            this.btnBdLammoi.BorderThickness = 2;
+            this.btnBdLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdLammoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnBdLammoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnBdLammoi.ForeColor = System.Drawing.Color.Black;
+            this.btnBdLammoi.Image = ((System.Drawing.Image)(resources.GetObject("btnBdLammoi.Image")));
+            this.btnBdLammoi.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBdLammoi.Location = new System.Drawing.Point(895, 222);
+            this.btnBdLammoi.Name = "btnBdLammoi";
+            this.btnBdLammoi.Size = new System.Drawing.Size(154, 48);
+            this.btnBdLammoi.TabIndex = 44;
+            this.btnBdLammoi.Text = "Làm mới";
+            this.btnBdLammoi.Click += new System.EventHandler(this.btnBdLammoi_Click_1);
+            // 
+            // btnDbSau
+            // 
+            this.btnDbSau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbSau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbSau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbSau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbSau.FillColor = System.Drawing.Color.White;
+            this.btnDbSau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDbSau.ForeColor = System.Drawing.Color.White;
+            this.btnDbSau.Image = ((System.Drawing.Image)(resources.GetObject("btnDbSau.Image")));
+            this.btnDbSau.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnDbSau.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnDbSau.Location = new System.Drawing.Point(385, 575);
+            this.btnDbSau.Name = "btnDbSau";
+            this.btnDbSau.Size = new System.Drawing.Size(63, 50);
+            this.btnDbSau.TabIndex = 43;
+            this.btnDbSau.Click += new System.EventHandler(this.btnDbSau_Click_1);
+            // 
+            // btnDbTruoc
+            // 
+            this.btnDbTruoc.BackColor = System.Drawing.Color.Aqua;
+            this.btnDbTruoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbTruoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbTruoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbTruoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbTruoc.FillColor = System.Drawing.Color.White;
+            this.btnDbTruoc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDbTruoc.ForeColor = System.Drawing.Color.White;
+            this.btnDbTruoc.Image = ((System.Drawing.Image)(resources.GetObject("btnDbTruoc.Image")));
+            this.btnDbTruoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDbTruoc.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnDbTruoc.Location = new System.Drawing.Point(320, 575);
+            this.btnDbTruoc.Name = "btnDbTruoc";
+            this.btnDbTruoc.Size = new System.Drawing.Size(59, 50);
+            this.btnDbTruoc.TabIndex = 42;
+            this.btnDbTruoc.Click += new System.EventHandler(this.btnDbTruoc_Click_1);
+            // 
+            // btnBdHoantat
+            // 
+            this.btnBdHoantat.AutoRoundedCorners = true;
+            this.btnBdHoantat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBdHoantat.BorderRadius = 23;
+            this.btnBdHoantat.BorderThickness = 2;
+            this.btnBdHoantat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdHoantat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBdHoantat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBdHoantat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBdHoantat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnBdHoantat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBdHoantat.ForeColor = System.Drawing.Color.Black;
+            this.btnBdHoantat.Image = ((System.Drawing.Image)(resources.GetObject("btnBdHoantat.Image")));
+            this.btnBdHoantat.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnBdHoantat.Location = new System.Drawing.Point(897, 43);
+            this.btnBdHoantat.Name = "btnBdHoantat";
+            this.btnBdHoantat.Size = new System.Drawing.Size(154, 48);
+            this.btnBdHoantat.TabIndex = 41;
+            this.btnBdHoantat.Text = "Đăng bán";
+            this.btnBdHoantat.Click += new System.EventHandler(this.btnBdHoantat_Click_1);
+            // 
+            // btnDbXoa
+            // 
+            this.btnDbXoa.AutoRoundedCorners = true;
+            this.btnDbXoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDbXoa.BorderRadius = 21;
+            this.btnDbXoa.BorderThickness = 2;
+            this.btnDbXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_48;
+            this.btnDbXoa.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDbXoa.Location = new System.Drawing.Point(15, 575);
+            this.btnDbXoa.Name = "btnDbXoa";
+            this.btnDbXoa.Size = new System.Drawing.Size(120, 45);
+            this.btnDbXoa.TabIndex = 40;
+            this.btnDbXoa.Text = "Xóa ảnh";
+            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click_1);
+            // 
+            // picImage
+            // 
+            this.picImage.BackColor = System.Drawing.Color.White;
+            this.picImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picImage.Location = new System.Drawing.Point(15, 357);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(433, 206);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImage.TabIndex = 32;
+            this.picImage.TabStop = false;
+            // 
             // FormBanDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -690,11 +690,11 @@
             this.Load += new System.EventHandler(this.FormBanDo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.ResumeLayout(false);
 
         }

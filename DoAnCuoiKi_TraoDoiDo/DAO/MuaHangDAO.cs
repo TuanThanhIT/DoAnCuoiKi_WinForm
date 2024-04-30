@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
     public class MuaHangDAO
     {
         DBConnection db = new DBConnection();
+        DAO d = new DAO();
 
         public bool ThemMuaHang(MuaHang muaHang)
         {
@@ -29,6 +31,12 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
         {
             string sqlStr = string.Format("DELETE FROM [MuaHàng] WHERE [ID] = N'{0}'", DangKiDAO.ID);
             return db.Thucthi(sqlStr);
+        }
+       
+        public List<MuaHang> LoadMuaHang()
+        {
+            string query2 = string.Format("SELECT * FROM [MuaHàng] where [ID] = N'{0}'", DangKiDAO.ID);
+            return d.LoadDanhSachMuaHang(query2);  
         }
     }
 }

@@ -58,5 +58,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             }
 
         }
+
+        private void btnLSXuatBaocao_Click(object sender, EventArgs e)
+        {
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
+            {
+                fd.OpenChildForm(new FormReportMuaHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Báo Cáo";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormReportMuaHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Báo Cáo";
+            }
+        }
     }
 }

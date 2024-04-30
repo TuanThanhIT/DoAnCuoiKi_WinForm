@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoAnCuoiKi_TraoDoiDo.DTO;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {

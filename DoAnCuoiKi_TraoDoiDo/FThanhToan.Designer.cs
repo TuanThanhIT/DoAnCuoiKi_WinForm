@@ -259,6 +259,7 @@
             this.dateTimeThanhToanNgay.Name = "dateTimeThanhToanNgay";
             this.dateTimeThanhToanNgay.Size = new System.Drawing.Size(200, 22);
             this.dateTimeThanhToanNgay.TabIndex = 14;
+            this.dateTimeThanhToanNgay.Value = new System.DateTime(2024, 4, 18, 0, 0, 0, 0);
             // 
             // lblThanhToanOut
             // 

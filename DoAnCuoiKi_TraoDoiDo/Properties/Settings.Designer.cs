@@ -33,5 +33,16 @@ namespace DoAnCuoiKi_TraoDoiDo.Properties {
                 return ((string)(this["connStr"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=DoAnTraoDoiDo;Integrated Secur" +
+            "ity=True;Encrypt=True")]
+        public string DoAnTraoDoiDoConnectionString {
+            get {
+                return ((string)(this["DoAnTraoDoiDoConnectionString"]));
+            }
+        }
     }
 }
