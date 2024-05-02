@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLPMainVoucher = new System.Windows.Forms.FlowLayoutPanel();
@@ -40,20 +41,22 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnTcTimkiemVou = new System.Windows.Forms.Button();
-            this.btnTcTimkiemSukien = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.White;
+            this.groupBox6.Controls.Add(this.pictureBox4);
             this.groupBox6.Controls.Add(this.label7);
             this.groupBox6.Controls.Add(this.flowLPMainVoucher);
-            this.groupBox6.Controls.Add(this.btnTcTimkiemVou);
             this.groupBox6.Controls.Add(this.txtVoucher);
             this.groupBox6.Location = new System.Drawing.Point(547, 342);
             this.groupBox6.Name = "groupBox6";
@@ -87,12 +90,13 @@
             this.txtVoucher.Name = "txtVoucher";
             this.txtVoucher.Size = new System.Drawing.Size(256, 22);
             this.txtVoucher.TabIndex = 3;
+            this.txtVoucher.TextChanged += new System.EventHandler(this.txtVoucher_TextChanged);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.White;
+            this.groupBox5.Controls.Add(this.pictureBox2);
             this.groupBox5.Controls.Add(this.flowLPMainSukien);
-            this.groupBox5.Controls.Add(this.btnTcTimkiemSukien);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.txtSuKien);
             this.groupBox5.Location = new System.Drawing.Point(1, 342);
@@ -127,6 +131,7 @@
             this.txtSuKien.Name = "txtSuKien";
             this.txtSuKien.Size = new System.Drawing.Size(266, 22);
             this.txtSuKien.TabIndex = 2;
+            this.txtSuKien.TextChanged += new System.EventHandler(this.txtSuKien_TextChanged);
             // 
             // lblTrangChinhHienthi
             // 
@@ -188,25 +193,29 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // btnTcTimkiemVou
+            // pictureBox2
             // 
-            this.btnTcTimkiemVou.BackColor = System.Drawing.Color.White;
-            this.btnTcTimkiemVou.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._22;
-            this.btnTcTimkiemVou.Location = new System.Drawing.Point(480, 13);
-            this.btnTcTimkiemVou.Name = "btnTcTimkiemVou";
-            this.btnTcTimkiemVou.Size = new System.Drawing.Size(32, 32);
-            this.btnTcTimkiemVou.TabIndex = 4;
-            this.btnTcTimkiemVou.UseVisualStyleBackColor = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(497, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
-            // btnTcTimkiemSukien
+            // pictureBox4
             // 
-            this.btnTcTimkiemSukien.BackColor = System.Drawing.Color.White;
-            this.btnTcTimkiemSukien.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._22;
-            this.btnTcTimkiemSukien.Location = new System.Drawing.Point(497, 13);
-            this.btnTcTimkiemSukien.Name = "btnTcTimkiemSukien";
-            this.btnTcTimkiemSukien.Size = new System.Drawing.Size(32, 32);
-            this.btnTcTimkiemSukien.TabIndex = 1;
-            this.btnTcTimkiemSukien.UseVisualStyleBackColor = false;
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(471, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // FormMain
             // 
@@ -230,6 +239,8 @@
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -241,14 +252,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtSuKien;
-        private System.Windows.Forms.Button btnTcTimkiemSukien;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTrangChinhHienthi;
-        private System.Windows.Forms.Button btnTcTimkiemVou;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLPMainSukien;
         private System.Windows.Forms.FlowLayoutPanel flowLPMainVoucher;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

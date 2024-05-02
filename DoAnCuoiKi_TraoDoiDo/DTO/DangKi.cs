@@ -25,52 +25,52 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
             get { return id; }
             set { id = value; }
         }
-        public string Hoten
+        public string Họ_tên
         {
             get { return hoten; }
             set { hoten = value; }
         }
-        public string Namsinh
+        public string Ngày_tháng_năm_sinh
         {
             get { return namsinh; }
             set { namsinh = value; }
         }
-        public string Gioitinh
+        public string Giới_tính
         {
             get { return gioitinh; }
             set { gioitinh = value; }
         }
-        public string Email
+        public string Địa_chỉ_Email
         {
             get { return email; }
             set { email = value; }
         }
-        public string Sodt
+        public string Số_điện_thoại
         {
             get { return sodt; }
             set { sodt = value; }
         }
-        public string Diachi
+        public string Địa_chỉ
         {
             get { return diachi; }
             set { diachi = value; }
         }
-        public string Ngaydangki
+        public string Ngày_đăng_kí
         {
             get { return ngaydangki; }
             set { ngaydangki = value; }
         }
-        public string Tendangnhap
+        public string Tên_đăng_nhập
         {
             get { return tendangnhap; }
             set { tendangnhap = value; }
         }
-        public string Matkhau
+        public string Mật_khẩu
         {
             get { return matkhau; }
             set { matkhau = value; }
         }
-        public string Chucvu
+        public string Chức_vụ
         {
             get { return chucvu; }
             set { chucvu = value; }

@@ -22,7 +22,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             float saoDanhGia;
             InitializeComponent();
-            UCDGlblTen.Text = dg.Tendangnhap;
+            UCDGlblTen.Text = dg.Tên_đăng_nhập;
             if (float.TryParse(dg.SaoDanhGia, out saoDanhGia))
             {
                 UCDGRateStar.Value = saoDanhGia;

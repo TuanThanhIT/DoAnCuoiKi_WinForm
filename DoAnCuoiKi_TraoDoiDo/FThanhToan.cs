@@ -69,7 +69,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnThanhtoanDatHang_Click_1(object sender, EventArgs e)
         {
-            MuaHang tt = new MuaHang(lblThanhToanTen.Text, lblThanhtoanSdt.Text, lblThanhtoanDiachi.Text, dateTimeThanhToanNgay.Value.ToShortDateString(), DangKiDAO.ID, lblThanhtoanTongThanhToan.Text, mhb.RanDomMaGiaoDich());
+            MuaHang tt = new MuaHang(lblThanhtoanSdt.Text, lblThanhtoanDiachi.Text, dateTimeThanhToanNgay.Value.ToShortDateString(), DangKiDAO.ID, lblThanhtoanTongThanhToan.Text, mhb.RanDomMaGiaoDich(), lblThanhToanTen.Text);
             if (mhb.ThemMuaHang(tt))
             {
                 DialogResult result = MessageBox.Show("Chúc mừng bạn đã đặt hàng thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

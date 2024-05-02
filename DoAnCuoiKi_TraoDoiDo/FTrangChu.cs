@@ -24,15 +24,15 @@ namespace DoAnCuoiKi_TraoDoiDo
         public FormTrangChu(DangKi dk)
         {
             InitializeComponent();
-            lblTrangchuTen.Text = dk.Tendangnhap;
-            lblTrangChuChucvu.Text = dk.Chucvu;
+            lblTrangchuTen.Text = dk.Tên_đăng_nhập;
+            lblTrangChuChucvu.Text = dk.Chức_vụ;
             lblTrangChuID.Text = dk.ID;
             DangKiDAO.ID = lblTrangChuID.Text;
             DangKiDAO.Ten_nguoi_dung = lblTrangchuTen.Text;
             DangKiDAO.Chuc_vu = lblTrangChuChucvu.Text;
-            DangKiDAO.Ho_ten = dk.Hoten;
-            DangKiDAO.Dia_chi = dk.Diachi;
-            DangKiDAO.So_dt = dk.Sodt;
+            DangKiDAO.Ho_ten = dk.Họ_tên;
+            DangKiDAO.Dia_chi = dk.Địa_chỉ;
+            DangKiDAO.So_dt = dk.Số_điện_thoại;
         }
 
         private void FormTrangChu_Load(object sender, EventArgs e)

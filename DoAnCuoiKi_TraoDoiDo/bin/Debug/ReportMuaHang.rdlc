@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>14728c35-957e-4c88-ac92-1b657119269c</rd:DataSourceID>
+      <rd:DataSourceID>a26f95a3-533c-42ad-a0d3-db03fe8d2612</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -17,10 +17,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Họ_tên_người_mua">
-          <DataField>Họ_tên_người_mua</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Số_điện_thoại">
           <DataField>Số_điện_thoại</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -45,6 +41,10 @@
           <DataField>Mã_giao_dịch</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Họ_tên">
+          <DataField>Họ_tên</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DoAnTraoDoiDoDataSet</rd:DataSetName>
@@ -60,12 +60,12 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Image Name="Image1">
+          <Image Name="Image3">
             <Source>Embedded</Source>
             <Value>ID9340938462_fc5496977e_o</Value>
             <Sizing>FitProportional</Sizing>
-            <Height>0.84167in</Height>
-            <Width>1.06667in</Width>
+            <Height>0.94167in</Height>
+            <Width>1.1in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -91,10 +91,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.50834in</Top>
-            <Left>2.32167in</Left>
+            <Top>0.60834in</Top>
+            <Left>2.30833in</Left>
             <Height>0.33333in</Height>
-            <Width>3.96667in</Width>
+            <Width>4.29167in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -110,13 +110,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.86667in</Width>
+                  <Width>1.38333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.35in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.125in</Width>
+                  <Width>1.31667in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -125,10 +122,10 @@
                   <Width>1.20833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.23334in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.18333in</Width>
+                  <Width>1.175in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -137,21 +134,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox22">
+                        <Textbox Name="Textbox3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ID</Value>
+                                  <Value>Họ tên</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -174,16 +171,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Họ tên</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
+                                  <Value>Địa chỉ</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -243,7 +231,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Địa chỉ</Value>
+                                  <Value>Ngày mua hàng</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -273,7 +261,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ngày mua hàng</Value>
+                                  <Value>Tổng thanh toán</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -296,7 +284,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox16">
+                        <Textbox Name="Textbox13">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -310,37 +298,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox16</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox18">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Tổng thanh toán</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -361,81 +319,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ID">
+                        <Textbox Name="Họ_tên">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ID.Value</Value>
+                                  <Value>=Fields!Họ_tên.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ID</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Họ_tên_người_mua">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Họ_tên_người_mua.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Họ_tên_người_mua</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Số_điện_thoại">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Số_điện_thoại.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Số_điện_thoại</rd:DefaultName>
+                          <rd:DefaultName>Họ_tên</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -481,21 +379,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Ngày_mua_hàng">
+                        <Textbox Name="Số_điện_thoại">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Ngày_mua_hàng.Value</Value>
+                                  <Value>=Fields!Số_điện_thoại.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Ngày_mua_hàng</rd:DefaultName>
+                          <rd:DefaultName>Số_điện_thoại</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -511,21 +409,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Mã_giao_dịch">
+                        <Textbox Name="Ngày_mua_hàng">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Mã_giao_dịch.Value</Value>
+                                  <Value>=Fields!Ngày_mua_hàng.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Mã_giao_dịch</rd:DefaultName>
+                          <rd:DefaultName>Ngày_mua_hàng</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -569,13 +467,42 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Mã_giao_dịch">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Mã_giao_dịch.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Mã_giao_dịch</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -595,10 +522,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>MuaHangDataSet</DataSetName>
-            <Top>1.08in</Top>
-            <Left>0.105in</Left>
+            <Top>1.26333in</Top>
+            <Left>0.78333in</Left>
             <Height>0.5in</Height>
-            <Width>7.73333in</Width>
+            <Width>7.31667in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -606,11 +533,11 @@
               </Border>
             </Style>
           </Tablix>
-          <Chart Name="Chart3">
+          <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart3_CategoryGroup">
+                  <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!Ngày_mua_hàng.Value</GroupExpression>
                     </GroupExpressions>
@@ -921,7 +848,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Biểu đồ thể hiện tổng thanh toán theo ngày</Caption>
+                <Caption>Tổng thanh toán theo ngày</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontFamily>Times New Roman</FontFamily>
@@ -950,8 +877,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>MuaHangDataSet</DataSetName>
-            <Top>2.20778in</Top>
-            <Left>0.70834in</Left>
+            <Top>2.34667in</Top>
+            <Left>0.78333in</Left>
             <Height>2in</Height>
             <Width>3in</Width>
             <ZIndex>3</ZIndex>
@@ -964,11 +891,11 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
-          <Chart Name="Chart4">
+          <Chart Name="Chart2">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart4_CategoryGroup">
+                  <Group Name="Chart2_CategoryGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!Ngày_mua_hàng.Value</GroupExpression>
                     </GroupExpressions>
@@ -1279,7 +1206,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Biểu đồ thể hiện số lượng giao dịch theo ngày</Caption>
+                <Caption>Số lượng giao dịch theo ngày</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontFamily>Times New Roman</FontFamily>
@@ -1288,6 +1215,7 @@
                   <VerticalAlign>Top</VerticalAlign>
                 </Style>
                 <Position>TopLeft</Position>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
               </ChartTitle>
             </ChartTitles>
             <Palette>Pacific</Palette>
@@ -1308,8 +1236,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>MuaHangDataSet</DataSetName>
-            <Top>2.20778in</Top>
-            <Left>4.16333in</Left>
+            <Top>2.34667in</Top>
+            <Left>4.93833in</Left>
             <Height>2in</Height>
             <Width>3in</Width>
             <ZIndex>4</ZIndex>
@@ -1323,10 +1251,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>5.26333in</Height>
+        <Height>5.17167in</Height>
         <Style />
       </Body>
-      <Width>7.98001in</Width>
+      <Width>9.1in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1584,5 +1512,5 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>fa8f5dd4-f693-4438-9446-c3ec82346202</rd:ReportID>
+  <rd:ReportID>b6e33617-3a82-49a7-b7b6-06770dcf88ba</rd:ReportID>
 </Report>

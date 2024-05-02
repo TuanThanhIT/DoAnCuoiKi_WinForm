@@ -28,9 +28,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
             txtDGTenNguoiDung.Text = DangKiDAO.Ten_nguoi_dung;
             txtDGID.Text = DangKiDAO.ID;
-            lblDanhGiaTen.Text = bd.Ten_Mat_Hang;
-            txtDGMa.Text = bd.Ma_San_Pham;
-            imagePath = bd.Hinh_Anh_1;
+            lblDanhGiaTen.Text = bd.Tên_mặt_hàng;
+            txtDGMa.Text = bd.Mã_sản_phẩm;
+            imagePath = bd.Hình_ảnh_1;
             picDGImage.Image = Image.FromFile(imagePath);
         }
 

@@ -8,24 +8,24 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
 {
     public class BanDo : DangKi
     {
-        public string Ten_Mat_Hang { get; set; }
-        public string Loai_Mat_Hang { get; set; }
-        public string Gia_Ban { get; set; }
-        public string Mo_ta_mat_hang { get; set; }
-        public string Ngay_Dang_Ban { get; set; }
-        public string Hinh_Anh_1 { get; set; }
-        public string Hinh_Anh_2 { get; set; }
-        public string Hinh_Anh_3 { get; set; }
-        public string Hinh_Anh_4 { get; set; }
-        public string Ma_Voucher { get; set; }
-        public string Giam_Gia { get; set; }
-        public string So_Luong_Voucher { get; set; }
-        public string So_Luong { get; set; }
-        public string Dia_Diem { get; set; }
-        public string Phuong_Thuc_Giao_Hang { get; set; }
-        public string Tinh_Trang_Mat_Hang { get; set; }
-        public string Ma_San_Pham { get; set; }
-        public string Gia_Goc { get; set; }
+        public string Tên_mặt_hàng { get; set; }
+        public string Loại_mặt_hàng { get; set; }
+        public string Giá_bán { get; set; }
+        public string Mô_tả_mặt_hàng { get; set; }
+        public string Ngày_đăng_bán { get; set; }
+        public string Hình_ảnh_1 { get; set; }
+        public string Hình_ảnh_2 { get; set; }
+        public string Hình_ảnh_3 { get; set; }
+        public string Hình_ảnh_4 { get; set; }
+        public string Mã_Voucher { get; set; }
+        public string Giảm_giá{ get; set; }
+        public string Số_lượng_Voucher { get; set; }
+        public string Số_lượng { get; set; }
+        public string Địa_điểm { get; set; }
+        public string Phương_thức_giao_hàng { get; set; }
+        public string Tình_trạng_mặt_hàng { get; set; }
+        public string Mã_sản_phẩm { get; set; }
+        public string Giá_gốc { get; set; }
         public BanDo()
         {
 
@@ -34,57 +34,57 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
         public BanDo(string ten_mat_hang, string loai_mat_hang, string gia_ban, string mo_ta_mat_hang, string hinh_anh_1, string hinh_anh_2, string hinh_anh_3, string hinh_anh_4,
                     string ma_voucher, string giam_gia, string so_luong_voucher, string so_luong, string dia_diem, string phuong_thuc_giao_hang, string tinh_trang_mat_hang, string ma_san_pham, string ngay_dang_ban, string iD, string gia_goc)
         {
-            Ten_Mat_Hang = ten_mat_hang;
-            Loai_Mat_Hang = loai_mat_hang;
-            Gia_Ban = gia_ban;
-            Mo_ta_mat_hang = mo_ta_mat_hang;
-            Ngay_Dang_Ban = ngay_dang_ban;
-            Hinh_Anh_1 = hinh_anh_1;
-            Hinh_Anh_2 = hinh_anh_2;
-            Hinh_Anh_3 = hinh_anh_3;
-            Hinh_Anh_4 = hinh_anh_4;
-            Ma_Voucher = ma_voucher;
-            Giam_Gia = giam_gia;
-            So_Luong_Voucher = so_luong_voucher;
-            So_Luong = so_luong;
-            Dia_Diem = dia_diem;
-            Phuong_Thuc_Giao_Hang = phuong_thuc_giao_hang;
-            Tinh_Trang_Mat_Hang = tinh_trang_mat_hang;
-            Ma_San_Pham = ma_san_pham;
+            Tên_mặt_hàng = ten_mat_hang;
+            Loại_mặt_hàng = loai_mat_hang;
+            Giá_bán = gia_ban;
+            Mô_tả_mặt_hàng = mo_ta_mat_hang;
+            Ngày_đăng_bán = ngay_dang_ban;
+            Hình_ảnh_1 = hinh_anh_1;
+            Hình_ảnh_2 = hinh_anh_2;
+            Hình_ảnh_3 = hinh_anh_3;
+            Hình_ảnh_4 = hinh_anh_4;
+            Mã_Voucher = ma_voucher;
+            Giảm_giá = giam_gia;
+            Số_lượng_Voucher = so_luong_voucher;
+            Số_lượng = so_luong;
+            Địa_điểm = dia_diem;
+            Phương_thức_giao_hàng = phuong_thuc_giao_hang;
+            Tình_trạng_mặt_hàng = tinh_trang_mat_hang;
+            Mã_sản_phẩm = ma_san_pham;
             ID = iD;
-            Gia_Goc = gia_goc;
+            Giá_gốc = gia_goc;
         }
         public BanDo(string iD, string ten_mat_hang, string loai_mat_hang, string so_luong, string hinh_anh_1, string gia_goc, string gia_ban, string ngay_dang_ban, string ma_san_pham, string ma_voucher, string giam_gia)
         {
             ID = iD;
-            Ten_Mat_Hang = ten_mat_hang;
-            Loai_Mat_Hang = loai_mat_hang;
-            So_Luong = so_luong;
-            Hinh_Anh_1 = hinh_anh_1;
-            Gia_Goc = gia_goc;
-            Gia_Ban = gia_ban;
-            Ngay_Dang_Ban = ngay_dang_ban;
-            Ma_San_Pham = ma_san_pham;
-            Ma_Voucher = ma_voucher;
-            Giam_Gia = giam_gia;
+            Tên_mặt_hàng = ten_mat_hang;
+            Loại_mặt_hàng = loai_mat_hang;
+            Số_lượng = so_luong;
+            Hình_ảnh_1 = hinh_anh_1;
+            Giá_gốc = gia_goc;
+            Giá_bán = gia_ban;
+            Ngày_đăng_bán = ngay_dang_ban;
+            Mã_sản_phẩm = ma_san_pham;
+            Mã_Voucher = ma_voucher;
+            Giảm_giá = giam_gia;
         }
         public BanDo(string ten_mat_hang, string ma_san_pham, string ma_voucher, string giam_gia, string so_luong_vou)
         {
-            Ten_Mat_Hang = ten_mat_hang;
-            Ma_San_Pham = ma_san_pham;
-            Ma_Voucher = ma_voucher;
-            Giam_Gia = giam_gia;
-            So_Luong_Voucher = so_luong_vou;
+            Tên_mặt_hàng = ten_mat_hang;
+            Mã_sản_phẩm = ma_san_pham;
+            Mã_Voucher = ma_voucher;
+            Giảm_giá = giam_gia;
+            Số_lượng_Voucher = so_luong_vou;
         }
         public BanDo(string ten_mat_hang)
         {
-            Ten_Mat_Hang = ten_mat_hang;
+            Tên_mặt_hàng = ten_mat_hang;
         }
         public BanDo(string so_luong_voucher, string so_luong, string ma_san_pham)
         {
-            So_Luong_Voucher = so_luong_voucher;
-            So_Luong = so_luong;
-            Ma_San_Pham = ma_san_pham;
+            Số_lượng_Voucher = so_luong_voucher;
+            Số_lượng = so_luong;
+            Mã_sản_phẩm = ma_san_pham;
         }
     }
 }

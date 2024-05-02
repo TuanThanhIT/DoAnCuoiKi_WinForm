@@ -32,7 +32,6 @@
             this.lblThanhToanTen = new System.Windows.Forms.Label();
             this.lblThanhtoanSdt = new System.Windows.Forms.Label();
             this.lblThanhtoanDiachi = new System.Windows.Forms.Label();
-            this.btnThanhtoanDoi = new Guna.UI2.WinForms.Guna2Button();
             this.flowLPThanhToan = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnThanhtoanDatHang = new Guna.UI2.WinForms.Guna2Button();
@@ -46,9 +45,9 @@
             this.lblThanhtoanTongThanhToan = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimeThanhToanNgay = new System.Windows.Forms.DateTimePicker();
+            this.txtTTThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.lblThanhToanOut = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTTThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,25 +96,6 @@
             this.lblThanhtoanDiachi.Size = new System.Drawing.Size(358, 19);
             this.lblThanhtoanDiachi.TabIndex = 4;
             this.lblThanhtoanDiachi.Text = "Thôn 8 Xã Tân Lạc Huyện Bảo Lâm Tỉnh Lâm Đồng";
-            // 
-            // btnThanhtoanDoi
-            // 
-            this.btnThanhtoanDoi.BackColor = System.Drawing.Color.White;
-            this.btnThanhtoanDoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnThanhtoanDoi.BorderRadius = 5;
-            this.btnThanhtoanDoi.BorderThickness = 2;
-            this.btnThanhtoanDoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhtoanDoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhtoanDoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhtoanDoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThanhtoanDoi.FillColor = System.Drawing.Color.White;
-            this.btnThanhtoanDoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhtoanDoi.ForeColor = System.Drawing.Color.Red;
-            this.btnThanhtoanDoi.Location = new System.Drawing.Point(710, 48);
-            this.btnThanhtoanDoi.Name = "btnThanhtoanDoi";
-            this.btnThanhtoanDoi.Size = new System.Drawing.Size(92, 29);
-            this.btnThanhtoanDoi.TabIndex = 5;
-            this.btnThanhtoanDoi.Text = "Thay đổi";
             // 
             // flowLPThanhToan
             // 
@@ -185,7 +165,7 @@
             this.lblTtGgSukien.Name = "lblTtGgSukien";
             this.lblTtGgSukien.Size = new System.Drawing.Size(18, 20);
             this.lblTtGgSukien.TabIndex = 3;
-            this.lblTtGgSukien.Text = "5";
+            this.lblTtGgSukien.Text = "0";
             // 
             // label6
             // 
@@ -253,45 +233,12 @@
             // 
             // dateTimeThanhToanNgay
             // 
-            this.dateTimeThanhToanNgay.Enabled = false;
             this.dateTimeThanhToanNgay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dateTimeThanhToanNgay.Location = new System.Drawing.Point(136, 415);
             this.dateTimeThanhToanNgay.Name = "dateTimeThanhToanNgay";
             this.dateTimeThanhToanNgay.Size = new System.Drawing.Size(200, 22);
             this.dateTimeThanhToanNgay.TabIndex = 14;
-            this.dateTimeThanhToanNgay.Value = new System.DateTime(2024, 4, 18, 0, 0, 0, 0);
-            // 
-            // lblThanhToanOut
-            // 
-            this.lblThanhToanOut.BackColor = System.Drawing.Color.White;
-            this.lblThanhToanOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblThanhToanOut.BorderRadius = 5;
-            this.lblThanhToanOut.BorderThickness = 2;
-            this.lblThanhToanOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.lblThanhToanOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.lblThanhToanOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.lblThanhToanOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.lblThanhToanOut.FillColor = System.Drawing.Color.White;
-            this.lblThanhToanOut.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThanhToanOut.ForeColor = System.Drawing.Color.Red;
-            this.lblThanhToanOut.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_log_out_802;
-            this.lblThanhToanOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.lblThanhToanOut.Location = new System.Drawing.Point(739, -1);
-            this.lblThanhToanOut.Name = "lblThanhToanOut";
-            this.lblThanhToanOut.Size = new System.Drawing.Size(63, 43);
-            this.lblThanhToanOut.TabIndex = 15;
-            this.lblThanhToanOut.Click += new System.EventHandler(this.lblThanhToanOut_Click_1);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_address_48;
-            this.pictureBox1.Location = new System.Drawing.Point(184, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.dateTimeThanhToanNgay.Value = new System.DateTime(2024, 5, 3, 0, 0, 0, 0);
             // 
             // txtTTThanhToan
             // 
@@ -313,6 +260,37 @@
             this.txtTTThanhToan.Text = "Thanh toán";
             this.txtTTThanhToan.Click += new System.EventHandler(this.txtTTThanhToan_Click_1);
             // 
+            // lblThanhToanOut
+            // 
+            this.lblThanhToanOut.BackColor = System.Drawing.Color.White;
+            this.lblThanhToanOut.BorderRadius = 5;
+            this.lblThanhToanOut.BorderThickness = 2;
+            this.lblThanhToanOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.lblThanhToanOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.lblThanhToanOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.lblThanhToanOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.lblThanhToanOut.FillColor = System.Drawing.Color.White;
+            this.lblThanhToanOut.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThanhToanOut.ForeColor = System.Drawing.Color.Black;
+            this.lblThanhToanOut.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_log_out_802;
+            this.lblThanhToanOut.ImageSize = new System.Drawing.Size(30, 30);
+            this.lblThanhToanOut.Location = new System.Drawing.Point(739, -1);
+            this.lblThanhToanOut.Name = "lblThanhToanOut";
+            this.lblThanhToanOut.Size = new System.Drawing.Size(63, 43);
+            this.lblThanhToanOut.TabIndex = 15;
+            this.lblThanhToanOut.Click += new System.EventHandler(this.lblThanhToanOut_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_address_48;
+            this.pictureBox1.Location = new System.Drawing.Point(184, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -330,7 +308,6 @@
             this.Controls.Add(this.btnThanhtoanDatHang);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLPThanhToan);
-            this.Controls.Add(this.btnThanhtoanDoi);
             this.Controls.Add(this.lblThanhtoanDiachi);
             this.Controls.Add(this.lblThanhtoanSdt);
             this.Controls.Add(this.lblThanhToanTen);
@@ -357,7 +334,6 @@
         private System.Windows.Forms.Label lblThanhToanTen;
         private System.Windows.Forms.Label lblThanhtoanSdt;
         private System.Windows.Forms.Label lblThanhtoanDiachi;
-        private Guna.UI2.WinForms.Guna2Button btnThanhtoanDoi;
         private System.Windows.Forms.FlowLayoutPanel flowLPThanhToan;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnThanhtoanDatHang;

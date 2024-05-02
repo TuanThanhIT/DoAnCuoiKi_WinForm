@@ -55,11 +55,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.lblID = new System.Windows.Forms.Label();
             this.lblNgay = new System.Windows.Forms.Label();
             this.lblGiagoc = new System.Windows.Forms.Label();
-            this.btnDbXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.gvDangban = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnDbChinhsua = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangbanThem = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDbXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnDbQuaylai = new System.Windows.Forms.Button();
-            this.gvDangban = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gvDangban)).BeginInit();
             this.SuspendLayout();
             // 
@@ -264,80 +264,6 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.lblGiagoc.TabIndex = 29;
             this.lblGiagoc.Text = "label19";
             // 
-            // btnDbXoa
-            // 
-            this.btnDbXoa.BorderColor = System.Drawing.Color.White;
-            this.btnDbXoa.BorderRadius = 5;
-            this.btnDbXoa.BorderThickness = 2;
-            this.btnDbXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDbXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
-            this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_481;
-            this.btnDbXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDbXoa.Location = new System.Drawing.Point(911, 579);
-            this.btnDbXoa.Name = "btnDbXoa";
-            this.btnDbXoa.Size = new System.Drawing.Size(146, 45);
-            this.btnDbXoa.TabIndex = 7;
-            this.btnDbXoa.Text = "Gỡ mặt hàng";
-            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click);
-            // 
-            // btnDbChinhsua
-            // 
-            this.btnDbChinhsua.BorderColor = System.Drawing.Color.White;
-            this.btnDbChinhsua.BorderRadius = 5;
-            this.btnDbChinhsua.BorderThickness = 2;
-            this.btnDbChinhsua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbChinhsua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDbChinhsua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDbChinhsua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDbChinhsua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDbChinhsua.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDbChinhsua.ForeColor = System.Drawing.Color.Black;
-            this.btnDbChinhsua.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_edit_961;
-            this.btnDbChinhsua.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDbChinhsua.Location = new System.Drawing.Point(748, 579);
-            this.btnDbChinhsua.Name = "btnDbChinhsua";
-            this.btnDbChinhsua.Size = new System.Drawing.Size(146, 45);
-            this.btnDbChinhsua.TabIndex = 9;
-            this.btnDbChinhsua.Text = "Sửa mặt hàng";
-            this.btnDbChinhsua.Click += new System.EventHandler(this.btnDbChinhsua_Click);
-            // 
-            // btnDangbanThem
-            // 
-            this.btnDangbanThem.BorderColor = System.Drawing.Color.White;
-            this.btnDangbanThem.BorderRadius = 5;
-            this.btnDangbanThem.BorderThickness = 2;
-            this.btnDangbanThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangbanThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangbanThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangbanThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDangbanThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDangbanThem.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangbanThem.ForeColor = System.Drawing.Color.Black;
-            this.btnDangbanThem.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_add_482;
-            this.btnDangbanThem.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnDangbanThem.Location = new System.Drawing.Point(584, 579);
-            this.btnDangbanThem.Name = "btnDangbanThem";
-            this.btnDangbanThem.Size = new System.Drawing.Size(146, 45);
-            this.btnDangbanThem.TabIndex = 8;
-            this.btnDangbanThem.Text = "Thêm mặt hàng";
-            this.btnDangbanThem.Click += new System.EventHandler(this.btnDangbanThem_Click_1);
-            // 
-            // btnDbQuaylai
-            // 
-            this.btnDbQuaylai.BackColor = System.Drawing.Color.White;
-            this.btnDbQuaylai.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.quaylai2;
-            this.btnDbQuaylai.Location = new System.Drawing.Point(974, 10);
-            this.btnDbQuaylai.Name = "btnDbQuaylai";
-            this.btnDbQuaylai.Size = new System.Drawing.Size(83, 49);
-            this.btnDbQuaylai.TabIndex = 4;
-            this.btnDbQuaylai.UseVisualStyleBackColor = false;
-            this.btnDbQuaylai.Click += new System.EventHandler(this.btnDbQuaylai_Click_1);
-            // 
             // gvDangban
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -346,7 +272,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.gvDangban.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Time New Roman", 10, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
@@ -356,7 +282,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.gvDangban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Time New Roman", 8, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -381,19 +307,93 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.gvDangban.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.gvDangban.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.gvDangban.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gvDangban.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Time New Roman", 8, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvDangban.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDangban.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.gvDangban.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvDangban.ThemeStyle.HeaderStyle.Height = 35;
             this.gvDangban.ThemeStyle.ReadOnly = false;
             this.gvDangban.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
             this.gvDangban.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gvDangban.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Time New Roman", 8, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvDangban.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gvDangban.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.gvDangban.ThemeStyle.RowsStyle.Height = 24;
             this.gvDangban.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
             this.gvDangban.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gvDangban.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDangban_CellClick_3);
+            // 
+            // btnDbChinhsua
+            // 
+            this.btnDbChinhsua.BorderColor = System.Drawing.Color.White;
+            this.btnDbChinhsua.BorderRadius = 5;
+            this.btnDbChinhsua.BorderThickness = 2;
+            this.btnDbChinhsua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbChinhsua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbChinhsua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbChinhsua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbChinhsua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDbChinhsua.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbChinhsua.ForeColor = System.Drawing.Color.Black;
+            this.btnDbChinhsua.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_edit_961;
+            this.btnDbChinhsua.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDbChinhsua.Location = new System.Drawing.Point(720, 579);
+            this.btnDbChinhsua.Name = "btnDbChinhsua";
+            this.btnDbChinhsua.Size = new System.Drawing.Size(158, 45);
+            this.btnDbChinhsua.TabIndex = 9;
+            this.btnDbChinhsua.Text = "Sửa mặt hàng";
+            this.btnDbChinhsua.Click += new System.EventHandler(this.btnDbChinhsua_Click);
+            // 
+            // btnDangbanThem
+            // 
+            this.btnDangbanThem.BorderColor = System.Drawing.Color.White;
+            this.btnDangbanThem.BorderRadius = 5;
+            this.btnDangbanThem.BorderThickness = 2;
+            this.btnDangbanThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangbanThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangbanThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangbanThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangbanThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDangbanThem.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangbanThem.ForeColor = System.Drawing.Color.Black;
+            this.btnDangbanThem.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_add_482;
+            this.btnDangbanThem.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDangbanThem.Location = new System.Drawing.Point(556, 582);
+            this.btnDangbanThem.Name = "btnDangbanThem";
+            this.btnDangbanThem.Size = new System.Drawing.Size(158, 45);
+            this.btnDangbanThem.TabIndex = 8;
+            this.btnDangbanThem.Text = "Thêm mặt hàng";
+            this.btnDangbanThem.Click += new System.EventHandler(this.btnDangbanThem_Click_1);
+            // 
+            // btnDbXoa
+            // 
+            this.btnDbXoa.BorderColor = System.Drawing.Color.White;
+            this.btnDbXoa.BorderRadius = 5;
+            this.btnDbXoa.BorderThickness = 2;
+            this.btnDbXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDbXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_481;
+            this.btnDbXoa.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnDbXoa.Location = new System.Drawing.Point(884, 579);
+            this.btnDbXoa.Name = "btnDbXoa";
+            this.btnDbXoa.Size = new System.Drawing.Size(158, 45);
+            this.btnDbXoa.TabIndex = 7;
+            this.btnDbXoa.Text = "Gỡ mặt hàng";
+            this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click);
+            // 
+            // btnDbQuaylai
+            // 
+            this.btnDbQuaylai.BackColor = System.Drawing.Color.White;
+            this.btnDbQuaylai.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.quaylai2;
+            this.btnDbQuaylai.Location = new System.Drawing.Point(974, 10);
+            this.btnDbQuaylai.Name = "btnDbQuaylai";
+            this.btnDbQuaylai.Size = new System.Drawing.Size(83, 49);
+            this.btnDbQuaylai.TabIndex = 4;
+            this.btnDbQuaylai.UseVisualStyleBackColor = false;
+            this.btnDbQuaylai.Click += new System.EventHandler(this.btnDbQuaylai_Click_1);
             // 
             // FormDangBan
             // 

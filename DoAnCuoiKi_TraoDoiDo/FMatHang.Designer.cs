@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMatHang));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMhTim = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMatHang = new System.Windows.Forms.Panel();
             this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhac = new Guna.UI2.WinForms.Guna2Button();
             this.btnDienThoai = new Guna.UI2.WinForms.Guna2Button();
@@ -44,10 +44,6 @@
             this.btnDogiadung = new Guna.UI2.WinForms.Guna2Button();
             this.btnIT = new Guna.UI2.WinForms.Guna2Button();
             this.btnGiay = new Guna.UI2.WinForms.Guna2Button();
-            this.panelMatHang = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnMhTimkiemSp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,13 +57,6 @@
             this.label1.Size = new System.Drawing.Size(222, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh mục sản phẩm";
-            // 
-            // txtMhTim
-            // 
-            this.txtMhTim.Location = new System.Drawing.Point(750, 8);
-            this.txtMhTim.Name = "txtMhTim";
-            this.txtMhTim.Size = new System.Drawing.Size(279, 22);
-            this.txtMhTim.TabIndex = 2;
             // 
             // panel1
             // 
@@ -88,6 +77,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1063, 77);
             this.panel1.TabIndex = 4;
+            // 
+            // panelMatHang
+            // 
+            this.panelMatHang.BackColor = System.Drawing.Color.White;
+            this.panelMatHang.Location = new System.Drawing.Point(4, 121);
+            this.panelMatHang.Name = "panelMatHang";
+            this.panelMatHang.Size = new System.Drawing.Size(1063, 523);
+            this.panelMatHang.TabIndex = 5;
             // 
             // btnTatCa
             // 
@@ -329,61 +326,14 @@
             this.btnGiay.TabIndex = 7;
             this.btnGiay.Click += new System.EventHandler(this.btnGiay_Click);
             // 
-            // panelMatHang
-            // 
-            this.panelMatHang.BackColor = System.Drawing.Color.White;
-            this.panelMatHang.Location = new System.Drawing.Point(4, 121);
-            this.panelMatHang.Name = "panelMatHang";
-            this.panelMatHang.Size = new System.Drawing.Size(1063, 523);
-            this.panelMatHang.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Tên",
-            "Mới nhất",
-            "Giá Tiền"});
-            this.comboBox1.Location = new System.Drawing.Point(584, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(514, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Sắp xếp";
-            // 
-            // btnMhTimkiemSp
-            // 
-            this.btnMhTimkiemSp.BackColor = System.Drawing.Color.White;
-            this.btnMhTimkiemSp.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._22;
-            this.btnMhTimkiemSp.Location = new System.Drawing.Point(1035, 1);
-            this.btnMhTimkiemSp.Name = "btnMhTimkiemSp";
-            this.btnMhTimkiemSp.Size = new System.Drawing.Size(32, 32);
-            this.btnMhTimkiemSp.TabIndex = 6;
-            this.btnMhTimkiemSp.UseVisualStyleBackColor = false;
-            // 
             // FormMatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1069, 645);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btnMhTimkiemSp);
             this.Controls.Add(this.panelMatHang);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtMhTim);
             this.Controls.Add(this.label1);
             this.Name = "FormMatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -397,12 +347,8 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMhTim;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelMatHang;
-        private System.Windows.Forms.Button btnMhTimkiemSp;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnTatCa;
         private Guna.UI2.WinForms.Guna2Button btnDienThoai;
         private Guna.UI2.WinForms.Guna2Button btnThoiTrang;

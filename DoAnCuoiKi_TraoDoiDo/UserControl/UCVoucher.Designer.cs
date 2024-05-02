@@ -86,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(229, 55);
+            this.label2.Location = new System.Drawing.Point(216, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 37);
             this.label2.TabIndex = 4;
@@ -163,7 +163,7 @@
             this.UCVClblGiamgia.ForeColor = System.Drawing.Color.Red;
             this.UCVClblGiamgia.Location = new System.Drawing.Point(162, 55);
             this.UCVClblGiamgia.Name = "UCVClblGiamgia";
-            this.UCVClblGiamgia.Size = new System.Drawing.Size(62, 38);
+            this.UCVClblGiamgia.Size = new System.Drawing.Size(48, 38);
             this.UCVClblGiamgia.TabIndex = 15;
             this.UCVClblGiamgia.Text = "5";
             // 
@@ -192,7 +192,7 @@
             this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_shop_962;
             this.pictureBox2.Location = new System.Drawing.Point(410, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(74, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -200,14 +200,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_voucher_64;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(405, 90);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // UCVou
+            // UCVoucher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,7 +227,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2TextBox1);
-            this.Name = "UCVou";
+            this.Name = "UCVoucher";
             this.Size = new System.Drawing.Size(533, 181);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

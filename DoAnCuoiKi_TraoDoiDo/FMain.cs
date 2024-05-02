@@ -14,7 +14,6 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormMain : Form
     {
-        DBConnection db = new DBConnection();
         SuKienBUS skb = new SuKienBUS();
         BanDoBUS bds = new BanDoBUS();
         public FormMain()
@@ -23,10 +22,19 @@ namespace DoAnCuoiKi_TraoDoiDo
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
-            skb.LoadSukien(flowLPMainSukien);
-            bds.LoadDSVou(flowLPMainVoucher);
+            skb.LoadSukien(flowLPMainSukien, txtSuKien);
+            bds.LoadDSVou(flowLPMainVoucher, txtVoucher);
         }
 
+        private void txtSuKien_TextChanged(object sender, EventArgs e)
+        {
+            skb.LoadSukien(flowLPMainSukien, txtSuKien);
+        }
+
+        private void txtVoucher_TextChanged(object sender, EventArgs e)
+        {
+            bds.LoadDSVou(flowLPMainVoucher, txtVoucher);
+        }
     }
 }
 

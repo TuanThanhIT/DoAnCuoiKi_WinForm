@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DoAnCuoiKi_TraoDoiDo.DTO;
+using System.Data;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
@@ -19,11 +20,17 @@ namespace DoAnCuoiKi_TraoDoiDo
         public static string Dia_chi;
         public static string So_dt;
 
-        public bool ThemThanhVien(DangKi dk)
+        public bool ThemThanhVien(DangKi dk) // Thêm tài khoản đăng kí thành công
         {
             string sqlStr = string.Format("INSERT INTO ĐăngKí(ID, Họ_tên, Ngày_tháng_năm_sinh, Giới_tính, Địa_chỉ_Email, Số_điện_thoại, Địa_chỉ, Ngày_đăng_kí, Tên_đăng_nhập, Mật_khẩu, Chức_vụ) " +
-              "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')", dk.ID, dk.Hoten, dk.Namsinh, dk.Gioitinh, dk.Email, dk.Sodt, dk.Diachi, dk.Ngaydangki, dk.Tendangnhap, dk.Matkhau, dk.Chucvu);
+              "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}')", dk.ID, dk.Họ_tên, dk.Ngày_tháng_năm_sinh, dk.Giới_tính, dk.Địa_chỉ_Email, dk.Số_điện_thoại, dk.Địa_chỉ, dk.Ngày_đăng_kí, dk.Tên_đăng_nhập, dk.Mật_khẩu, dk.Chức_vụ);
             return db.Thucthi(sqlStr);
+        }
+        public DataTable DSTaiKhoan()// lấy tất cả các tài khoản để hiển thị lên datagridview của FThongKeTaiKhoan
+        {
+            string sqlStr = string.Format("select ID, [Tên_đăng_nhập] as [Tên người dùng], [Họ_tên] as [Họ tên người dùng], [Ngày_tháng_năm_sinh] as [Ngày tháng năm sinh], [Giới_tính] as [Giới tính], [Địa_chỉ_Email] as [Địa chỉ Email], [Số_điện_thoại] as [Số điện thoại], [Địa_chỉ] as [Địa chỉ], [Ngày_đăng_kí] as [Ngày đăng kí], [Chức_vụ] as [Chức vụ]"+
+                "from [ĐăngKí]");
+            return db.Load(sqlStr);
         }
         public List<DangKi> LoadDSDangKi()
         {

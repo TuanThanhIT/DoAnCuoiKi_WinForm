@@ -59,7 +59,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             string phuongthucGiaoHang = bds.ptGiaoHang(rdBChuyenPhatNhanh, rdBGiaohangtructiep, rdBNguoibangiao);
             string maSanPham = bds.RandomMaSanPham();
             BanDo banDo = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, bds.ImagePaths[0], bds.ImagePaths[1],
-                 bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, maSanPham, dateTimeNgayban.Value.ToString(), DangKiDAO.ID, txtDbGiaGoc.Text);
+                     bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, maSanPham, dateTimeNgayban.Value.ToShortDateString(), DangKiDAO.ID, txtDbGiaGoc.Text);
             if (bds.ThemMatHang(banDo))
             {
                 DialogResult result = MessageBox.Show("Bạn đã đăng bán thành công. Bạn có muốn đăng bán mặt hàng khác", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -79,8 +79,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             }
             else
             {
-                MessageBox.Show("Mặt hàng của bạn đăng bán thất bại");
+                    MessageBox.Show("Mặt hàng của bạn đăng bán thất bại");
             }
+            
         }
 
         private void btnBdDangBan_Click_1(object sender, EventArgs e)
@@ -104,8 +105,8 @@ namespace DoAnCuoiKi_TraoDoiDo
             txtBdGiaban.Text = "";
             txtBdMota.Text = "";
             txtBdMa.Text = "Khong co";
-            txtBdGiamgia.Text = "Khong co";
-            txtBdSlVou.Text = "Khong co";
+            txtBdGiamgia.Text = "0";
+            txtBdSlVou.Text = "0";
             txtBdMa.Enabled = false;
             txtBdGiamgia.Enabled = false;
             txtBdSlVou.Enabled = false;
@@ -182,9 +183,6 @@ namespace DoAnCuoiKi_TraoDoiDo
             bds.DeleteImage(picImage, txtImagePath);
         }
 
-        private void FormBanDo_Load(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }

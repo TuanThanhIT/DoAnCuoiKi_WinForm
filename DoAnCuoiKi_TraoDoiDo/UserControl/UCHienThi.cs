@@ -28,12 +28,12 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
             this.bando = bando;
 
-            UCHTlblTen.Text = bando.Ten_Mat_Hang;
-            UCHTlblGiaban.Text = bando.Gia_Ban;
-            string path = bando.Hinh_Anh_1;
+            UCHTlblTen.Text = bando.Tên_mặt_hàng;
+            UCHTlblGiaban.Text = bando.Giá_bán;
+            string path = bando.Hình_ảnh_1;
             UCHTpicImage.Image = Image.FromFile(path);
-            UCHTlblGiagoc.Text = bando.Gia_Goc;
-            UCHTlblNgay.Text = bando.Ngay_Dang_Ban;
+            UCHTlblGiagoc.Text = bando.Giá_gốc;
+            UCHTlblNgay.Text = bando.Ngày_đăng_bán;
         }
 
         private void UCHienThi_Load(object sender, EventArgs e)

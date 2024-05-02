@@ -26,7 +26,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void FormGioHang_Load(object sender, EventArgs e)
         {
-            ghs.LoadDanhSach(flowLPGioHang);
+            ghs.LoadDanhSach(flowLPGioHang, txtTimKiemGH);
         }
 
 
@@ -57,6 +57,11 @@ namespace DoAnCuoiKi_TraoDoiDo
                 fd.OpenChildForm(new FormThanhToan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Thanh Toán";
             }
+        }
+
+        private void txtTimKiemGH_TextChanged(object sender, EventArgs e)
+        {
+            FormGioHang_Load(sender, e);
         }
     }
 }

@@ -54,6 +54,14 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             return bdd.DanhSachDangBan();
         }
+        public DataTable LoadLSBanDo() 
+        {
+            return bdd.DanhSachLSBanDo();
+        }
+        public DataTable LoadTKBanDo()
+        {
+            return bdd.DanhSachTKBanDo();   
+        }
         public bool ThemMatHang(BanDo bd)
         {
             return bdd.ThemMatHang(bd);
@@ -61,6 +69,10 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         public bool XoaMatHang(BanDo bd)
         {
             return bdd.XoaMatHang(bd);
+        }
+        public bool XoaLSBanHang()
+        {
+            return bdd.XoaLSBanHang();
         }
         public bool SuaMatHang(BanDo bd)
         {
@@ -70,6 +82,42 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         public void SuaMatHang1(BanDo bd)
         {
             bdd.SuaMatHang1(bd);
+        }
+       
+        public List<BanHangReport> LoadDSBanHang(string check) // Đưa tất cả thông tin các mặt hàng đăng bán vào list
+        {
+            List<BanDo> listBanDo = new List<BanDo>();
+            if(check == "T")
+            {
+                listBanDo = bdd.LoadTKBanHang();
+            }
+            else
+            {
+                listBanDo = bdd.LoadBaoCaoBanHang();
+            }
+            List<BanHangReport> listReport = new List<BanHangReport>();
+            foreach (BanDo mh in listBanDo)
+            {
+                BanHangReport temp = new BanHangReport();
+                temp.ID = mh.ID;
+                temp.Mã_sản_phẩm = mh.Mã_sản_phẩm;
+                temp.Tên_mặt_hàng = mh.Tên_mặt_hàng;
+                temp.Loại_mặt_hàng = mh.Loại_mặt_hàng;
+                temp.Giá_gốc = mh.Giá_gốc;
+                temp.Giá_bán = mh.Giá_bán;
+                temp.Mô_tả_mặt_hàng = mh.Mô_tả_mặt_hàng;
+                temp.Mã_Voucher = mh.Mã_Voucher;
+                temp.Giảm_giá = mh.Giảm_giá;
+                temp.Số_lượng_Voucher = mh.Số_lượng_Voucher;
+                temp.Số_lượng = mh.Số_lượng;
+                temp.Địa_điểm = mh.Địa_điểm;
+                temp.Phương_thức_giao_hàng = mh.Phương_thức_giao_hàng;
+                temp.Tình_trạng_mặt_hàng = mh.Tình_trạng_mặt_hàng;
+                temp.Ngày_đăng_bán = mh.Ngày_đăng_bán;
+
+                listReport.Add(temp);
+            }
+            return listReport;  
         }
         public string ptGiaoHang(RadioButton rad1, RadioButton rad2, RadioButton rad3)
         {
@@ -204,11 +252,57 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         }
 
 
-        public void LoadDanhSach(string a, FlowLayoutPanel fl)
+        public void LoadDanhSach(string a, FlowLayoutPanel fl, TextBox tk) 
         {
-            List<BanDo> bds = new List<BanDo>();
-            bds = bdd.LoadDanhSach();
+            List<BanDo> bds = bdd.LoadDanhSach();
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+
+            string tuKhoa = tk.Text.ToLower(); // Chuyển đổi tìm kiếm về chữ thường
+
             foreach (BanDo j in bds)
+            {
+                if (a == "All")
+                {
+                    string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
+
+                    if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
+                    {
+                        UCHienThi ucht = new UCHienThi(j);
+                        ucht.Margin = new Padding(8);
+                        fl.Controls.Add(ucht);
+                    }
+                }
+                if(a == j.Loại_mặt_hàng)
+                {
+                    string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
+
+                    if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
+                    {
+                        UCHienThi ucht = new UCHienThi(j);
+                        ucht.Margin = new Padding(8);
+                        fl.Controls.Add(ucht);
+                    }
+                }
+            }
+        }
+        public void LoadDSSapXep(string a, FlowLayoutPanel fl, ComboBox cm)
+        {
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+            List<BanDo> bds = bdd.LoadDanhSach();
+            List<BanDo> danhSachSapXep = new List<BanDo>();
+            if (cm.Text == "Tên mặt hàng")
+            {
+                danhSachSapXep = bds.OrderBy(j => j.Tên_mặt_hàng).ToList();
+            }
+            else if(cm.Text == "Mới nhất")
+            {
+                danhSachSapXep = bds.OrderByDescending(j => DateTime.Parse(j.Ngày_đăng_bán)).ToList();
+            }
+            else
+            {
+                danhSachSapXep = bds.OrderBy(j => float.Parse(j.Giá_bán)).ToList();
+            }
+            foreach (BanDo j in danhSachSapXep)
             {
                 if (a == "All")
                 {
@@ -216,7 +310,7 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                     ucht.Margin = new Padding(8);
                     fl.Controls.Add(ucht);
                 }
-                if (a == j.Loai_Mat_Hang)
+                if(a == j.Loại_mặt_hàng)
                 {
                     UCHienThi ucht = new UCHienThi(j);
                     ucht.Margin = new Padding(8);
@@ -224,18 +318,23 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                 }
             }
         }
-        public void LoadDSVou(FlowLayoutPanel fl)
+
+        public void LoadDSVou(FlowLayoutPanel fl, TextBox tk)
         {
             List<BanDo> listVou = bdd.LoadDSVou();
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+            string tuKhoa = tk.Text.ToLower(); // Chuyển đổi tìm kiếm về chữ thường
             foreach (BanDo j in listVou)
             {
-                UCVoucher ucVou = new UCVoucher(j);
-                ucVou.Margin = new Padding(8);
-                fl.Controls.Add(ucVou);
+                string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
+                if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
+                {
+                    UCVoucher ucVou = new UCVoucher(j);
+                    ucVou.Margin = new Padding(8);
+                    fl.Controls.Add(ucVou);
+                }
             }
         }
-
-
 
     }
 }

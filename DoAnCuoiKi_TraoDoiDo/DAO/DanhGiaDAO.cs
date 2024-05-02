@@ -15,7 +15,7 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
         public bool ThemDanhGia(DanhGia dg)
         {
             string sqlStr = string.Format("INSERT INTO ĐánhGiá(ID, Tên_người_dùng, Tên_sản_phẩm, Mã_sản_phẩm, Hình_ảnh, Viết_đánh_giá, Sao_đánh_giá) " +
-              "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",dg.ID, dg.Tendangnhap, dg.Ten_Mat_Hang, dg.Ma_San_Pham, dg.Hinh_Anh_1, dg.VietDanhGia, dg.SaoDanhGia );
+              "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",dg.ID, dg.Tên_đăng_nhập, dg.Tên_mặt_hàng, dg.Mã_sản_phẩm, dg.Hình_ảnh_1, dg.VietDanhGia, dg.SaoDanhGia );
             return db.Thucthi(sqlStr);
         }
         public List<DanhGia> LoadDanhGia(string maSanPham)

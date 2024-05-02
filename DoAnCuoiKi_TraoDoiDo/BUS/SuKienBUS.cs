@@ -29,16 +29,24 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             return skd.Load();
         }
-        public void LoadSukien(FlowLayoutPanel fl)
+        public void LoadSukien(FlowLayoutPanel fl, TextBox tk)
         {
-            List<SuKien> suKiens = new List<SuKien>();
-            suKiens = skd.LoadAll();
+            List<SuKien> suKiens = skd.LoadAll();
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+
+            string tuKhoa = tk.Text.ToLower(); 
+
             foreach (SuKien sk in suKiens)
             {
-                UCSuKien ucsk = new UCSuKien(sk);
-                ucsk.Margin = new Padding(0, 0, 0, 8);
-                fl.Controls.Add(ucsk);
+                string tenSuKien = sk.TenSuKien.ToLower(); 
+                if (string.IsNullOrEmpty(tuKhoa) || tenSuKien.Contains(tuKhoa))
+                {
+                    UCSuKien ucsk = new UCSuKien(sk);
+                    ucsk.Margin = new Padding(0, 0, 0, 8);
+                    fl.Controls.Add(ucsk);
+                }
             }
+                
         }
     }
 }

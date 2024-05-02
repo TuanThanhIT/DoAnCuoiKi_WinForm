@@ -22,7 +22,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void FormDangKi_Load(object sender, EventArgs e)
         {
-            dateTPNgayDangki.Enabled = false;
+
         }
 
 
@@ -34,8 +34,8 @@ namespace DoAnCuoiKi_TraoDoiDo
                 {
                     if (txtDkMaXacnhan.Text == dkb.maQuanTriVien)
                     {
-                        DangKi dk = new DangKi(dkb.RandomMaID(), txtDkHoten.Text, dateTPNamSinh.Value.ToString(), cmBoxGioitinh.Text, txtDkDichiE.Text, txtDkSoDt.Text, txtDkDiachi.Text,
-                                                dateTPNgayDangki.Value.ToString(), txtDkTenDangnhap.Text, txtDKMatKhau.Text, cbBoxChucvu.Text);
+                        DangKi dk = new DangKi(dkb.RandomMaID(), txtDkHoten.Text, dateTPNamSinh.Value.ToShortDateString(), cmBoxGioitinh.Text, txtDkDichiE.Text, txtDkSoDt.Text, txtDkDiachi.Text,
+                                                dateTPNgayDangki.Value.ToShortDateString(), txtDkTenDangnhap.Text, txtDKMatKhau.Text, cbBoxChucvu.Text);
                         if (dkb.ThemThanhVien(dk) == true)
                         {
                             MessageBox.Show("Đăng kí tài khoản quản trị viên thành công");
@@ -61,7 +61,8 @@ namespace DoAnCuoiKi_TraoDoiDo
                     {
                         MessageBox.Show("Đăng kí tài khoản thành viên thành công");
                         FormDangNhap f = new FormDangNhap();
-                        f.ShowDialog();
+                        f.Show();
+                        this.Hide();    
                     }
                     else
                     {
@@ -80,6 +81,24 @@ namespace DoAnCuoiKi_TraoDoiDo
             FormDangNhap f = new FormDangNhap();
             f.Show();
             this.Hide();
+        }
+
+        private void showPass_Click(object sender, EventArgs e)
+        {
+            if (txtDKMatKhau.PasswordChar == '*')
+            {
+                hidePass.BringToFront();
+                txtDKMatKhau.PasswordChar = '\0';
+            }
+        }
+
+        private void hidePass_Click(object sender, EventArgs e)
+        {
+            if (txtDKMatKhau.PasswordChar == '\0')
+            {
+                showPass.BringToFront();
+                txtDKMatKhau.PasswordChar = '*';
+            }
         }
     }
 }

@@ -28,15 +28,24 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             ghd.SuaGH(gh);
         }
-        public void LoadDanhSach(FlowLayoutPanel fl)
+        public void LoadDanhSach(FlowLayoutPanel fl, TextBox tk)
         {
             List<GioHang> ghs = new List<GioHang>();
             ghs = ghd.LoadDanhSach();
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+            string tuKhoa = tk.Text.ToLower();
+            
             foreach (GioHang j in ghs)
             {
-                UCGioHang ucgh = new UCGioHang(j);
-                ucgh.Margin = new Padding(0, 0, 0, 8);
-                fl.Controls.Add(ucgh);
+
+                string tenMatHang = j.Tên_mặt_hàng.ToLower();
+                if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
+                {
+                    UCGioHang ucgh = new UCGioHang(j);
+                    ucgh.Margin = new Padding(0, 0, 0, 8);
+                    fl.Controls.Add(ucgh);
+                }
+               
             }
         }
     }

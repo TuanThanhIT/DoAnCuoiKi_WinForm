@@ -16,7 +16,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         public void themThanhToan(ThanhToan tt)
         {
             string sqlStr = string.Format("INSERT INTO ThanhToán(ID, Mã_sản_phẩm, Tên_mặt_hàng, Loại_mặt_hàng, Giá_mới, Hình_ảnh, Số_lượng_chọn, Mã_Voucher, Giảm_giá, Thành_tiền) " +
-                "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}')", tt.ID, tt.Ma_San_Pham, tt.Ten_Mat_Hang, tt.Loai_Mat_Hang, tt.Gia_Ban, tt.Hinh_Anh_1, tt.Soluongchon, tt.Ma_Voucher, tt.Giam_Gia, tt.ThanhTien);
+                "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}')", tt.ID, tt.Mã_sản_phẩm, tt.Tên_mặt_hàng, tt.Loại_mặt_hàng, tt.Giá_bán, tt.Hình_ảnh_1, tt.Soluongchon, tt.Mã_Voucher, tt.Giảm_giá, tt.ThanhTien);
             db.Thucthi(sqlStr);
         }
         public void xoaThanhToan()
@@ -27,7 +27,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         public void SuaThanhToan(ThanhToan tt)
         {
             string sqlStr = string.Format("UPDATE ThanhToán SET Thành_tiền = '{0}'WHERE Mã_sản_phẩm = '{1}'",
-                tt.ThanhTien, tt.Ma_San_Pham);
+                tt.ThanhTien, tt.Mã_sản_phẩm);
             db.Thucthi(sqlStr);
         }
 

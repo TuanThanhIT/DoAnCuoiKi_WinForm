@@ -38,7 +38,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             checkcv = chucvu();
             foreach (DangKi j in dangKis)
             {
-                if (j.Tendangnhap == txtDNTen.Text && j.Matkhau == txtDNPass.Text && checkcv == j.Chucvu)
+                if (j.Tên_đăng_nhập == txtDNTen.Text && j.Mật_khẩu == txtDNPass.Text && checkcv == j.Chức_vụ)
                 {
                     dk = j;
                     return true;
@@ -87,6 +87,24 @@ namespace DoAnCuoiKi_TraoDoiDo
             else
             {
                 MessageBox.Show("Đăng nhập thất bại, vui lòng đăng nhập lại");
+            }
+        }
+
+        private void hidePass_Click(object sender, EventArgs e)
+        {
+            if (txtDNPass.PasswordChar == '\0')
+            {
+                showPass.BringToFront();
+                txtDNPass.PasswordChar = '*';
+            }
+        }
+
+        private void showPass_Click(object sender, EventArgs e)
+        {
+            if (txtDNPass.PasswordChar == '*')
+            {
+                hidePass.BringToFront();
+                txtDNPass.PasswordChar = '\0';
             }
         }
     }

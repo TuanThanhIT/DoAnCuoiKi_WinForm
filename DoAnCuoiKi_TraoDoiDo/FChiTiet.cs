@@ -35,16 +35,16 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             this.bando = bando;
             InitializeComponent();
-            txtChiTietMa.Text = bando.Ma_San_Pham;
-            lblChitietTen.Text = bando.Ten_Mat_Hang;
-            txtChiTietLoai.Text = bando.Loai_Mat_Hang;
-            lblChiTietGiaban.Text = bando.Gia_Ban;
-            txtChitietMota.Text = bando.Mo_ta_mat_hang;
+            txtChiTietMa.Text = bando.Mã_sản_phẩm;
+            lblChitietTen.Text = bando.Tên_mặt_hàng;
+            txtChiTietLoai.Text = bando.Loại_mặt_hàng;
+            lblChiTietGiaban.Text = bando.Giá_bán;
+            txtChitietMota.Text = bando.Mô_tả_mặt_hàng;
             List<string> imagePathList = new List<string>();
-            hinh1 = bando.Hinh_Anh_1;
-            hinh2 = bando.Hinh_Anh_2;
-            hinh3 = bando.Hinh_Anh_3;
-            hinh4 = bando.Hinh_Anh_4;
+            hinh1 = bando.Hình_ảnh_1;
+            hinh2 = bando.Hình_ảnh_2;
+            hinh3 = bando.Hình_ảnh_3;
+            hinh4 = bando.Hình_ảnh_4;
             imagePathList.Add(hinh1);
             imagePathList.Add(hinh2);
             imagePathList.Add(hinh3);
@@ -93,16 +93,16 @@ namespace DoAnCuoiKi_TraoDoiDo
                 // Hiển thị ảnh tại chỉ số hiện tại
                 DisplayImageAtIndex(currentImageIndex);
             }
-            txtChiTietSLVou.Text = bando.So_Luong_Voucher;
-            lblChotietSoluong.Text = bando.So_Luong;
-            txtChiTietDiaDiem.Text = bando.Dia_Diem;
-            txtChitietTinhtrang.Text = bando.Tinh_Trang_Mat_Hang;
-            txtChiTietGiaohang.Text = bando.Phuong_Thuc_Giao_Hang;
-            lblChitietGiacu.Text = bando.Gia_Goc;
-            lblChiTietGiamgia.Text = bando.Giam_Gia;
-            txtChitietNgay.Text = bando.Ngay_Dang_Ban;
-            maVoucher = bando.Ma_Voucher;
-            giamGia = bando.Giam_Gia;
+            txtChiTietSLVou.Text = bando.Số_lượng_Voucher;
+            lblChotietSoluong.Text = bando.Số_lượng;
+            txtChiTietDiaDiem.Text = bando.Địa_điểm;
+            txtChitietTinhtrang.Text = bando.Tình_trạng_mặt_hàng;
+            txtChiTietGiaohang.Text = bando.Phương_thức_giao_hàng;
+            lblChitietGiacu.Text = bando.Giá_gốc;
+            lblChiTietGiamgia.Text = bando.Giảm_giá;
+            txtChitietNgay.Text = bando.Ngày_đăng_bán;
+            maVoucher = bando.Mã_Voucher;
+            giamGia = bando.Giảm_giá;
         }
 
 
@@ -110,7 +110,7 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             lblChitietGiacu.Font = new Font(lblChitietGiacu.Font, FontStyle.Strikeout);
             lblChitietRateStar.Font = new Font(lblChitietRateStar.Font, FontStyle.Underline);
-            dgb.LoadDanhGia(flowLPDanhGia, bando.Ma_San_Pham);
+            dgb.LoadDanhGia(flowLPDanhGia, bando.Mã_sản_phẩm);
         }
 
 

@@ -100,93 +100,115 @@
     <Compile Include="BUS\MuaHangBUS.cs" />
     <Compile Include="BUS\SuKienBUS.cs" />
     <Compile Include="BUS\ThanhToanBUS.cs" />
-    <Compile Include="Các form măt hàng\FormDoDienTu.cs">
+    <Compile Include="Lịch Sử\DoAnTraoDoiDoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form măt hàng\FormDoDienTu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDoDienTu.Designer.cs">
+    <Compile Include="Form măt hàng\FormDoDienTu.Designer.cs">
       <DependentUpon>FormDoDienTu.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\DanhGiaDAO.cs" />
     <Compile Include="DAO\DAO.cs" />
     <Compile Include="DAO\DBConnection.cs" />
     <Compile Include="DAO\ThanhToanDAO.cs" />
-    <Compile Include="DoAnTraoDoiDoDataSet.Designer.cs">
+    <Compile Include="Thống kê\DoAnTraoDoiDoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DAO\BanDoDAO.cs" />
+    <Compile Include="Lịch Sử\DoAnTraoDoiDoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnTraoDoiDoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\DoAnTraoDoiDoDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnTraoDoiDoDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\DoAnTraoDoiDoDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnTraoDoiDoDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DTO\BanDo.cs" />
+    <Compile Include="DTO\BanHangReport.cs" />
     <Compile Include="DTO\DangKi.cs" />
     <Compile Include="DAO\DangKiDAO.cs" />
     <Compile Include="DTO\DanhGia.cs" />
     <Compile Include="DTO\MuaHangReport.cs" />
+    <Compile Include="DTO\TaiKhoanReport.cs" />
     <Compile Include="DTO\ThanhToan.cs" />
-    <Compile Include="Các form măt hàng\FormDienThoai.cs">
+    <Compile Include="Form măt hàng\FormDienThoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDienThoai.Designer.cs">
+    <Compile Include="Form măt hàng\FormDienThoai.Designer.cs">
       <DependentUpon>FormDienThoai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDoEmBe.cs">
+    <Compile Include="Form măt hàng\FormDoEmBe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDoEmBe.Designer.cs">
+    <Compile Include="Form măt hàng\FormDoEmBe.Designer.cs">
       <DependentUpon>FormDoEmBe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDoGiaDung.cs">
+    <Compile Include="Form măt hàng\FormDoGiaDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormDoGiaDung.Designer.cs">
+    <Compile Include="Form măt hàng\FormDoGiaDung.Designer.cs">
       <DependentUpon>FormDoGiaDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormGiay.cs">
+    <Compile Include="Form măt hàng\FormGiay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormGiay.Designer.cs">
+    <Compile Include="Form măt hàng\FormGiay.Designer.cs">
       <DependentUpon>FormGiay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormKhac.cs">
+    <Compile Include="Form măt hàng\FormKhac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormKhac.Designer.cs">
+    <Compile Include="Form măt hàng\FormKhac.Designer.cs">
       <DependentUpon>FormKhac.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormNoiThat.cs">
+    <Compile Include="Form măt hàng\FormNoiThat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormNoiThat.Designer.cs">
+    <Compile Include="Form măt hàng\FormNoiThat.Designer.cs">
       <DependentUpon>FormNoiThat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormSach.cs">
+    <Compile Include="Form măt hàng\FormSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormSach.Designer.cs">
+    <Compile Include="Form măt hàng\FormSach.Designer.cs">
       <DependentUpon>FormSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormTatCaMatHang.cs">
+    <Compile Include="Form măt hàng\FormTatCaMatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormTatCaMatHang.Designer.cs">
+    <Compile Include="Form măt hàng\FormTatCaMatHang.Designer.cs">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\FormDAO.cs" />
-    <Compile Include="Các form măt hàng\FormThietBiIT.cs">
+    <Compile Include="Form măt hàng\FormThietBiIT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormThietBiIT.Designer.cs">
+    <Compile Include="Form măt hàng\FormThietBiIT.Designer.cs">
       <DependentUpon>FormThietBiIT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormThoiTrang.cs">
+    <Compile Include="Form măt hàng\FormThoiTrang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormThoiTrang.Designer.cs">
+    <Compile Include="Form măt hàng\FormThoiTrang.Designer.cs">
       <DependentUpon>FormThoiTrang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Các form măt hàng\FormXeCo.cs">
+    <Compile Include="Form măt hàng\FormXeCo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Các form măt hàng\FormXeCo.Designer.cs">
+    <Compile Include="Form măt hàng\FormXeCo.Designer.cs">
       <DependentUpon>FormXeCo.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\GioHang.cs" />
@@ -235,22 +257,22 @@
     <Compile Include="FGioHang.Designer.cs">
       <DependentUpon>FGioHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FLichSu.cs">
+    <Compile Include="Lịch Sử\FLichSu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FLichSu.Designer.cs">
+    <Compile Include="Lịch Sử\FLichSu.Designer.cs">
       <DependentUpon>FLichSu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FLSBanHang.cs">
+    <Compile Include="Lịch Sử\FLSBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FLSBanHang.Designer.cs">
+    <Compile Include="Lịch Sử\FLSBanHang.Designer.cs">
       <DependentUpon>FLSBanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FLSMuaHang.cs">
+    <Compile Include="Lịch Sử\FLSMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FLSMuaHang.Designer.cs">
+    <Compile Include="Lịch Sử\FLSMuaHang.Designer.cs">
       <DependentUpon>FLSMuaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FMain.cs">
@@ -265,11 +287,59 @@
     <Compile Include="FMatHang.Designer.cs">
       <DependentUpon>FMatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FReportMuaHang.cs">
+    <Compile Include="Thống kê\FRTKBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FReportMuaHang.Designer.cs">
-      <DependentUpon>FReportMuaHang.cs</DependentUpon>
+    <Compile Include="Thống kê\FRTKBanHang.Designer.cs">
+      <DependentUpon>FRTKBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeBanHang.Designer.cs">
+      <DependentUpon>FThongKeBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lịch Sử\FRLSBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lịch Sử\FRLSBanHang.Designer.cs">
+      <DependentUpon>FRLSBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lịch Sử\FRLSMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lịch Sử\FRLSMuaHang.Designer.cs">
+      <DependentUpon>FRLSMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeMuaHang.Designer.cs">
+      <DependentUpon>FThongKeMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FThongKeTaiKhoan.Designer.cs">
+      <DependentUpon>FThongKeTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FThongKe.Designer.cs">
+      <DependentUpon>FThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FRTKMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FRTKMuaHang.Designer.cs">
+      <DependentUpon>FRTKMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê\FRTKTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê\FRTKTaiKhoan.Designer.cs">
+      <DependentUpon>FRTKTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="FTrangChuThanhVien.cs">
       <SubType>Form</SubType>
@@ -288,12 +358,6 @@
     </Compile>
     <Compile Include="FThanhToan.Designer.cs">
       <DependentUpon>FThanhToan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FThongKe.Designer.cs">
-      <DependentUpon>FThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="FTrangChu.cs">
       <SubType>Form</SubType>
@@ -342,40 +406,40 @@
     <Compile Include="UserControl\UCGioHang.Designer.cs">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Các form măt hàng\FormDienThoai.resx">
+    <EmbeddedResource Include="Form măt hàng\FormDienThoai.resx">
       <DependentUpon>FormDienThoai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormDoDienTu.resx">
+    <EmbeddedResource Include="Form măt hàng\FormDoDienTu.resx">
       <DependentUpon>FormDoDienTu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormDoEmBe.resx">
+    <EmbeddedResource Include="Form măt hàng\FormDoEmBe.resx">
       <DependentUpon>FormDoEmBe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormDoGiaDung.resx">
+    <EmbeddedResource Include="Form măt hàng\FormDoGiaDung.resx">
       <DependentUpon>FormDoGiaDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormGiay.resx">
+    <EmbeddedResource Include="Form măt hàng\FormGiay.resx">
       <DependentUpon>FormGiay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormKhac.resx">
+    <EmbeddedResource Include="Form măt hàng\FormKhac.resx">
       <DependentUpon>FormKhac.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormNoiThat.resx">
+    <EmbeddedResource Include="Form măt hàng\FormNoiThat.resx">
       <DependentUpon>FormNoiThat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormSach.resx">
+    <EmbeddedResource Include="Form măt hàng\FormSach.resx">
       <DependentUpon>FormSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormTatCaMatHang.resx">
+    <EmbeddedResource Include="Form măt hàng\FormTatCaMatHang.resx">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormThietBiIT.resx">
+    <EmbeddedResource Include="Form măt hàng\FormThietBiIT.resx">
       <DependentUpon>FormThietBiIT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormThoiTrang.resx">
+    <EmbeddedResource Include="Form măt hàng\FormThoiTrang.resx">
       <DependentUpon>FormThoiTrang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Các form măt hàng\FormXeCo.resx">
+    <EmbeddedResource Include="Form măt hàng\FormXeCo.resx">
       <DependentUpon>FormXeCo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FBanDo.resx">
@@ -399,13 +463,13 @@
     <EmbeddedResource Include="FGioHang.resx">
       <DependentUpon>FGioHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FLichSu.resx">
+    <EmbeddedResource Include="Lịch Sử\FLichSu.resx">
       <DependentUpon>FLichSu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FLSBanHang.resx">
+    <EmbeddedResource Include="Lịch Sử\FLSBanHang.resx">
       <DependentUpon>FLSBanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FLSMuaHang.resx">
+    <EmbeddedResource Include="Lịch Sử\FLSMuaHang.resx">
       <DependentUpon>FLSMuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
@@ -414,8 +478,41 @@
     <EmbeddedResource Include="FMatHang.resx">
       <DependentUpon>FMatHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FReportMuaHang.resx">
-      <DependentUpon>FReportMuaHang.cs</DependentUpon>
+    <EmbeddedResource Include="ReportMuaHang.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTKMuaHang.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FRTKBanHang.resx">
+      <DependentUpon>FRTKBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTKBanHang.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FThongKeBanHang.resx">
+      <DependentUpon>FThongKeBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lịch Sử\FRLSBanHang.resx">
+      <DependentUpon>FRLSBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lịch Sử\FRLSMuaHang.resx">
+      <DependentUpon>FRLSMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FThongKeMuaHang.resx">
+      <DependentUpon>FThongKeMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FThongKeTaiKhoan.resx">
+      <DependentUpon>FThongKeTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FThongKe.resx">
+      <DependentUpon>FThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FRTKMuaHang.resx">
+      <DependentUpon>FRTKMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê\FRTKTaiKhoan.resx">
+      <DependentUpon>FRTKTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FTrangChuThanhVien.resx">
       <DependentUpon>FTrangChuThanhVien.cs</DependentUpon>
@@ -425,9 +522,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FThanhToan.resx">
       <DependentUpon>FThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FThongKe.resx">
-      <DependentUpon>FThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FTrangChu.resx">
       <DependentUpon>FTrangChu.cs</DependentUpon>
@@ -442,7 +536,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReportMuaHang.rdlc">
+    <EmbeddedResource Include="ReportBanHang.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTKTaiKhoan.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\UCDanhGia.resx">
@@ -463,16 +560,60 @@
     <EmbeddedResource Include="UserControl\UCGioHang.resx">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DoAnTraoDoiDoDataSet.xsc">
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet.xsc">
       <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DoAnTraoDoiDoDataSet.xsd">
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DoAnTraoDoiDoDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DoAnTraoDoiDoDataSet.xss">
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet.xss">
       <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet.xsc">
+      <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnTraoDoiDoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet.xss">
+      <DependentUpon>DoAnTraoDoiDoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet1.xsc">
+      <DependentUpon>DoAnTraoDoiDoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnTraoDoiDoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lịch Sử\DoAnTraoDoiDoDataSet1.xss">
+      <DependentUpon>DoAnTraoDoiDoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet3.xsc">
+      <DependentUpon>DoAnTraoDoiDoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnTraoDoiDoDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet3.xss">
+      <DependentUpon>DoAnTraoDoiDoDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet4.xsc">
+      <DependentUpon>DoAnTraoDoiDoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnTraoDoiDoDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thống kê\DoAnTraoDoiDoDataSet4.xss">
+      <DependentUpon>DoAnTraoDoiDoDataSet4.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -20,11 +20,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         public UCVoucher(BanDo bd)
         {
             InitializeComponent();
-            UCVClblTen.Text = bd.Ten_Mat_Hang;
-            UCVClblGiamgia.Text = bd.Giam_Gia;
-            UCVClblMa.Text = bd.Ma_San_Pham;
-            UCVClblMaVou.Text = bd.Ma_Voucher;
-            UCVClblSoluong.Text = bd.So_Luong_Voucher;
+            UCVClblTen.Text = bd.Tên_mặt_hàng;
+            UCVClblGiamgia.Text = bd.Giảm_giá;
+            UCVClblMa.Text = bd.Mã_sản_phẩm;
+            UCVClblMaVou.Text = bd.Mã_Voucher;
+            UCVClblSoluong.Text = bd.Số_lượng_Voucher;
         }
 
         private void UCVoucher_Load(object sender, EventArgs e)

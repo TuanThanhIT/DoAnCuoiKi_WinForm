@@ -13,35 +13,35 @@ namespace DoAnCuoiKi_TraoDoiDo
     public class GioHangDAO
     {
         DBConnection db = new DBConnection();
-        public bool ThemGioHang(GioHang bd)
+        public bool ThemGioHang(GioHang bd)  // Thêm sản phẩm vào giỏ hàng
         {
             string sqlStr = string.Format("INSERT INTO GiỏHàng(ID, Tên_mặt_hàng, Loại_mặt_hàng, Số_lượng, Hình_ảnh, Giá_cũ, Giá_mới, Số_lượng_chọn, Ngày_đăng_bán, Mã_sản_phẩm, Mã_kiểm_tra, Mã_Voucher, Giảm_giá) " +
-                "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')", bd.ID, bd.Ten_Mat_Hang, bd.Loai_Mat_Hang, bd.So_Luong, bd.Hinh_Anh_1, bd.Gia_Goc, bd.Gia_Ban, bd.Soluongchon, bd.Ngay_Dang_Ban, bd.Ma_San_Pham, bd.MaKiemTra, bd.Ma_Voucher, bd.Giam_Gia);
+                "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}')", bd.ID, bd.Tên_mặt_hàng, bd.Loại_mặt_hàng, bd.Số_lượng, bd.Hình_ảnh_1, bd.Giá_gốc, bd.Giá_bán, bd.Soluongchon, bd.Ngày_đăng_bán, bd.Mã_sản_phẩm, bd.MaKiemTra, bd.Mã_Voucher, bd.Giảm_giá);
             return db.Thucthi(sqlStr);
         }
-        public bool XoaGH(GioHang gh)
+        public bool XoaGH(GioHang gh) // Xóa sản phẩm khỏi giỏ hàng
         {
-            string sqlStr = string.Format("DELETE FROM GiỏHàng WHERE Mã_sản_phẩm = '{0}'", gh.Ma_San_Pham);
+            string sqlStr = string.Format("DELETE FROM GiỏHàng WHERE Mã_sản_phẩm = '{0}'", gh.Mã_sản_phẩm);
             return db.Thucthi(sqlStr);
 
         }
 
-        public bool SuaGioHang(GioHang bd)
+        public bool SuaGioHang(GioHang bd) // sửa sản phẩm trong giỏ hàng (Lưu)
         {
             string sqlStr = string.Format("UPDATE GiỏHàng SET ID = '{0}', Tên_mặt_hàng = '{1}', Loại_mặt_hàng = '{2}', Số_lượng = '{3}', Hình_ảnh = '{4}', Giá_cũ = '{5}', Giá_mới = '{6}', Số_lượng_chọn = '{7}', Ngày_đăng_bán = '{8}', Mã_kiểm_tra = '{9}', Mã_Voucher = '{10}', Giảm_giá = '{11}' WHERE Mã_sản_phẩm = '{12}'",
-              bd.ID, bd.Ten_Mat_Hang, bd.Loai_Mat_Hang, bd.So_Luong, bd.Hinh_Anh_1, bd.Gia_Goc, bd.Gia_Ban, bd.Soluongchon, bd.Ngay_Dang_Ban, bd.MaKiemTra, bd.Ma_Voucher, bd.Giam_Gia, bd.Ma_San_Pham);
+              bd.ID, bd.Tên_mặt_hàng, bd.Loại_mặt_hàng, bd.Số_lượng, bd.Hình_ảnh_1, bd.Giá_gốc, bd.Giá_bán, bd.Soluongchon, bd.Ngày_đăng_bán, bd.MaKiemTra, bd.Mã_Voucher, bd.Giảm_giá, bd.Mã_sản_phẩm);
             return db.Thucthi(sqlStr);
         }
-        public void SuaGH(GioHang gh)//Sửa số lượng khi thanh toán
+        public void SuaGH(GioHang gh)// Sửa số lượng khi thanh toán
         {
-            string sqlStr = string.Format("UPDATE GiỏHàng SET Số_lượng = '{0}' WHERE Mã_sản_phẩm = '{1}'", gh.So_Luong, gh.Ma_San_Pham);
+            string sqlStr = string.Format("UPDATE GiỏHàng SET Số_lượng = '{0}' WHERE Mã_sản_phẩm = '{1}'", gh.Số_lượng, gh.Mã_sản_phẩm);
             db.Thucthi(sqlStr);
         }
-        public List<GioHang> LoadDanhSach()
+        public List<GioHang> LoadDanhSach()  // Lấy dữ liệu hiển thị UCGioHang
         {
             string query2 = string.Format("SELECT *" +
             "FROM [GiỏHàng] " +
-            "WHERE ID = N'{0}' and [Số_lượng] > 0", DangKiDAO.ID);
+            "WHERE ID = N'{0}'", DangKiDAO.ID);
             List<GioHang> ghs = new List<GioHang>();
             using (SqlConnection connection = db.GetSqlConnection())
             {

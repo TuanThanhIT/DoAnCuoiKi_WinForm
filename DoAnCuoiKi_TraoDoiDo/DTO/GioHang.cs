@@ -29,12 +29,12 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
         }
         public GioHang(string ma_san_pham)
         {
-            Ma_San_Pham = ma_san_pham;
+            Mã_sản_phẩm = ma_san_pham;
         }
         public GioHang(string soluong, string ma_san_pham)
         {
-            So_Luong = soluong;
-            Ma_San_Pham = ma_san_pham;
+            Số_lượng = soluong;
+            Mã_sản_phẩm = ma_san_pham;
         }
         public GioHang() { }
     }

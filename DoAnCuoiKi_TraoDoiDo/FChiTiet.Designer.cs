@@ -584,7 +584,6 @@
             // 
             // btnChiTietThoat
             // 
-            this.btnChiTietThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(144)))), ((int)(((byte)(170)))));
             this.btnChiTietThoat.BorderRadius = 5;
             this.btnChiTietThoat.BorderThickness = 2;
             this.btnChiTietThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

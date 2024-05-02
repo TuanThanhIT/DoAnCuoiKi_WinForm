@@ -24,16 +24,16 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
         public DanhGia(string iD, string tenNguoiDung,  string tenSanPham, string maSanPham, string hinhAnh, string vietDanhGia, string saoDanhGia)
         {
             ID = iD;
-            Tendangnhap = tenNguoiDung;
-            Ten_Mat_Hang = tenSanPham;
-            Ma_San_Pham = maSanPham;
-            Hinh_Anh_1 = hinhAnh;
+            Tên_đăng_nhập = tenNguoiDung;
+            Tên_mặt_hàng = tenSanPham;
+            Mã_sản_phẩm = maSanPham;
+            Hình_ảnh_1 = hinhAnh;
             this.vietDanhGia = vietDanhGia;
             this.saoDanhGia = saoDanhGia;
         }
         public DanhGia(string tenNguoiDung, string saoDanhGia, string vietDanhGia)
         {
-            Tendangnhap = tenNguoiDung;
+            Tên_đăng_nhập = tenNguoiDung;
             this.saoDanhGia = saoDanhGia;
             this.vietDanhGia = vietDanhGia;
         }

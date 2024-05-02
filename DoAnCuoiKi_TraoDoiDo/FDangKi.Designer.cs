@@ -58,8 +58,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnDkThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnDKDangKi = new Guna.UI2.WinForms.Guna2Button();
+            this.showPass = new System.Windows.Forms.PictureBox();
+            this.hidePass = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showPass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -88,7 +92,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(489, 485);
+            this.groupBox1.Size = new System.Drawing.Size(478, 485);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cá nhân";
@@ -98,6 +102,7 @@
             this.txtDkMaXacnhan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDkMaXacnhan.Location = new System.Drawing.Point(235, 451);
             this.txtDkMaXacnhan.Name = "txtDkMaXacnhan";
+            this.txtDkMaXacnhan.PasswordChar = '*';
             this.txtDkMaXacnhan.Size = new System.Drawing.Size(231, 27);
             this.txtDkMaXacnhan.TabIndex = 18;
             // 
@@ -267,6 +272,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.showPass);
+            this.groupBox2.Controls.Add(this.hidePass);
             this.groupBox2.Controls.Add(this.txtDkXacnhanMK);
             this.groupBox2.Controls.Add(this.txtDKMatKhau);
             this.groupBox2.Controls.Add(this.txtDkTenDangnhap);
@@ -277,7 +284,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(5, 503);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(489, 169);
+            this.groupBox2.Size = new System.Drawing.Size(478, 169);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin tài khoản";
@@ -285,23 +292,25 @@
             // txtDkXacnhanMK
             // 
             this.txtDkXacnhanMK.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDkXacnhanMK.Location = new System.Drawing.Point(174, 128);
+            this.txtDkXacnhanMK.Location = new System.Drawing.Point(198, 128);
             this.txtDkXacnhanMK.Name = "txtDkXacnhanMK";
+            this.txtDkXacnhanMK.PasswordChar = '*';
             this.txtDkXacnhanMK.Size = new System.Drawing.Size(231, 27);
             this.txtDkXacnhanMK.TabIndex = 13;
             // 
             // txtDKMatKhau
             // 
             this.txtDKMatKhau.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDKMatKhau.Location = new System.Drawing.Point(174, 83);
+            this.txtDKMatKhau.Location = new System.Drawing.Point(198, 83);
             this.txtDKMatKhau.Name = "txtDKMatKhau";
+            this.txtDKMatKhau.PasswordChar = '*';
             this.txtDKMatKhau.Size = new System.Drawing.Size(231, 27);
             this.txtDKMatKhau.TabIndex = 12;
             // 
             // txtDkTenDangnhap
             // 
             this.txtDkTenDangnhap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDkTenDangnhap.Location = new System.Drawing.Point(174, 36);
+            this.txtDkTenDangnhap.Location = new System.Drawing.Point(198, 36);
             this.txtDkTenDangnhap.Name = "txtDkTenDangnhap";
             this.txtDkTenDangnhap.Size = new System.Drawing.Size(231, 27);
             this.txtDkTenDangnhap.TabIndex = 11;
@@ -335,18 +344,17 @@
             // 
             // btnDkThoat
             // 
-            this.btnDkThoat.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnDkThoat.BorderRadius = 5;
             this.btnDkThoat.BorderThickness = 2;
             this.btnDkThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDkThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDkThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDkThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDkThoat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDkThoat.FillColor = System.Drawing.Color.White;
             this.btnDkThoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDkThoat.ForeColor = System.Drawing.Color.Black;
             this.btnDkThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnDkThoat.Image")));
-            this.btnDkThoat.Location = new System.Drawing.Point(402, 678);
+            this.btnDkThoat.Location = new System.Drawing.Point(390, 678);
             this.btnDkThoat.Name = "btnDkThoat";
             this.btnDkThoat.Size = new System.Drawing.Size(92, 37);
             this.btnDkThoat.TabIndex = 5;
@@ -355,30 +363,53 @@
             // 
             // btnDKDangKi
             // 
-            this.btnDKDangKi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnDKDangKi.BorderRadius = 5;
             this.btnDKDangKi.BorderThickness = 2;
             this.btnDKDangKi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDKDangKi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDKDangKi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDKDangKi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDKDangKi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
+            this.btnDKDangKi.FillColor = System.Drawing.Color.White;
             this.btnDKDangKi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDKDangKi.ForeColor = System.Drawing.Color.Black;
             this.btnDKDangKi.Image = ((System.Drawing.Image)(resources.GetObject("btnDKDangKi.Image")));
-            this.btnDKDangKi.Location = new System.Drawing.Point(264, 678);
+            this.btnDKDangKi.Location = new System.Drawing.Point(252, 678);
             this.btnDKDangKi.Name = "btnDKDangKi";
             this.btnDKDangKi.Size = new System.Drawing.Size(116, 37);
             this.btnDKDangKi.TabIndex = 4;
             this.btnDKDangKi.Text = "Đăng kí";
             this.btnDKDangKi.Click += new System.EventHandler(this.btnDKDangKi_Click);
             // 
+            // showPass
+            // 
+            this.showPass.BackColor = System.Drawing.Color.White;
+            this.showPass.Image = ((System.Drawing.Image)(resources.GetObject("showPass.Image")));
+            this.showPass.Location = new System.Drawing.Point(439, 83);
+            this.showPass.Name = "showPass";
+            this.showPass.Size = new System.Drawing.Size(27, 27);
+            this.showPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.showPass.TabIndex = 14;
+            this.showPass.TabStop = false;
+            this.showPass.Click += new System.EventHandler(this.showPass_Click);
+            // 
+            // hidePass
+            // 
+            this.hidePass.BackColor = System.Drawing.Color.White;
+            this.hidePass.Image = ((System.Drawing.Image)(resources.GetObject("hidePass.Image")));
+            this.hidePass.Location = new System.Drawing.Point(439, 83);
+            this.hidePass.Name = "hidePass";
+            this.hidePass.Size = new System.Drawing.Size(27, 27);
+            this.hidePass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hidePass.TabIndex = 19;
+            this.hidePass.TabStop = false;
+            this.hidePass.Click += new System.EventHandler(this.hidePass_Click);
+            // 
             // FormDangKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(498, 721);
+            this.ClientSize = new System.Drawing.Size(490, 721);
             this.Controls.Add(this.btnDkThoat);
             this.Controls.Add(this.btnDKDangKi);
             this.Controls.Add(this.groupBox2);
@@ -391,6 +422,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showPass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,5 +459,7 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2Button btnDKDangKi;
         private Guna.UI2.WinForms.Guna2Button btnDkThoat;
+        private System.Windows.Forms.PictureBox showPass;
+        private System.Windows.Forms.PictureBox hidePass;
     }
 }

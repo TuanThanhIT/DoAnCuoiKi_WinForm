@@ -35,7 +35,6 @@
             this.dateTimePickerTrangchu = new System.Windows.Forms.DateTimePicker();
             panelTrangChu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnGiaoDich = new Guna.UI2.WinForms.Guna2Button();
             this.btnSuKien = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGioHang = new Guna.UI2.WinForms.Guna2Button();
@@ -139,7 +138,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.btnGiaoDich);
             this.panel2.Controls.Add(this.btnSuKien);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.btnGioHang);
@@ -153,26 +151,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 682);
             this.panel2.TabIndex = 9;
-            // 
-            // btnGiaoDich
-            // 
-            this.btnGiaoDich.BorderColor = System.Drawing.Color.White;
-            this.btnGiaoDich.BorderRadius = 10;
-            this.btnGiaoDich.BorderThickness = 2;
-            this.btnGiaoDich.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGiaoDich.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGiaoDich.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGiaoDich.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGiaoDich.FillColor = System.Drawing.Color.White;
-            this.btnGiaoDich.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGiaoDich.ForeColor = System.Drawing.Color.Black;
-            this.btnGiaoDich.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_transaction_1001;
-            this.btnGiaoDich.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnGiaoDich.Location = new System.Drawing.Point(15, 627);
-            this.btnGiaoDich.Name = "btnGiaoDich";
-            this.btnGiaoDich.Size = new System.Drawing.Size(164, 33);
-            this.btnGiaoDich.TabIndex = 21;
-            this.btnGiaoDich.Text = "Giao Dịch";
             // 
             // btnSuKien
             // 
@@ -188,7 +166,7 @@
             this.btnSuKien.ForeColor = System.Drawing.Color.Black;
             this.btnSuKien.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_event_100;
             this.btnSuKien.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSuKien.Location = new System.Drawing.Point(15, 566);
+            this.btnSuKien.Location = new System.Drawing.Point(15, 626);
             this.btnSuKien.Name = "btnSuKien";
             this.btnSuKien.Size = new System.Drawing.Size(164, 33);
             this.btnSuKien.TabIndex = 20;
@@ -283,7 +261,7 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.Black;
             this.btnThongKe.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_graph_report_script_481;
             this.btnThongKe.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnThongKe.Location = new System.Drawing.Point(15, 512);
+            this.btnThongKe.Location = new System.Drawing.Point(15, 572);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(164, 33);
             this.btnThongKe.TabIndex = 17;
@@ -506,7 +484,6 @@
         private Guna.UI2.WinForms.Guna2Button btnThongKe;
         private Guna.UI2.WinForms.Guna2Button btnLichSu;
         private Guna.UI2.WinForms.Guna2Button btnMatHang;
-        private Guna.UI2.WinForms.Guna2Button btnGiaoDich;
         private Guna.UI2.WinForms.Guna2Button btnSuKien;
         private System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.Label label4;

@@ -33,19 +33,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
             this.gh = gh;
             ID = gh.ID;
-            UCGHlblTenMH.Text = gh.Ten_Mat_Hang;
-            UCGHlblLoai.Text = gh.Loai_Mat_Hang;
-            UCGHlblSoluong.Text = gh.So_Luong;
-            UCGHlblNgay.Text = gh.Ngay_Dang_Ban;
+            UCGHlblTenMH.Text = gh.Tên_mặt_hàng;
+            UCGHlblLoai.Text = gh.Loại_mặt_hàng;
+            UCGHlblSoluong.Text = gh.Số_lượng;
+            UCGHlblNgay.Text = gh.Ngày_đăng_bán;
             UCGHUpDown.Value = Convert.ToDecimal(gh.Soluongchon);
-            UCGHlblGiacu.Text = gh.Gia_Goc;
-            UCGHlblGiamoi.Text = gh.Gia_Ban;
-            path = gh.Hinh_Anh_1;
+            UCGHlblGiacu.Text = gh.Giá_gốc;
+            UCGHlblGiamoi.Text = gh.Giá_bán;
+            path = gh.Hình_ảnh_1;
             UCGHImagePicBox.Image = Image.FromFile(path);
-            UCGHlblMa.Text = gh.Ma_San_Pham;
+            UCGHlblMa.Text = gh.Mã_sản_phẩm;
             check = gh.MaKiemTra;
-            mavoucher = gh.Ma_Voucher;
-            giamgia = gh.Giam_Gia;
+            mavoucher = gh.Mã_Voucher;
+            giamgia = gh.Giảm_giá;
         }
 
         private void UCGioHang_Load(object sender, EventArgs e)

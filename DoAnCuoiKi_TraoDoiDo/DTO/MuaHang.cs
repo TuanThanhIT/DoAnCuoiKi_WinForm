@@ -12,17 +12,17 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
         private string ngayMuaHang;
         private string tongThanhToan;
         private string maGiaoDich;
-        public string NgayMuaHang
+        public string Ngày_mua_hàng
         {
             get { return ngayMuaHang; }
             set { ngayMuaHang = value; }
         }
-        public string TongThanhToan
+        public string Tổng_thanh_toán
         {
             get { return tongThanhToan; }
             set { tongThanhToan = value; }
         }
-        public string MaGiaoDich
+        public string Mã_giao_dịch
         {
             get { return maGiaoDich; }
             set { maGiaoDich = value; }
@@ -31,11 +31,11 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
         {
 
         }
-        public MuaHang(string hoTen, string soDt, string diaChi, string ngayMuaHang, string iD, string tongThanhToan, string maGiaoDich)
+        public MuaHang(string soDt, string diaChi, string ngayMuaHang, string iD, string tongThanhToan, string maGiaoDich, string hoTen)
         {
-            Hoten = hoTen;
-            Sodt = soDt;
-            Diachi = diaChi;
+            Họ_tên = hoTen;
+            Số_điện_thoại = soDt;
+            Địa_chỉ = diaChi;
             this.ngayMuaHang = ngayMuaHang;
             ID = iD;
             this.tongThanhToan = tongThanhToan;
