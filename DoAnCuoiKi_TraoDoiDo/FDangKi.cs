@@ -55,8 +55,8 @@ namespace DoAnCuoiKi_TraoDoiDo
                 }
                 else
                 {
-                    DangKi dk = new DangKi(dkb.RandomMaID(), txtDkHoten.Text, dateTPNamSinh.Value.ToString(), cmBoxGioitinh.Text, txtDkDichiE.Text, txtDkSoDt.Text, txtDkDiachi.Text,
-                                                dateTPNgayDangki.Value.ToString(), txtDkTenDangnhap.Text, txtDKMatKhau.Text, cbBoxChucvu.Text);
+                    DangKi dk = new DangKi(dkb.RandomMaID(), txtDkHoten.Text, dateTPNamSinh.Value.ToShortDateString(), cmBoxGioitinh.Text, txtDkDichiE.Text, txtDkSoDt.Text, txtDkDiachi.Text,
+                                                dateTPNgayDangki.Value.ToShortDateString(), txtDkTenDangnhap.Text, txtDKMatKhau.Text, cbBoxChucvu.Text);
                     if (dkb.ThemThanhVien(dk) == true)
                     {
                         MessageBox.Show("Đăng kí tài khoản thành viên thành công");

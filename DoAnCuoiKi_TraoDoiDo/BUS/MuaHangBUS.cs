@@ -43,7 +43,7 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         }
         public List<MuaHangReport> LayDuLieu()  // Báo cáo lịch sử mua hàng, đưa dữ liệu vào list
         {
-            List<MuaHang> listMuaHang = LoadMuaHang();
+            List<MuaHang> listMuaHang = LoadTKMuaHang();
             List<MuaHangReport> listReport = new List<MuaHangReport>();
             foreach (MuaHang mh in listMuaHang)
             {

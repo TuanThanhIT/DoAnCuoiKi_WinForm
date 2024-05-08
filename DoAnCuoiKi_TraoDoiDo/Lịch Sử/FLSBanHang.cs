@@ -13,7 +13,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormLSBanHang : Form
     {
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         BanDoBUS bdb = new BanDoBUS();
         public FormLSBanHang()
         {
@@ -51,12 +51,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormRLSBanHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormRLSBanHang(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Báo Cáo";
             }
             else
             {
-                fd.OpenChildForm(new FormRLSBanHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormRLSBanHang(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Báo Cáo";
             }
         }

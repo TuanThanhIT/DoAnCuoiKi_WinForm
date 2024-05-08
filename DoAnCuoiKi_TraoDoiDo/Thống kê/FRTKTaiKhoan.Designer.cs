@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.rpvTKTaiKhoan = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.SuspendLayout();
             // 
             // rpvTKTaiKhoan
@@ -37,15 +38,22 @@
             this.rpvTKTaiKhoan.Location = new System.Drawing.Point(0, 0);
             this.rpvTKTaiKhoan.Name = "rpvTKTaiKhoan";
             this.rpvTKTaiKhoan.ServerReport.BearerToken = null;
-            this.rpvTKTaiKhoan.Size = new System.Drawing.Size(892, 538);
+            this.rpvTKTaiKhoan.Size = new System.Drawing.Size(1366, 748);
             this.rpvTKTaiKhoan.TabIndex = 0;
+            // 
+            // guna2HtmlToolTip1
+            // 
+            this.guna2HtmlToolTip1.AllowLinksHandling = true;
+            this.guna2HtmlToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
             // 
             // FormRTKTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 538);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1366, 748);
             this.Controls.Add(this.rpvTKTaiKhoan);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FormRTKTaiKhoan";
             this.Text = "Thống Kê Tài Khoản";
             this.Load += new System.EventHandler(this.FRTKTaiKhoan_Load);
@@ -56,5 +64,6 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer rpvTKTaiKhoan;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip guna2HtmlToolTip1;
     }
 }

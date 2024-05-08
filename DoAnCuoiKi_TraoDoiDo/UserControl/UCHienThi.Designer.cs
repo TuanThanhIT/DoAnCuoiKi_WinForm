@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCHienThi));
             this.UCHTlblTen = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UCHTlblGiagoc = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.UCHTlblGiaban = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.UCHTlblNgay = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UCHTbtnChitiet = new Guna.UI2.WinForms.Guna2Button();
             this.UCHTpicImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.UCHTlblGiaban = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.checkBoxYeuThich = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.UCHTlblLuotxem = new System.Windows.Forms.Label();
+            this.UCHTlblDiadiem = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.UCHTpicImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,38 +64,6 @@
             this.UCHTlblGiagoc.TabIndex = 2;
             this.UCHTlblGiagoc.Text = "Giá gốc";
             // 
-            // UCHTlblGiaban
-            // 
-            this.UCHTlblGiaban.BackColor = System.Drawing.Color.Transparent;
-            this.UCHTlblGiaban.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCHTlblGiaban.ForeColor = System.Drawing.Color.Red;
-            this.UCHTlblGiaban.Location = new System.Drawing.Point(95, 224);
-            this.UCHTlblGiaban.Name = "UCHTlblGiaban";
-            this.UCHTlblGiaban.Size = new System.Drawing.Size(97, 33);
-            this.UCHTlblGiaban.TabIndex = 3;
-            this.UCHTlblGiaban.Text = "Giá bán";
-            this.UCHTlblGiaban.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 260);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(88, 20);
-            this.guna2HtmlLabel4.TabIndex = 4;
-            this.guna2HtmlLabel4.Text = "Đăng bán từ: ";
-            // 
-            // UCHTlblNgay
-            // 
-            this.UCHTlblNgay.BackColor = System.Drawing.Color.Transparent;
-            this.UCHTlblNgay.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCHTlblNgay.Location = new System.Drawing.Point(48, 276);
-            this.UCHTlblNgay.Name = "UCHTlblNgay";
-            this.UCHTlblNgay.Size = new System.Drawing.Size(82, 17);
-            this.UCHTlblNgay.TabIndex = 5;
-            this.UCHTlblNgay.Text = "Ngày đăng bán";
-            // 
             // UCHTbtnChitiet
             // 
             this.UCHTbtnChitiet.BorderRadius = 5;
@@ -102,41 +73,99 @@
             this.UCHTbtnChitiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.UCHTbtnChitiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UCHTbtnChitiet.FillColor = System.Drawing.Color.White;
-            this.UCHTbtnChitiet.Font = new System.Drawing.Font("Times New Roman", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCHTbtnChitiet.Font = new System.Drawing.Font("Times New Roman", 6F, System.Drawing.FontStyle.Bold);
             this.UCHTbtnChitiet.ForeColor = System.Drawing.Color.Black;
-            this.UCHTbtnChitiet.Location = new System.Drawing.Point(70, 299);
+            this.UCHTbtnChitiet.Location = new System.Drawing.Point(75, 289);
             this.UCHTbtnChitiet.Name = "UCHTbtnChitiet";
-            this.UCHTbtnChitiet.Size = new System.Drawing.Size(70, 28);
+            this.UCHTbtnChitiet.Size = new System.Drawing.Size(70, 26);
             this.UCHTbtnChitiet.TabIndex = 6;
             this.UCHTbtnChitiet.Text = "Chi tiết";
             this.UCHTbtnChitiet.Click += new System.EventHandler(this.UCHTbtnChitiet_Click);
             // 
             // UCHTpicImage
             // 
-            this.UCHTpicImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UCHTpicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UCHTpicImage.ImageRotate = 0F;
             this.UCHTpicImage.Location = new System.Drawing.Point(4, 3);
             this.UCHTpicImage.Name = "UCHTpicImage";
-            this.UCHTpicImage.Size = new System.Drawing.Size(226, 161);
+            this.UCHTpicImage.Size = new System.Drawing.Size(222, 161);
             this.UCHTpicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UCHTpicImage.TabIndex = 7;
             this.UCHTpicImage.TabStop = false;
+            // 
+            // UCHTlblGiaban
+            // 
+            this.UCHTlblGiaban.BackColor = System.Drawing.Color.Transparent;
+            this.UCHTlblGiaban.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCHTlblGiaban.ForeColor = System.Drawing.Color.Red;
+            this.UCHTlblGiaban.Location = new System.Drawing.Point(75, 224);
+            this.UCHTlblGiaban.Name = "UCHTlblGiaban";
+            this.UCHTlblGiaban.Size = new System.Drawing.Size(97, 33);
+            this.UCHTlblGiaban.TabIndex = 3;
+            this.UCHTlblGiaban.Text = "Giá bán";
+            this.UCHTlblGiaban.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBoxYeuThich
+            // 
+            this.checkBoxYeuThich.BackColor = System.Drawing.Color.White;
+            this.checkBoxYeuThich.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.checkBoxYeuThich.Image = ((System.Drawing.Image)(resources.GetObject("checkBoxYeuThich.Image")));
+            this.checkBoxYeuThich.ImageOffset = new System.Drawing.Point(0, 0);
+            this.checkBoxYeuThich.ImageRotate = 0F;
+            this.checkBoxYeuThich.Location = new System.Drawing.Point(184, 291);
+            this.checkBoxYeuThich.Name = "checkBoxYeuThich";
+            this.checkBoxYeuThich.Size = new System.Drawing.Size(24, 24);
+            this.checkBoxYeuThich.TabIndex = 8;
+            this.checkBoxYeuThich.CheckedChanged += new System.EventHandler(this.checkBoxYeuThich_CheckedChanged);
+            // 
+            // UCHTlblLuotxem
+            // 
+            this.UCHTlblLuotxem.AutoSize = true;
+            this.UCHTlblLuotxem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCHTlblLuotxem.Location = new System.Drawing.Point(3, 264);
+            this.UCHTlblLuotxem.Name = "UCHTlblLuotxem";
+            this.UCHTlblLuotxem.Size = new System.Drawing.Size(18, 19);
+            this.UCHTlblLuotxem.TabIndex = 9;
+            this.UCHTlblLuotxem.Text = "0";
+            this.UCHTlblLuotxem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // UCHTlblDiadiem
+            // 
+            this.UCHTlblDiadiem.AutoSize = true;
+            this.UCHTlblDiadiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCHTlblDiadiem.Location = new System.Drawing.Point(134, 264);
+            this.UCHTlblDiadiem.Name = "UCHTlblDiadiem";
+            this.UCHTlblDiadiem.Size = new System.Drawing.Size(58, 19);
+            this.UCHTlblDiadiem.TabIndex = 11;
+            this.UCHTlblDiadiem.Text = "Hà Nội";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 19);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "lượt xem";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // UCHienThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.UCHTlblLuotxem);
+            this.Controls.Add(this.UCHTlblDiadiem);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.checkBoxYeuThich);
             this.Controls.Add(this.UCHTpicImage);
             this.Controls.Add(this.UCHTbtnChitiet);
-            this.Controls.Add(this.UCHTlblNgay);
-            this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.UCHTlblGiaban);
             this.Controls.Add(this.UCHTlblGiagoc);
             this.Controls.Add(this.UCHTlblTen);
             this.Name = "UCHienThi";
-            this.Size = new System.Drawing.Size(229, 334);
+            this.Size = new System.Drawing.Size(231, 324);
             this.Load += new System.EventHandler(this.UCHienThi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UCHTpicImage)).EndInit();
             this.ResumeLayout(false);
@@ -147,10 +176,12 @@
         #endregion
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblTen;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblGiagoc;
-        private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblGiaban;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblNgay;
         private Guna.UI2.WinForms.Guna2Button UCHTbtnChitiet;
         private Guna.UI2.WinForms.Guna2PictureBox UCHTpicImage;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UCHTlblGiaban;
+        private Guna.UI2.WinForms.Guna2ImageCheckBox checkBoxYeuThich;
+        private System.Windows.Forms.Label UCHTlblLuotxem;
+        private System.Windows.Forms.Label UCHTlblDiadiem;
+        private System.Windows.Forms.Label label2;
     }
 }

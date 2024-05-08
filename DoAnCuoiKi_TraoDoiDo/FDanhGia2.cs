@@ -17,7 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     {
         DanhGiaBUS dgb = new DanhGiaBUS();
         string imagePath;
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         public FormDanhGia()
         {
             InitializeComponent();
@@ -56,13 +56,13 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Mặt Hàng";
                 this.Hide();
             }
             else
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
                 this.Hide();
             }

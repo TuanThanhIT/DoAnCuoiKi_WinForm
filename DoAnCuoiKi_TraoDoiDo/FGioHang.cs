@@ -17,7 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormGioHang : Form
     {
         GioHangBUS ghs = new GioHangBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         public FormGioHang()
         {
             InitializeComponent();
@@ -35,12 +35,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Mặt Hàng";
             }
             else
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
             }
         }
@@ -49,12 +49,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormThanhToan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormThanhToan(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Thanh Toán";
             }
             else
             {
-                fd.OpenChildForm(new FormThanhToan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormThanhToan(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Thanh Toán";
             }
         }

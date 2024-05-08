@@ -66,6 +66,14 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             return bdd.ThemMatHang(bd);
         }
+        public void ThemHienThi(BanDo bd)
+        {
+            bdd.ThemHienThi(bd);
+        }
+        public void SuaHienThi(BanDo bd)
+        {
+            bdd.SuaHienThi(bd);
+        }
         public bool XoaMatHang(BanDo bd)
         {
             return bdd.XoaMatHang(bd);
@@ -114,7 +122,6 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                 temp.Phương_thức_giao_hàng = mh.Phương_thức_giao_hàng;
                 temp.Tình_trạng_mặt_hàng = mh.Tình_trạng_mặt_hàng;
                 temp.Ngày_đăng_bán = mh.Ngày_đăng_bán;
-
                 listReport.Add(temp);
             }
             return listReport;  
@@ -256,10 +263,12 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             List<BanDo> bds = bdd.LoadDanhSach();
             fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
-
+            List<BanDo> danhSachSapXep = new List<BanDo>();
+            danhSachSapXep = bds.OrderByDescending(j => j.Yêu_thích).ToList();
+            danhSachSapXep = bds.OrderByDescending(j => int.Parse(j.Lượt_xem)).ToList();
             string tuKhoa = tk.Text.ToLower(); // Chuyển đổi tìm kiếm về chữ thường
 
-            foreach (BanDo j in bds)
+            foreach (BanDo j in danhSachSapXep)
             {
                 if (a == "All")
                 {
@@ -268,7 +277,7 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                     if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
                     {
                         UCHienThi ucht = new UCHienThi(j);
-                        ucht.Margin = new Padding(8);
+                        ucht.Margin = new Padding(10);
                         fl.Controls.Add(ucht);
                     }
                 }
@@ -279,7 +288,7 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                     if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
                     {
                         UCHienThi ucht = new UCHienThi(j);
-                        ucht.Margin = new Padding(8);
+                        ucht.Margin = new Padding(10);
                         fl.Controls.Add(ucht);
                     }
                 }

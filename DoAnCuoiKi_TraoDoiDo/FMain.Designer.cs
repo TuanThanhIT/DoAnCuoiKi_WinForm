@@ -30,10 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLPMainVoucher = new System.Windows.Forms.FlowLayoutPanel();
             this.txtVoucher = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.flowLPMainSukien = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSuKien = new System.Windows.Forms.TextBox();
@@ -41,14 +43,12 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox6
@@ -58,11 +58,23 @@
             this.groupBox6.Controls.Add(this.label7);
             this.groupBox6.Controls.Add(this.flowLPMainVoucher);
             this.groupBox6.Controls.Add(this.txtVoucher);
-            this.groupBox6.Location = new System.Drawing.Point(547, 342);
+            this.groupBox6.Location = new System.Drawing.Point(700, 362);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(518, 305);
+            this.groupBox6.Size = new System.Drawing.Size(676, 380);
             this.groupBox6.TabIndex = 22;
             this.groupBox6.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(641, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // label7
             // 
@@ -79,16 +91,17 @@
             // 
             this.flowLPMainVoucher.AutoScroll = true;
             this.flowLPMainVoucher.BackColor = System.Drawing.Color.White;
+            this.flowLPMainVoucher.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLPMainVoucher.Location = new System.Drawing.Point(6, 46);
             this.flowLPMainVoucher.Name = "flowLPMainVoucher";
-            this.flowLPMainVoucher.Size = new System.Drawing.Size(506, 266);
+            this.flowLPMainVoucher.Size = new System.Drawing.Size(664, 324);
             this.flowLPMainVoucher.TabIndex = 1;
             // 
             // txtVoucher
             // 
-            this.txtVoucher.Location = new System.Drawing.Point(209, 20);
+            this.txtVoucher.Location = new System.Drawing.Point(341, 19);
             this.txtVoucher.Name = "txtVoucher";
-            this.txtVoucher.Size = new System.Drawing.Size(256, 22);
+            this.txtVoucher.Size = new System.Drawing.Size(294, 22);
             this.txtVoucher.TabIndex = 3;
             this.txtVoucher.TextChanged += new System.EventHandler(this.txtVoucher_TextChanged);
             // 
@@ -99,19 +112,32 @@
             this.groupBox5.Controls.Add(this.flowLPMainSukien);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.txtSuKien);
-            this.groupBox5.Location = new System.Drawing.Point(1, 342);
+            this.groupBox5.Location = new System.Drawing.Point(1, 362);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(540, 305);
+            this.groupBox5.Size = new System.Drawing.Size(693, 380);
             this.groupBox5.TabIndex = 21;
             this.groupBox5.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(657, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // flowLPMainSukien
             // 
             this.flowLPMainSukien.AutoScroll = true;
             this.flowLPMainSukien.BackColor = System.Drawing.Color.White;
-            this.flowLPMainSukien.Location = new System.Drawing.Point(6, 46);
+            this.flowLPMainSukien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLPMainSukien.Location = new System.Drawing.Point(6, 45);
             this.flowLPMainSukien.Name = "flowLPMainSukien";
-            this.flowLPMainSukien.Size = new System.Drawing.Size(528, 266);
+            this.flowLPMainSukien.Size = new System.Drawing.Size(680, 325);
             this.flowLPMainSukien.TabIndex = 0;
             // 
             // label6
@@ -127,20 +153,20 @@
             // 
             // txtSuKien
             // 
-            this.txtSuKien.Location = new System.Drawing.Point(225, 18);
+            this.txtSuKien.Location = new System.Drawing.Point(344, 17);
             this.txtSuKien.Name = "txtSuKien";
-            this.txtSuKien.Size = new System.Drawing.Size(266, 22);
+            this.txtSuKien.Size = new System.Drawing.Size(307, 22);
             this.txtSuKien.TabIndex = 2;
             this.txtSuKien.TextChanged += new System.EventHandler(this.txtSuKien_TextChanged);
             // 
             // lblTrangChinhHienthi
             // 
             this.lblTrangChinhHienthi.BackColor = System.Drawing.Color.Black;
-            this.lblTrangChinhHienthi.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChinhHienthi.Font = new System.Drawing.Font("MV Boli", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrangChinhHienthi.ForeColor = System.Drawing.Color.White;
             this.lblTrangChinhHienthi.Location = new System.Drawing.Point(7, 9);
             this.lblTrangChinhHienthi.Name = "lblTrangChinhHienthi";
-            this.lblTrangChinhHienthi.Size = new System.Drawing.Size(722, 317);
+            this.lblTrangChinhHienthi.Size = new System.Drawing.Size(1034, 334);
             this.lblTrangChinhHienthi.TabIndex = 20;
             this.lblTrangChinhHienthi.Text = "Welcome back\r\nĐây là phầm mềm giúp bạn mua bán đồ một cách dễ \r\ndàng và nhanh chó" +
     "ng. Mong bạn sẽ có những trải nghiệm\r\ntuyệt vời nhất khi sử dụng phầm mềm của ch" +
@@ -168,14 +194,14 @@
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(1064, 335);
+            this.guna2TextBox1.Size = new System.Drawing.Size(1375, 355);
             this.guna2TextBox1.TabIndex = 24;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
             this.pictureBox3.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_shop_96;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 161);
+            this.pictureBox3.Location = new System.Drawing.Point(7, 181);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(261, 162);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,43 +212,19 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.pngtree_grocery_store_logo_png_png_image_7223803;
-            this.pictureBox1.Location = new System.Drawing.Point(726, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1047, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(319, 298);
+            this.pictureBox1.Size = new System.Drawing.Size(319, 334);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(497, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(471, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(29, 34);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1066, 649);
+            this.ClientSize = new System.Drawing.Size(1378, 744);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblTrangChinhHienthi);
             this.Controls.Add(this.pictureBox1);
@@ -235,12 +237,12 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

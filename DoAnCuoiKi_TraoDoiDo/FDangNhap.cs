@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnCuoiKi_TraoDoiDo.DTO;
+using System.Security.Cryptography;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
@@ -28,9 +29,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             string cv;
             if (radQuantrivien.Checked == true)
                 cv = radQuantrivien.Text;
-
-            else
+            else if (radThanhvien.Checked == true)
                 cv = radThanhvien.Text;
+            else
+                cv = "khong co";
+
             return cv;
         }
         private bool checkDangnhap()

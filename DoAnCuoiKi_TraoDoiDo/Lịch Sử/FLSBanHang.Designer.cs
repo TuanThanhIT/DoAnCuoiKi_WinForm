@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLSBanHang));
             this.label1 = new System.Windows.Forms.Label();
             this.gvLSBanHang = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnXoaLSBanHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnTiepTheo = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuayLai = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLSXuatBaocao = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvLSBanHang)).BeginInit();
@@ -57,28 +56,28 @@
             // 
             // gvLSBanHang
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gvLSBanHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.gvLSBanHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gvLSBanHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.gvLSBanHang.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvLSBanHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvLSBanHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gvLSBanHang.ColumnHeadersHeight = 40;
             this.gvLSBanHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvLSBanHang.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvLSBanHang.DefaultCellStyle = dataGridViewCellStyle6;
             this.gvLSBanHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.gvLSBanHang.Location = new System.Drawing.Point(12, 66);
             this.gvLSBanHang.Name = "gvLSBanHang";
@@ -86,7 +85,7 @@
             this.gvLSBanHang.RowHeadersVisible = false;
             this.gvLSBanHang.RowHeadersWidth = 51;
             this.gvLSBanHang.RowTemplate.Height = 24;
-            this.gvLSBanHang.Size = new System.Drawing.Size(1041, 441);
+            this.gvLSBanHang.Size = new System.Drawing.Size(1349, 538);
             this.gvLSBanHang.TabIndex = 10;
             this.gvLSBanHang.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvLSBanHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -123,9 +122,9 @@
             this.btnXoaLSBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(238)))), ((int)(((byte)(232)))));
             this.btnXoaLSBanHang.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaLSBanHang.ForeColor = System.Drawing.Color.Black;
-            this.btnXoaLSBanHang.Location = new System.Drawing.Point(904, 513);
+            this.btnXoaLSBanHang.Location = new System.Drawing.Point(1172, 624);
             this.btnXoaLSBanHang.Name = "btnXoaLSBanHang";
-            this.btnXoaLSBanHang.Size = new System.Drawing.Size(132, 41);
+            this.btnXoaLSBanHang.Size = new System.Drawing.Size(170, 41);
             this.btnXoaLSBanHang.TabIndex = 3;
             this.btnXoaLSBanHang.Text = "Xóa lịch sử";
             this.btnXoaLSBanHang.Click += new System.EventHandler(this.btnXoaLSBanHang_Click);
@@ -147,24 +146,6 @@
             this.btnTiepTheo.Name = "btnTiepTheo";
             this.btnTiepTheo.Size = new System.Drawing.Size(66, 58);
             this.btnTiepTheo.TabIndex = 4;
-            // 
-            // btnQuayLai
-            // 
-            this.btnQuayLai.BorderColor = System.Drawing.Color.White;
-            this.btnQuayLai.BorderRadius = 5;
-            this.btnQuayLai.BorderThickness = 2;
-            this.btnQuayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQuayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQuayLai.FillColor = System.Drawing.Color.White;
-            this.btnQuayLai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnQuayLai.ForeColor = System.Drawing.Color.White;
-            this.btnQuayLai.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnQuayLai.Location = new System.Drawing.Point(12, 544);
-            this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Size = new System.Drawing.Size(66, 56);
-            this.btnQuayLai.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -189,9 +170,9 @@
             this.btnLSXuatBaocao.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLSXuatBaocao.ForeColor = System.Drawing.Color.Black;
             this.btnLSXuatBaocao.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_report_96;
-            this.btnLSXuatBaocao.Location = new System.Drawing.Point(756, 513);
+            this.btnLSXuatBaocao.Location = new System.Drawing.Point(986, 624);
             this.btnLSXuatBaocao.Name = "btnLSXuatBaocao";
-            this.btnLSXuatBaocao.Size = new System.Drawing.Size(132, 41);
+            this.btnLSXuatBaocao.Size = new System.Drawing.Size(170, 41);
             this.btnLSXuatBaocao.TabIndex = 2;
             this.btnLSXuatBaocao.Text = "Xuất báo cáo";
             this.btnLSXuatBaocao.Click += new System.EventHandler(this.btnLSXuatBaocao_Click);
@@ -201,9 +182,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 557);
+            this.ClientSize = new System.Drawing.Size(1371, 677);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.btnTiepTheo);
             this.Controls.Add(this.btnXoaLSBanHang);
             this.Controls.Add(this.btnLSXuatBaocao);
@@ -227,7 +207,6 @@
         private Guna.UI2.WinForms.Guna2Button btnLSXuatBaocao;
         private Guna.UI2.WinForms.Guna2Button btnXoaLSBanHang;
         private Guna.UI2.WinForms.Guna2Button btnTiepTheo;
-        private Guna.UI2.WinForms.Guna2Button btnQuayLai;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

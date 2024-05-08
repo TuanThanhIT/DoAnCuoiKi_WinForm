@@ -16,7 +16,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormDangBan : Form
     {
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         BanDoBUS bds = new BanDoBUS();
 
         public FormDangBan()
@@ -34,12 +34,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormBanDo(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormBanDo(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Bán Đồ";
             }
             else
             {
-                fd.OpenChildForm(new FormBanDo(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormBanDo(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Bán Đồ";
             }
         }
@@ -49,12 +49,12 @@ namespace DoAnCuoiKi_TraoDoiDo
             BanDoBUS.checkButton = false;
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormBanDo(this), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormBanDo(this), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Bán Đồ";
             }
             else
             {
-                fd.OpenChildForm(new FormBanDo(this), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormBanDo(this), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Bán Đồ";
             }
         }
@@ -110,12 +110,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormBanDo(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormBanDo(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Mặt hàng";
             }
             else
             {
-                fd.OpenChildForm(new FormBanDo(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormBanDo(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Mặt hàng";
             }
         }

@@ -31,9 +31,9 @@ namespace DoAnCuoiKi_TraoDoiDo
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAnh3 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblMaVoucher.AutoSize = true;
             this.lblMaVoucher.ForeColor = System.Drawing.Color.White;
-            this.lblMaVoucher.Location = new System.Drawing.Point(174, 595);
+            this.lblMaVoucher.Location = new System.Drawing.Point(174, 702);
             this.lblMaVoucher.Name = "lblMaVoucher";
             this.lblMaVoucher.Size = new System.Drawing.Size(44, 16);
             this.lblMaVoucher.TabIndex = 11;
@@ -108,7 +108,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblTen.AutoSize = true;
             this.lblTen.ForeColor = System.Drawing.Color.White;
-            this.lblTen.Location = new System.Drawing.Point(12, 611);
+            this.lblTen.Location = new System.Drawing.Point(12, 718);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(44, 16);
             this.lblTen.TabIndex = 13;
@@ -118,7 +118,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblSoluong.AutoSize = true;
             this.lblSoluong.ForeColor = System.Drawing.Color.White;
-            this.lblSoluong.Location = new System.Drawing.Point(459, 595);
+            this.lblSoluong.Location = new System.Drawing.Point(459, 702);
             this.lblSoluong.Name = "lblSoluong";
             this.lblSoluong.Size = new System.Drawing.Size(44, 16);
             this.lblSoluong.TabIndex = 14;
@@ -128,7 +128,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblSlVou.AutoSize = true;
             this.lblSlVou.ForeColor = System.Drawing.Color.White;
-            this.lblSlVou.Location = new System.Drawing.Point(389, 595);
+            this.lblSlVou.Location = new System.Drawing.Point(389, 702);
             this.lblSlVou.Name = "lblSlVou";
             this.lblSlVou.Size = new System.Drawing.Size(44, 16);
             this.lblSlVou.TabIndex = 15;
@@ -138,7 +138,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblGiamgia.AutoSize = true;
             this.lblGiamgia.ForeColor = System.Drawing.Color.White;
-            this.lblGiamgia.Location = new System.Drawing.Point(275, 595);
+            this.lblGiamgia.Location = new System.Drawing.Point(275, 702);
             this.lblGiamgia.Name = "lblGiamgia";
             this.lblGiamgia.Size = new System.Drawing.Size(44, 16);
             this.lblGiamgia.TabIndex = 16;
@@ -158,7 +158,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblMota.AutoSize = true;
             this.lblMota.ForeColor = System.Drawing.Color.White;
-            this.lblMota.Location = new System.Drawing.Point(275, 611);
+            this.lblMota.Location = new System.Drawing.Point(275, 718);
             this.lblMota.Name = "lblMota";
             this.lblMota.Size = new System.Drawing.Size(51, 16);
             this.lblMota.TabIndex = 18;
@@ -168,7 +168,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblGiaban.AutoSize = true;
             this.lblGiaban.ForeColor = System.Drawing.Color.White;
-            this.lblGiaban.Location = new System.Drawing.Point(167, 611);
+            this.lblGiaban.Location = new System.Drawing.Point(167, 718);
             this.lblGiaban.Name = "lblGiaban";
             this.lblGiaban.Size = new System.Drawing.Size(51, 16);
             this.lblGiaban.TabIndex = 19;
@@ -178,7 +178,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblLoai.AutoSize = true;
             this.lblLoai.ForeColor = System.Drawing.Color.White;
-            this.lblLoai.Location = new System.Drawing.Point(89, 611);
+            this.lblLoai.Location = new System.Drawing.Point(89, 718);
             this.lblLoai.Name = "lblLoai";
             this.lblLoai.Size = new System.Drawing.Size(51, 16);
             this.lblLoai.TabIndex = 20;
@@ -188,7 +188,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblMaSP.AutoSize = true;
             this.lblMaSP.ForeColor = System.Drawing.Color.White;
-            this.lblMaSP.Location = new System.Drawing.Point(273, 579);
+            this.lblMaSP.Location = new System.Drawing.Point(273, 686);
             this.lblMaSP.Name = "lblMaSP";
             this.lblMaSP.Size = new System.Drawing.Size(51, 16);
             this.lblMaSP.TabIndex = 21;
@@ -198,7 +198,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblTinhtrang.AutoSize = true;
             this.lblTinhtrang.ForeColor = System.Drawing.Color.White;
-            this.lblTinhtrang.Location = new System.Drawing.Point(172, 579);
+            this.lblTinhtrang.Location = new System.Drawing.Point(172, 686);
             this.lblTinhtrang.Name = "lblTinhtrang";
             this.lblTinhtrang.Size = new System.Drawing.Size(51, 16);
             this.lblTinhtrang.TabIndex = 22;
@@ -208,7 +208,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblPtGiaohang.AutoSize = true;
             this.lblPtGiaohang.ForeColor = System.Drawing.Color.White;
-            this.lblPtGiaohang.Location = new System.Drawing.Point(87, 579);
+            this.lblPtGiaohang.Location = new System.Drawing.Point(87, 686);
             this.lblPtGiaohang.Name = "lblPtGiaohang";
             this.lblPtGiaohang.Size = new System.Drawing.Size(51, 16);
             this.lblPtGiaohang.TabIndex = 23;
@@ -218,7 +218,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblDiadiem.AutoSize = true;
             this.lblDiadiem.ForeColor = System.Drawing.Color.White;
-            this.lblDiadiem.Location = new System.Drawing.Point(12, 579);
+            this.lblDiadiem.Location = new System.Drawing.Point(12, 686);
             this.lblDiadiem.Name = "lblDiadiem";
             this.lblDiadiem.Size = new System.Drawing.Size(51, 16);
             this.lblDiadiem.TabIndex = 24;
@@ -238,7 +238,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblID.AutoSize = true;
             this.lblID.ForeColor = System.Drawing.Color.White;
-            this.lblID.Location = new System.Drawing.Point(459, 579);
+            this.lblID.Location = new System.Drawing.Point(459, 686);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(51, 16);
             this.lblID.TabIndex = 27;
@@ -248,7 +248,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblNgay.AutoSize = true;
             this.lblNgay.ForeColor = System.Drawing.Color.White;
-            this.lblNgay.Location = new System.Drawing.Point(380, 579);
+            this.lblNgay.Location = new System.Drawing.Point(380, 686);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(51, 16);
             this.lblNgay.TabIndex = 28;
@@ -258,7 +258,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblGiagoc.AutoSize = true;
             this.lblGiagoc.ForeColor = System.Drawing.Color.White;
-            this.lblGiagoc.Location = new System.Drawing.Point(389, 611);
+            this.lblGiagoc.Location = new System.Drawing.Point(389, 718);
             this.lblGiagoc.Name = "lblGiagoc";
             this.lblGiagoc.Size = new System.Drawing.Size(51, 16);
             this.lblGiagoc.TabIndex = 29;
@@ -266,28 +266,28 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             // gvDangban
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gvDangban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.gvDangban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gvDangban.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None;
             this.gvDangban.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvDangban.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvDangban.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gvDangban.ColumnHeadersHeight = 35;
             this.gvDangban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvDangban.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvDangban.DefaultCellStyle = dataGridViewCellStyle6;
             this.gvDangban.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.gvDangban.Location = new System.Drawing.Point(1, 65);
             this.gvDangban.Name = "gvDangban";
@@ -295,7 +295,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.gvDangban.RowHeadersVisible = false;
             this.gvDangban.RowHeadersWidth = 51;
             this.gvDangban.RowTemplate.Height = 24;
-            this.gvDangban.Size = new System.Drawing.Size(1056, 508);
+            this.gvDangban.Size = new System.Drawing.Size(1377, 600);
             this.gvDangban.TabIndex = 10;
             this.gvDangban.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvDangban.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -331,13 +331,13 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnDbChinhsua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDbChinhsua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDbChinhsua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDbChinhsua.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbChinhsua.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDbChinhsua.ForeColor = System.Drawing.Color.Black;
             this.btnDbChinhsua.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_edit_961;
             this.btnDbChinhsua.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDbChinhsua.Location = new System.Drawing.Point(720, 579);
+            this.btnDbChinhsua.Location = new System.Drawing.Point(1010, 686);
             this.btnDbChinhsua.Name = "btnDbChinhsua";
-            this.btnDbChinhsua.Size = new System.Drawing.Size(158, 45);
+            this.btnDbChinhsua.Size = new System.Drawing.Size(171, 45);
             this.btnDbChinhsua.TabIndex = 9;
             this.btnDbChinhsua.Text = "Sửa mặt hàng";
             this.btnDbChinhsua.Click += new System.EventHandler(this.btnDbChinhsua_Click);
@@ -352,13 +352,13 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnDangbanThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDangbanThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDangbanThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDangbanThem.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangbanThem.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangbanThem.ForeColor = System.Drawing.Color.Black;
             this.btnDangbanThem.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_add_482;
             this.btnDangbanThem.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnDangbanThem.Location = new System.Drawing.Point(556, 582);
+            this.btnDangbanThem.Location = new System.Drawing.Point(815, 686);
             this.btnDangbanThem.Name = "btnDangbanThem";
-            this.btnDangbanThem.Size = new System.Drawing.Size(158, 45);
+            this.btnDangbanThem.Size = new System.Drawing.Size(171, 45);
             this.btnDangbanThem.TabIndex = 8;
             this.btnDangbanThem.Text = "Thêm mặt hàng";
             this.btnDangbanThem.Click += new System.EventHandler(this.btnDangbanThem_Click_1);
@@ -373,13 +373,13 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnDbXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDbXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDbXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(222)))));
-            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDbXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
             this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_481;
             this.btnDbXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDbXoa.Location = new System.Drawing.Point(884, 579);
+            this.btnDbXoa.Location = new System.Drawing.Point(1196, 686);
             this.btnDbXoa.Name = "btnDbXoa";
-            this.btnDbXoa.Size = new System.Drawing.Size(158, 45);
+            this.btnDbXoa.Size = new System.Drawing.Size(171, 45);
             this.btnDbXoa.TabIndex = 7;
             this.btnDbXoa.Text = "Gỡ mặt hàng";
             this.btnDbXoa.Click += new System.EventHandler(this.btnDbXoa_Click);
@@ -388,7 +388,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.btnDbQuaylai.BackColor = System.Drawing.Color.White;
             this.btnDbQuaylai.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.quaylai2;
-            this.btnDbQuaylai.Location = new System.Drawing.Point(974, 10);
+            this.btnDbQuaylai.Location = new System.Drawing.Point(1295, 6);
             this.btnDbQuaylai.Name = "btnDbQuaylai";
             this.btnDbQuaylai.Size = new System.Drawing.Size(83, 49);
             this.btnDbQuaylai.TabIndex = 4;
@@ -400,7 +400,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1059, 636);
+            this.ClientSize = new System.Drawing.Size(1380, 743);
             this.Controls.Add(this.gvDangban);
             this.Controls.Add(this.lblGiagoc);
             this.Controls.Add(this.lblNgay);

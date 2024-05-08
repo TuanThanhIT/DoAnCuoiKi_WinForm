@@ -8,16 +8,16 @@ using DoAnCuoiKi_TraoDoiDo.DTO;
 
 namespace DoAnCuoiKi_TraoDoiDo
 {
-    public class FormDAO
+    public class FormBUS
     {
-        public static Form activeForm;
-        public void OpenChildForm(Form childForm, ref Form activeForm, Panel panel)
+        private Form currentFormChild;
+        public void OpenChildForm(Form childForm, Panel panel)
         {
-            if (activeForm != null)
+            if (currentFormChild != null)
             {
-                activeForm.Close();
+                currentFormChild.Close();
             }
-            activeForm = childForm;
+            currentFormChild = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;

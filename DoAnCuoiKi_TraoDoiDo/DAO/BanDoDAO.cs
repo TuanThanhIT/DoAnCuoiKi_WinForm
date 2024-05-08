@@ -25,6 +25,19 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
 
 
         }
+
+        public void ThemHienThi(BanDo bd)
+        {
+            string sqlStr = string.Format("INSERT INTO SảnPhẩm(Tên_mặt_hàng, Mã_sản_phẩm, Lượt_xem, Yêu_thích)" +
+                "VALUES ('{0}', '{1}', '{2}', '{3}')",bd.Tên_mặt_hàng, bd.Mã_sản_phẩm, bd.Lượt_xem, bd.Yêu_thích);
+            db.Thucthi(sqlStr);
+        }
+        public void SuaHienThi(BanDo bd)
+        {
+            string sqlStr = string.Format("UPDATE [SảnPhẩm] SET Tên_mặt_hàng = '{0}', Lượt_xem = '{1}', Yêu_thích = '{2}' WHERE Mã_sản_phẩm = '{3}'",
+              bd.Tên_mặt_hàng, bd.Lượt_xem, bd.Yêu_thích, bd.Mã_sản_phẩm);
+            db.Thucthi(sqlStr);
+        }
         public bool XoaMatHang(BanDo bd)  // Xóa trong FormDangBan
         {
             string sqlStr = string.Format("DELETE FROM ĐăngBán WHERE Tên_mặt_hàng = '{0}'", bd.Tên_mặt_hàng);
@@ -70,11 +83,10 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
 
         public List<BanDo> LoadDanhSach() // Lấy dữ liệu để hiển thị UCHienThi
         {
-              string query2 = string.Format("SELECT * FROM [ĐăngBán] WHERE Số_lượng > 0");
-               return d.LoadDanhSachDangBan(query2);
-
-
-
+            string query2 = "SELECT dangban.Tên_mặt_hàng, Loại_mặt_hàng, Giá_bán, Mô_tả_mặt_hàng, Hình_ảnh_1, Hình_ảnh_2, Hình_ảnh_3, Hình_ảnh_4, Mã_Voucher, Giảm_giá, Số_lượng_Voucher, Số_lượng, Địa_điểm, Phương_thức_giao_hàng, Tình_trạng_mặt_hàng, dangban.Mã_sản_phẩm, Ngày_đăng_bán, ID, Giá_gốc, Lượt_xem, Yêu_thích " +
+               "FROM [ĐăngBán] AS dangban INNER JOIN [SảnPhẩm] AS sanpham ON dangban.Mã_sản_phẩm = sanpham.Mã_sản_phẩm " +
+               "WHERE dangban.Số_lượng > 0";
+            return d.LoadDanhSachDangBan2(query2);
         }
         public List<BanDo> LoadDSVou() // Lấy dữ liệu để hiển thị UCVoucher
         {
@@ -87,7 +99,7 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
                 "from [ĐăngBán] where [Số_lượng] = 0 and ID = N'{0}'", DangKiDAO.ID);
             return d.LoadDanhSachDangBan(sqlStr);
         }
-        public List<BanDo> LoadTKBanHang()
+        public List<BanDo> LoadTKBanHang() // Lấy dữ liệu tạo thống kê bán hàng
         {
             string sqlStr = string.Format("select *" +
                 "from [ĐăngBán]");

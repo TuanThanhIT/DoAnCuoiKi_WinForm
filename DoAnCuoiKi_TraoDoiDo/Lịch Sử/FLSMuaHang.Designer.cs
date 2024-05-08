@@ -83,7 +83,7 @@
             this.gvLSMuaHang.RowHeadersVisible = false;
             this.gvLSMuaHang.RowHeadersWidth = 51;
             this.gvLSMuaHang.RowTemplate.Height = 24;
-            this.gvLSMuaHang.Size = new System.Drawing.Size(1051, 438);
+            this.gvLSMuaHang.Size = new System.Drawing.Size(1379, 535);
             this.gvLSMuaHang.TabIndex = 10;
             this.gvLSMuaHang.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvLSMuaHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -131,9 +131,9 @@
             this.btnXoaLS.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaLS.ForeColor = System.Drawing.Color.Black;
             this.btnXoaLS.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaLS.Image")));
-            this.btnXoaLS.Location = new System.Drawing.Point(912, 512);
+            this.btnXoaLS.Location = new System.Drawing.Point(1216, 621);
             this.btnXoaLS.Name = "btnXoaLS";
-            this.btnXoaLS.Size = new System.Drawing.Size(132, 41);
+            this.btnXoaLS.Size = new System.Drawing.Size(155, 44);
             this.btnXoaLS.TabIndex = 3;
             this.btnXoaLS.Text = "Xóa lịch sử";
             this.btnXoaLS.Click += new System.EventHandler(this.btnXoaLS_Click);
@@ -151,9 +151,9 @@
             this.btnLSXuatBaocao.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLSXuatBaocao.ForeColor = System.Drawing.Color.Black;
             this.btnLSXuatBaocao.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_report_96;
-            this.btnLSXuatBaocao.Location = new System.Drawing.Point(764, 512);
+            this.btnLSXuatBaocao.Location = new System.Drawing.Point(1045, 621);
             this.btnLSXuatBaocao.Name = "btnLSXuatBaocao";
-            this.btnLSXuatBaocao.Size = new System.Drawing.Size(132, 41);
+            this.btnLSXuatBaocao.Size = new System.Drawing.Size(155, 44);
             this.btnLSXuatBaocao.TabIndex = 2;
             this.btnLSXuatBaocao.Text = "Xuất báo cáo";
             this.btnLSXuatBaocao.Click += new System.EventHandler(this.btnLSXuatBaocao_Click);
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1057, 557);
+            this.ClientSize = new System.Drawing.Size(1385, 677);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnXoaLS);
             this.Controls.Add(this.btnLSXuatBaocao);

@@ -16,41 +16,26 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             InitializeComponent();
         }
-        private Form currentFormChild;
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelLichSu.Controls.Add(childForm);
-            panelLichSu.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
+        FormBUS fd = new FormBUS();
 
         private void FormThongKe_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTKMuaHang());
+            fd.OpenChildForm(new FormTKMuaHang(),panelThongKe);
         }
 
         private void btnTKMuaHang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTKMuaHang());
+            fd.OpenChildForm(new FormTKMuaHang(), panelThongKe);
         }
 
         private void btnTKBanHang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTKBanHang());
+            fd.OpenChildForm(new FormTKBanHang(), panelThongKe);
         }
 
         private void btnTKTaiKhoan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTKTaiKhoan());
+            fd.OpenChildForm(new FormTKTaiKhoan(), panelThongKe);
         }
     }
 }

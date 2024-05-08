@@ -51,10 +51,10 @@
             panelTVTrangChu = new System.Windows.Forms.Panel();
             this.btnOut = new Guna.UI2.WinForms.Guna2Button();
             lblTVChude = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dateTimePickerTrangchu = new System.Windows.Forms.DateTimePicker();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.Panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,6 +62,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -249,9 +250,9 @@
             this.panel3.Controls.Add(this.lblTrangchuTen);
             this.panel3.Controls.Add(this.btnDangxuat);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(1284, 53);
+            this.panel3.Location = new System.Drawing.Point(1271, 55);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 630);
+            this.panel3.Size = new System.Drawing.Size(223, 607);
             this.panel3.TabIndex = 14;
             // 
             // btnDangxuat
@@ -319,13 +320,13 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 684);
+            this.panel2.Size = new System.Drawing.Size(216, 662);
             this.panel2.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 540);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 521);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(209, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,10 +336,10 @@
             // panelTVTrangChu
             // 
             panelTVTrangChu.BackColor = System.Drawing.Color.White;
-            panelTVTrangChu.Location = new System.Drawing.Point(215, 53);
+            panelTVTrangChu.Location = new System.Drawing.Point(216, 55);
             panelTVTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             panelTVTrangChu.Name = "panelTVTrangChu";
-            panelTVTrangChu.Size = new System.Drawing.Size(1068, 630);
+            panelTVTrangChu.Size = new System.Drawing.Size(1057, 605);
             panelTVTrangChu.TabIndex = 12;
             // 
             // btnOut
@@ -355,7 +356,7 @@
             this.btnOut.ForeColor = System.Drawing.Color.Black;
             this.btnOut.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_log_out_96;
             this.btnOut.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnOut.Location = new System.Drawing.Point(1175, 6);
+            this.btnOut.Location = new System.Drawing.Point(1178, 8);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(96, 41);
             this.btnOut.TabIndex = 38;
@@ -372,20 +373,9 @@
             lblTVChude.TabIndex = 10;
             lblTVChude.Text = "label1";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.button1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
-            this.button1.Location = new System.Drawing.Point(1352, 8);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 39);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // dateTimePickerTrangchu
             // 
-            this.dateTimePickerTrangchu.Location = new System.Drawing.Point(821, 12);
+            this.dateTimePickerTrangchu.Location = new System.Drawing.Point(810, 12);
             this.dateTimePickerTrangchu.Name = "dateTimePickerTrangchu";
             this.dateTimePickerTrangchu.Size = new System.Drawing.Size(247, 22);
             this.dateTimePickerTrangchu.TabIndex = 7;
@@ -395,24 +385,35 @@
             this.Panel.BackColor = System.Drawing.Color.Black;
             this.Panel.Controls.Add(this.btnOut);
             this.Panel.Controls.Add(lblTVChude);
-            this.Panel.Controls.Add(this.button1);
             this.Panel.Controls.Add(this.dateTimePickerTrangchu);
-            this.Panel.Location = new System.Drawing.Point(215, 0);
+            this.Panel.Location = new System.Drawing.Point(216, 0);
             this.Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1277, 52);
+            this.Panel.Size = new System.Drawing.Size(1277, 55);
             this.Panel.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(panelTVTrangChu);
+            this.panel1.Controls.Add(this.Panel);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1494, 662);
+            this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // FormTrangChuThanhVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1494, 684);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(panelTVTrangChu);
-            this.Controls.Add(this.Panel);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1494, 662);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormTrangChuThanhVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Chủ";
             this.Load += new System.EventHandler(this.FormTrangChuThanhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -425,7 +426,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -450,11 +453,11 @@
         private Guna.UI2.WinForms.Guna2Button btnTrangChu;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnOut;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePickerTrangchu;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
         public static System.Windows.Forms.Panel panelTVTrangChu;
         public static System.Windows.Forms.Label lblTVChude;
     }

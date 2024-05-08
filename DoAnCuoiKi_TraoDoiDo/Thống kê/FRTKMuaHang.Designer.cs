@@ -37,14 +37,15 @@
             this.rpVTKMuaHang.Location = new System.Drawing.Point(0, 0);
             this.rpVTKMuaHang.Name = "rpVTKMuaHang";
             this.rpVTKMuaHang.ServerReport.BearerToken = null;
-            this.rpVTKMuaHang.Size = new System.Drawing.Size(892, 538);
+            this.rpVTKMuaHang.Size = new System.Drawing.Size(1376, 748);
             this.rpVTKMuaHang.TabIndex = 0;
             // 
             // FormRTKMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 538);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1376, 748);
             this.Controls.Add(this.rpVTKMuaHang);
             this.Name = "FormRTKMuaHang";
             this.Text = "Thống Kê Mua Hàng";

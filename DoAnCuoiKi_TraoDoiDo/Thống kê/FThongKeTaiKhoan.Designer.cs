@@ -56,7 +56,6 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.gvAllTaiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvAllTaiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.gvAllTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -83,7 +82,7 @@
             this.gvAllTaiKhoan.RowHeadersVisible = false;
             this.gvAllTaiKhoan.RowHeadersWidth = 51;
             this.gvAllTaiKhoan.RowTemplate.Height = 24;
-            this.gvAllTaiKhoan.Size = new System.Drawing.Size(1041, 442);
+            this.gvAllTaiKhoan.Size = new System.Drawing.Size(1347, 558);
             this.gvAllTaiKhoan.TabIndex = 16;
             this.gvAllTaiKhoan.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvAllTaiKhoan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -120,22 +119,23 @@
             // 
             // btnAllTaiKhoan
             // 
-            this.btnAllTaiKhoan.BorderColor = System.Drawing.Color.Red;
             this.btnAllTaiKhoan.BorderRadius = 5;
             this.btnAllTaiKhoan.BorderThickness = 2;
             this.btnAllTaiKhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAllTaiKhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAllTaiKhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAllTaiKhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllTaiKhoan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(238)))), ((int)(((byte)(232)))));
+            this.btnAllTaiKhoan.FillColor = System.Drawing.Color.White;
             this.btnAllTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllTaiKhoan.ForeColor = System.Drawing.Color.Black;
             this.btnAllTaiKhoan.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_report_96;
-            this.btnAllTaiKhoan.Location = new System.Drawing.Point(851, 510);
+            this.btnAllTaiKhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAllTaiKhoan.Location = new System.Drawing.Point(1177, 626);
             this.btnAllTaiKhoan.Name = "btnAllTaiKhoan";
             this.btnAllTaiKhoan.Size = new System.Drawing.Size(182, 41);
             this.btnAllTaiKhoan.TabIndex = 18;
             this.btnAllTaiKhoan.Text = "Báo cáo thống kê";
+            this.btnAllTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAllTaiKhoan.Click += new System.EventHandler(this.btnAllTaiKhoan_Click);
             // 
             // FormTKTaiKhoan
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1063, 556);
+            this.ClientSize = new System.Drawing.Size(1371, 679);
             this.Controls.Add(this.btnAllTaiKhoan);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gvAllTaiKhoan);

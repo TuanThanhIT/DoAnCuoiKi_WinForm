@@ -14,7 +14,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormTKMuaHang : Form
     {
         MuaHangBUS mhb = new MuaHangBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         public FormTKMuaHang()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnAllMuaHangReport_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormRTKMuaHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+            fd.OpenChildForm(new FormRTKMuaHang(), FormTrangChu.panelTrangChu);
             FormTrangChu.lblChude.Text = "Thống kê mua hàng";
         }
     }

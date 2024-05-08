@@ -53,9 +53,9 @@
             // 
             // txtTimKiemGH
             // 
-            this.txtTimKiemGH.Location = new System.Drawing.Point(473, 17);
+            this.txtTimKiemGH.Location = new System.Drawing.Point(652, 17);
             this.txtTimKiemGH.Name = "txtTimKiemGH";
-            this.txtTimKiemGH.Size = new System.Drawing.Size(241, 22);
+            this.txtTimKiemGH.Size = new System.Drawing.Size(260, 22);
             this.txtTimKiemGH.TabIndex = 4;
             this.txtTimKiemGH.TextChanged += new System.EventHandler(this.txtTimKiemGH_TextChanged);
             // 
@@ -63,9 +63,10 @@
             // 
             this.flowLPGioHang.AutoScroll = true;
             this.flowLPGioHang.BackColor = System.Drawing.Color.White;
-            this.flowLPGioHang.Location = new System.Drawing.Point(4, 57);
+            this.flowLPGioHang.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLPGioHang.Location = new System.Drawing.Point(12, 57);
             this.flowLPGioHang.Name = "flowLPGioHang";
-            this.flowLPGioHang.Size = new System.Drawing.Size(803, 408);
+            this.flowLPGioHang.Size = new System.Drawing.Size(1013, 496);
             this.flowLPGioHang.TabIndex = 9;
             // 
             // btnGioHangMua
@@ -80,9 +81,9 @@
             this.btnGioHangMua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(69)))), ((int)(((byte)(40)))));
             this.btnGioHangMua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioHangMua.ForeColor = System.Drawing.Color.White;
-            this.btnGioHangMua.Location = new System.Drawing.Point(636, 471);
+            this.btnGioHangMua.Location = new System.Drawing.Point(850, 559);
             this.btnGioHangMua.Name = "btnGioHangMua";
-            this.btnGioHangMua.Size = new System.Drawing.Size(164, 35);
+            this.btnGioHangMua.Size = new System.Drawing.Size(173, 42);
             this.btnGioHangMua.TabIndex = 15;
             this.btnGioHangMua.Text = "Mua Hàng";
             this.btnGioHangMua.Click += new System.EventHandler(this.btnGioHangMua_Click_1);
@@ -101,7 +102,7 @@
             // 
             this.btnGHQuayLai.BackColor = System.Drawing.Color.White;
             this.btnGHQuayLai.Image = ((System.Drawing.Image)(resources.GetObject("btnGHQuayLai.Image")));
-            this.btnGHQuayLai.Location = new System.Drawing.Point(754, 4);
+            this.btnGHQuayLai.Location = new System.Drawing.Point(972, 8);
             this.btnGHQuayLai.Name = "btnGHQuayLai";
             this.btnGHQuayLai.Size = new System.Drawing.Size(51, 48);
             this.btnGHQuayLai.TabIndex = 5;
@@ -113,7 +114,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(719, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(917, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(812, 518);
+            this.ClientSize = new System.Drawing.Size(1035, 608);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGioHangMua);

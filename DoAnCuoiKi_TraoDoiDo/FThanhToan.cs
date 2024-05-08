@@ -17,7 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormThanhToan : Form
     {
         ThanhToanBUS ttb = new ThanhToanBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         MuaHangBUS mhb = new MuaHangBUS();
         public FormThanhToan()
         {
@@ -43,12 +43,12 @@ namespace DoAnCuoiKi_TraoDoiDo
             ttb.XoaThanhToan();
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormGioHang(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Giỏ Hàng";
             }
             else
             {
-                fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormGioHang(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Giỏ Hàng";
             }
         }
@@ -78,12 +78,12 @@ namespace DoAnCuoiKi_TraoDoiDo
                     ttb.XoaThanhToan();
                     if (DangKiDAO.Chuc_vu == "Quan tri vien")
                     {
-                        fd.OpenChildForm(new FormMain(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                        fd.OpenChildForm(new FormMain(), FormTrangChu.panelTrangChu);
                         FormTrangChu.lblChude.Text = "Trang Chủ";
                     }
                     else
                     {
-                        fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                        fd.OpenChildForm(new FormMatHang(), FormTrangChuThanhVien.panelTVTrangChu);
                         FormTrangChuThanhVien.lblTVChude.Text = "Trang Chủ";
                     }
                 }

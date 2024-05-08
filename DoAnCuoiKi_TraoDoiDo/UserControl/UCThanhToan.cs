@@ -15,7 +15,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class UCThanhToan : UserControl
     {
         ThanhToanBUS ttb = new ThanhToanBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         BanDoBUS bdb = new BanDoBUS();
         GioHangBUS ghb = new GioHangBUS();
         public UCThanhToan()

@@ -59,7 +59,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Location = new System.Drawing.Point(13, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 32);
@@ -78,11 +78,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(479, 89);
+            this.groupBox1.Location = new System.Drawing.Point(618, 92);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(313, 315);
+            this.groupBox1.Size = new System.Drawing.Size(405, 315);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sự kiện";
@@ -92,7 +92,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.dateTimeSKKetthuc.Location = new System.Drawing.Point(119, 262);
             this.dateTimeSKKetthuc.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeSKKetthuc.Name = "dateTimeSKKetthuc";
-            this.dateTimeSKKetthuc.Size = new System.Drawing.Size(183, 25);
+            this.dateTimeSKKetthuc.Size = new System.Drawing.Size(260, 25);
             this.dateTimeSKKetthuc.TabIndex = 8;
             // 
             // dateTimeSKbatdau
@@ -100,7 +100,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.dateTimeSKbatdau.Location = new System.Drawing.Point(119, 186);
             this.dateTimeSKbatdau.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimeSKbatdau.Name = "dateTimeSKbatdau";
-            this.dateTimeSKbatdau.Size = new System.Drawing.Size(183, 25);
+            this.dateTimeSKbatdau.Size = new System.Drawing.Size(260, 25);
             this.dateTimeSKbatdau.TabIndex = 7;
             // 
             // txtSKGiamgia
@@ -108,7 +108,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.txtSKGiamgia.Location = new System.Drawing.Point(119, 111);
             this.txtSKGiamgia.Margin = new System.Windows.Forms.Padding(4);
             this.txtSKGiamgia.Name = "txtSKGiamgia";
-            this.txtSKGiamgia.Size = new System.Drawing.Size(183, 25);
+            this.txtSKGiamgia.Size = new System.Drawing.Size(260, 25);
             this.txtSKGiamgia.TabIndex = 6;
             // 
             // txtSKTen
@@ -116,7 +116,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.txtSKTen.Location = new System.Drawing.Point(119, 46);
             this.txtSKTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtSKTen.Name = "txtSKTen";
-            this.txtSKTen.Size = new System.Drawing.Size(183, 25);
+            this.txtSKTen.Size = new System.Drawing.Size(260, 25);
             this.txtSKTen.TabIndex = 5;
             // 
             // label5
@@ -166,7 +166,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.gvSKsukien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
@@ -183,13 +183,13 @@ namespace DoAnCuoiKi_TraoDoiDo
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gvSKsukien.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvSKsukien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gvSKsukien.Location = new System.Drawing.Point(1, 56);
+            this.gvSKsukien.Location = new System.Drawing.Point(19, 56);
             this.gvSKsukien.Name = "gvSKsukien";
             this.gvSKsukien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvSKsukien.RowHeadersVisible = false;
             this.gvSKsukien.RowHeadersWidth = 51;
             this.gvSKsukien.RowTemplate.Height = 24;
-            this.gvSKsukien.Size = new System.Drawing.Size(471, 423);
+            this.gvSKsukien.Size = new System.Drawing.Size(580, 540);
             this.gvSKsukien.TabIndex = 10;
             this.gvSKsukien.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvSKsukien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -218,7 +218,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(671, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(902, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,11 +238,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnSkSua.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSkSua.ForeColor = System.Drawing.Color.Black;
             this.btnSkSua.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_edit_96;
-            this.btnSkSua.Location = new System.Drawing.Point(694, 442);
+            this.btnSkSua.Location = new System.Drawing.Point(908, 550);
             this.btnSkSua.Name = "btnSkSua";
-            this.btnSkSua.Size = new System.Drawing.Size(98, 37);
+            this.btnSkSua.Size = new System.Drawing.Size(123, 46);
             this.btnSkSua.TabIndex = 8;
-            this.btnSkSua.Text = "Sửa";
+            this.btnSkSua.Text = "Sửa Sự Kiện";
             this.btnSkSua.Click += new System.EventHandler(this.btnSkSua_Click);
             // 
             // btnSkXoa
@@ -258,11 +258,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnSkXoa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSkXoa.ForeColor = System.Drawing.Color.Black;
             this.btnSkXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_48;
-            this.btnSkXoa.Location = new System.Drawing.Point(583, 442);
+            this.btnSkXoa.Location = new System.Drawing.Point(765, 550);
             this.btnSkXoa.Name = "btnSkXoa";
-            this.btnSkXoa.Size = new System.Drawing.Size(98, 37);
+            this.btnSkXoa.Size = new System.Drawing.Size(123, 46);
             this.btnSkXoa.TabIndex = 7;
-            this.btnSkXoa.Text = "Xóa";
+            this.btnSkXoa.Text = "Xóa Sự Kiện";
             this.btnSkXoa.Click += new System.EventHandler(this.btnSkXoa_Click);
             // 
             // btnSkThem
@@ -278,11 +278,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnSkThem.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSkThem.ForeColor = System.Drawing.Color.Black;
             this.btnSkThem.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_add_48;
-            this.btnSkThem.Location = new System.Drawing.Point(479, 442);
+            this.btnSkThem.Location = new System.Drawing.Point(618, 550);
             this.btnSkThem.Name = "btnSkThem";
-            this.btnSkThem.Size = new System.Drawing.Size(98, 37);
+            this.btnSkThem.Size = new System.Drawing.Size(123, 46);
             this.btnSkThem.TabIndex = 6;
-            this.btnSkThem.Text = "Thêm ";
+            this.btnSkThem.Text = "Thêm Sự Kiện";
             this.btnSkThem.Click += new System.EventHandler(this.btnSkThem_Click);
             // 
             // FormSuKien
@@ -290,7 +290,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(793, 503);
+            this.ClientSize = new System.Drawing.Size(1035, 608);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gvSKsukien);
             this.Controls.Add(this.btnSkSua);

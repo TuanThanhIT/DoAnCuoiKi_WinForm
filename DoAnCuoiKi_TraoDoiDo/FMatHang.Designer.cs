@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMatHang));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelMatHang = new System.Windows.Forms.Panel();
             this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhac = new Guna.UI2.WinForms.Guna2Button();
             this.btnDienThoai = new Guna.UI2.WinForms.Guna2Button();
@@ -44,6 +43,7 @@
             this.btnDogiadung = new Guna.UI2.WinForms.Guna2Button();
             this.btnIT = new Guna.UI2.WinForms.Guna2Button();
             this.btnGiay = new Guna.UI2.WinForms.Guna2Button();
+            this.panelMatHang = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnTatCa);
             this.panel1.Controls.Add(this.btnKhac);
             this.panel1.Controls.Add(this.btnDienThoai);
@@ -75,16 +76,8 @@
             this.panel1.Controls.Add(this.btnGiay);
             this.panel1.Location = new System.Drawing.Point(4, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1063, 77);
+            this.panel1.Size = new System.Drawing.Size(1371, 79);
             this.panel1.TabIndex = 4;
-            // 
-            // panelMatHang
-            // 
-            this.panelMatHang.BackColor = System.Drawing.Color.White;
-            this.panelMatHang.Location = new System.Drawing.Point(4, 121);
-            this.panelMatHang.Name = "panelMatHang";
-            this.panelMatHang.Size = new System.Drawing.Size(1063, 523);
-            this.panelMatHang.TabIndex = 5;
             // 
             // btnTatCa
             // 
@@ -100,9 +93,9 @@
             this.btnTatCa.ForeColor = System.Drawing.Color.Black;
             this.btnTatCa.Image = ((System.Drawing.Image)(resources.GetObject("btnTatCa.Image")));
             this.btnTatCa.ImageSize = new System.Drawing.Size(60, 60);
-            this.btnTatCa.Location = new System.Drawing.Point(49, 3);
+            this.btnTatCa.Location = new System.Drawing.Point(65, 3);
             this.btnTatCa.Name = "btnTatCa";
-            this.btnTatCa.Size = new System.Drawing.Size(74, 70);
+            this.btnTatCa.Size = new System.Drawing.Size(94, 70);
             this.btnTatCa.TabIndex = 0;
             this.btnTatCa.Click += new System.EventHandler(this.btnTatCa_Click);
             // 
@@ -120,9 +113,9 @@
             this.btnKhac.ForeColor = System.Drawing.Color.White;
             this.btnKhac.Image = ((System.Drawing.Image)(resources.GetObject("btnKhac.Image")));
             this.btnKhac.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnKhac.Location = new System.Drawing.Point(929, 4);
+            this.btnKhac.Location = new System.Drawing.Point(1165, 3);
             this.btnKhac.Name = "btnKhac";
-            this.btnKhac.Size = new System.Drawing.Size(74, 70);
+            this.btnKhac.Size = new System.Drawing.Size(94, 70);
             this.btnKhac.TabIndex = 11;
             this.btnKhac.Click += new System.EventHandler(this.btnKhac_Click);
             // 
@@ -140,9 +133,9 @@
             this.btnDienThoai.ForeColor = System.Drawing.Color.White;
             this.btnDienThoai.Image = ((System.Drawing.Image)(resources.GetObject("btnDienThoai.Image")));
             this.btnDienThoai.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDienThoai.Location = new System.Drawing.Point(129, 4);
+            this.btnDienThoai.Location = new System.Drawing.Point(165, 3);
             this.btnDienThoai.Name = "btnDienThoai";
-            this.btnDienThoai.Size = new System.Drawing.Size(74, 70);
+            this.btnDienThoai.Size = new System.Drawing.Size(94, 70);
             this.btnDienThoai.TabIndex = 1;
             this.btnDienThoai.Click += new System.EventHandler(this.btnDienThoai_Click);
             // 
@@ -160,9 +153,9 @@
             this.btnNoiThat.ForeColor = System.Drawing.Color.White;
             this.btnNoiThat.Image = ((System.Drawing.Image)(resources.GetObject("btnNoiThat.Image")));
             this.btnNoiThat.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnNoiThat.Location = new System.Drawing.Point(209, 4);
+            this.btnNoiThat.Location = new System.Drawing.Point(265, 3);
             this.btnNoiThat.Name = "btnNoiThat";
-            this.btnNoiThat.Size = new System.Drawing.Size(74, 70);
+            this.btnNoiThat.Size = new System.Drawing.Size(94, 70);
             this.btnNoiThat.TabIndex = 2;
             this.btnNoiThat.Click += new System.EventHandler(this.btnNoiThat_Click);
             // 
@@ -180,9 +173,9 @@
             this.btnDoembe.ForeColor = System.Drawing.Color.White;
             this.btnDoembe.Image = ((System.Drawing.Image)(resources.GetObject("btnDoembe.Image")));
             this.btnDoembe.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDoembe.Location = new System.Drawing.Point(849, 4);
+            this.btnDoembe.Location = new System.Drawing.Point(1065, 3);
             this.btnDoembe.Name = "btnDoembe";
-            this.btnDoembe.Size = new System.Drawing.Size(74, 70);
+            this.btnDoembe.Size = new System.Drawing.Size(94, 70);
             this.btnDoembe.TabIndex = 10;
             this.btnDoembe.Click += new System.EventHandler(this.btnDoembe_Click);
             // 
@@ -200,9 +193,9 @@
             this.btnThoiTrang.ForeColor = System.Drawing.Color.White;
             this.btnThoiTrang.Image = ((System.Drawing.Image)(resources.GetObject("btnThoiTrang.Image")));
             this.btnThoiTrang.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnThoiTrang.Location = new System.Drawing.Point(289, 4);
+            this.btnThoiTrang.Location = new System.Drawing.Point(365, 3);
             this.btnThoiTrang.Name = "btnThoiTrang";
-            this.btnThoiTrang.Size = new System.Drawing.Size(74, 70);
+            this.btnThoiTrang.Size = new System.Drawing.Size(94, 70);
             this.btnThoiTrang.TabIndex = 3;
             this.btnThoiTrang.Click += new System.EventHandler(this.btnThoiTrang_Click);
             // 
@@ -220,9 +213,9 @@
             this.btnXeco.ForeColor = System.Drawing.Color.White;
             this.btnXeco.Image = ((System.Drawing.Image)(resources.GetObject("btnXeco.Image")));
             this.btnXeco.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnXeco.Location = new System.Drawing.Point(769, 4);
+            this.btnXeco.Location = new System.Drawing.Point(965, 3);
             this.btnXeco.Name = "btnXeco";
-            this.btnXeco.Size = new System.Drawing.Size(74, 70);
+            this.btnXeco.Size = new System.Drawing.Size(94, 70);
             this.btnXeco.TabIndex = 9;
             this.btnXeco.Click += new System.EventHandler(this.btnXeco_Click);
             // 
@@ -240,9 +233,9 @@
             this.btnDoDienTu.ForeColor = System.Drawing.Color.White;
             this.btnDoDienTu.Image = ((System.Drawing.Image)(resources.GetObject("btnDoDienTu.Image")));
             this.btnDoDienTu.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDoDienTu.Location = new System.Drawing.Point(369, 3);
+            this.btnDoDienTu.Location = new System.Drawing.Point(465, 3);
             this.btnDoDienTu.Name = "btnDoDienTu";
-            this.btnDoDienTu.Size = new System.Drawing.Size(74, 70);
+            this.btnDoDienTu.Size = new System.Drawing.Size(94, 70);
             this.btnDoDienTu.TabIndex = 4;
             this.btnDoDienTu.Click += new System.EventHandler(this.btnDoDienTu_Click);
             // 
@@ -260,9 +253,9 @@
             this.btnSach.ForeColor = System.Drawing.Color.White;
             this.btnSach.Image = ((System.Drawing.Image)(resources.GetObject("btnSach.Image")));
             this.btnSach.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSach.Location = new System.Drawing.Point(449, 4);
+            this.btnSach.Location = new System.Drawing.Point(565, 3);
             this.btnSach.Name = "btnSach";
-            this.btnSach.Size = new System.Drawing.Size(74, 70);
+            this.btnSach.Size = new System.Drawing.Size(94, 70);
             this.btnSach.TabIndex = 5;
             this.btnSach.Click += new System.EventHandler(this.btnSach_Click);
             // 
@@ -280,9 +273,9 @@
             this.btnDogiadung.ForeColor = System.Drawing.Color.White;
             this.btnDogiadung.Image = ((System.Drawing.Image)(resources.GetObject("btnDogiadung.Image")));
             this.btnDogiadung.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDogiadung.Location = new System.Drawing.Point(529, 4);
+            this.btnDogiadung.Location = new System.Drawing.Point(665, 3);
             this.btnDogiadung.Name = "btnDogiadung";
-            this.btnDogiadung.Size = new System.Drawing.Size(74, 70);
+            this.btnDogiadung.Size = new System.Drawing.Size(94, 70);
             this.btnDogiadung.TabIndex = 6;
             this.btnDogiadung.Click += new System.EventHandler(this.btnDogiadung_Click);
             // 
@@ -300,9 +293,9 @@
             this.btnIT.ForeColor = System.Drawing.Color.White;
             this.btnIT.Image = ((System.Drawing.Image)(resources.GetObject("btnIT.Image")));
             this.btnIT.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnIT.Location = new System.Drawing.Point(689, 4);
+            this.btnIT.Location = new System.Drawing.Point(865, 3);
             this.btnIT.Name = "btnIT";
-            this.btnIT.Size = new System.Drawing.Size(74, 70);
+            this.btnIT.Size = new System.Drawing.Size(94, 70);
             this.btnIT.TabIndex = 8;
             this.btnIT.Click += new System.EventHandler(this.btnIT_Click);
             // 
@@ -320,18 +313,26 @@
             this.btnGiay.ForeColor = System.Drawing.Color.White;
             this.btnGiay.Image = ((System.Drawing.Image)(resources.GetObject("btnGiay.Image")));
             this.btnGiay.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnGiay.Location = new System.Drawing.Point(609, 4);
+            this.btnGiay.Location = new System.Drawing.Point(765, 3);
             this.btnGiay.Name = "btnGiay";
-            this.btnGiay.Size = new System.Drawing.Size(74, 70);
+            this.btnGiay.Size = new System.Drawing.Size(94, 70);
             this.btnGiay.TabIndex = 7;
             this.btnGiay.Click += new System.EventHandler(this.btnGiay_Click);
+            // 
+            // panelMatHang
+            // 
+            this.panelMatHang.BackColor = System.Drawing.Color.White;
+            this.panelMatHang.Location = new System.Drawing.Point(4, 120);
+            this.panelMatHang.Name = "panelMatHang";
+            this.panelMatHang.Size = new System.Drawing.Size(1371, 628);
+            this.panelMatHang.TabIndex = 5;
             // 
             // FormMatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1069, 645);
+            this.ClientSize = new System.Drawing.Size(1378, 750);
             this.Controls.Add(this.panelMatHang);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);

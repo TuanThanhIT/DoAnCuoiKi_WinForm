@@ -192,7 +192,7 @@
     <Compile Include="Form măt hàng\FormTatCaMatHang.Designer.cs">
       <DependentUpon>FormTatCaMatHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAO\FormDAO.cs" />
+    <Compile Include="BUS\FormBUS.cs" />
     <Compile Include="Form măt hàng\FormThietBiIT.cs">
       <SubType>Form</SubType>
     </Compile>

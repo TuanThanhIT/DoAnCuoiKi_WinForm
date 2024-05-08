@@ -94,7 +94,7 @@
                     <Value>Thống kê tất cả các tài khoản đăng kí  </Value>
                     <Style>
                       <FontFamily>Times New Roman</FontFamily>
-                      <FontSize>16pt</FontSize>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -103,10 +103,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.49167in</Top>
+            <Top>0.43334in</Top>
             <Left>3.2875in</Left>
-            <Height>0.33333in</Height>
-            <Width>3.90834in</Width>
+            <Height>0.39166in</Height>
+            <Width>4.82501in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -122,34 +122,34 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.62083in</Width>
+                  <Width>0.6125in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.58333in</Width>
+                  <Width>1.575in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.105in</Width>
+                  <Width>1.09667in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.99167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -166,7 +166,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>ID</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -196,7 +198,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Họ tên</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -226,7 +230,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Ngày tháng năm sinh</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -256,7 +262,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Giới tính</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -286,7 +294,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Địa chỉ Email</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -316,7 +326,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Số điện thoại</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -346,7 +358,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Địa chỉ</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -376,7 +390,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Ngày đăng kí</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -406,7 +422,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Tên đăng nhập</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -436,7 +454,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Chức vụ</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -793,7 +813,7 @@
             <Top>1.18in</Top>
             <Left>0.08334in</Left>
             <Height>0.5in</Height>
-            <Width>10.30917in</Width>
+            <Width>10.22583in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1146,10 +1166,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetTaiKhoan</DataSetName>
-            <Top>2.19667in</Top>
-            <Left>3.03in</Left>
-            <Height>2in</Height>
-            <Width>3.65in</Width>
+            <Top>2.27167in</Top>
+            <Left>2.88833in</Left>
+            <Height>2.35833in</Height>
+            <Width>4.5in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1161,10 +1181,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>4.63in</Height>
+        <Height>4.81333in</Height>
         <Style />
       </Body>
-      <Width>10.59667in</Width>
+      <Width>10.39667in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

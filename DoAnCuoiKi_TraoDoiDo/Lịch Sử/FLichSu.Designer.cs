@@ -72,7 +72,7 @@
             this.panelLichSu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelLichSu.Location = new System.Drawing.Point(2, 58);
             this.panelLichSu.Name = "panelLichSu";
-            this.panelLichSu.Size = new System.Drawing.Size(1057, 566);
+            this.panelLichSu.Size = new System.Drawing.Size(1372, 691);
             this.panelLichSu.TabIndex = 6;
             // 
             // FormLichSu
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1060, 626);
+            this.ClientSize = new System.Drawing.Size(1376, 751);
             this.Controls.Add(this.panelLichSu);
             this.Controls.Add(this.btnLSBanHang);
             this.Controls.Add(this.btnLSMuaHang);

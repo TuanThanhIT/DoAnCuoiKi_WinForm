@@ -17,7 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormBanDo : Form
     {
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         BanDoBUS bds = new BanDoBUS();
         public FormBanDo(FormDangBan f)
         {
@@ -67,12 +67,12 @@ namespace DoAnCuoiKi_TraoDoiDo
                 {
                     if (DangKiDAO.Chuc_vu == "Quan tri vien")
                     {
-                        fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                        fd.OpenChildForm(new FormDangBan(), FormTrangChu.panelTrangChu);
                         FormTrangChu.lblChude.Text = "Đang Bán";
                     }
                     else
                     {
-                        fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                        fd.OpenChildForm(new FormDangBan(), FormTrangChuThanhVien.panelTVTrangChu);
                         FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
                     }
                 }
@@ -81,6 +81,12 @@ namespace DoAnCuoiKi_TraoDoiDo
             {
                     MessageBox.Show("Mặt hàng của bạn đăng bán thất bại");
             }
+
+            // Thêm mặt hàng vào bảng HiểnThị
+            string luotxem = "0";
+            string yeuthich = "F";
+            BanDo bando1 = new BanDo(txtBdTenMH.Text, maSanPham, luotxem, yeuthich);
+            bds.ThemHienThi(bando1);
             
         }
 
@@ -88,12 +94,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormDangBan(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Đang Bán";
             }
             else
             {
-                fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormDangBan(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
             }
         }
@@ -138,12 +144,12 @@ namespace DoAnCuoiKi_TraoDoiDo
                  MessageBox.Show("Bạn đã sửa thông tin mặt hàng thành công");
                 if (DangKiDAO.Chuc_vu == "Quan tri vien")
                 {
-                    fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                    fd.OpenChildForm(new FormDangBan(), FormTrangChu.panelTrangChu);
                     FormTrangChu.lblChude.Text = "Đang Bán";
                 }
                 else
                 {
-                    fd.OpenChildForm(new FormDangBan(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                    fd.OpenChildForm(new FormDangBan(), FormTrangChuThanhVien.panelTVTrangChu);
                     FormTrangChuThanhVien.lblTVChude.Text = "Đang Bán";
                 }
             }
@@ -183,6 +189,9 @@ namespace DoAnCuoiKi_TraoDoiDo
             bds.DeleteImage(picImage, txtImagePath);
         }
 
-    
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

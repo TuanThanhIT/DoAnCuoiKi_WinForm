@@ -115,8 +115,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
-            <Top>0.49167in</Top>
-            <Left>5.1in</Left>
+            <Top>0.60834in</Top>
+            <Left>3.43269in</Left>
             <Height>0.33333in</Height>
             <Width>4.29167in</Width>
             <ZIndex>1</ZIndex>
@@ -134,43 +134,43 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.925in</Width>
+                  <Width>0.6609in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.775in</Width>
+                  <Width>0.5109in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.7359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.76667in</Width>
+                  <Width>0.50257in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.55in</Width>
+                  <Width>1.2859in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.5in</Width>
+                  <Width>1.2359in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25833in</Width>
+                  <Width>0.99423in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -997,7 +997,7 @@
             <Top>1.07167in</Top>
             <Left>0.1in</Left>
             <Height>0.5in</Height>
-            <Width>13.775in</Width>
+            <Width>10.34167in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1349,9 +1349,9 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetBanHang</DataSetName>
-            <Top>1.83833in</Top>
-            <Left>2.70833in</Left>
-            <Height>2in</Height>
+            <Top>2.77166in</Top>
+            <Left>1.08461in</Left>
+            <Height>2.35834in</Height>
             <Width>4.09167in</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -1707,9 +1707,9 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSetBanHang</DataSetName>
-            <Top>1.83833in</Top>
-            <Left>7.98333in</Left>
-            <Height>2in</Height>
+            <Top>2.77166in</Top>
+            <Left>5.68718in</Left>
+            <Height>2.35834in</Height>
             <Width>4.09167in</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -1721,11 +1721,45 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Một số biểu đồ liên quan</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.315in</Top>
+            <Left>0.40417in</Left>
+            <Height>0.25in</Height>
+            <Width>2.075in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>6.08in</Height>
         <Style />
       </Body>
-      <Width>14.1in</Width>
+      <Width>10.51667in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

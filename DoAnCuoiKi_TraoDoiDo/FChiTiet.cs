@@ -17,7 +17,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormChiTiet : Form
     {
         BanDo bando;
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         GioHangBUS ghb = new GioHangBUS();
          DanhGiaBUS dgb = new DanhGiaBUS();
         string hinh1;
@@ -35,11 +35,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             this.bando = bando;
             InitializeComponent();
-            txtChiTietMa.Text = bando.Mã_sản_phẩm;
+            lblCTMaSp.Text = bando.Mã_sản_phẩm;
             lblChitietTen.Text = bando.Tên_mặt_hàng;
-            txtChiTietLoai.Text = bando.Loại_mặt_hàng;
+            lblCTLoaiSp.Text = bando.Loại_mặt_hàng;
             lblChiTietGiaban.Text = bando.Giá_bán;
-            txtChitietMota.Text = bando.Mô_tả_mặt_hàng;
+            lblCTMota.Text = bando.Mô_tả_mặt_hàng;
             List<string> imagePathList = new List<string>();
             hinh1 = bando.Hình_ảnh_1;
             hinh2 = bando.Hình_ảnh_2;
@@ -93,14 +93,13 @@ namespace DoAnCuoiKi_TraoDoiDo
                 // Hiển thị ảnh tại chỉ số hiện tại
                 DisplayImageAtIndex(currentImageIndex);
             }
-            txtChiTietSLVou.Text = bando.Số_lượng_Voucher;
-            lblChotietSoluong.Text = bando.Số_lượng;
-            txtChiTietDiaDiem.Text = bando.Địa_điểm;
-            txtChitietTinhtrang.Text = bando.Tình_trạng_mặt_hàng;
-            txtChiTietGiaohang.Text = bando.Phương_thức_giao_hàng;
+            lblCTSlVou.Text = bando.Số_lượng_Voucher;
+            lblChitietSoluong.Text = bando.Số_lượng;
+            lblCTTinhtrang.Text = bando.Tình_trạng_mặt_hàng;
+            lblCTGiaoHang.Text = bando.Phương_thức_giao_hàng;
             lblChitietGiacu.Text = bando.Giá_gốc;
             lblChiTietGiamgia.Text = bando.Giảm_giá;
-            txtChitietNgay.Text = bando.Ngày_đăng_bán;
+            lblCTNgayDangBan.Text = bando.Ngày_đăng_bán;
             maVoucher = bando.Mã_Voucher;
             giamGia = bando.Giảm_giá;
         }
@@ -118,11 +117,11 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnChitietThem_Click_1(object sender, EventArgs e)
         {
-            if(NumUpDown.Value <= Convert.ToInt32(lblChotietSoluong.Text))
+            if(NumUpDown.Value <= Convert.ToInt32(lblChitietSoluong.Text))
             {
                 string check = "F";
-                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
-                     NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check, maVoucher, giamGia);
+                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, lblCTLoaiSp.Text, lblChitietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                     NumUpDown.Value.ToString(), lblCTNgayDangBan.Text, lblCTMaSp.Text, check, maVoucher, giamGia);
                 if (ghb.ThemGioHang(gh) == true)
                 {
                     MessageBox.Show("Thêm vào giỏ hàng của bạn thành công");
@@ -141,21 +140,21 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnChiTietMuangay_Click_1(object sender, EventArgs e)
         {
-            if (NumUpDown.Value <= Convert.ToInt32(lblChotietSoluong.Text))
+            if (NumUpDown.Value <= Convert.ToInt32(lblChitietSoluong.Text))
             {
                 string check = "T"; ;
-                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, txtChiTietLoai.Text, lblChotietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
-                    NumUpDown.Value.ToString(), txtChitietNgay.Text, txtChiTietMa.Text, check, maVoucher, giamGia);
+                GioHang gh = new GioHang(DangKiDAO.ID, lblChitietTen.Text, lblCTLoaiSp.Text, lblChitietSoluong.Text, hinh1, lblChitietGiacu.Text, lblChiTietGiaban.Text,
+                    NumUpDown.Value.ToString(), lblCTNgayDangBan.Text, lblCTMaSp.Text, check, maVoucher, giamGia);
                 if (ghb.ThemGioHang(gh))
                 {
                     if (DangKiDAO.Chuc_vu == "Quan tri vien")
                     {
-                        fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                        fd.OpenChildForm(new FormGioHang(), FormTrangChu.panelTrangChu);
                         FormTrangChu.lblChude.Text = "Giỏ Hàng";
                     }
                     else
                     {
-                        fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                        fd.OpenChildForm(new FormGioHang(), FormTrangChuThanhVien.panelTVTrangChu);
                         FormTrangChuThanhVien.lblTVChude.Text = "Giỏ Hàng";
                     }
                 }
@@ -178,12 +177,12 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             if (DangKiDAO.Chuc_vu == "Quan tri vien")
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChu.panelTrangChu);
                 FormTrangChu.lblChude.Text = "Mặt Hàng";
             }
             else
             {
-                fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, FormTrangChuThanhVien.panelTVTrangChu);
+                fd.OpenChildForm(new FormMatHang(), FormTrangChuThanhVien.panelTVTrangChu);
                 FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
             }
 

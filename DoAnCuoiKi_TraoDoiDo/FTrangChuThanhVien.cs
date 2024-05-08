@@ -14,7 +14,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 {
     public partial class FormTrangChuThanhVien : Form
     {
-        FormDAO fd = new FormDAO(); 
+        FormBUS fd = new FormBUS(); 
         public FormTrangChuThanhVien(DangKi dk)
         {
             InitializeComponent();
@@ -37,26 +37,26 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void FormTrangChuThanhVien_Load(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormMain(), ref FormDAO.activeForm, panelTVTrangChu);
+            fd.OpenChildForm(new FormMain(), panelTVTrangChu);
             lblTVChude.Text = "Trang Chủ";
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormMain(), ref FormDAO.activeForm, panelTVTrangChu);
+            fd.OpenChildForm(new FormMain(), panelTVTrangChu);
             lblTVChude.Text = "Trang Chủ";
         }
 
         private void btnBanDo_Click(object sender, EventArgs e)
         {
             BanDoBUS.checkButton = true;
-            fd.OpenChildForm(new FormBanDo(), ref FormDAO.activeForm, panelTVTrangChu);
+            fd.OpenChildForm(new FormBanDo(), panelTVTrangChu);
             lblTVChude.Text = "Bán Hàng";
         }
 
         private void btnMatHang_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormMatHang(), ref FormDAO.activeForm, panelTVTrangChu);
+            fd.OpenChildForm(new FormMatHang(), panelTVTrangChu);
             lblTVChude.Text = "Mặt Hàng";
         }
 
@@ -67,15 +67,15 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnLichSu_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormLichSu(), ref FormDAO.activeForm, panelTVTrangChu);
-            lblTVChude.Text = "Lịch sử";
+            fd.OpenChildForm(new FormLichSu(), panelTVTrangChu);
+            lblTVChude.Text = "Lịch Sử";
         }
 
         private void btnGioHang_Click(object sender, EventArgs e)
         {
 
-            fd.OpenChildForm(new FormGioHang(), ref FormDAO.activeForm, panelTVTrangChu);
-            lblTVChude.Text = "Giỏ hàng";
+            fd.OpenChildForm(new FormGioHang(), panelTVTrangChu);
+            lblTVChude.Text = "Giỏ Hàng";
         }
 
         private void btnOut_Click(object sender, EventArgs e)
@@ -83,6 +83,11 @@ namespace DoAnCuoiKi_TraoDoiDo
             FormDangNhap f = new FormDangNhap();
             f.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

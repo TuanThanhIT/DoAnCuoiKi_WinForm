@@ -31,9 +31,7 @@
             this.Panel = new System.Windows.Forms.Panel();
             this.btnOut = new Guna.UI2.WinForms.Guna2Button();
             lblChude = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dateTimePickerTrangchu = new System.Windows.Forms.DateTimePicker();
-            panelTrangChu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSuKien = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,12 +53,15 @@
             this.lblTrangchuTen = new System.Windows.Forms.Label();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            panelTrangChu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
@@ -68,12 +69,11 @@
             this.Panel.BackColor = System.Drawing.Color.Black;
             this.Panel.Controls.Add(this.btnOut);
             this.Panel.Controls.Add(lblChude);
-            this.Panel.Controls.Add(this.button1);
             this.Panel.Controls.Add(this.dateTimePickerTrangchu);
             this.Panel.Location = new System.Drawing.Point(204, 0);
             this.Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1274, 52);
+            this.Panel.Size = new System.Drawing.Size(1243, 52);
             this.Panel.TabIndex = 7;
             // 
             // btnOut
@@ -90,7 +90,7 @@
             this.btnOut.ForeColor = System.Drawing.Color.Black;
             this.btnOut.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_log_out_96;
             this.btnOut.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnOut.Location = new System.Drawing.Point(1175, 6);
+            this.btnOut.Location = new System.Drawing.Point(1140, 4);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(96, 41);
             this.btnOut.TabIndex = 38;
@@ -101,39 +101,20 @@
             lblChude.AutoSize = true;
             lblChude.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblChude.ForeColor = System.Drawing.Color.White;
-            lblChude.Location = new System.Drawing.Point(3, 12);
+            lblChude.Location = new System.Drawing.Point(3, 6);
             lblChude.Name = "lblChude";
             lblChude.Size = new System.Drawing.Size(90, 35);
             lblChude.TabIndex = 10;
             lblChude.Text = "label1";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(79)))), ((int)(((byte)(144)))));
-            this.button1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources._8;
-            this.button1.Location = new System.Drawing.Point(1352, 8);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 39);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // dateTimePickerTrangchu
             // 
-            this.dateTimePickerTrangchu.Location = new System.Drawing.Point(821, 12);
+            this.dateTimePickerTrangchu.Enabled = false;
+            this.dateTimePickerTrangchu.Location = new System.Drawing.Point(838, 19);
             this.dateTimePickerTrangchu.Name = "dateTimePickerTrangchu";
             this.dateTimePickerTrangchu.Size = new System.Drawing.Size(247, 22);
             this.dateTimePickerTrangchu.TabIndex = 7;
             this.dateTimePickerTrangchu.ValueChanged += new System.EventHandler(this.dateTimePickerTrangchu_ValueChanged_1);
-            // 
-            // panelTrangChu
-            // 
-            panelTrangChu.BackColor = System.Drawing.Color.White;
-            panelTrangChu.Location = new System.Drawing.Point(204, 52);
-            panelTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            panelTrangChu.Name = "panelTrangChu";
-            panelTrangChu.Size = new System.Drawing.Size(1068, 628);
-            panelTrangChu.TabIndex = 8;
             // 
             // panel2
             // 
@@ -146,11 +127,11 @@
             this.panel2.Controls.Add(this.btnThongKe);
             this.panel2.Controls.Add(this.btnMatHang);
             this.panel2.Controls.Add(this.btnTrangChu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 682);
+            this.panel2.Size = new System.Drawing.Size(204, 660);
             this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnSuKien
             // 
@@ -166,7 +147,7 @@
             this.btnSuKien.ForeColor = System.Drawing.Color.Black;
             this.btnSuKien.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_event_100;
             this.btnSuKien.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSuKien.Location = new System.Drawing.Point(15, 626);
+            this.btnSuKien.Location = new System.Drawing.Point(15, 587);
             this.btnSuKien.Name = "btnSuKien";
             this.btnSuKien.Size = new System.Drawing.Size(164, 33);
             this.btnSuKien.TabIndex = 20;
@@ -261,7 +242,7 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.Black;
             this.btnThongKe.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_graph_report_script_481;
             this.btnThongKe.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnThongKe.Location = new System.Drawing.Point(15, 572);
+            this.btnThongKe.Location = new System.Drawing.Point(15, 533);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(164, 33);
             this.btnThongKe.TabIndex = 17;
@@ -323,9 +304,9 @@
             this.panel3.Controls.Add(this.lblTrangchuTen);
             this.panel3.Controls.Add(this.btnDangxuat);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(1270, 52);
+            this.panel3.Location = new System.Drawing.Point(1238, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 630);
+            this.panel3.Size = new System.Drawing.Size(209, 607);
             this.panel3.TabIndex = 10;
             // 
             // pictureBox4
@@ -333,7 +314,7 @@
             this.pictureBox4.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.business_3d_friendly_robot_assistant_waving;
             this.pictureBox4.Location = new System.Drawing.Point(8, 407);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(197, 220);
+            this.pictureBox4.Size = new System.Drawing.Size(197, 194);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
@@ -436,15 +417,33 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Cá nhân";
             // 
+            // panelTrangChu
+            // 
+            panelTrangChu.BackColor = System.Drawing.Color.White;
+            panelTrangChu.Location = new System.Drawing.Point(204, 53);
+            panelTrangChu.Name = "panelTrangChu";
+            panelTrangChu.Size = new System.Drawing.Size(1036, 607);
+            panelTrangChu.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.Panel);
+            this.panel1.Controls.Add(panelTrangChu);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1448, 662);
+            this.panel1.TabIndex = 12;
+            // 
             // FormTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1478, 682);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(panelTrangChu);
-            this.Controls.Add(this.Panel);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1448, 662);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Chủ";
@@ -458,7 +457,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -475,7 +476,6 @@
         private System.Windows.Forms.Label lblTrangchuTen;
         private System.Windows.Forms.Button btnDangxuat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblTrangChuID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -489,6 +489,7 @@
         public System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button btnOut;
         private Guna.UI2.WinForms.Guna2Button btnTrangChu;
+        private System.Windows.Forms.Panel panel1;
         public static System.Windows.Forms.Label lblChude;
         public static System.Windows.Forms.Panel panelTrangChu;
     }

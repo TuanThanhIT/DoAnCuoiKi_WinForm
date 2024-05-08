@@ -58,7 +58,7 @@
             this.flowLPHienthiAll.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLPHienthiAll.Location = new System.Drawing.Point(3, 49);
             this.flowLPHienthiAll.Name = "flowLPHienthiAll";
-            this.flowLPHienthiAll.Size = new System.Drawing.Size(1056, 436);
+            this.flowLPHienthiAll.Size = new System.Drawing.Size(1362, 567);
             this.flowLPHienthiAll.TabIndex = 1;
             // 
             // pictureBox3
@@ -73,9 +73,9 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(752, 9);
+            this.txtTimKiem.Location = new System.Drawing.Point(1047, 13);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(265, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(280, 22);
             this.txtTimKiem.TabIndex = 13;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -84,7 +84,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1023, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1333, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(455, 8);
+            this.label2.Location = new System.Drawing.Point(685, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 19);
             this.label2.TabIndex = 15;
@@ -108,7 +108,7 @@
             "Tên mặt hàng",
             "Giá bán",
             "Mới nhất"});
-            this.comBoSapxep.Location = new System.Drawing.Point(525, 8);
+            this.comBoSapxep.Location = new System.Drawing.Point(771, 13);
             this.comBoSapxep.Name = "comBoSapxep";
             this.comBoSapxep.Size = new System.Drawing.Size(145, 24);
             this.comBoSapxep.TabIndex = 16;
@@ -124,7 +124,7 @@
             this.btnLoc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLoc.ForeColor = System.Drawing.Color.White;
             this.btnLoc.Image = ((System.Drawing.Image)(resources.GetObject("btnLoc.Image")));
-            this.btnLoc.Location = new System.Drawing.Point(676, 8);
+            this.btnLoc.Location = new System.Drawing.Point(922, 13);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(32, 24);
             this.btnLoc.TabIndex = 17;
@@ -135,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1064, 487);
+            this.ClientSize = new System.Drawing.Size(1369, 617);
             this.Controls.Add(this.btnLoc);
             this.Controls.Add(this.comBoSapxep);
             this.Controls.Add(this.label2);

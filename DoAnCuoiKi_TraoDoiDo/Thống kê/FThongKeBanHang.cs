@@ -14,7 +14,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormTKBanHang : Form
     {
         BanDoBUS bdb = new BanDoBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         public FormTKBanHang()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnAllBanHang_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormTKBanHang(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+            fd.OpenChildForm(new FormRTKBanHang(), FormTrangChu.panelTrangChu);
             FormTrangChu.lblChude.Text = "Thống kê bán hàng";
         }
     }

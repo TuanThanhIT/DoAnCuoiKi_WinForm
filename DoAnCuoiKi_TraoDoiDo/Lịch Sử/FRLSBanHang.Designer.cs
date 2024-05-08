@@ -37,14 +37,14 @@
             this.rptBanHang.Location = new System.Drawing.Point(0, 0);
             this.rptBanHang.Name = "rptBanHang";
             this.rptBanHang.ServerReport.BearerToken = null;
-            this.rptBanHang.Size = new System.Drawing.Size(883, 524);
+            this.rptBanHang.Size = new System.Drawing.Size(871, 524);
             this.rptBanHang.TabIndex = 0;
             // 
             // FormRLSBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 524);
+            this.ClientSize = new System.Drawing.Size(871, 524);
             this.Controls.Add(this.rptBanHang);
             this.Name = "FormRLSBanHang";
             this.Text = "Báo cáo bán hàng";

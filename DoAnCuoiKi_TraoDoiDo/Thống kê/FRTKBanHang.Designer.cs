@@ -37,14 +37,15 @@
             this.rpvBanHang.Location = new System.Drawing.Point(0, 0);
             this.rpvBanHang.Name = "rpvBanHang";
             this.rpvBanHang.ServerReport.BearerToken = null;
-            this.rpvBanHang.Size = new System.Drawing.Size(892, 538);
+            this.rpvBanHang.Size = new System.Drawing.Size(1376, 748);
             this.rpvBanHang.TabIndex = 0;
             // 
             // FormRTKBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 538);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1376, 748);
             this.Controls.Add(this.rpvBanHang);
             this.Name = "FormRTKBanHang";
             this.Text = "Thống Kê Bán Hàng";

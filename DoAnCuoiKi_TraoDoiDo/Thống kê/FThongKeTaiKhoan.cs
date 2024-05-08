@@ -14,7 +14,7 @@ namespace DoAnCuoiKi_TraoDoiDo
     public partial class FormTKTaiKhoan : Form
     {
         DangKiBUS dkb = new DangKiBUS();
-        FormDAO fd = new FormDAO();
+        FormBUS fd = new FormBUS();
         public FormTKTaiKhoan()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnAllTaiKhoan_Click(object sender, EventArgs e)
         {
-            fd.OpenChildForm(new FormRTKTaiKhoan(), ref FormDAO.activeForm, FormTrangChu.panelTrangChu);
+            fd.OpenChildForm(new FormRTKTaiKhoan(), FormTrangChu.panelTrangChu);
             FormTrangChu.lblChude.Text = "Thống kê tài khoản";
         }
     }

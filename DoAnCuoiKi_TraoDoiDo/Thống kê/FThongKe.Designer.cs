@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelLichSu = new System.Windows.Forms.Panel();
+            this.panelThongKe = new System.Windows.Forms.Panel();
             this.btnTKMuaHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnTKBanHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnTKTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // panelLichSu
+            // panelThongKe
             // 
-            this.panelLichSu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelLichSu.Location = new System.Drawing.Point(3, 58);
-            this.panelLichSu.Name = "panelLichSu";
-            this.panelLichSu.Size = new System.Drawing.Size(1057, 566);
-            this.panelLichSu.TabIndex = 7;
+            this.panelThongKe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelThongKe.Location = new System.Drawing.Point(3, 58);
+            this.panelThongKe.Name = "panelThongKe";
+            this.panelThongKe.Size = new System.Drawing.Size(1374, 688);
+            this.panelThongKe.TabIndex = 7;
             // 
             // btnTKMuaHang
             // 
@@ -98,11 +98,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1063, 628);
+            this.ClientSize = new System.Drawing.Size(1379, 751);
             this.Controls.Add(this.btnTKTaiKhoan);
             this.Controls.Add(this.btnTKBanHang);
             this.Controls.Add(this.btnTKMuaHang);
-            this.Controls.Add(this.panelLichSu);
+            this.Controls.Add(this.panelThongKe);
             this.Name = "FormThongKe";
             this.Text = "Thống Kê";
             this.Load += new System.EventHandler(this.FormThongKe_Load);
@@ -112,7 +112,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelLichSu;
+        private System.Windows.Forms.Panel panelThongKe;
         private Guna.UI2.WinForms.Guna2Button btnTKMuaHang;
         private Guna.UI2.WinForms.Guna2Button btnTKBanHang;
         private Guna.UI2.WinForms.Guna2Button btnTKTaiKhoan;

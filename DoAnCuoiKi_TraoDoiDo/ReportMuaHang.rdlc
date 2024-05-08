@@ -92,7 +92,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox15</rd:DefaultName>
             <Top>0.60834in</Top>
-            <Left>2.30833in</Left>
+            <Left>3.21332in</Left>
             <Height>0.33333in</Height>
             <Width>4.29167in</Width>
             <ZIndex>1</ZIndex>
@@ -110,22 +110,22 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.38333in</Width>
+                  <Width>1.58611in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.31667in</Width>
+                  <Width>1.51945in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.20278in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.20833in</Width>
+                  <Width>1.41111in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.23334in</Width>
+                  <Width>1.43612in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.175in</Width>
+                  <Width>1.37778in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -523,9 +523,9 @@
             </TablixRowHierarchy>
             <DataSetName>MuaHangDataSet</DataSetName>
             <Top>1.26333in</Top>
-            <Left>0.78333in</Left>
+            <Left>1.02722in</Left>
             <Height>0.5in</Height>
-            <Width>7.31667in</Width>
+            <Width>8.53335in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -877,10 +877,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>MuaHangDataSet</DataSetName>
-            <Top>2.34667in</Top>
-            <Left>0.78333in</Left>
-            <Height>2in</Height>
-            <Width>3in</Width>
+            <Top>2.455in</Top>
+            <Left>1.02722in</Left>
+            <Height>2.36667in</Height>
+            <Width>4.25833in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1236,10 +1236,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>MuaHangDataSet</DataSetName>
-            <Top>2.34667in</Top>
-            <Left>4.93833in</Left>
-            <Height>2in</Height>
-            <Width>3in</Width>
+            <Top>2.455in</Top>
+            <Left>5.47389in</Left>
+            <Height>2.36667in</Height>
+            <Width>4.08667in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1250,11 +1250,45 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Một số biểu đồ liên quan</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.08584in</Top>
+            <Left>1.02722in</Left>
+            <Height>0.25in</Height>
+            <Width>2.075in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>5.17167in</Height>
         <Style />
       </Body>
-      <Width>9.1in</Width>
+      <Width>10.44167in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
