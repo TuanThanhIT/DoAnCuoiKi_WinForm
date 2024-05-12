@@ -100,6 +100,30 @@
     <Compile Include="BUS\MuaHangBUS.cs" />
     <Compile Include="BUS\SuKienBUS.cs" />
     <Compile Include="BUS\ThanhToanBUS.cs" />
+    <Compile Include="FCapNhatThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCapNhatThongTin.Designer.cs">
+      <DependentUpon>FCapNhatThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDoiMatKhau.Designer.cs">
+      <DependentUpon>FDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTaiKhoan.Designer.cs">
+      <DependentUpon>FTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShop.Designer.cs">
+      <DependentUpon>FShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lịch Sử\DoAnTraoDoiDoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -406,6 +430,12 @@
     <Compile Include="UserControl\UCGioHang.Designer.cs">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FCapNhatThongTin.resx">
+      <DependentUpon>FCapNhatThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDoiMatKhau.resx">
+      <DependentUpon>FDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form măt hàng\FormDienThoai.resx">
       <DependentUpon>FormDienThoai.cs</DependentUpon>
     </EmbeddedResource>
@@ -462,6 +492,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FGioHang.resx">
       <DependentUpon>FGioHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTaiKhoan.resx">
+      <DependentUpon>FTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FShop.resx">
+      <DependentUpon>FShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lịch Sử\FLichSu.resx">
       <DependentUpon>FLichSu.cs</DependentUpon>
@@ -1056,6 +1092,109 @@
     <None Include="Resources\icons8-report-96.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-store-96.png" />
+    <None Include="Resources\icons8-store-961.png" />
+    <None Include="Resources\icons8-product-100.png" />
+    <None Include="Resources\icons8-product-100 %281%29.png" />
+    <None Include="Resources\icons8-shop-96 %281%29.png" />
+    <None Include="Resources\icons8-shop-96 %282%29.png" />
+    <None Include="Resources\icons8-name-100.png" />
+    <None Include="Resources\icons8-address-100.png" />
+    <None Include="Resources\icons8-phone-number-100.png" />
+    <None Include="Resources\icons8-address-1001.png" />
+    <None Include="Resources\icons8-email-100.png" />
+    <None Include="Resources\icons8-star-100.png" />
+    <None Include="Resources\icons8-product-96.png" />
+    <None Include="Resources\icons8-name-100 %281%29.png" />
+    <None Include="Resources\icons8-year-64.png" />
+    <None Include="Resources\icons8-year-64 %281%29.png" />
+    <None Include="Resources\icons8-sex-100.png" />
+    <None Include="Resources\icons8-sex-1001.png" />
+    <None Include="Resources\icons8-email-address-64.png" />
+    <None Include="Resources\icons8-phone-number-96.png" />
+    <None Include="Resources\icons8-address-90.png" />
+    <None Include="Resources\icons8-account-90.png" />
+    <None Include="Resources\icons8-password-90.png" />
+    <None Include="Resources\icons8-show-password-100.png" />
+    <None Include="Resources\icons8-hide-password-100.png" />
+    <None Include="Resources\icons8-hide-password-90.png" />
+    <None Include="Resources\z5385357374042_c4f872ff0a094dd90ebad5a8dec9ab911.jpg" />
+    <None Include="Resources\icons8-refresh-200.png" />
+    <None Include="Resources\icons8-save-96.png" />
+    <None Include="Resources\icons8-register-80.png" />
+    <None Include="Resources\icons8-log-out-60.png" />
+    <None Include="Resources\icons8-sign-up-16.png" />
+    <None Include="Resources\icons8-out-481.png" />
+    <None Include="Resources\icons8-search-64.png" />
+    <None Include="Resources\icons8-cart-961.png" />
+    <None Include="Resources\icons8-shopping-cart-902.png" />
+    <None Include="Resources\icons8-select-all-961.png" />
+    <None Include="Resources\icons8-select-all-100.png" />
+    <None Include="Resources\icons8-mobile-phone-96.png" />
+    <None Include="Resources\icons8-exclamation-mark-100.png" />
+    <None Include="Resources\icons8-baby-bottle-100.png" />
+    <None Include="Resources\icons8-motorbike-96.png" />
+    <None Include="Resources\icons8-laptop-96 %281%29.png" />
+    <None Include="Resources\icons8-laptop-96.png" />
+    <None Include="Resources\icons8-shoe-96.png" />
+    <None Include="Resources\icons8-kitchenwares-96 %281%29.png" />
+    <None Include="Resources\icons8-book-80.png" />
+    <None Include="Resources\icons8-electronic-device-66 %281%29.png" />
+    <None Include="Resources\icons8-fashion-80.png" />
+    <None Include="Resources\icons8-kitchenwares-96 %281%291.png" />
+    <None Include="Resources\icons8-electronic-device-66 %281%291.png" />
+    <None Include="Resources\icons8-footwear-96.png" />
+    <None Include="Resources\icons8-furniture-96 %281%29.png" />
+    <None Include="Resources\icons8-event-1001.png" />
+    <None Include="Resources\icons8-event-48.png" />
+    <None Include="Resources\icons8-event-96.png" />
+    <None Include="Resources\icons8-shop-96 %282%291.png" />
+    <None Include="Resources\icons8-online-shopping-100.png" />
+    <None Include="Resources\icons8-transaction-96.png" />
+    <None Include="Resources\icons8-transaction-1002.png" />
+    <None Include="Resources\icons8-account-901.png" />
+    <None Include="Resources\icons8-account-94.png" />
+    <None Include="Resources\icons8-account-100.png" />
+    <None Include="Resources\icons8-history-962.png" />
+    <None Include="Resources\icons8-report-961.png" />
+    <None Include="Resources\icons8-report-962.png" />
+    <None Include="Resources\icons8-graph-report-script-482.png" />
+    <None Include="Resources\icons8-history-963.png" />
+    <None Include="Resources\icons8-mobile-phone-961.png" />
+    <None Include="Resources\mobile-shopping.png" />
+    <None Include="Resources\icons8-mobile-phone-962.png" />
+    <None Include="Resources\icons8-mobile-phone-963.png" />
+    <None Include="Resources\icons8-phone-96.png" />
+    <None Include="Resources\9340938462_fc5496977e_o.jpg" />
+    <None Include="Resources\icons8-phone-number-1001.png" />
+    <None Include="Resources\icons8-phone-number-961.png" />
+    <None Include="Resources\icons8-mobile-phone-964.png" />
+    <None Include="Resources\icons8-phone-961.png" />
+    <None Include="Resources\icons8-phone-962.png" />
+    <None Include="Resources\icons8-mobile-phone-965.png" />
+    <None Include="Resources\icons8-filter-90.png" />
+    <None Include="Resources\icons8-electronic-device-66 %281%292.png" />
+    <None Include="Resources\icons8-electronic-device-66 %281%293.png" />
+    <None Include="Resources\icons8-electronic-device-64.png" />
+    <None Include="Resources\icons8-filter-901.png" />
+    <None Include="Resources\icons8-baby-bottle-1001.png" />
+    <None Include="Resources\icons8-baby-bottle-1002.png" />
+    <None Include="Resources\icons8-filter-902.png" />
+    <None Include="Resources\icons8-kitchenwares-96.png" />
+    <None Include="Resources\icons8-shoe-961.png" />
+    <None Include="Resources\icons8-shoe-962.png" />
+    <None Include="Resources\icons8-shoe-963.png" />
+    <None Include="Resources\icons8-shoe-964.png" />
+    <None Include="Resources\icons8-exclamation-mark-1001.png" />
+    <None Include="Resources\icons8-furniture-96 %281%291.png" />
+    <None Include="Resources\icons8-furniture-96.png" />
+    <None Include="Resources\icons8-filter-903.png" />
+    <None Include="Resources\icons8-book-96.png" />
+    <None Include="Resources\icons8-all-96.png" />
+    <None Include="Resources\icons8-mobilephone-64.png" />
+    <None Include="Resources\icons8-laptop-96 %281%291.png" />
+    <None Include="Resources\icons8-fashion-96.png" />
+    <None Include="Resources\icons8-motorbike-961.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

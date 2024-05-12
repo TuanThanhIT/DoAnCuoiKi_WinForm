@@ -90,6 +90,13 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
             matkhau = matKhau;
             chucvu = chucVu;
         }
+        public DangKi(string hoTen, string diaChi, string soDt, string eMail)
+        {
+            hoten = hoTen;
+            diachi = diaChi;
+            sodt = soDt;
+            email = eMail;
+        }
         public DangKi() { }
     }
 }

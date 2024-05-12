@@ -60,6 +60,7 @@ namespace DoAnCuoiKi_TraoDoiDo.DTO
             Lượt_xem = luot_xem;
             Yêu_thích = yeu_thich;
         }
+ 
         public BanDo(string ten_mat_hang, string loai_mat_hang, string gia_ban, string mo_ta_mat_hang, string hinh_anh_1, string hinh_anh_2, string hinh_anh_3, string hinh_anh_4,
                    string ma_voucher, string giam_gia, string so_luong_voucher, string so_luong, string dia_diem, string phuong_thuc_giao_hang, string tinh_trang_mat_hang, string ma_san_pham, string ngay_dang_ban, string iD, string gia_goc)
         {

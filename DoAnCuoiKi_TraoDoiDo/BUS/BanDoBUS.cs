@@ -161,7 +161,6 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         public void ngayDangBan(DateTimePicker ngayDangBan, string ngayDangBanStr)
         {
             string format = "dd/MM/yyyy"; // Định dạng ngày tháng mong muốn
-
             DateTime ngayDangBanDateTime;
             bool isValidDateTime = DateTime.TryParseExact(ngayDangBanStr, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out ngayDangBanDateTime);
 
@@ -264,15 +263,16 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
             List<BanDo> bds = bdd.LoadDanhSach();
             fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
             List<BanDo> danhSachSapXep = new List<BanDo>();
-            danhSachSapXep = bds.OrderByDescending(j => j.Yêu_thích).ToList();
-            danhSachSapXep = bds.OrderByDescending(j => int.Parse(j.Lượt_xem)).ToList();
+            danhSachSapXep = bds.OrderByDescending(j => j.Yêu_thích)
+                   .ThenByDescending(j => int.Parse(j.Lượt_xem))
+                   .ToList();
             string tuKhoa = tk.Text.ToLower(); // Chuyển đổi tìm kiếm về chữ thường
 
             foreach (BanDo j in danhSachSapXep)
             {
+                string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
                 if (a == "All")
                 {
-                    string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
 
                     if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
                     {
@@ -283,7 +283,6 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
                 }
                 if(a == j.Loại_mặt_hàng)
                 {
-                    string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
 
                     if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
                     {
@@ -345,5 +344,72 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
             }
         }
 
+        // Hiển thị các sản phẩm liên quan trong FormChiTiet
+        private int DemSoTuTrongChuoi(string a, string b) // phương thức này dùng để kiểm tra xem những sản phẩm nào liên quan
+        {
+            // Chuyển cả chuỗi a và b về chữ thường để không phân biệt hoa thường
+            string chuoiA = a.ToLower();
+            string chuoiB = b.ToLower();
+
+            // Tách chuỗi b thành các từ
+            string[] tuTrongB = chuoiB.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            int dem = 0;
+            foreach (string tu in tuTrongB)
+            {
+                if (chuoiA.Contains(tu))
+                {
+                    dem++;
+                }
+            }
+            if (chuoiA.Length == chuoiB.Length && dem == tuTrongB.Length)
+                return -100;
+            else
+                return dem;
+        }
+
+        public void LoadDSSPLienQuan(string tenMH, string loaiMH, FlowLayoutPanel fl)  // Hiển thị các sản phẩm liên quan
+        {
+            int soluongSPLQ = 0;
+            List<BanDo> bds = bdd.LoadDanhSach();
+            List<BanDo> DSSPLienQuan = new List<BanDo>();
+            DSSPLienQuan = bds.OrderByDescending(j => DemSoTuTrongChuoi(tenMH, j.Tên_mặt_hàng)).ToList();
+
+
+            foreach (BanDo a in DSSPLienQuan)
+            { 
+                if (loaiMH == a.Loại_mặt_hàng)
+                {
+                    UCHienThi ucht = new UCHienThi(a);
+                    ucht.Margin = new Padding(10);
+                    fl.Controls.Add(ucht);
+                }
+                soluongSPLQ++;
+                if (soluongSPLQ == 5)
+                    break;
+            }
+        }
+
+        // Load UCHT trong FormShop, hiển thị tất cả các sản phẩm của shop bán
+        public void LoadDSSanPhamShop(string iD, FlowLayoutPanel fl, TextBox tk)
+        {
+            List<BanDo> bds = bdd.LoadDanhSachMH(iD);
+            fl.Controls.Clear(); // Xóa các controls cũ trên flow layout
+            List<BanDo> danhSachSapXep = new List<BanDo>();
+            danhSachSapXep = bds.OrderByDescending(j => j.Yêu_thích).ToList();
+            danhSachSapXep = bds.OrderByDescending(j => int.Parse(j.Lượt_xem)).ToList();
+            string tuKhoa = tk.Text.ToLower(); // Chuyển đổi tìm kiếm về chữ thường
+
+            foreach (BanDo j in danhSachSapXep)
+            {
+                string tenMatHang = j.Tên_mặt_hàng.ToLower(); // Chuyển đổi tên mặt hàng về chữ thường
+                if (string.IsNullOrEmpty(tuKhoa) || tenMatHang.Contains(tuKhoa))
+                {
+                    UCHienThi ucht = new UCHienThi(j);
+                    ucht.Margin = new Padding(10);
+                    fl.Controls.Add(ucht);
+                }
+            }
+        }
     }
 }

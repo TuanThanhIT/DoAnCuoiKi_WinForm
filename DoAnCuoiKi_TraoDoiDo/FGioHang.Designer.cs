@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGioHang));
             this.label1 = new System.Windows.Forms.Label();
             this.txtTimKiemGH = new System.Windows.Forms.TextBox();
             this.flowLPGioHang = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGioHangMua = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGHQuayLai = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,9 +87,21 @@
             this.btnGioHangMua.Text = "Mua Hàng";
             this.btnGioHangMua.Click += new System.EventHandler(this.btnGioHangMua_Click_1);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_search_64;
+            this.pictureBox2.Location = new System.Drawing.Point(917, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_shopping_cart_902;
             this.pictureBox1.Location = new System.Drawing.Point(199, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 48);
@@ -101,25 +112,13 @@
             // btnGHQuayLai
             // 
             this.btnGHQuayLai.BackColor = System.Drawing.Color.White;
-            this.btnGHQuayLai.Image = ((System.Drawing.Image)(resources.GetObject("btnGHQuayLai.Image")));
-            this.btnGHQuayLai.Location = new System.Drawing.Point(972, 8);
+            this.btnGHQuayLai.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_log_out_60;
+            this.btnGHQuayLai.Location = new System.Drawing.Point(952, 8);
             this.btnGHQuayLai.Name = "btnGHQuayLai";
-            this.btnGHQuayLai.Size = new System.Drawing.Size(51, 48);
+            this.btnGHQuayLai.Size = new System.Drawing.Size(71, 48);
             this.btnGHQuayLai.TabIndex = 5;
             this.btnGHQuayLai.UseVisualStyleBackColor = false;
             this.btnGHQuayLai.Click += new System.EventHandler(this.btnGHQuayLai_Click_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(917, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
             // 
             // FormGioHang
             // 
@@ -139,8 +138,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giỏ Hàng";
             this.Load += new System.EventHandler(this.FormGioHang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

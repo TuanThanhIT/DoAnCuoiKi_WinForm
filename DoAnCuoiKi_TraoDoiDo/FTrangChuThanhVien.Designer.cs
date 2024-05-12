@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrangChuThanhVien));
             this.label1 = new System.Windows.Forms.Label();
             this.lblTrangChuID = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -43,6 +42,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnThongTinCaNha = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnMatHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2Button();
@@ -105,8 +105,8 @@
             this.pictureBox2.Location = new System.Drawing.Point(14, 176);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 215);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(174, 186);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
@@ -219,9 +219,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.business_3d_friendly_robot_assistant_waving;
-            this.pictureBox4.Location = new System.Drawing.Point(8, 407);
+            this.pictureBox4.Location = new System.Drawing.Point(8, 439);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(197, 220);
+            this.pictureBox4.Size = new System.Drawing.Size(197, 156);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
@@ -240,6 +240,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.btnThongTinCaNha);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
@@ -254,6 +255,22 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(223, 607);
             this.panel3.TabIndex = 14;
+            // 
+            // btnThongTinCaNha
+            // 
+            this.btnThongTinCaNha.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongTinCaNha.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongTinCaNha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThongTinCaNha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThongTinCaNha.FillColor = System.Drawing.Color.Black;
+            this.btnThongTinCaNha.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinCaNha.ForeColor = System.Drawing.Color.White;
+            this.btnThongTinCaNha.Location = new System.Drawing.Point(8, 396);
+            this.btnThongTinCaNha.Name = "btnThongTinCaNha";
+            this.btnThongTinCaNha.Size = new System.Drawing.Size(190, 30);
+            this.btnThongTinCaNha.TabIndex = 30;
+            this.btnThongTinCaNha.Text = "Thông tin tài khoản";
+            this.btnThongTinCaNha.Click += new System.EventHandler(this.btnThongTinCaNha_Click);
             // 
             // btnDangxuat
             // 
@@ -325,7 +342,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_online_shopping_100;
             this.pictureBox1.Location = new System.Drawing.Point(3, 521);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(209, 141);
@@ -458,6 +475,7 @@
         private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnThongTinCaNha;
         public static System.Windows.Forms.Panel panelTVTrangChu;
         public static System.Windows.Forms.Label lblTVChude;
     }

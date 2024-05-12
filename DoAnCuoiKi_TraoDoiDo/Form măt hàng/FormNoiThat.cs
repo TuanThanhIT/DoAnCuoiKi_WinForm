@@ -33,5 +33,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             bdb.LoadDSSapXep(loaimathang, flowLPNoithat, comBoSapxep);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

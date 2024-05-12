@@ -31,7 +31,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDGVietdanhgia = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDGThoat = new Guna.UI2.WinForms.Guna2Button();
             this.btnDGDanglen = new Guna.UI2.WinForms.Guna2Button();
             this.txtDGID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,12 +38,13 @@
             this.DGRateStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDGTenNguoiDung = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDGMa = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblDanhGiaTen = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picDGImage = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblDGMaSP = new System.Windows.Forms.Label();
+            this.txtDGDanhGia = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDGImage)).BeginInit();
@@ -55,7 +55,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 529);
+            this.label6.Location = new System.Drawing.Point(20, 534);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 19);
             this.label6.TabIndex = 31;
@@ -81,30 +81,6 @@
             this.label4.Size = new System.Drawing.Size(94, 15);
             this.label4.TabIndex = 29;
             this.label4.Text = "Tên người dùng";
-            // 
-            // txtDGVietdanhgia
-            // 
-            this.txtDGVietdanhgia.BorderColor = System.Drawing.Color.Red;
-            this.txtDGVietdanhgia.BorderRadius = 5;
-            this.txtDGVietdanhgia.BorderThickness = 2;
-            this.txtDGVietdanhgia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDGVietdanhgia.DefaultText = "";
-            this.txtDGVietdanhgia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDGVietdanhgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDGVietdanhgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDGVietdanhgia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDGVietdanhgia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDGVietdanhgia.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDGVietdanhgia.ForeColor = System.Drawing.Color.Black;
-            this.txtDGVietdanhgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDGVietdanhgia.Location = new System.Drawing.Point(11, 539);
-            this.txtDGVietdanhgia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDGVietdanhgia.Name = "txtDGVietdanhgia";
-            this.txtDGVietdanhgia.PasswordChar = '\0';
-            this.txtDGVietdanhgia.PlaceholderText = "";
-            this.txtDGVietdanhgia.SelectedText = "";
-            this.txtDGVietdanhgia.Size = new System.Drawing.Size(394, 98);
-            this.txtDGVietdanhgia.TabIndex = 24;
             // 
             // btnDGThoat
             // 
@@ -148,7 +124,6 @@
             // 
             this.txtDGID.BorderColor = System.Drawing.Color.Red;
             this.txtDGID.BorderRadius = 5;
-            this.txtDGID.BorderThickness = 2;
             this.txtDGID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDGID.DefaultText = "ITHH";
             this.txtDGID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -191,17 +166,16 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 105);
+            this.label5.Location = new System.Drawing.Point(26, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.Size = new System.Drawing.Size(82, 15);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Mã sản phẩm";
+            this.label5.Text = "Mã sản phẩm:";
             // 
             // txtDGTenNguoiDung
             // 
             this.txtDGTenNguoiDung.BorderColor = System.Drawing.Color.Red;
             this.txtDGTenNguoiDung.BorderRadius = 5;
-            this.txtDGTenNguoiDung.BorderThickness = 2;
             this.txtDGTenNguoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDGTenNguoiDung.DefaultText = "tuanthanh07";
             this.txtDGTenNguoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -220,30 +194,6 @@
             this.txtDGTenNguoiDung.SelectedText = "";
             this.txtDGTenNguoiDung.Size = new System.Drawing.Size(191, 28);
             this.txtDGTenNguoiDung.TabIndex = 25;
-            // 
-            // txtDGMa
-            // 
-            this.txtDGMa.BorderColor = System.Drawing.Color.Red;
-            this.txtDGMa.BorderRadius = 5;
-            this.txtDGMa.BorderThickness = 2;
-            this.txtDGMa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDGMa.DefaultText = "a";
-            this.txtDGMa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDGMa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDGMa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDGMa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDGMa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDGMa.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDGMa.ForeColor = System.Drawing.Color.Black;
-            this.txtDGMa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDGMa.Location = new System.Drawing.Point(19, 114);
-            this.txtDGMa.Name = "txtDGMa";
-            this.txtDGMa.PasswordChar = '\0';
-            this.txtDGMa.PlaceholderText = "";
-            this.txtDGMa.ReadOnly = true;
-            this.txtDGMa.SelectedText = "";
-            this.txtDGMa.Size = new System.Drawing.Size(187, 22);
-            this.txtDGMa.TabIndex = 26;
             // 
             // lblDanhGiaTen
             // 
@@ -277,7 +227,7 @@
             // 
             // picDGImage
             // 
-            this.picDGImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picDGImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picDGImage.Location = new System.Drawing.Point(18, 176);
             this.picDGImage.Name = "picDGImage";
             this.picDGImage.Size = new System.Drawing.Size(384, 292);
@@ -287,11 +237,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblDGMaSP);
+            this.groupBox1.Controls.Add(this.txtDGDanhGia);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.txtDGMa);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.txtDGTenNguoiDung);
             this.groupBox1.Controls.Add(this.lblDanhGiaTen);
@@ -299,7 +250,6 @@
             this.groupBox1.Controls.Add(this.DGRateStar);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.picDGImage);
-            this.groupBox1.Controls.Add(this.txtDGVietdanhgia);
             this.groupBox1.Controls.Add(this.txtDGID);
             this.groupBox1.Controls.Add(this.btnDGThoat);
             this.groupBox1.Controls.Add(this.btnDGDanglen);
@@ -308,6 +258,37 @@
             this.groupBox1.Size = new System.Drawing.Size(424, 691);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
+            // 
+            // lblDGMaSP
+            // 
+            this.lblDGMaSP.AutoSize = true;
+            this.lblDGMaSP.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDGMaSP.Location = new System.Drawing.Point(130, 115);
+            this.lblDGMaSP.Name = "lblDGMaSP";
+            this.lblDGMaSP.Size = new System.Drawing.Size(50, 15);
+            this.lblDGMaSP.TabIndex = 39;
+            this.lblDGMaSP.Text = "THKHT";
+            // 
+            // txtDGDanhGia
+            // 
+            this.txtDGDanhGia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDGDanhGia.DefaultText = "";
+            this.txtDGDanhGia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDGDanhGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDGDanhGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDGDanhGia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDGDanhGia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDGDanhGia.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDGDanhGia.ForeColor = System.Drawing.Color.Black;
+            this.txtDGDanhGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDGDanhGia.Location = new System.Drawing.Point(24, 557);
+            this.txtDGDanhGia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDGDanhGia.Name = "txtDGDanhGia";
+            this.txtDGDanhGia.PasswordChar = '\0';
+            this.txtDGDanhGia.PlaceholderText = "";
+            this.txtDGDanhGia.SelectedText = "";
+            this.txtDGDanhGia.Size = new System.Drawing.Size(378, 87);
+            this.txtDGDanhGia.TabIndex = 38;
             // 
             // FormDanhGia
             // 
@@ -334,7 +315,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtDGVietdanhgia;
         private Guna.UI2.WinForms.Guna2Button btnDGThoat;
         private Guna.UI2.WinForms.Guna2Button btnDGDanglen;
         private Guna.UI2.WinForms.Guna2TextBox txtDGID;
@@ -343,10 +323,11 @@
         private Guna.UI2.WinForms.Guna2RatingStar DGRateStar;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtDGTenNguoiDung;
-        private Guna.UI2.WinForms.Guna2TextBox txtDGMa;
         private System.Windows.Forms.Label lblDanhGiaTen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtDGDanhGia;
+        private System.Windows.Forms.Label lblDGMaSP;
     }
 }

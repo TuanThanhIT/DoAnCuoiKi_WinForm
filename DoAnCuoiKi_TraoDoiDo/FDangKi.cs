@@ -39,9 +39,6 @@ namespace DoAnCuoiKi_TraoDoiDo
                         if (dkb.ThemThanhVien(dk) == true)
                         {
                             MessageBox.Show("Đăng kí tài khoản quản trị viên thành công");
-                            FormDangNhap f = new FormDangNhap();
-                            f.Show();
-                            this.Hide();
                         }
                         else
                         {
@@ -59,10 +56,7 @@ namespace DoAnCuoiKi_TraoDoiDo
                                                 dateTPNgayDangki.Value.ToShortDateString(), txtDkTenDangnhap.Text, txtDKMatKhau.Text, cbBoxChucvu.Text);
                     if (dkb.ThemThanhVien(dk) == true)
                     {
-                        MessageBox.Show("Đăng kí tài khoản thành viên thành công");
-                        FormDangNhap f = new FormDangNhap();
-                        f.Show();
-                        this.Hide();    
+                        MessageBox.Show("Đăng kí tài khoản thành viên thành công");    
                     }
                     else
                     {

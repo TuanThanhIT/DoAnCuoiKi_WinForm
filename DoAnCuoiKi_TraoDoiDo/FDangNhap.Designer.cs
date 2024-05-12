@@ -33,21 +33,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDNTen = new System.Windows.Forms.TextBox();
             this.txtDNPass = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDNDangnhap = new System.Windows.Forms.Button();
             this.btnDNQuenMK = new System.Windows.Forms.Button();
             this.btnDNDangKi = new System.Windows.Forms.Button();
             this.radQuantrivien = new System.Windows.Forms.RadioButton();
             this.radThanhvien = new System.Windows.Forms.RadioButton();
-            this.hidePass = new System.Windows.Forms.PictureBox();
             this.showPass = new System.Windows.Forms.PictureBox();
+            this.hidePass = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.showPass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showPass)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,36 +86,6 @@
             this.txtDNPass.PasswordChar = '*';
             this.txtDNPass.Size = new System.Drawing.Size(221, 27);
             this.txtDNPass.TabIndex = 4;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(130, 405);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.pass;
-            this.pictureBox2.Location = new System.Drawing.Point(130, 457);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.FIT_DoanHoi;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 370);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnDNDangnhap
             // 
@@ -180,6 +150,18 @@
             this.radThanhvien.Text = "Thanh vien";
             this.radThanhvien.UseVisualStyleBackColor = true;
             // 
+            // showPass
+            // 
+            this.showPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(164)))));
+            this.showPass.Image = ((System.Drawing.Image)(resources.GetObject("showPass.Image")));
+            this.showPass.Location = new System.Drawing.Point(397, 457);
+            this.showPass.Name = "showPass";
+            this.showPass.Size = new System.Drawing.Size(27, 27);
+            this.showPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.showPass.TabIndex = 13;
+            this.showPass.TabStop = false;
+            this.showPass.Click += new System.EventHandler(this.showPass_Click);
+            // 
             // hidePass
             // 
             this.hidePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(164)))));
@@ -192,17 +174,35 @@
             this.hidePass.TabStop = false;
             this.hidePass.Click += new System.EventHandler(this.hidePass_Click);
             // 
-            // showPass
+            // pictureBox3
             // 
-            this.showPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(164)))));
-            this.showPass.Image = ((System.Drawing.Image)(resources.GetObject("showPass.Image")));
-            this.showPass.Location = new System.Drawing.Point(397, 457);
-            this.showPass.Name = "showPass";
-            this.showPass.Size = new System.Drawing.Size(27, 27);
-            this.showPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.showPass.TabIndex = 13;
-            this.showPass.TabStop = false;
-            this.showPass.Click += new System.EventHandler(this.showPass_Click);
+            this.pictureBox3.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.account;
+            this.pictureBox3.Location = new System.Drawing.Point(130, 405);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(34, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.pass;
+            this.pictureBox2.Location = new System.Drawing.Point(130, 457);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.FIT_DoanHoi;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(424, 370);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDangNhap
             // 
@@ -228,11 +228,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.showPass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hidePass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.showPass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

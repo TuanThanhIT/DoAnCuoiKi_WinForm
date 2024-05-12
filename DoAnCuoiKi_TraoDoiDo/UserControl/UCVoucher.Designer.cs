@@ -68,7 +68,7 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(533, 181);
+            this.guna2TextBox1.Size = new System.Drawing.Size(617, 181);
             this.guna2TextBox1.TabIndex = 0;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -86,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(216, 59);
+            this.label2.Location = new System.Drawing.Point(228, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 37);
             this.label2.TabIndex = 4;
@@ -161,7 +161,7 @@
             // 
             this.UCVClblGiamgia.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCVClblGiamgia.ForeColor = System.Drawing.Color.Red;
-            this.UCVClblGiamgia.Location = new System.Drawing.Point(162, 55);
+            this.UCVClblGiamgia.Location = new System.Drawing.Point(174, 55);
             this.UCVClblGiamgia.Name = "UCVClblGiamgia";
             this.UCVClblGiamgia.Size = new System.Drawing.Size(48, 38);
             this.UCVClblGiamgia.TabIndex = 15;
@@ -171,7 +171,7 @@
             // 
             this.UCVClblTen.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCVClblTen.ForeColor = System.Drawing.Color.Red;
-            this.UCVClblTen.Location = new System.Drawing.Point(33, 17);
+            this.UCVClblTen.Location = new System.Drawing.Point(26, 21);
             this.UCVClblTen.Name = "UCVClblTen";
             this.UCVClblTen.Size = new System.Drawing.Size(371, 34);
             this.UCVClblTen.TabIndex = 16;
@@ -180,7 +180,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_online_shopping_96;
-            this.pictureBox3.Location = new System.Drawing.Point(313, 108);
+            this.pictureBox3.Location = new System.Drawing.Point(535, 117);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(79, 61);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +190,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_shop_962;
-            this.pictureBox2.Location = new System.Drawing.Point(410, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(540, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(74, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +200,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_voucher_64;
-            this.pictureBox1.Location = new System.Drawing.Point(405, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(450, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +228,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "UCVoucher";
-            this.Size = new System.Drawing.Size(533, 181);
+            this.Size = new System.Drawing.Size(617, 181);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

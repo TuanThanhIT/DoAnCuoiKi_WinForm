@@ -37,7 +37,7 @@
             // 
             // UCDGRateStar
             // 
-            this.UCDGRateStar.Location = new System.Drawing.Point(6, 40);
+            this.UCDGRateStar.Location = new System.Drawing.Point(3, 40);
             this.UCDGRateStar.Name = "UCDGRateStar";
             this.UCDGRateStar.RatingColor = System.Drawing.Color.Red;
             this.UCDGRateStar.Size = new System.Drawing.Size(77, 18);
@@ -58,7 +58,7 @@
             // 
             this.UCDGlblDanhgia.AutoSize = true;
             this.UCDGlblDanhgia.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCDGlblDanhgia.Location = new System.Drawing.Point(18, 61);
+            this.UCDGlblDanhgia.Location = new System.Drawing.Point(25, 61);
             this.UCDGlblDanhgia.Name = "UCDGlblDanhgia";
             this.UCDGlblDanhgia.Size = new System.Drawing.Size(55, 15);
             this.UCDGlblDanhgia.TabIndex = 6;
@@ -79,13 +79,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UCDGlblDanhgia);
             this.Controls.Add(this.UCDGlblTen);
             this.Controls.Add(this.UCDGRateStar);
             this.Name = "UCDanhGia";
-            this.Size = new System.Drawing.Size(250, 89);
+            this.Size = new System.Drawing.Size(322, 99);
             this.Load += new System.EventHandler(this.UCDanhGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

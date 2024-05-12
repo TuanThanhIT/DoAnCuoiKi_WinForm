@@ -19,18 +19,21 @@ namespace DoAnCuoiKi_TraoDoiDo
         ThanhToanBUS ttb = new ThanhToanBUS();
         FormBUS fd = new FormBUS();
         MuaHangBUS mhb = new MuaHangBUS();
+        DangKiBUS dkb = new DangKiBUS();
         public FormThanhToan()
         {
             InitializeComponent();
-            lblThanhToanTen.Text = DangKiDAO.Ho_ten;
-            lblThanhtoanDiachi.Text = DangKiDAO.Dia_chi;
-            lblThanhtoanSdt.Text = DangKiDAO.So_dt;
+            DangKi dk = dkb.LoadThongTin(DangKiDAO.ID);
+            lblThanhToanTen.Text = dk.Họ_tên;
+            lblThanhtoanDiachi.Text = dk.Địa_chỉ;
+            lblThanhtoanSdt.Text = dk.Số_điện_thoại;
         }
 
 
 
         private void FormThanhToan_Load(object sender, EventArgs e)
         {
+            dateTimeThanhToanNgay.Value = DateTime.Now; 
             ttb.LoadDS(flowLPThanhToan);
             ttb.HienThiSuKien(dateTimeThanhToanNgay, lblTtGgSukien);
         }
@@ -92,6 +95,26 @@ namespace DoAnCuoiKi_TraoDoiDo
             {
                 MessageBox.Show("Đặt hàng thất bại. Vui lòng thử lại sau");
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeThanhToanNgay_ValueChanged(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeThanhToanNgay_ValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

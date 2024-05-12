@@ -64,7 +64,7 @@
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(527, 157);
+            this.guna2TextBox1.Size = new System.Drawing.Size(653, 157);
             this.guna2TextBox1.TabIndex = 0;
             // 
             // guna2HtmlLabel1
@@ -72,7 +72,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(26, 25);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(42, 25);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(87, 21);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(27, 68);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(42, 68);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(102, 19);
             this.guna2HtmlLabel2.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(27, 100);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(42, 100);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(62, 17);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(27, 123);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(42, 123);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(75, 19);
             this.guna2HtmlLabel4.TabIndex = 5;
@@ -115,7 +115,7 @@
             // 
             this.UCSKlblBegin.BackColor = System.Drawing.Color.Transparent;
             this.UCSKlblBegin.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCSKlblBegin.Location = new System.Drawing.Point(154, 100);
+            this.UCSKlblBegin.Location = new System.Drawing.Point(188, 100);
             this.UCSKlblBegin.Name = "UCSKlblBegin";
             this.UCSKlblBegin.Size = new System.Drawing.Size(47, 17);
             this.UCSKlblBegin.TabIndex = 7;
@@ -125,7 +125,7 @@
             // 
             this.UCSKlblEnd.BackColor = System.Drawing.Color.Transparent;
             this.UCSKlblEnd.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCSKlblEnd.Location = new System.Drawing.Point(154, 125);
+            this.UCSKlblEnd.Location = new System.Drawing.Point(188, 125);
             this.UCSKlblEnd.Name = "UCSKlblEnd";
             this.UCSKlblEnd.Size = new System.Drawing.Size(47, 17);
             this.UCSKlblEnd.TabIndex = 8;
@@ -134,9 +134,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_flower_48;
-            this.pictureBox2.Location = new System.Drawing.Point(324, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(429, 100);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(63, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -144,9 +144,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_congratulations_96;
-            this.pictureBox1.Location = new System.Drawing.Point(354, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(474, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(144, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -156,7 +156,7 @@
             this.UCSKlblten.AutoSize = true;
             this.UCSKlblten.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCSKlblten.ForeColor = System.Drawing.Color.Red;
-            this.UCSKlblten.Location = new System.Drawing.Point(149, 21);
+            this.UCSKlblten.Location = new System.Drawing.Point(183, 25);
             this.UCSKlblten.Name = "UCSKlblten";
             this.UCSKlblten.Size = new System.Drawing.Size(70, 25);
             this.UCSKlblten.TabIndex = 11;
@@ -167,7 +167,7 @@
             this.UCSKlblGiamGia.AutoSize = true;
             this.UCSKlblGiamGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCSKlblGiamGia.ForeColor = System.Drawing.Color.Red;
-            this.UCSKlblGiamGia.Location = new System.Drawing.Point(150, 64);
+            this.UCSKlblGiamGia.Location = new System.Drawing.Point(184, 64);
             this.UCSKlblGiamGia.Name = "UCSKlblGiamGia";
             this.UCSKlblGiamGia.Size = new System.Drawing.Size(60, 23);
             this.UCSKlblGiamGia.TabIndex = 12;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "UCSuKien";
-            this.Size = new System.Drawing.Size(527, 157);
+            this.Size = new System.Drawing.Size(653, 157);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

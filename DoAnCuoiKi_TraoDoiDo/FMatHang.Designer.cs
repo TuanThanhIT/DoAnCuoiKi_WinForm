@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMatHang));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMatHang = new System.Windows.Forms.Panel();
             this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhac = new Guna.UI2.WinForms.Guna2Button();
             this.btnDienThoai = new Guna.UI2.WinForms.Guna2Button();
@@ -43,7 +43,6 @@
             this.btnDogiadung = new Guna.UI2.WinForms.Guna2Button();
             this.btnIT = new Guna.UI2.WinForms.Guna2Button();
             this.btnGiay = new Guna.UI2.WinForms.Guna2Button();
-            this.panelMatHang = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnTatCa);
             this.panel1.Controls.Add(this.btnKhac);
             this.panel1.Controls.Add(this.btnDienThoai);
@@ -79,6 +78,14 @@
             this.panel1.Size = new System.Drawing.Size(1371, 79);
             this.panel1.TabIndex = 4;
             // 
+            // panelMatHang
+            // 
+            this.panelMatHang.BackColor = System.Drawing.Color.White;
+            this.panelMatHang.Location = new System.Drawing.Point(4, 120);
+            this.panelMatHang.Name = "panelMatHang";
+            this.panelMatHang.Size = new System.Drawing.Size(1371, 628);
+            this.panelMatHang.TabIndex = 5;
+            // 
             // btnTatCa
             // 
             this.btnTatCa.BackColor = System.Drawing.Color.White;
@@ -91,9 +98,9 @@
             this.btnTatCa.FillColor = System.Drawing.Color.White;
             this.btnTatCa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTatCa.ForeColor = System.Drawing.Color.Black;
-            this.btnTatCa.Image = ((System.Drawing.Image)(resources.GetObject("btnTatCa.Image")));
+            this.btnTatCa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_select_all_100;
             this.btnTatCa.ImageSize = new System.Drawing.Size(60, 60);
-            this.btnTatCa.Location = new System.Drawing.Point(65, 3);
+            this.btnTatCa.Location = new System.Drawing.Point(80, 3);
             this.btnTatCa.Name = "btnTatCa";
             this.btnTatCa.Size = new System.Drawing.Size(94, 70);
             this.btnTatCa.TabIndex = 0;
@@ -111,9 +118,9 @@
             this.btnKhac.FillColor = System.Drawing.Color.White;
             this.btnKhac.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnKhac.ForeColor = System.Drawing.Color.White;
-            this.btnKhac.Image = ((System.Drawing.Image)(resources.GetObject("btnKhac.Image")));
+            this.btnKhac.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_exclamation_mark_100;
             this.btnKhac.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnKhac.Location = new System.Drawing.Point(1165, 3);
+            this.btnKhac.Location = new System.Drawing.Point(1180, 3);
             this.btnKhac.Name = "btnKhac";
             this.btnKhac.Size = new System.Drawing.Size(94, 70);
             this.btnKhac.TabIndex = 11;
@@ -131,9 +138,9 @@
             this.btnDienThoai.FillColor = System.Drawing.Color.White;
             this.btnDienThoai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDienThoai.ForeColor = System.Drawing.Color.White;
-            this.btnDienThoai.Image = ((System.Drawing.Image)(resources.GetObject("btnDienThoai.Image")));
+            this.btnDienThoai.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_mobile_phone_96;
             this.btnDienThoai.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDienThoai.Location = new System.Drawing.Point(165, 3);
+            this.btnDienThoai.Location = new System.Drawing.Point(180, 3);
             this.btnDienThoai.Name = "btnDienThoai";
             this.btnDienThoai.Size = new System.Drawing.Size(94, 70);
             this.btnDienThoai.TabIndex = 1;
@@ -151,9 +158,9 @@
             this.btnNoiThat.FillColor = System.Drawing.Color.White;
             this.btnNoiThat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNoiThat.ForeColor = System.Drawing.Color.White;
-            this.btnNoiThat.Image = ((System.Drawing.Image)(resources.GetObject("btnNoiThat.Image")));
+            this.btnNoiThat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_furniture_96__1_;
             this.btnNoiThat.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnNoiThat.Location = new System.Drawing.Point(265, 3);
+            this.btnNoiThat.Location = new System.Drawing.Point(280, 3);
             this.btnNoiThat.Name = "btnNoiThat";
             this.btnNoiThat.Size = new System.Drawing.Size(94, 70);
             this.btnNoiThat.TabIndex = 2;
@@ -171,9 +178,9 @@
             this.btnDoembe.FillColor = System.Drawing.Color.White;
             this.btnDoembe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDoembe.ForeColor = System.Drawing.Color.White;
-            this.btnDoembe.Image = ((System.Drawing.Image)(resources.GetObject("btnDoembe.Image")));
+            this.btnDoembe.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_baby_bottle_100;
             this.btnDoembe.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDoembe.Location = new System.Drawing.Point(1065, 3);
+            this.btnDoembe.Location = new System.Drawing.Point(1080, 3);
             this.btnDoembe.Name = "btnDoembe";
             this.btnDoembe.Size = new System.Drawing.Size(94, 70);
             this.btnDoembe.TabIndex = 10;
@@ -191,9 +198,9 @@
             this.btnThoiTrang.FillColor = System.Drawing.Color.White;
             this.btnThoiTrang.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThoiTrang.ForeColor = System.Drawing.Color.White;
-            this.btnThoiTrang.Image = ((System.Drawing.Image)(resources.GetObject("btnThoiTrang.Image")));
+            this.btnThoiTrang.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_fashion_80;
             this.btnThoiTrang.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnThoiTrang.Location = new System.Drawing.Point(365, 3);
+            this.btnThoiTrang.Location = new System.Drawing.Point(380, 3);
             this.btnThoiTrang.Name = "btnThoiTrang";
             this.btnThoiTrang.Size = new System.Drawing.Size(94, 70);
             this.btnThoiTrang.TabIndex = 3;
@@ -211,9 +218,9 @@
             this.btnXeco.FillColor = System.Drawing.Color.White;
             this.btnXeco.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXeco.ForeColor = System.Drawing.Color.White;
-            this.btnXeco.Image = ((System.Drawing.Image)(resources.GetObject("btnXeco.Image")));
+            this.btnXeco.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_motorbike_96;
             this.btnXeco.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnXeco.Location = new System.Drawing.Point(965, 3);
+            this.btnXeco.Location = new System.Drawing.Point(980, 3);
             this.btnXeco.Name = "btnXeco";
             this.btnXeco.Size = new System.Drawing.Size(94, 70);
             this.btnXeco.TabIndex = 9;
@@ -231,9 +238,9 @@
             this.btnDoDienTu.FillColor = System.Drawing.Color.White;
             this.btnDoDienTu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDoDienTu.ForeColor = System.Drawing.Color.White;
-            this.btnDoDienTu.Image = ((System.Drawing.Image)(resources.GetObject("btnDoDienTu.Image")));
+            this.btnDoDienTu.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_electronic_device_66__1_;
             this.btnDoDienTu.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDoDienTu.Location = new System.Drawing.Point(465, 3);
+            this.btnDoDienTu.Location = new System.Drawing.Point(480, 3);
             this.btnDoDienTu.Name = "btnDoDienTu";
             this.btnDoDienTu.Size = new System.Drawing.Size(94, 70);
             this.btnDoDienTu.TabIndex = 4;
@@ -251,9 +258,9 @@
             this.btnSach.FillColor = System.Drawing.Color.White;
             this.btnSach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSach.ForeColor = System.Drawing.Color.White;
-            this.btnSach.Image = ((System.Drawing.Image)(resources.GetObject("btnSach.Image")));
+            this.btnSach.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_book_80;
             this.btnSach.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSach.Location = new System.Drawing.Point(565, 3);
+            this.btnSach.Location = new System.Drawing.Point(580, 3);
             this.btnSach.Name = "btnSach";
             this.btnSach.Size = new System.Drawing.Size(94, 70);
             this.btnSach.TabIndex = 5;
@@ -271,9 +278,9 @@
             this.btnDogiadung.FillColor = System.Drawing.Color.White;
             this.btnDogiadung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDogiadung.ForeColor = System.Drawing.Color.White;
-            this.btnDogiadung.Image = ((System.Drawing.Image)(resources.GetObject("btnDogiadung.Image")));
+            this.btnDogiadung.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_kitchenwares_96__1_;
             this.btnDogiadung.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnDogiadung.Location = new System.Drawing.Point(665, 3);
+            this.btnDogiadung.Location = new System.Drawing.Point(680, 3);
             this.btnDogiadung.Name = "btnDogiadung";
             this.btnDogiadung.Size = new System.Drawing.Size(94, 70);
             this.btnDogiadung.TabIndex = 6;
@@ -291,9 +298,9 @@
             this.btnIT.FillColor = System.Drawing.Color.White;
             this.btnIT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnIT.ForeColor = System.Drawing.Color.White;
-            this.btnIT.Image = ((System.Drawing.Image)(resources.GetObject("btnIT.Image")));
+            this.btnIT.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_laptop_96__1_;
             this.btnIT.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnIT.Location = new System.Drawing.Point(865, 3);
+            this.btnIT.Location = new System.Drawing.Point(880, 3);
             this.btnIT.Name = "btnIT";
             this.btnIT.Size = new System.Drawing.Size(94, 70);
             this.btnIT.TabIndex = 8;
@@ -311,21 +318,13 @@
             this.btnGiay.FillColor = System.Drawing.Color.White;
             this.btnGiay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGiay.ForeColor = System.Drawing.Color.White;
-            this.btnGiay.Image = ((System.Drawing.Image)(resources.GetObject("btnGiay.Image")));
+            this.btnGiay.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_shoe_96;
             this.btnGiay.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnGiay.Location = new System.Drawing.Point(765, 3);
+            this.btnGiay.Location = new System.Drawing.Point(780, 3);
             this.btnGiay.Name = "btnGiay";
             this.btnGiay.Size = new System.Drawing.Size(94, 70);
             this.btnGiay.TabIndex = 7;
             this.btnGiay.Click += new System.EventHandler(this.btnGiay_Click);
-            // 
-            // panelMatHang
-            // 
-            this.panelMatHang.BackColor = System.Drawing.Color.White;
-            this.panelMatHang.Location = new System.Drawing.Point(4, 120);
-            this.panelMatHang.Name = "panelMatHang";
-            this.panelMatHang.Size = new System.Drawing.Size(1371, 628);
-            this.panelMatHang.TabIndex = 5;
             // 
             // FormMatHang
             // 

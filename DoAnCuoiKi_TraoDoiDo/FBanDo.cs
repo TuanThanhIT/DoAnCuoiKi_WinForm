@@ -136,9 +136,8 @@ namespace DoAnCuoiKi_TraoDoiDo
         private void btnBdLuu_Click_1(object sender, EventArgs e)
         {
             string phuongthucGiaoHang = bds.ptGiaoHang(rdBChuyenPhatNhanh, rdBGiaohangtructiep, rdBNguoibangiao);
-            string maSanPham = bds.RandomMaSanPham();
             BanDo banDo = new BanDo(txtBdTenMH.Text, comboBdLoaiMH.Text, txtBdGiaban.Text, txtBdMota.Text, bds.ImagePaths[0], bds.ImagePaths[1],
-                 bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, maSanPham, dateTimeNgayban.Value.ToString(), DangKiDAO.ID, txtDbGiaGoc.Text);
+                 bds.ImagePaths[2], bds.ImagePaths[3], txtBdMa.Text, txtBdGiamgia.Text, txtBdSlVou.Text, txtBdSoluong.Text, txtBdDiadiem.Text, phuongthucGiaoHang, cbBoxTinhtrang.Text, txtBDMaSP.Text,dateTimeNgayban.Value.ToString(), DangKiDAO.ID, txtDbGiaGoc.Text);
              if (bds.SuaMatHang(banDo) == true)
              {
                  MessageBox.Show("Bạn đã sửa thông tin mặt hàng thành công");
@@ -190,6 +189,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormBanDo_Load(object sender, EventArgs e)
         {
 
         }

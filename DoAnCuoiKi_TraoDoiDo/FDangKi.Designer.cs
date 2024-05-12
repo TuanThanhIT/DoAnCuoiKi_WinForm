@@ -353,7 +353,7 @@
             this.btnDkThoat.FillColor = System.Drawing.Color.White;
             this.btnDkThoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDkThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnDkThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnDkThoat.Image")));
+            this.btnDkThoat.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_export_961;
             this.btnDkThoat.Location = new System.Drawing.Point(390, 678);
             this.btnDkThoat.Name = "btnDkThoat";
             this.btnDkThoat.Size = new System.Drawing.Size(92, 37);
@@ -372,7 +372,7 @@
             this.btnDKDangKi.FillColor = System.Drawing.Color.White;
             this.btnDKDangKi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDKDangKi.ForeColor = System.Drawing.Color.Black;
-            this.btnDKDangKi.Image = ((System.Drawing.Image)(resources.GetObject("btnDKDangKi.Image")));
+            this.btnDKDangKi.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_register_80;
             this.btnDKDangKi.Location = new System.Drawing.Point(252, 678);
             this.btnDKDangKi.Name = "btnDKDangKi";
             this.btnDKDangKi.Size = new System.Drawing.Size(116, 37);

@@ -21,18 +21,17 @@ namespace DoAnCuoiKi_TraoDoiDo
             InitializeComponent();
         }
         FormBUS fd = new FormBUS();
+        DangKi dk;
         public FormTrangChu(DangKi dk)
         {
             InitializeComponent();
+            this.dk = dk;
             lblTrangchuTen.Text = dk.Tên_đăng_nhập;
             lblTrangChuChucvu.Text = dk.Chức_vụ;
             lblTrangChuID.Text = dk.ID;
             DangKiDAO.ID = lblTrangChuID.Text;
             DangKiDAO.Ten_nguoi_dung = lblTrangchuTen.Text;
             DangKiDAO.Chuc_vu = lblTrangChuChucvu.Text;
-            DangKiDAO.Ho_ten = dk.Họ_tên;
-            DangKiDAO.Dia_chi = dk.Địa_chỉ;
-            DangKiDAO.So_dt = dk.Số_điện_thoại;
         }
 
         private void FormTrangChu_Load(object sender, EventArgs e)
@@ -91,14 +90,21 @@ namespace DoAnCuoiKi_TraoDoiDo
 
         private void btnOut_Click_1(object sender, EventArgs e)
         {
-            FormDangNhap f = new FormDangNhap();
-            f.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(result == DialogResult.OK)
+            {
+                FormDangNhap f = new FormDangNhap();
+                f.Show();
+                this.Hide();
+            }
+            
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnThongTinCaNha_Click(object sender, EventArgs e)
+        {
+            fd.OpenChildForm(new FormTaiKhoan(dk), panelTrangChu);
+            lblChude.Text = "Thông tin tài khoản";
         }
     }
 }

@@ -83,9 +83,16 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
 
         public List<BanDo> LoadDanhSach() // Lấy dữ liệu để hiển thị UCHienThi
         {
-            string query2 = "SELECT dangban.Tên_mặt_hàng, Loại_mặt_hàng, Giá_bán, Mô_tả_mặt_hàng, Hình_ảnh_1, Hình_ảnh_2, Hình_ảnh_3, Hình_ảnh_4, Mã_Voucher, Giảm_giá, Số_lượng_Voucher, Số_lượng, Địa_điểm, Phương_thức_giao_hàng, Tình_trạng_mặt_hàng, dangban.Mã_sản_phẩm, Ngày_đăng_bán, ID, Giá_gốc, Lượt_xem, Yêu_thích " +
+            string query2 = string.Format("SELECT dangban.Tên_mặt_hàng, Loại_mặt_hàng, Giá_bán, Mô_tả_mặt_hàng, Hình_ảnh_1, Hình_ảnh_2, Hình_ảnh_3, Hình_ảnh_4, Mã_Voucher, Giảm_giá, Số_lượng_Voucher, Số_lượng, Địa_điểm, Phương_thức_giao_hàng, Tình_trạng_mặt_hàng, dangban.Mã_sản_phẩm, Ngày_đăng_bán, ID, Giá_gốc, Lượt_xem, Yêu_thích " +
                "FROM [ĐăngBán] AS dangban INNER JOIN [SảnPhẩm] AS sanpham ON dangban.Mã_sản_phẩm = sanpham.Mã_sản_phẩm " +
-               "WHERE dangban.Số_lượng > 0";
+               "WHERE dangban.Số_lượng > 0");
+            return d.LoadDanhSachDangBan2(query2);
+        }
+        public List<BanDo> LoadDanhSachMH(string iD) // Lấy dữ liệu để hiển thị UCHienThi trong FormShop
+        {
+            string query2 =string.Format("SELECT dangban.Tên_mặt_hàng, Loại_mặt_hàng, Giá_bán, Mô_tả_mặt_hàng, Hình_ảnh_1, Hình_ảnh_2, Hình_ảnh_3, Hình_ảnh_4, Mã_Voucher, Giảm_giá, Số_lượng_Voucher, Số_lượng, Địa_điểm, Phương_thức_giao_hàng, Tình_trạng_mặt_hàng, dangban.Mã_sản_phẩm, Ngày_đăng_bán, ID, Giá_gốc, Lượt_xem, Yêu_thích " +
+               "FROM [ĐăngBán] AS dangban INNER JOIN [SảnPhẩm] AS sanpham ON dangban.Mã_sản_phẩm = sanpham.Mã_sản_phẩm " +
+               "WHERE dangban.Số_lượng > 0 and ID = N'{0}'", iD);
             return d.LoadDanhSachDangBan2(query2);
         }
         public List<BanDo> LoadDSVou() // Lấy dữ liệu để hiển thị UCVoucher

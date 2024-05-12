@@ -29,19 +29,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             txtDGTenNguoiDung.Text = DangKiDAO.Ten_nguoi_dung;
             txtDGID.Text = DangKiDAO.ID;
             lblDanhGiaTen.Text = bd.Tên_mặt_hàng;
-            txtDGMa.Text = bd.Mã_sản_phẩm;
+            lblDGMaSP.Text = bd.Mã_sản_phẩm;
             imagePath = bd.Hình_ảnh_1;
             picDGImage.Image = Image.FromFile(imagePath);
         }
 
         private void FormDanhGia2_Load(object sender, EventArgs e)
         {
-            txtDGVietdanhgia.Focus();
+            txtDGDanhGia.Focus();
         }
 
         private void btnDGDanglen_Click(object sender, EventArgs e)
         {
-            DanhGia dg = new DanhGia(DangKiDAO.ID, DangKiDAO.Ten_nguoi_dung, lblDanhGiaTen.Text, txtDGMa.Text, imagePath, txtDGVietdanhgia.Text, DGRateStar.Value.ToString());
+            DanhGia dg = new DanhGia(DangKiDAO.ID, DangKiDAO.Ten_nguoi_dung, lblDanhGiaTen.Text, lblDGMaSP.Text, imagePath, txtDGDanhGia.Text, DGRateStar.Value.ToString());
             if(dgb.ThemDanhGia(dg))
             {
                 MessageBox.Show("Cảm ơn bạn đã đánh giá sản phẩm");

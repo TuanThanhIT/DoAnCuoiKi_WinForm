@@ -33,5 +33,10 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             FormThietBiIT_Load(sender, e);
         }
+
+        private void flowLPTbIT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

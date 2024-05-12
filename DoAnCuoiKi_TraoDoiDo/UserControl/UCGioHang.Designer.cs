@@ -44,6 +44,7 @@
             this.UCGHCheck = new System.Windows.Forms.CheckBox();
             this.UCGHlblMa = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.UCGHbtnLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.UCGHUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UCGHImagePicBox)).BeginInit();
             this.SuspendLayout();
@@ -53,20 +54,20 @@
             this.UCGHUpDown.BackColor = System.Drawing.Color.Transparent;
             this.UCGHUpDown.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UCGHUpDown.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UCGHUpDown.Location = new System.Drawing.Point(682, 55);
+            this.UCGHUpDown.Location = new System.Drawing.Point(867, 62);
             this.UCGHUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.UCGHUpDown.Name = "UCGHUpDown";
-            this.UCGHUpDown.Size = new System.Drawing.Size(137, 40);
+            this.UCGHUpDown.Size = new System.Drawing.Size(148, 40);
             this.UCGHUpDown.TabIndex = 3;
             this.UCGHUpDown.ValueChanged += new System.EventHandler(this.UCGHUpDown_ValueChanged);
             // 
             // UCGHImagePicBox
             // 
-            this.UCGHImagePicBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UCGHImagePicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UCGHImagePicBox.ImageRotate = 0F;
-            this.UCGHImagePicBox.Location = new System.Drawing.Point(34, 3);
+            this.UCGHImagePicBox.Location = new System.Drawing.Point(53, 3);
             this.UCGHImagePicBox.Name = "UCGHImagePicBox";
-            this.UCGHImagePicBox.Size = new System.Drawing.Size(158, 156);
+            this.UCGHImagePicBox.Size = new System.Drawing.Size(197, 161);
             this.UCGHImagePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UCGHImagePicBox.TabIndex = 4;
             this.UCGHImagePicBox.TabStop = false;
@@ -82,7 +83,7 @@
             // 
             this.UCGHlblLoai.BackColor = System.Drawing.Color.White;
             this.UCGHlblLoai.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCGHlblLoai.Location = new System.Drawing.Point(230, 90);
+            this.UCGHlblLoai.Location = new System.Drawing.Point(291, 106);
             this.UCGHlblLoai.Name = "UCGHlblLoai";
             this.UCGHlblLoai.Size = new System.Drawing.Size(98, 21);
             this.UCGHlblLoai.TabIndex = 9;
@@ -92,22 +93,22 @@
             // UCGHlblGiacu
             // 
             this.UCGHlblGiacu.BackColor = System.Drawing.Color.Transparent;
-            this.UCGHlblGiacu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblGiacu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHlblGiacu.ForeColor = System.Drawing.Color.Fuchsia;
-            this.UCGHlblGiacu.Location = new System.Drawing.Point(431, 69);
+            this.UCGHlblGiacu.Location = new System.Drawing.Point(547, 72);
             this.UCGHlblGiacu.Name = "UCGHlblGiacu";
-            this.UCGHlblGiacu.Size = new System.Drawing.Size(55, 24);
+            this.UCGHlblGiacu.Size = new System.Drawing.Size(58, 25);
             this.UCGHlblGiacu.TabIndex = 10;
             this.UCGHlblGiacu.Text = "Giá cũ";
             // 
             // UCGHlblGiamoi
             // 
             this.UCGHlblGiamoi.BackColor = System.Drawing.Color.Transparent;
-            this.UCGHlblGiamoi.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblGiamoi.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHlblGiamoi.ForeColor = System.Drawing.Color.Red;
-            this.UCGHlblGiamoi.Location = new System.Drawing.Point(527, 55);
+            this.UCGHlblGiamoi.Location = new System.Drawing.Point(656, 61);
             this.UCGHlblGiamoi.Name = "UCGHlblGiamoi";
-            this.UCGHlblGiamoi.Size = new System.Drawing.Size(115, 39);
+            this.UCGHlblGiamoi.Size = new System.Drawing.Size(129, 44);
             this.UCGHlblGiamoi.TabIndex = 11;
             this.UCGHlblGiamoi.Text = "Giá mới";
             // 
@@ -118,9 +119,9 @@
             this.UCGHbtnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.UCGHbtnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UCGHbtnXoa.FillColor = System.Drawing.Color.White;
-            this.UCGHbtnXoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHbtnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHbtnXoa.ForeColor = System.Drawing.Color.Black;
-            this.UCGHbtnXoa.Location = new System.Drawing.Point(970, 38);
+            this.UCGHbtnXoa.Location = new System.Drawing.Point(1210, 45);
             this.UCGHbtnXoa.Name = "UCGHbtnXoa";
             this.UCGHbtnXoa.Size = new System.Drawing.Size(77, 38);
             this.UCGHbtnXoa.TabIndex = 12;
@@ -131,9 +132,9 @@
             // 
             this.UCGHlblThanhtoan.AutoSize = false;
             this.UCGHlblThanhtoan.BackColor = System.Drawing.Color.Transparent;
-            this.UCGHlblThanhtoan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblThanhtoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHlblThanhtoan.ForeColor = System.Drawing.Color.Red;
-            this.UCGHlblThanhtoan.Location = new System.Drawing.Point(855, 65);
+            this.UCGHlblThanhtoan.Location = new System.Drawing.Point(1051, 75);
             this.UCGHlblThanhtoan.Name = "UCGHlblThanhtoan";
             this.UCGHlblThanhtoan.Size = new System.Drawing.Size(109, 30);
             this.UCGHlblThanhtoan.TabIndex = 13;
@@ -144,7 +145,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(230, 126);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(291, 142);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(75, 21);
             this.guna2HtmlLabel1.TabIndex = 14;
@@ -154,7 +155,7 @@
             // 
             this.UCGHlblSoluong.BackColor = System.Drawing.Color.White;
             this.UCGHlblSoluong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCGHlblSoluong.Location = new System.Drawing.Point(336, 126);
+            this.UCGHlblSoluong.Location = new System.Drawing.Point(400, 142);
             this.UCGHlblSoluong.Name = "UCGHlblSoluong";
             this.UCGHlblSoluong.Size = new System.Drawing.Size(21, 21);
             this.UCGHlblSoluong.TabIndex = 15;
@@ -165,27 +166,27 @@
             this.UCGHlblNgay.AutoSize = false;
             this.UCGHlblNgay.BackColor = System.Drawing.Color.White;
             this.UCGHlblNgay.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCGHlblNgay.Location = new System.Drawing.Point(576, 120);
+            this.UCGHlblNgay.Location = new System.Drawing.Point(1005, 136);
             this.UCGHlblNgay.Name = "UCGHlblNgay";
-            this.UCGHlblNgay.Size = new System.Drawing.Size(243, 27);
+            this.UCGHlblNgay.Size = new System.Drawing.Size(133, 27);
             this.UCGHlblNgay.TabIndex = 16;
-            this.UCGHlblNgay.Text = "Ngày đăng bán";
+            this.UCGHlblNgay.Text = "7/5/2024";
             // 
             // UCGHlblTenMH
             // 
             this.UCGHlblTenMH.BackColor = System.Drawing.Color.White;
-            this.UCGHlblTenMH.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHlblTenMH.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHlblTenMH.ForeColor = System.Drawing.Color.Red;
-            this.UCGHlblTenMH.Location = new System.Drawing.Point(230, 3);
+            this.UCGHlblTenMH.Location = new System.Drawing.Point(291, 8);
             this.UCGHlblTenMH.Name = "UCGHlblTenMH";
-            this.UCGHlblTenMH.Size = new System.Drawing.Size(130, 28);
+            this.UCGHlblTenMH.Size = new System.Drawing.Size(151, 33);
             this.UCGHlblTenMH.TabIndex = 17;
             this.UCGHlblTenMH.Text = "Tên mặt hàng";
             // 
             // UCGHCheck
             // 
             this.UCGHCheck.AutoSize = true;
-            this.UCGHCheck.Location = new System.Drawing.Point(10, 76);
+            this.UCGHCheck.Location = new System.Drawing.Point(18, 75);
             this.UCGHCheck.Name = "UCGHCheck";
             this.UCGHCheck.Size = new System.Drawing.Size(18, 17);
             this.UCGHCheck.TabIndex = 18;
@@ -196,7 +197,7 @@
             // 
             this.UCGHlblMa.BackColor = System.Drawing.Color.White;
             this.UCGHlblMa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCGHlblMa.Location = new System.Drawing.Point(230, 55);
+            this.UCGHlblMa.Location = new System.Drawing.Point(291, 71);
             this.UCGHlblMa.Name = "UCGHlblMa";
             this.UCGHlblMa.Size = new System.Drawing.Size(89, 21);
             this.UCGHlblMa.TabIndex = 19;
@@ -209,21 +210,33 @@
             this.UCGHbtnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.UCGHbtnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UCGHbtnLuu.FillColor = System.Drawing.Color.White;
-            this.UCGHbtnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCGHbtnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCGHbtnLuu.ForeColor = System.Drawing.Color.Black;
-            this.UCGHbtnLuu.Location = new System.Drawing.Point(970, 99);
+            this.UCGHbtnLuu.Location = new System.Drawing.Point(1210, 106);
             this.UCGHbtnLuu.Name = "UCGHbtnLuu";
             this.UCGHbtnLuu.Size = new System.Drawing.Size(77, 38);
             this.UCGHbtnLuu.TabIndex = 20;
             this.UCGHbtnLuu.Text = "Lưu";
             this.UCGHbtnLuu.Click += new System.EventHandler(this.UCGHbtnLuu_Click_1);
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(831, 136);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(137, 20);
+            this.guna2HtmlLabel2.TabIndex = 21;
+            this.guna2HtmlLabel2.Text = "Ngày đăng bán";
+            // 
             // UCGioHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.UCGHbtnLuu);
             this.Controls.Add(this.UCGHlblMa);
             this.Controls.Add(this.UCGHCheck);
@@ -239,7 +252,7 @@
             this.Controls.Add(this.UCGHImagePicBox);
             this.Controls.Add(this.UCGHUpDown);
             this.Name = "UCGioHang";
-            this.Size = new System.Drawing.Size(1055, 166);
+            this.Size = new System.Drawing.Size(1342, 168);
             this.Load += new System.EventHandler(this.UCGioHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UCGHUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UCGHImagePicBox)).EndInit();
@@ -265,5 +278,6 @@
         public System.Windows.Forms.CheckBox UCGHCheck;
         private Guna.UI2.WinForms.Guna2HtmlLabel UCGHlblMa;
         private Guna.UI2.WinForms.Guna2Button UCGHbtnLuu;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }

@@ -19,13 +19,16 @@ namespace DoAnCuoiKi_TraoDoiDo
         BanDo bando;
         FormBUS fd = new FormBUS();
         GioHangBUS ghb = new GioHangBUS();
-         DanhGiaBUS dgb = new DanhGiaBUS();
+        DanhGiaBUS dgb = new DanhGiaBUS();
+        BanDoBUS bdb = new BanDoBUS();
         string hinh1;
         string hinh2;
         string hinh3;
         string hinh4;
         string maVoucher;
         string giamGia;
+        string tenMatHang;
+        string loaiMatHang;
         public FormChiTiet()
         {
             InitializeComponent();
@@ -35,9 +38,11 @@ namespace DoAnCuoiKi_TraoDoiDo
         {
             this.bando = bando;
             InitializeComponent();
+            tenMatHang = bando.Tên_mặt_hàng;
+            loaiMatHang = bando.Loại_mặt_hàng;
             lblCTMaSp.Text = bando.Mã_sản_phẩm;
-            lblChitietTen.Text = bando.Tên_mặt_hàng;
-            lblCTLoaiSp.Text = bando.Loại_mặt_hàng;
+            lblChitietTen.Text = tenMatHang;
+            lblCTLoaiSp.Text = loaiMatHang;
             lblChiTietGiaban.Text = bando.Giá_bán;
             lblCTMota.Text = bando.Mô_tả_mặt_hàng;
             List<string> imagePathList = new List<string>();
@@ -110,6 +115,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             lblChitietGiacu.Font = new Font(lblChitietGiacu.Font, FontStyle.Strikeout);
             lblChitietRateStar.Font = new Font(lblChitietRateStar.Font, FontStyle.Underline);
             dgb.LoadDanhGia(flowLPDanhGia, bando.Mã_sản_phẩm);
+            bdb.LoadDSSPLienQuan(tenMatHang, loaiMatHang, flowLPSPLienQuan);
         }
 
 
@@ -186,6 +192,20 @@ namespace DoAnCuoiKi_TraoDoiDo
                 FormTrangChuThanhVien.lblTVChude.Text = "Mặt Hàng";
             }
 
+        }
+
+        private void btnCTXemShop_Click(object sender, EventArgs e)
+        {
+            if (DangKiDAO.Chuc_vu == "Quan tri vien")
+            {
+                fd.OpenChildForm(new FormShop(bando), FormTrangChu.panelTrangChu);
+                FormTrangChu.lblChude.Text = "Shop bán hàng";
+            }
+            else
+            {
+                fd.OpenChildForm(new FormShop(bando), FormTrangChuThanhVien.panelTVTrangChu);
+                FormTrangChuThanhVien.lblTVChude.Text = "Shop bán hàng";
+            }
         }
     }
 }

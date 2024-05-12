@@ -31,9 +31,9 @@ namespace DoAnCuoiKi_TraoDoiDo
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAnh3 = new System.Windows.Forms.Label();
@@ -66,19 +66,19 @@ namespace DoAnCuoiKi_TraoDoiDo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(299, 32);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Đang bán";
+            this.label1.Text = "Các mặt hàng đang bán";
             // 
             // lblAnh3
             // 
             this.lblAnh3.AutoSize = true;
             this.lblAnh3.ForeColor = System.Drawing.Color.White;
-            this.lblAnh3.Location = new System.Drawing.Point(179, 22);
+            this.lblAnh3.Location = new System.Drawing.Point(478, 42);
             this.lblAnh3.Name = "lblAnh3";
             this.lblAnh3.Size = new System.Drawing.Size(44, 16);
             this.lblAnh3.TabIndex = 10;
@@ -98,7 +98,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblAnh4.AutoSize = true;
             this.lblAnh4.ForeColor = System.Drawing.Color.White;
-            this.lblAnh4.Location = new System.Drawing.Point(339, 29);
+            this.lblAnh4.Location = new System.Drawing.Point(437, 25);
             this.lblAnh4.Name = "lblAnh4";
             this.lblAnh4.Size = new System.Drawing.Size(44, 16);
             this.lblAnh4.TabIndex = 12;
@@ -148,7 +148,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblAnh1.AutoSize = true;
             this.lblAnh1.ForeColor = System.Drawing.Color.White;
-            this.lblAnh1.Location = new System.Drawing.Point(282, 10);
+            this.lblAnh1.Location = new System.Drawing.Point(380, 6);
             this.lblAnh1.Name = "lblAnh1";
             this.lblAnh1.Size = new System.Drawing.Size(44, 16);
             this.lblAnh1.TabIndex = 17;
@@ -228,7 +228,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             this.lblAnh2.AutoSize = true;
             this.lblAnh2.ForeColor = System.Drawing.Color.White;
-            this.lblAnh2.Location = new System.Drawing.Point(282, 43);
+            this.lblAnh2.Location = new System.Drawing.Point(380, 39);
             this.lblAnh2.Name = "lblAnh2";
             this.lblAnh2.Size = new System.Drawing.Size(51, 16);
             this.lblAnh2.TabIndex = 25;
@@ -266,36 +266,36 @@ namespace DoAnCuoiKi_TraoDoiDo
             // 
             // gvDangban
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gvDangban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.gvDangban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gvDangban.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None;
             this.gvDangban.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvDangban.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvDangban.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gvDangban.ColumnHeadersHeight = 35;
             this.gvDangban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvDangban.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvDangban.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvDangban.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gvDangban.Location = new System.Drawing.Point(1, 65);
+            this.gvDangban.Location = new System.Drawing.Point(1, 61);
             this.gvDangban.Name = "gvDangban";
             this.gvDangban.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvDangban.RowHeadersVisible = false;
             this.gvDangban.RowHeadersWidth = 51;
             this.gvDangban.RowTemplate.Height = 24;
-            this.gvDangban.Size = new System.Drawing.Size(1377, 600);
+            this.gvDangban.Size = new System.Drawing.Size(1377, 619);
             this.gvDangban.TabIndex = 10;
             this.gvDangban.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.gvDangban.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -377,7 +377,7 @@ namespace DoAnCuoiKi_TraoDoiDo
             this.btnDbXoa.ForeColor = System.Drawing.Color.Black;
             this.btnDbXoa.Image = global::DoAnCuoiKi_TraoDoiDo.Properties.Resources.icons8_delete_481;
             this.btnDbXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDbXoa.Location = new System.Drawing.Point(1196, 686);
+            this.btnDbXoa.Location = new System.Drawing.Point(1197, 689);
             this.btnDbXoa.Name = "btnDbXoa";
             this.btnDbXoa.Size = new System.Drawing.Size(171, 45);
             this.btnDbXoa.TabIndex = 7;

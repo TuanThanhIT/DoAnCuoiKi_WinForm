@@ -16,9 +16,6 @@ namespace DoAnCuoiKi_TraoDoiDo
         public static string ID;
         public static string Ten_nguoi_dung;
         public static string Chuc_vu;
-        public static string Ho_ten;
-        public static string Dia_chi;
-        public static string So_dt;
 
         public bool ThemThanhVien(DangKi dk) // Thêm tài khoản đăng kí thành công
         {
@@ -62,6 +59,35 @@ namespace DoAnCuoiKi_TraoDoiDo
             return dks;
 
         }
+        public DangKi LoadThongTin(string iD)
+        {
+            string query = string.Format("SELECT * FROM [ĐăngKí] WHERE ID = N'{0}'", iD);
+            DangKi dk = null;
+            using (SqlConnection connection = db.GetSqlConnection())
+            {
+                connection.Open();
 
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                dk = new DangKi(reader.GetString(1), reader.GetString(6), reader.GetString(5), reader.GetString(4));
+                            } 
+                        }
+                    }
+                }
+            }
+            return dk;
+
+        }
+        public bool Sua(DangKi dk) 
+        {
+            string sqlStr = string.Format("UPDATE [ĐăngKí] SET [Họ_tên] = '{0}', [Ngày_tháng_năm_sinh] = '{1}', [Giới_tính] = '{2}', [Địa_chỉ_Email] = '{3}', [Số_điện_thoại] = '{4}', [Địa_chỉ] = '{5}', [Ngày_đăng_kí] = '{6}', [Tên_đăng_nhập] = '{7}', [Mật_khẩu] = '{8}', [Chức_vụ] = '{9}' WHERE ID = '{10}'", dk.Họ_tên, dk.Ngày_tháng_năm_sinh, dk.Giới_tính, dk.Địa_chỉ_Email, dk.Số_điện_thoại, dk.Địa_chỉ, dk.Ngày_đăng_kí, dk.Tên_đăng_nhập, dk.Mật_khẩu, dk.Chức_vụ, dk.ID);
+            return db.Thucthi(sqlStr);
+        }
     }
 }

@@ -23,6 +23,10 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         {
             return dkd.ThemThanhVien(dk);
         }
+        public DangKi LoadThongTin(string ID)
+        {
+            return dkd.LoadThongTin(ID);
+        }
         public List<DangKi> LoadDSTaiKhoan()
         {
             return dkd.LoadDSDangKi();
@@ -31,6 +35,10 @@ namespace DoAnCuoiKi_TraoDoiDo.BUS
         public DataTable DSTaiKhoan()
         {
             return dkd.DSTaiKhoan();
+        }
+        public bool Sua(DangKi dk)
+        {
+            return dkd.Sua(dk);
         }
         public List<TaiKhoanReport> layDuLieu() // lấy dữ liệu đưa vào list để làm thống kê
         {

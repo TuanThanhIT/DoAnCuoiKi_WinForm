@@ -86,7 +86,7 @@
             // 
             this.UCHTpicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UCHTpicImage.ImageRotate = 0F;
-            this.UCHTpicImage.Location = new System.Drawing.Point(4, 3);
+            this.UCHTpicImage.Location = new System.Drawing.Point(6, -1);
             this.UCHTpicImage.Name = "UCHTpicImage";
             this.UCHTpicImage.Size = new System.Drawing.Size(222, 161);
             this.UCHTpicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +98,7 @@
             this.UCHTlblGiaban.BackColor = System.Drawing.Color.Transparent;
             this.UCHTlblGiaban.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UCHTlblGiaban.ForeColor = System.Drawing.Color.Red;
-            this.UCHTlblGiaban.Location = new System.Drawing.Point(75, 224);
+            this.UCHTlblGiaban.Location = new System.Drawing.Point(95, 224);
             this.UCHTlblGiaban.Name = "UCHTlblGiaban";
             this.UCHTlblGiaban.Size = new System.Drawing.Size(97, 33);
             this.UCHTlblGiaban.TabIndex = 3;

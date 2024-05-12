@@ -40,7 +40,37 @@ namespace DoAnCuoiKi_TraoDoiDo.DAO
                                 DanhGia dg = new DanhGia(reader.GetString(1), reader.GetString(6), reader.GetString(5));
                                 dgs.Add(dg);
 
+                            }
 
+
+                        }
+                    }
+                }
+            }
+            return dgs;
+
+        }
+        public List<DanhGia> LoadSanPhamShop(string maSanPham)
+        {
+            string query2 = string.Format("SELECT *" +
+            "FROM [ĐánhGiá] " +
+            "WHERE [Mã_sản_phẩm] = N'{0}'", maSanPham);
+            List<DanhGia> dgs = new List<DanhGia>();
+            using (SqlConnection connection = db.GetSqlConnection())
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand(query2, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+
+                            while (reader.Read())
+                            {
+                                DanhGia dg = new DanhGia(reader.GetString(1), reader.GetString(6), reader.GetString(5));
+                                dgs.Add(dg);
 
                             }
 
