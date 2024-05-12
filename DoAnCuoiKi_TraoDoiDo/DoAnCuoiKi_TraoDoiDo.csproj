@@ -100,22 +100,22 @@
     <Compile Include="BUS\MuaHangBUS.cs" />
     <Compile Include="BUS\SuKienBUS.cs" />
     <Compile Include="BUS\ThanhToanBUS.cs" />
-    <Compile Include="FCapNhatThongTin.cs">
+    <Compile Include="Tài Khoản\FCapNhatThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FCapNhatThongTin.Designer.cs">
+    <Compile Include="Tài Khoản\FCapNhatThongTin.Designer.cs">
       <DependentUpon>FCapNhatThongTin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FDoiMatKhau.cs">
+    <Compile Include="Tài Khoản\FDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDoiMatKhau.Designer.cs">
+    <Compile Include="Tài Khoản\FDoiMatKhau.Designer.cs">
       <DependentUpon>FDoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="FTaiKhoan.cs">
+    <Compile Include="Tài Khoản\FTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FTaiKhoan.Designer.cs">
+    <Compile Include="Tài Khoản\FTaiKhoan.Designer.cs">
       <DependentUpon>FTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="FShop.cs">
@@ -257,16 +257,16 @@
     <Compile Include="FDangBan.Designer.cs">
       <DependentUpon>FDangBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FDangKi.cs">
+    <Compile Include="Tài Khoản\FDangKi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDangKi.Designer.cs">
+    <Compile Include="Tài Khoản\FDangKi.Designer.cs">
       <DependentUpon>FDangKi.cs</DependentUpon>
     </Compile>
-    <Compile Include="FDangNhap.cs">
+    <Compile Include="Tài Khoản\FDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDangNhap.Designer.cs">
+    <Compile Include="Tài Khoản\FDangNhap.Designer.cs">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FDanhGia2.cs">
@@ -430,10 +430,10 @@
     <Compile Include="UserControl\UCGioHang.Designer.cs">
       <DependentUpon>UCGioHang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FCapNhatThongTin.resx">
+    <EmbeddedResource Include="Tài Khoản\FCapNhatThongTin.resx">
       <DependentUpon>FCapNhatThongTin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDoiMatKhau.resx">
+    <EmbeddedResource Include="Tài Khoản\FDoiMatKhau.resx">
       <DependentUpon>FDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form măt hàng\FormDienThoai.resx">
@@ -481,10 +481,10 @@
     <EmbeddedResource Include="FDangBan.resx">
       <DependentUpon>FDangBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDangKi.resx">
+    <EmbeddedResource Include="Tài Khoản\FDangKi.resx">
       <DependentUpon>FDangKi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDangNhap.resx">
+    <EmbeddedResource Include="Tài Khoản\FDangNhap.resx">
       <DependentUpon>FDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FDanhGia2.resx">
@@ -493,7 +493,7 @@
     <EmbeddedResource Include="FGioHang.resx">
       <DependentUpon>FGioHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FTaiKhoan.resx">
+    <EmbeddedResource Include="Tài Khoản\FTaiKhoan.resx">
       <DependentUpon>FTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FShop.resx">
